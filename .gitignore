@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.venv/
+venv/
+
+# Node (just in case)
+node_modules/
+
+# Editor
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Local-only artifacts
+*.log
+.claude/
+
+# Temporary copies
+/tmp/
+*.tmp

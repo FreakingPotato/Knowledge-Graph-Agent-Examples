@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Knowledge Graph Agent Examples</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Inter, system-ui, -apple-system, sans-serif; background: linear-gradient(180deg, #050810 0%, #0b1220 50%, #0a0f1c 100%); color: #e2e8f0; min-height: 100vh; }
+  a { color: #7dd3fc; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  header { padding: 64px 32px 36px; max-width: 1180px; margin: 0 auto; text-align: center; }
+  header .badge { display: inline-block; background: rgba(34, 211, 238, 0.12); color: #22d3ee; border: 1px solid rgba(34, 211, 238, 0.4); padding: 4px 14px; border-radius: 999px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 18px; }
+  header h1 { margin: 0; font-size: 36px; line-height: 1.15; color: #f1f5f9; letter-spacing: -0.02em; }
+  header .subtitle { margin: 14px auto 0; max-width: 720px; color: #94a3b8; font-size: 15px; line-height: 1.65; }
+  main { padding: 16px 32px 80px; max-width: 1180px; margin: 0 auto; }
+  .pipeline-overview { background: linear-gradient(135deg, rgba(34, 211, 238, 0.06), rgba(167, 139, 250, 0.05)); border: 1px solid rgba(148, 163, 184, 0.18); border-radius: 14px; padding: 24px 28px; margin: 24px 0 36px; }
+  .pipeline-overview h2 { margin: 0 0 12px; color: #f1f5f9; font-size: 17px; }
+  .pipeline-overview p { color: #cbd5e1; font-size: 13px; line-height: 1.7; margin: 0 0 8px; }
+  .pipeline-overview .agents { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .pipeline-overview .agent-tag { background: #111827; border: 1px solid #334155; color: #cbd5e1; padding: 4px 10px; border-radius: 999px; font-size: 11px; }
+  h2.section { margin: 44px 0 18px; color: #f1f5f9; font-size: 19px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 18px; }
+  .project-card { background: #111827; border: 1px solid #1f2937; border-radius: 14px; overflow: hidden; transition: transform 140ms, box-shadow 140ms, border-color 140ms; display: flex; flex-direction: column; }
+  .project-card:hover { transform: translateY(-2px); border-color: #22d3ee; box-shadow: 0 12px 32px rgba(2, 6, 23, 0.55); text-decoration: none; }
+  .project-card.coming-soon { opacity: 0.5; cursor: not-allowed; }
+  .project-card.coming-soon:hover { transform: none; border-color: #1f2937; box-shadow: none; }
+  .project-card .thumb { aspect-ratio: 16 / 9; background: #020617; overflow: hidden; }
+  .project-card .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .project-card .thumb-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #475569; font-size: 14px; background: linear-gradient(135deg, #0b1220, #1e293b); }
+  .project-card .body { padding: 18px 20px; flex: 1 1 auto; display: flex; flex-direction: column; }
+  .project-card .pill { display: inline-block; background: rgba(34, 211, 238, 0.12); color: #22d3ee; border: 1px solid rgba(34, 211, 238, 0.4); padding: 2px 8px; border-radius: 999px; font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; align-self: flex-start; }
+  .project-card.coming-soon .pill { background: rgba(148, 163, 184, 0.12); color: #94a3b8; border-color: rgba(148, 163, 184, 0.3); }
+  .project-card h3 { margin: 0 0 8px; color: #f1f5f9; font-size: 17px; line-height: 1.3; }
+  .project-card p.summary { color: #cbd5e1; font-size: 13px; line-height: 1.6; margin: 0 0 14px; flex: 1 1 auto; }
+  .project-card .stats { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 14px; }
+  .project-card .stat { font-size: 12px; color: #94a3b8; }
+  .project-card .stat strong { color: #f1f5f9; font-family: ui-monospace, monospace; font-weight: 600; }
+  .project-card .cta-row { display: flex; gap: 10px; margin-top: 4px; }
+  .project-card .demo-btn { background: linear-gradient(135deg, #22d3ee, #38bdf8); color: #0a0f1c; padding: 9px 18px; border-radius: 999px; font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(34, 211, 238, 0.3); }
+  .project-card .demo-btn:hover { text-decoration: none; }
+  .project-card .gh-btn { background: #0f172a; color: #cbd5e1; border: 1px solid #334155; padding: 9px 14px; border-radius: 999px; font-size: 12px; display: inline-flex; align-items: center; gap: 6px; }
+  .project-card .gh-btn:hover { border-color: #38bdf8; text-decoration: none; }
+  footer { padding: 24px 32px; border-top: 1px solid rgba(148, 163, 184, 0.1); color: #64748b; font-size: 12px; text-align: center; }
+</style>
+</head>
+<body>
+<header>
+  <span class="badge">Demo Hub · Open in browser</span>
+  <h1>Knowledge Graph Agent Examples</h1>
+  <p class="subtitle">Knowledge graphs built from scientific literature, automatically curated by an agentic pipeline. Each project lists candidate papers, scores them against a topic-specific rubric, promotes the survivors to evidence, and highlights the supporting paragraph in the original PDF.</p>
+</header>
+<main>
+
+  <div class="pipeline-overview">
+    <h2>The pipeline (used by every project below)</h2>
+    <p>An <strong>Architect</strong> defines the topic ontology — paradigms, claims, a 5-dimension scoring rubric, and a high-impact venue allowlist. The pipeline then runs through a sequence of single-purpose agents that read from shared canonical files and write to their own narrow output slots:</p>
+    <div class="agents">
+      <span class="agent-tag">Discoverer</span>
+      <span class="agent-tag">Scorers ×3</span>
+      <span class="agent-tag">Reviewer</span>
+      <span class="agent-tag">PDF fetcher</span>
+      <span class="agent-tag">Ranker</span>
+      <span class="agent-tag">Sentence linker</span>
+      <span class="agent-tag">Planning linker</span>
+      <span class="agent-tag">QC checker</span>
+      <span class="agent-tag">Auditor</span>
+    </div>
+    <p style="margin-top:14px;">Each agent's logic is also a CLI script — the pipeline is reproducible end-to-end. To build a knowledge graph for a new topic, write a new ontology and re-run the same scripts.</p>
+  </div>
+
+  <h2 class="section">Projects</h2>
+  <div class="grid">
+
+    <a href="multimodal_genomics/index.html" class="project-card">
+      <div class="thumb">
+        <img src="multimodal_genomics/assets/qa/final_evidence.png" alt="Multimodal NLP × Genomic Foundation Models — preview">
+      </div>
+      <div class="body">
+        <span class="pill">Bioinformatics · Foundation models</span>
+        <h3>Multimodal NLP × Genomic Foundation Models (DNA / RNA)</h3>
+        <p class="summary">A literature knowledge graph for combining language models with DNA / RNA foundation models — three paradigms (genomic FMs, multimodal integration, applications), nine claims, with a Planning view of five next-step research directions distilled from the corpus's own Discussion / Future-Work sections.</p>
+        <div class="stats">
+          <span class="stat"><strong>125</strong> papers</span>
+          <span class="stat"><strong>76</strong> evidence rows</span>
+          <span class="stat"><strong>5</strong> next-steps</span>
+          <span class="stat"><strong>2016&ndash;2026</strong></span>
+        </div>
+        <div class="cta-row">
+          <span class="demo-btn">▶ Open project →</span>
+          <span class="gh-btn">📂 Source</span>
+        </div>
+      </div>
+    </a>
+
+    <div class="project-card coming-soon">
+      <div class="thumb"><div class="thumb-placeholder">More projects coming soon</div></div>
+      <div class="body">
+        <span class="pill">Coming soon</span>
+        <h3>Whole-Cell Model Paper Collection</h3>
+        <p class="summary">Curated literature for whole-cell models, anchored on the 2026 Cell paper "Bringing the genetically minimal cell to life on a computer in 4D". Lives in a sister repo today; will be reflected here as a project card.</p>
+        <div class="stats"><span class="stat"><strong>56</strong> papers</span></div>
+      </div>
+    </div>
+
+    <div class="project-card coming-soon">
+      <div class="thumb"><div class="thumb-placeholder">+ new topic</div></div>
+      <div class="body">
+        <span class="pill">Coming soon</span>
+        <h3>Your next knowledge graph</h3>
+        <p class="summary">The pipeline is topic-agnostic. Drop a new ontology JSON into <code>scripts/</code>, re-run the agents, and the next project tile lands here.</p>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+<footer>
+  Built with the agentic knowledge-graph pipeline.
+  &nbsp;·&nbsp;
+  <a href="https://github.com/FreakingPotato/Knowledge-Graph-Agent-Examples" target="_blank" rel="noreferrer">GitHub</a>
+</footer>
+</body>
+</html>
