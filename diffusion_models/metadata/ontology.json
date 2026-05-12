@@ -1,0 +1,148 @@
+{
+  "schema_version": "0.1",
+  "topic_id": "diffusion_models",
+  "topic_label": "Diffusion Models × Natural Language × Genomic Sequences",
+  "thesis": "Diffusion models began as a continuous-noise generative process for images but have rapidly extended to discrete tokens (text, DNA, RNA, protein sequences) and to high-dimensional structured biology. We argue that progress at this intersection will be driven by three coordinated developments: (i) continuous-time diffusion foundations (score-based modelling, classifier-free guidance, latent-space scaling) that supply the modelling vocabulary; (ii) discrete & language diffusion that adapts the framework to text and other token sequences and now reaches LLM scale; and (iii) biological sequence and structure diffusion that translates these advances into protein, DNA, and RNA design — closing the loop between natural-language conditioning and functional biomolecule generation.",
+  "paradigm_id_prefix": "DFM",
+  "paper_id_prefix": "DFM",
+  "paradigms": [
+    {
+      "id": "foundations",
+      "label": "Continuous diffusion foundations",
+      "summary": "The modelling vocabulary: score-based generative modelling, discrete-time denoising diffusion probabilistic models (DDPM), and the continuous-time SDE framework; classifier-free guidance and latent-space scaling that made diffusion practical at modern scale.",
+      "claims": [
+        {
+          "id": "foundations-score-and-ddpm",
+          "subtype": "Score matching & denoising diffusion",
+          "claim": "Score-based generative modelling and denoising diffusion probabilistic models (NCSN, DDPM) establish a learnable noise-prediction objective whose reverse process samples high-quality data from a tractable Gaussian prior, giving the field its core modelling vocabulary.",
+          "search_terms": "denoising diffusion probabilistic models score-based generative noise prediction NCSN DDPM"
+        },
+        {
+          "id": "foundations-continuous-time-sde",
+          "subtype": "Continuous-time SDE framework",
+          "claim": "Continuous-time score-based stochastic differential equations unify discrete-time DDPM with score-matching and make implicit, deterministic, and accelerated samplers (DDIM, probability-flow ODE) natural special cases.",
+          "search_terms": "score-based stochastic differential equation continuous time SDE generative modelling DDIM probability flow"
+        },
+        {
+          "id": "foundations-latent-and-guidance",
+          "subtype": "Latent-space + classifier-free guidance",
+          "claim": "Latent-space diffusion (LDM / Stable Diffusion) and classifier-free guidance are the two engineering innovations that made diffusion practical at modern scale — by moving the diffusion process into a perceptual / semantic latent and by enabling strong conditional generation without an explicit classifier.",
+          "search_terms": "latent diffusion classifier-free guidance Stable Diffusion conditional generation perceptual compression"
+        }
+      ]
+    },
+    {
+      "id": "language",
+      "label": "Discrete & language diffusion",
+      "summary": "Adapting diffusion to discrete tokens — first via D3PM-style discrete state Markov chains, then via score-entropy / masked diffusion that scales much better, and finally via LLM-scale discrete diffusion models that challenge autoregressive language modelling head-on.",
+      "claims": [
+        {
+          "id": "language-discrete-state-markov",
+          "subtype": "Discrete-state Markov chains for text",
+          "claim": "Discrete-state diffusion (D3PM, DiffusionLM) defines a forward Markov chain over discrete tokens — uniform / absorbing / Gaussian transition kernels — and trains a reverse denoising model that can generate fluent text without an autoregressive factorisation.",
+          "search_terms": "discrete diffusion D3PM DiffusionLM text generation Markov chain absorbing state"
+        },
+        {
+          "id": "language-score-entropy-masked",
+          "subtype": "Score-entropy & masked diffusion",
+          "claim": "Score-entropy discrete diffusion (SEDD) and masked diffusion language models (MDLM) replace the divergence-based discrete-diffusion losses with score-entropy / masked-token objectives that scale more reliably and close the perplexity gap with autoregressive baselines.",
+          "search_terms": "score entropy discrete diffusion SEDD masked diffusion language model MDLM ratio matching"
+        },
+        {
+          "id": "language-llm-scale-diffusion",
+          "subtype": "LLM-scale discrete diffusion",
+          "claim": "LLM-scale discrete diffusion models (LLaDA, DiffuLLaMA, BeyondAR) demonstrate that non-autoregressive diffusion can match — and in some regimes exceed — autoregressive LLM performance at billion-parameter scale, while enabling parallel decoding and bidirectional context.",
+          "search_terms": "LLaDA DiffuLLaMA discrete diffusion large language model billion parameter non-autoregressive"
+        }
+      ]
+    },
+    {
+      "id": "biology",
+      "label": "Biological sequence & structure diffusion",
+      "summary": "Translating diffusion into protein, DNA, and RNA design. Three sub-areas have reached production-grade utility: structure-conditioned protein backbone generation (RFdiffusion), protein-sequence diffusion language models (EvoDiff / DPLM), and nucleotide-sequence diffusion for DNA / RNA design (DNADiffusion, DiscDiff, RNAdiffusion, DRAKES).",
+      "claims": [
+        {
+          "id": "biology-protein-structure",
+          "subtype": "Protein backbone & structure diffusion",
+          "claim": "Diffusion over 3D protein backbones (RFdiffusion-style) enables de novo design of binders, scaffolds, and symmetric assemblies that experimentally fold and function — bringing diffusion-as-generative-prior into the wet-lab design loop.",
+          "search_terms": "RFdiffusion protein backbone de novo design diffusion structure generation binder"
+        },
+        {
+          "id": "biology-protein-sequence",
+          "subtype": "Protein-sequence diffusion language models",
+          "claim": "Protein-sequence diffusion models (EvoDiff, DPLM) train discrete diffusion on amino-acid sequences and reach parity with — or exceed — protein language models on inverse-folding, generation, and design tasks while supporting flexible conditioning.",
+          "search_terms": "EvoDiff DPLM protein sequence diffusion amino acid generation inverse folding"
+        },
+        {
+          "id": "biology-dna-rna-nucleotide",
+          "subtype": "DNA / RNA nucleotide diffusion",
+          "claim": "Discrete diffusion for nucleotide sequences (DNADiffusion, DiscDiff, D3, RNAdiffusion, DRAKES) generates regulatory DNA, RNA aptamers, and codon-optimised CDSs with controllable function, demonstrating that the diffusion framework transfers cleanly from text to nucleic acids.",
+          "search_terms": "DNA diffusion RNA diffusion DiscDiff DNADiffusion regulatory sequence aptamer DRAKES"
+        }
+      ]
+    }
+  ],
+  "rubric": {
+    "weights": {
+      "useful_outcomes": 1.5,
+      "immediate_benefit": 1.3,
+      "plausible": 1.1,
+      "scalable": 0.9,
+      "how_to_validate": 0.7
+    },
+    "anchors": {
+      "5": "strong, direct, explicit support for THIS specific claim",
+      "4": "strong, modest gap",
+      "3": "moderate / partial",
+      "2": "weak / indirect",
+      "1": "tangential",
+      "0": "does not support"
+    },
+    "primary_threshold": 18.0,
+    "secondary_threshold": 14.0,
+    "max_total": 28.0
+  },
+  "discovery": {
+    "candidates_per_claim": 10,
+    "min_citations": 5,
+    "venue_allowlist": [
+      "Nature", "Science", "Cell",
+      "Nature Methods", "Nature Biotechnology", "Nature Machine Intelligence",
+      "Nature Communications", "Nature Computational Science",
+      "Nature Chemistry", "Nature Structural & Molecular Biology",
+      "Cell Systems", "Science Advances",
+      "Proceedings of the National Academy of Sciences", "PNAS",
+      "eLife", "Molecular Systems Biology",
+      "Genome Biology", "Genome Research", "Nucleic Acids Research", "Bioinformatics",
+      "Advances in Neural Information Processing Systems", "NeurIPS Proceedings",
+      "International Conference on Machine Learning", "ICML Proceedings",
+      "International Conference on Learning Representations", "ICLR",
+      "Annual Meeting of the Association for Computational Linguistics", "ACL Proceedings",
+      "Empirical Methods in Natural Language Processing", "EMNLP Proceedings",
+      "Conference on Computer Vision and Pattern Recognition", "CVPR",
+      "AAAI Conference on Artificial Intelligence",
+      "Journal of Machine Learning Research", "Transactions on Machine Learning Research",
+      "Journal of Chemical Information and Modeling",
+      "arXiv", "bioRxiv", "medRxiv"
+    ],
+    "preprint_venues": ["arXiv", "bioRxiv", "medRxiv"],
+    "domain_buckets": ["foundation-models", "language-diffusion", "vision-diffusion", "protein-structure-diffusion", "protein-sequence-diffusion", "dna-diffusion", "rna-diffusion", "ml-methods", "interdisciplinary"]
+  },
+  "promotion": {
+    "per_claim_min_papers": 6,
+    "per_claim_max_papers": 10,
+    "max_claims_per_paper": 4,
+    "diversity_filter_threshold": 4
+  },
+  "ranking": {
+    "primary": "journal_tier",
+    "secondary": "cited_by_count",
+    "tertiary": "year"
+  },
+  "viewer": {
+    "title": "Diffusion Models × Natural Language × Genomic Sequences — Knowledge Graph",
+    "subtitle": "Three coordinated developments at the intersection of diffusion-based generative modelling, natural-language tokens, and protein/DNA/RNA sequence design — discovered, scored, ranked, and evidence-linked.",
+    "primary_color": "#f472b6",
+    "secondary_color": "#fbbf24"
+  }
+}

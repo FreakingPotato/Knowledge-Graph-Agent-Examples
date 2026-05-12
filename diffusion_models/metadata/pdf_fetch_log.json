@@ -1,0 +1,1228 @@
+{
+  "DFM-001": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2006.11239.pdf",
+    "saved_to": "pdfs/DFM-001_2020_Denoising_Diffusion_Probabilistic_Models.pdf",
+    "bytes": 10267274,
+    "n_pages": 25,
+    "sha256": "aee5e07a802e8dfd",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2006.11239.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-002": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2204.06125.pdf",
+    "saved_to": "pdfs/DFM-002_2022_Hierarchical_Text_Conditional_Image_Generation_with_CLIP_Latents.pdf",
+    "bytes": 42905303,
+    "n_pages": 27,
+    "sha256": "21e40300958a9425",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2204.06125.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-003": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2105.05233.pdf",
+    "saved_to": "pdfs/DFM-003_2021_Diffusion_Models_Beat_GANs_on_Image_Synthesis.pdf",
+    "bytes": 39795106,
+    "n_pages": 44,
+    "sha256": "f3e66af0c1b69825",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2105.05233.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-004": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      }
+    ],
+    "notes": "no_OA_route (1 tried)"
+  },
+  "DFM-005": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2011.13456.pdf",
+    "saved_to": "pdfs/DFM-005_2020_Score_Based_Generative_Modeling_through_Stochastic_Differential_Equations.pdf",
+    "bytes": 26918820,
+    "n_pages": 36,
+    "sha256": "b244b740e60628d0",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2011.13456.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-006": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/1907.05600.pdf",
+    "saved_to": "pdfs/DFM-006_2019_Generative_Modeling_by_Estimating_Gradients_of_the_Data_Distribution.pdf",
+    "bytes": 8113050,
+    "n_pages": 23,
+    "sha256": "c4a898f531eb8716",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/1907.05600.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-007": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2102.09672.pdf",
+    "saved_to": "pdfs/DFM-007_2021_Improved_Denoising_Diffusion_Probabilistic_Models.pdf",
+    "bytes": 12442086,
+    "n_pages": 17,
+    "sha256": "1f041c12d72020bb",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2102.09672.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-008": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2206.00364.pdf",
+    "saved_to": "pdfs/DFM-008_2022_Elucidating_the_Design_Space_of_Diffusion_Based_Generative_Models.pdf",
+    "bytes": 19211841,
+    "n_pages": 47,
+    "sha256": "0cf53de9ac234366",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2206.00364.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-009": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2107.00630.pdf",
+    "saved_to": "pdfs/DFM-009_2021_Variational_Diffusion_Models.pdf",
+    "bytes": 2488863,
+    "n_pages": 27,
+    "sha256": "86ae796b67367231",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2107.00630.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-010": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2303.01469.pdf",
+    "saved_to": "pdfs/DFM-010_2023_Consistency_Models.pdf",
+    "bytes": 31529980,
+    "n_pages": 42,
+    "sha256": "b36df36eb96abcad",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2303.01469.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-011": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2108.01073.pdf",
+    "saved_to": "pdfs/DFM-011_2021_SDEdit_Guided_Image_Synthesis_and_Editing_with_Stochastic_Differential_Equations.pdf",
+    "bytes": 12402950,
+    "n_pages": 33,
+    "sha256": "c27e338ed58a2a5b",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2108.01073.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-012": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2206.00927.pdf",
+    "saved_to": "pdfs/DFM-012_2022_DPM_Solver_A_Fast_ODE_Solver_for_Diffusion_Probabilistic_Model_Sampling_in_Aroun.pdf",
+    "bytes": 15918595,
+    "n_pages": 31,
+    "sha256": "4a14cb652bb4996c",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2206.00927.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-013": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2202.09778.pdf",
+    "saved_to": "pdfs/DFM-013_2022_Pseudo_Numerical_Methods_for_Diffusion_Models_on_Manifolds.pdf",
+    "bytes": 14755098,
+    "n_pages": 24,
+    "sha256": "986b333801694986",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2202.09778.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-014": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2010.02502.pdf",
+    "saved_to": "pdfs/DFM-014_2020_Denoising_Diffusion_Implicit_Models.pdf",
+    "bytes": 10857218,
+    "n_pages": 22,
+    "sha256": "07cb8796d7c100bf",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2010.02502.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-015": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2210.02747.pdf",
+    "saved_to": "pdfs/DFM-015_2022_Flow_Matching_for_Generative_Modeling.pdf",
+    "bytes": 25147129,
+    "n_pages": 28,
+    "sha256": "5eeb39ba51639692",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2210.02747.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-016": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2209.03003.pdf",
+    "saved_to": "pdfs/DFM-016_2022_Flow_Straight_and_Fast_Learning_to_Generate_and_Transfer_Data_with_Rectified_Flo.pdf",
+    "bytes": 18024983,
+    "n_pages": 41,
+    "sha256": "d81790cb6988ef48",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2209.03003.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-017": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2106.01357.pdf",
+    "saved_to": "pdfs/DFM-017_2021_Diffusion_Schr_dinger_Bridge_with_Applications_to_Score_Based_Generative_Modelin.pdf",
+    "bytes": 7837737,
+    "n_pages": 59,
+    "sha256": "9114b8cccb39e439",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2106.01357.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-018": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2209.11215.pdf",
+    "saved_to": "pdfs/DFM-018_2022_Sampling_is_as_easy_as_learning_the_score_theory_for_diffusion_models_with_minim.pdf",
+    "bytes": 445635,
+    "n_pages": 29,
+    "sha256": "03f7c302ef183407",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2209.11215.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-019": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      }
+    ],
+    "notes": "no_OA_route (1 tried)"
+  },
+  "DFM-020": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      }
+    ],
+    "notes": "no_OA_route (1 tried)"
+  },
+  "DFM-021": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2205.11487.pdf",
+    "saved_to": "pdfs/DFM-021_2022_Photorealistic_Text_to_Image_Diffusion_Models_with_Deep_Language_Understanding.pdf",
+    "bytes": 11365725,
+    "n_pages": 46,
+    "sha256": "0c168c11ddb3757d",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2205.11487.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-022": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2210.08402.pdf",
+    "saved_to": "pdfs/DFM-022_2022_LAION_5B_An_open_large_scale_dataset_for_training_next_generation_image_text_mod.pdf",
+    "bytes": 17686858,
+    "n_pages": 50,
+    "sha256": "18dad8c88914dfcd",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2210.08402.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-023": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2112.10741.pdf",
+    "saved_to": "pdfs/DFM-023_2021_GLIDE_Towards_Photorealistic_Image_Generation_and_Editing_with_Text_Guided_Diffu.pdf",
+    "bytes": 21259715,
+    "n_pages": 20,
+    "sha256": "0bfe7755ca38d858",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2112.10741.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-024": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2207.12598.pdf",
+    "saved_to": "pdfs/DFM-024_2022_Classifier_Free_Diffusion_Guidance.pdf",
+    "bytes": 3773509,
+    "n_pages": 14,
+    "sha256": "ccbdf2da65903ed5",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2207.12598.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-025": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2106.15282.pdf",
+    "saved_to": "pdfs/DFM-025_2021_Cascaded_Diffusion_Models_for_High_Fidelity_Image_Generation.pdf",
+    "bytes": 29348312,
+    "n_pages": 33,
+    "sha256": "ca1b934cb990a9d6",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2106.15282.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-026": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2210.02303.pdf",
+    "saved_to": "pdfs/DFM-026_2022_Imagen_Video_High_Definition_Video_Generation_with_Diffusion_Models.pdf",
+    "bytes": 8893839,
+    "n_pages": 18,
+    "sha256": "e88386e3c0fc1df8",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2210.02303.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-027": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2307.01952.pdf",
+    "saved_to": "pdfs/DFM-027_2023_SDXL_Improving_Latent_Diffusion_Models_for_High_Resolution_Image_Synthesis.pdf",
+    "bytes": 18407785,
+    "n_pages": 21,
+    "sha256": "f832961455a94254",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2307.01952.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-028": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2205.14217.pdf",
+    "saved_to": "pdfs/DFM-028_2022_Diffusion_LM_Improves_Controllable_Text_Generation.pdf",
+    "bytes": 1069685,
+    "n_pages": 25,
+    "sha256": "f786dd9d65a604f2",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2205.14217.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-029": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2301.00704.pdf",
+    "saved_to": "pdfs/DFM-029_2023_Muse_Text_To_Image_Generation_via_Masked_Generative_Transformers.pdf",
+    "bytes": 10637685,
+    "n_pages": 22,
+    "sha256": "26f7cb12e0b3d5b2",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2301.00704.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-030": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2210.08933.pdf",
+    "saved_to": "pdfs/DFM-030_2022_DiffuSeq_Sequence_to_Sequence_Text_Generation_with_Diffusion_Models.pdf",
+    "bytes": 1021637,
+    "n_pages": 20,
+    "sha256": "bc22af15da9554a5",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2210.08933.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-031": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2107.03006.pdf",
+    "saved_to": "pdfs/DFM-031_2021_Structured_Denoising_Diffusion_Models_in_Discrete_State_Spaces.pdf",
+    "bytes": 4561360,
+    "n_pages": 33,
+    "sha256": "80406c2c520bac1e",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2107.03006.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-032": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2208.04202.pdf",
+    "saved_to": "pdfs/DFM-032_2022_Analog_Bits_Generating_Discrete_Data_using_Diffusion_Models_with_Self_Conditioni.pdf",
+    "bytes": 2803810,
+    "n_pages": 23,
+    "sha256": "b20974f883c79c87",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2208.04202.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-033": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2102.05379.pdf",
+    "saved_to": "pdfs/DFM-033_2021_Argmax_Flows_and_Multinomial_Diffusion_Learning_Categorical_n_Distributions.pdf",
+    "bytes": 865438,
+    "n_pages": 20,
+    "sha256": "fb15bb185d0803da",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2102.05379.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-034": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2209.14734.pdf",
+    "saved_to": "pdfs/DFM-034_2022_DiGress_Discrete_Denoising_diffusion_for_graph_generation.pdf",
+    "bytes": 1791141,
+    "n_pages": 22,
+    "sha256": "f8c7653294b6eb2e",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2209.14734.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-035": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2112.06749.pdf",
+    "saved_to": "pdfs/DFM-035_2021_Step_unrolled_Denoising_Autoencoders_for_Text_Generation.pdf",
+    "bytes": 692030,
+    "n_pages": 23,
+    "sha256": "bb36bdfc29040371",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2112.06749.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-036": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2210.16886.pdf",
+    "saved_to": "pdfs/DFM-036_2022_DiffusER_Discrete_Diffusion_via_Edit_based_Reconstruction.pdf",
+    "bytes": 480083,
+    "n_pages": 13,
+    "sha256": "8459189aaf529593",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2210.16886.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-037": {
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/27761/27563",
+    "saved_to": "pdfs/DFM-037_2024_Text_Guided_Molecule_Generation_with_Diffusion_Language_Model.pdf",
+    "bytes": 587219,
+    "n_pages": 9,
+    "sha256": "1fdb5537333e64fd",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      },
+      {
+        "source": "unpaywall",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/download/27761/27563",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-038": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2211.15029.pdf",
+    "saved_to": "pdfs/DFM-038_2022_DiffusionBERT_Improving_Generative_Masked_Language_Models_with_Diffusion_Models.pdf",
+    "bytes": 922142,
+    "n_pages": 10,
+    "sha256": "b6cf62a8dae42801",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2211.15029.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-039": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2406.07524.pdf",
+    "saved_to": "pdfs/DFM-039_2024_Simple_and_Effective_Masked_Diffusion_Language_Models.pdf",
+    "bytes": 1034628,
+    "n_pages": 49,
+    "sha256": "d3f6e01211777db2",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2406.07524.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-040": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      }
+    ],
+    "notes": "no_OA_route (1 tried)"
+  },
+  "DFM-041": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2412.17780.pdf",
+    "saved_to": "pdfs/DFM-041_2024_PepTune_De_Novo_Generation_of_Therapeutic_Peptides_with_Multi_Objective_Guided_D.pdf",
+    "bytes": 49019802,
+    "n_pages": 49,
+    "sha256": "a67366b3f62227f0",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2412.17780.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-042": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2310.16834.pdf",
+    "saved_to": "pdfs/DFM-042_2023_Discrete_Diffusion_Modeling_by_Estimating_the_Ratios_of_the_Data_Distribution.pdf",
+    "bytes": 1069705,
+    "n_pages": 30,
+    "sha256": "1f3a135a52346270",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2310.16834.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-043": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2406.04329.pdf",
+    "saved_to": "pdfs/DFM-043_2024_Simplified_and_Generalized_Masked_Diffusion_for_Discrete_Data.pdf",
+    "bytes": 1965340,
+    "n_pages": 32,
+    "sha256": "0f189ad10105962d",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2406.04329.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-044": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2212.11685.pdf",
+    "saved_to": "pdfs/DFM-044_2022_Text_Generation_with_Diffusion_Language_Models_A_Pre_training_Approach_with_Cont.pdf",
+    "bytes": 593970,
+    "n_pages": 13,
+    "sha256": "749597fba9e2d053",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2212.11685.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-045": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2212.09412.pdf",
+    "saved_to": "pdfs/DFM-045_2022_Empowering_Diffusion_Models_on_the_Embedding_Space_for_Text_Generation.pdf",
+    "bytes": 715463,
+    "n_pages": 20,
+    "sha256": "2e7af9621d8688dc",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2212.09412.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-046": {
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/29787/31360",
+    "saved_to": "pdfs/DFM-046_2024_PoetryDiffusion_Towards_Joint_Semantic_and_Metrical_Manipulation_in_Poetry_Gener.pdf",
+    "bytes": 886802,
+    "n_pages": 10,
+    "sha256": "f9009dfaaa1c3376",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      },
+      {
+        "source": "unpaywall",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/download/29787/31360",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-047": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2502.09992.pdf",
+    "saved_to": "pdfs/DFM-047_2025_Large_Language_Diffusion_Models.pdf",
+    "bytes": 2497382,
+    "n_pages": 33,
+    "sha256": "18942f14544d696b",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2502.09992.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-048": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2305.18619.pdf",
+    "saved_to": "pdfs/DFM-048_2023_Likelihood_Based_Diffusion_Language_Models.pdf",
+    "bytes": 844896,
+    "n_pages": 23,
+    "sha256": "3a71a58b83cdfd5e",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2305.18619.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-049": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2308.12219.pdf",
+    "saved_to": "pdfs/DFM-049_2023_Diffusion_Language_Models_Can_Perform_Many_Tasks_with_Scaling_and_Instruction_Fi.pdf",
+    "bytes": 2176483,
+    "n_pages": 22,
+    "sha256": "bed760757c0eb95d",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2308.12219.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-050": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2410.17891.pdf",
+    "saved_to": "pdfs/DFM-050_2024_Scaling_Diffusion_Language_Models_via_Adaptation_from_Autoregressive_Models.pdf",
+    "bytes": 1015466,
+    "n_pages": 28,
+    "sha256": "c6553cddd4528836",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2410.17891.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-051": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      }
+    ],
+    "notes": "no_OA_route (1 tried)"
+  },
+  "DFM-052": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      }
+    ],
+    "notes": "no_OA_route (1 tried)"
+  },
+  "DFM-053": {
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.nature.com/articles/s41586-023-06728-8.pdf",
+    "saved_to": "pdfs/DFM-053_2023_Illuminating_protein_space_with_a_programmable_generative_model.pdf",
+    "bytes": 8449404,
+    "n_pages": 15,
+    "sha256": "0f5f8dde81269db8",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      },
+      {
+        "source": "unpaywall",
+        "url": "https://www.nature.com/articles/s41586-023-06728-8.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-054": {
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.nature.com/articles/s41586-023-06953-1.pdf",
+    "saved_to": "pdfs/DFM-054_2023_De_novo_design_of_high_affinity_binders_of_bioactive_helical_peptides.pdf",
+    "bytes": 7788273,
+    "n_pages": 23,
+    "sha256": "fa0189fe1e0b5a23",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      },
+      {
+        "source": "unpaywall",
+        "url": "https://www.nature.com/articles/s41586-023-06953-1.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-055": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      },
+      {
+        "source": "unpaywall",
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2024/03/18/2024.03.14.585103.full.pdf",
+        "result": "http_403"
+      }
+    ],
+    "notes": "no_OA_route (2 tried)"
+  },
+  "DFM-056": {
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.nature.com/articles/s41467-024-45461-2.pdf",
+    "saved_to": "pdfs/DFM-056_2024_DynamicBind_predicting_ligand_specific_protein_ligand_complex_structure_with_a_d.pdf",
+    "bytes": 4047890,
+    "n_pages": 13,
+    "sha256": "68647bbe9f1199a0",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      },
+      {
+        "source": "unpaywall",
+        "url": "https://www.nature.com/articles/s41467-024-45461-2.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-057": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      },
+      {
+        "source": "unpaywall",
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2023/09/12/2023.09.11.556673.full.pdf",
+        "result": "http_403"
+      }
+    ],
+    "notes": "no_OA_route (2 tried)"
+  },
+  "DFM-058": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2206.04119.pdf",
+    "saved_to": "pdfs/DFM-058_2022_Diffusion_probabilistic_modeling_of_protein_backbones_in_3D_for_the_motif_scaffo.pdf",
+    "bytes": 6658909,
+    "n_pages": 30,
+    "sha256": "1854496e07b3747b",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2206.04119.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-059": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2301.12485.pdf",
+    "saved_to": "pdfs/DFM-059_2023_Generating_Novel_Designable_and_Diverse_Protein_Structures_by_Equivariantly_Diff.pdf",
+    "bytes": 9604219,
+    "n_pages": 25,
+    "sha256": "fb2299cec3769368",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2301.12485.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-060": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2305.04120.pdf",
+    "saved_to": "pdfs/DFM-060_2023_A_Latent_Diffusion_Model_for_Protein_Structure_Generation.pdf",
+    "bytes": 1610807,
+    "n_pages": 17,
+    "sha256": "d393eb69fcc04029",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2305.04120.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-061": {
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.nature.com/articles/s41467-024-45051-2.pdf",
+    "saved_to": "pdfs/DFM-061_2024_Protein_structure_generation_via_folding_diffusion.pdf",
+    "bytes": 3436019,
+    "n_pages": 12,
+    "sha256": "2e17a15896183a27",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      },
+      {
+        "source": "unpaywall",
+        "url": "https://www.nature.com/articles/s41467-024-45051-2.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-062": {
+    "status": "downloaded",
+    "source": "unpaywall",
+    "pdf_url": "https://www.nature.com/articles/s41587-024-02395-w.pdf",
+    "saved_to": "pdfs/DFM-062_2024_Multistate_and_functional_protein_design_using_RoseTTAFold_sequence_space_diffus.pdf",
+    "bytes": 4129415,
+    "n_pages": 19,
+    "sha256": "809da65e535ce9fd",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      },
+      {
+        "source": "unpaywall",
+        "url": "https://www.nature.com/articles/s41587-024-02395-w.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-063": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      },
+      {
+        "source": "unpaywall",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11734486/pdf/nihms-2036637.pdf",
+        "result": "not_pdf:text/html; charset=utf-8"
+      }
+    ],
+    "notes": "no_OA_route (2 tried)"
+  },
+  "DFM-064": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      }
+    ],
+    "notes": "no_OA_route (1 tried)"
+  },
+  "DFM-065": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      }
+    ],
+    "notes": "no_OA_route (1 tried)"
+  },
+  "DFM-066": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      },
+      {
+        "source": "unpaywall",
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2023/05/10/2023.05.08.539766.full.pdf",
+        "result": "http_403"
+      }
+    ],
+    "notes": "no_OA_route (2 tried)"
+  },
+  "DFM-067": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      },
+      {
+        "source": "unpaywall",
+        "url": "https://www.science.org/doi/pdf/10.1126/sciadv.adl4000?download=true",
+        "result": "http_403"
+      }
+    ],
+    "notes": "no_OA_route (2 tried)"
+  },
+  "DFM-068": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      },
+      {
+        "source": "unpaywall",
+        "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/advs.202406305",
+        "result": "http_403"
+      }
+    ],
+    "notes": "no_OA_route (2 tried)"
+  },
+  "DFM-069": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2402.18567.pdf",
+    "saved_to": "pdfs/DFM-069_2024_Diffusion_Language_Models_Are_Versatile_Protein_Learners.pdf",
+    "bytes": 25011377,
+    "n_pages": 25,
+    "sha256": "21ad92c9f1e593f0",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2402.18567.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-070": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      },
+      {
+        "source": "unpaywall",
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2024/02/01/2024.02.01.578352.full.pdf",
+        "result": "http_403"
+      }
+    ],
+    "notes": "no_OA_route (2 tried)"
+  },
+  "DFM-071": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      },
+      {
+        "source": "unpaywall",
+        "url": "https://academic.oup.com/bib/article-pdf/25/6/bbae517/59923079/bbae517.pdf",
+        "result": "http_403"
+      }
+    ],
+    "notes": "no_OA_route (2 tried)"
+  },
+  "DFM-072": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      }
+    ],
+    "notes": "no_OA_route (1 tried)"
+  },
+  "DFM-073": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      },
+      {
+        "source": "unpaywall",
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2024/05/24/2024.05.23.595630.full.pdf",
+        "result": "http_403"
+      }
+    ],
+    "notes": "no_OA_route (2 tried)"
+  },
+  "DFM-074": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      }
+    ],
+    "notes": "no_OA_route (1 tried)"
+  },
+  "DFM-075": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      },
+      {
+        "source": "unpaywall",
+        "url": "https://academic.oup.com/nar/article-pdf/53/16/gkaf833/64147214/gkaf833.pdf",
+        "result": "http_403"
+      }
+    ],
+    "notes": "no_OA_route (2 tried)"
+  },
+  "DFM-076": {
+    "status": "paywalled",
+    "source": "none",
+    "attempts": [
+      {
+        "source": "openalex_oa",
+        "result": "req_fail:JSONDecodeError"
+      },
+      {
+        "source": "unpaywall",
+        "url": "https://www.biorxiv.org/content/biorxiv/early/2025/02/28/2025.02.25.639942.full.pdf",
+        "result": "http_403"
+      }
+    ],
+    "notes": "no_OA_route (2 tried)"
+  },
+  "DFM-077": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2402.06079.pdf",
+    "saved_to": "pdfs/DFM-077_2024_DiscDiff_Latent_Diffusion_Model_for_DNA_Sequence_Generation.pdf",
+    "bytes": 3974840,
+    "n_pages": 27,
+    "sha256": "551124266e631f7c",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2402.06079.pdf",
+        "result": "ok"
+      }
+    ]
+  },
+  "DFM-078": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2410.13643.pdf",
+    "saved_to": "pdfs/DFM-078_2024_Fine_Tuning_Discrete_Diffusion_Models_via_Reward_Optimization_with_Applications_.pdf",
+    "bytes": 5080465,
+    "n_pages": 29,
+    "sha256": "2a8c53a92982dc13",
+    "attempts": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/pdf/2410.13643.pdf",
+        "result": "ok"
+      }
+    ]
+  }
+}

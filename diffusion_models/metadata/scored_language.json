@@ -1,0 +1,759 @@
+{
+  "schema_version": "0.1",
+  "paradigm": "language",
+  "scored_at": "2026-05-12T07:27:21.748170+00:00",
+  "scored_by": "S2",
+  "claims": {
+    "language-discrete-state-markov": {
+      "claim_text": "Discrete-state diffusion (D3PM, DiffusionLM) defines a forward Markov chain over discrete tokens \u2014 uniform / absorbing / Gaussian transition kernels \u2014 and trains a reverse denoising model that can generate fluent text without an autoregressive factorisation.",
+      "candidates": [
+        {
+          "candidate_id": "candidate-language-discrete-state-markov-DFM-031",
+          "paper_id": "DFM-031",
+          "paper_title": "Structured Denoising Diffusion Models in Discrete State-Spaces",
+          "paper_year": 2021,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 82,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "D3PM defines uniform/absorbing/Gaussian discrete kernels and beats prior multinomial diffusion on text and image tokens, directly grounding the claim."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Provides the canonical D3PM transition-kernel toolkit any practitioner can adopt today for discrete-token diffusion modelling."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Rigorously generalises multinomial diffusion with categorical Markov kernels and a sound discrete ELBO derivation."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Demonstrated on LM1B and CIFAR token grids; framework generalises but the paper itself stays at moderate scale."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Reports BPC/perplexity and FID baselines on standard text and image-token benchmarks that transfer cleanly."
+            }
+          },
+          "weighted_total": 26.6,
+          "match_score": 0.95
+        },
+        {
+          "candidate_id": "candidate-language-discrete-state-markov-DFM-028",
+          "paper_id": "DFM-028",
+          "paper_title": "Diffusion-LM Improves Controllable Text Generation",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 237,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Diffusion-LM is the named exemplar in the claim and shows controllable non-autoregressive text generation outperforming prior plug-and-play baselines on six control tasks."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Released training and control recipe lets practitioners apply continuous-embedding diffusion to controllable NLG immediately."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Continuous-embedding relaxation is principled but adds rounding noise versus a pure discrete Markov chain."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Trained at small (~80M) scale on E2E/ROC; scaling to LLM regime not demonstrated."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Controllable-generation benchmark suite (syntax, semantics) provides a transferable evaluation protocol."
+            }
+          },
+          "weighted_total": 22.6,
+          "match_score": 0.8071
+        },
+        {
+          "candidate_id": "candidate-language-discrete-state-markov-DFM-033",
+          "paper_id": "DFM-033",
+          "paper_title": "Argmax Flows and Multinomial Diffusion: Learning Categorical Distributions",
+          "paper_year": 2021,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 79,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Introduces multinomial diffusion that D3PM later generalises \u2014 a direct precursor demonstrating discrete categorical diffusion works."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Multinomial transition kernel is easy to drop into any categorical generative pipeline."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Derives a clean categorical ELBO with uniform-noise kernel; methodologically tight."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Validated on character-level text8 and image segmentation, not at modern LM scale."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Reports NLL/bits-per-character on text8 and standard categorical benchmarks."
+            }
+          },
+          "weighted_total": 22.2,
+          "match_score": 0.7929
+        },
+        {
+          "candidate_id": "candidate-language-discrete-state-markov-DFM-030",
+          "paper_id": "DFM-030",
+          "paper_title": "DiffuSeq: Sequence to Sequence Text Generation with Diffusion Models",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 94,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Demonstrates non-autoregressive seq2seq text generation rivalling AR baselines on four conditional tasks, supporting the no-AR claim."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Partially-noising classifier-free seq2seq recipe is directly reusable for conditional text generation."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Builds on embedding-space diffusion with sound partial-noise objective; relies on continuous relaxation."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Encoder-decoder at modest scale; LLM-scale scaling not addressed."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "BLEU/ROUGE/BERTScore on paraphrase, dialogue, and QG tasks \u2014 standard transferable metrics."
+            }
+          },
+          "weighted_total": 21.1,
+          "match_score": 0.7536
+        },
+        {
+          "candidate_id": "candidate-language-discrete-state-markov-DFM-032",
+          "paper_id": "DFM-032",
+          "paper_title": "Analog Bits: Generating Discrete Data using Diffusion Models with Self-Conditioning",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 80,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Generates discrete tokens via continuous bit diffusion; competitive on image-token and captioning tasks but a tangential route to the Markov-kernel claim."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Self-conditioning trick is a drop-in improvement many later discrete-diffusion systems adopt."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Binary-bit relaxation is simple and well-justified, though it sidesteps explicit discrete Markov kernels."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Shown on ImageNet token grids and captioning; scales cleanly to larger discrete vocabularies."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "FID and captioning BLEU give reasonable but not text-perplexity transferable validation."
+            }
+          },
+          "weighted_total": 19.8,
+          "match_score": 0.7071
+        },
+        {
+          "candidate_id": "candidate-language-discrete-state-markov-DFM-035",
+          "paper_id": "DFM-035",
+          "paper_title": "Step-unrolled Denoising Autoencoders for Text Generation",
+          "paper_year": 2021,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 30,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "SUNDAE shows non-autoregressive iterative refinement reaches competitive MT BLEU, partially supporting non-AR discrete generation."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Unrolled-denoising training recipe is reusable but predates the absorbing-kernel formulation in the claim."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Unrolled denoising is principled, but lacks the explicit forward-Markov-chain framing of D3PM."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Demonstrated on EN-DE WMT at moderate scale; no large-LM evidence."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Standard MT BLEU and Python code generation \u2014 transferable evaluation."
+            }
+          },
+          "weighted_total": 17.6,
+          "match_score": 0.6286
+        },
+        {
+          "candidate_id": "candidate-language-discrete-state-markov-DFM-034",
+          "paper_id": "DFM-034",
+          "paper_title": "DiGress: Discrete Denoising diffusion for graph generation",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 70,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Applies discrete-state denoising diffusion to graphs and beats baselines on molecule and graph benchmarks \u2014 supports the kernel framework, not text."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Discrete-kernel + transformer architecture transfers conceptually to token sequences."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Uses marginal-preserving discrete noise schedule with rigorous categorical ELBO."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Limited to graphs of <1k nodes; no language-scale demonstration."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "MMD and molecular-validity metrics \u2014 useful framework but not text-specific."
+            }
+          },
+          "weighted_total": 18.7,
+          "match_score": 0.6679
+        },
+        {
+          "candidate_id": "candidate-language-discrete-state-markov-DFM-036",
+          "paper_id": "DFM-036",
+          "paper_title": "DiffusER: Discrete Diffusion via Edit-based Reconstruction",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 8,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Edit-based discrete diffusion reaches AR-level quality on machine translation and summarisation while enabling revision."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Edit-operation parameterisation is implementation-heavy and less directly reusable than absorbing kernels."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Insertions/deletions/substitutions form a valid but unconventional discrete Markov chain."
+            },
+            "scalable": {
+              "score": 2,
+              "rationale": "Small benchmark sizes; scaling behaviour and large-vocab efficiency unclear."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "BLEU/ROUGE on translation and summarisation provide a transferable but narrow validation."
+            }
+          },
+          "weighted_total": 16.7,
+          "match_score": 0.5964
+        },
+        {
+          "candidate_id": "candidate-language-discrete-state-markov-DFM-029",
+          "paper_id": "DFM-029",
+          "paper_title": "Muse: Text-To-Image Generation via Masked Generative Transformers",
+          "paper_year": 2023,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 119,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "Masked-token generation over image tokens \u2014 adjacent to absorbing-kernel discrete diffusion but produces images, not fluent text."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Masking schedule and parallel-decoding recipe transfer to text-token diffusion modelling."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "MaskGIT-style masked modelling is a degenerate absorbing-kernel discrete diffusion, methodologically sound."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Trained at 3B parameters on huge image-text corpora \u2014 strong evidence of scalability."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "FID on image generation gives no transferable text-perplexity validation strategy."
+            }
+          },
+          "weighted_total": 17.2,
+          "match_score": 0.6143
+        }
+      ]
+    },
+    "language-score-entropy-masked": {
+      "claim_text": "Score-entropy discrete diffusion (SEDD) and masked diffusion language models (MDLM) replace the divergence-based discrete-diffusion losses with score-entropy / masked-token objectives that scale more reliably and close the perplexity gap with autoregressive baselines.",
+      "candidates": [
+        {
+          "candidate_id": "candidate-language-score-entropy-masked-DFM-042",
+          "paper_id": "DFM-042",
+          "paper_title": "Discrete Diffusion Modeling by Estimating the Ratios of the Data Distribution",
+          "paper_year": 2023,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 4,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "SEDD itself: score-entropy ratio-matching loss closes the perplexity gap and outperforms GPT-2 on zero-shot language modelling \u2014 directly grounds the claim."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Open-source SEDD training recipe is the reference implementation any practitioner can adopt today."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Derives concrete-score / ratio-matching objective with rigorous theoretical grounding for discrete diffusion."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Demonstrated up to GPT-2 medium scale with stable training and improved perplexity scaling."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Reports zero-shot perplexity across WikiText, LAMBADA, PTB \u2014 directly transferable AR-comparison protocol."
+            }
+          },
+          "weighted_total": 27.5,
+          "match_score": 0.9821
+        },
+        {
+          "candidate_id": "candidate-language-score-entropy-masked-DFM-039",
+          "paper_id": "DFM-039",
+          "paper_title": "Simple and Effective Masked Diffusion Language Models",
+          "paper_year": 2024,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 12,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "MDLM is the named exemplar and shows masked-diffusion narrows the perplexity gap to AR on LM1B and OWT \u2014 direct claim support."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Released MDLM recipe with weighted ELBO is a drop-in upgrade for any masked-diffusion language pipeline."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Rigorous absorbing-state ELBO with a weighted cross-entropy form that subsumes prior masked objectives."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Trained at GPT-2 medium scale; scaling laws shown but billion-parameter regime untested."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "OWT, LM1B perplexity and zero-shot transfer to several benchmarks \u2014 directly comparable to AR baselines."
+            }
+          },
+          "weighted_total": 26.6,
+          "match_score": 0.95
+        },
+        {
+          "candidate_id": "candidate-language-score-entropy-masked-DFM-043",
+          "paper_id": "DFM-043",
+          "paper_title": "Simplified and Generalized Masked Diffusion for Discrete Data",
+          "paper_year": 2024,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 3,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Unifies masked-diffusion variants and reports SOTA perplexity among discrete-diffusion text models, supporting the claim."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Clean Rao-Blackwellised loss and continuous-time formulation give an immediately reusable training recipe."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Provides a clean theoretical generalisation that subsumes SEDD/MDLM as special cases."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Demonstrates favourable scaling versus AR but caps at moderate model sizes."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Perplexity on LM1B and OWT plus image-token benchmarks \u2014 solid but standard."
+            }
+          },
+          "weighted_total": 24.4,
+          "match_score": 0.8714
+        },
+        {
+          "candidate_id": "candidate-language-score-entropy-masked-DFM-038",
+          "paper_id": "DFM-038",
+          "paper_title": "DiffusionBERT: Improving Generative Masked Language Models with Diffusion Models",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 13,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Couples a BERT backbone with absorbing-state diffusion and improves generative perplexity, but does not yet close the AR gap."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Spindle noise schedule and BERT-init recipe are reusable engineering tricks for masked-diffusion practitioners."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Combines pretrained BERT with absorbing-kernel D3PM cleanly, though the loss is still divergence-based."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Limited to BERT-base scale, with no scaling-law analysis."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Perplexity on LM1B and unconditional-generation quality offer partial validation."
+            }
+          },
+          "weighted_total": 18.9,
+          "match_score": 0.675
+        },
+        {
+          "candidate_id": "candidate-language-score-entropy-masked-DFM-041",
+          "paper_id": "DFM-041",
+          "paper_title": "PepTune: De Novo Generation of Therapeutic Peptides with Multi-Objective-Guided Discrete Diffusion",
+          "paper_year": 2024,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 7,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Uses the MDLM framework to generate Pareto-optimal therapeutic peptides \u2014 demonstrates the masked objective scales to a new domain."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Adds Monte-Carlo tree guidance on top of MDLM, useful for conditional sampling but tangential to the loss claim."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Bond-dependent masking with MDLM ELBO is sound but specialised to peptide SMILES."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Restricted to peptide-sized vocabularies and sequences; no LM-scale evidence."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Multi-objective peptide-property metrics, not transferable to perplexity-gap evaluation."
+            }
+          },
+          "weighted_total": 17.6,
+          "match_score": 0.6286
+        },
+        {
+          "candidate_id": "candidate-language-score-entropy-masked-DFM-037",
+          "paper_id": "DFM-037",
+          "paper_title": "Text-Guided Molecule Generation with Diffusion Language Model",
+          "paper_year": 2024,
+          "paper_journal": "AAAI Conference on Artificial Intelligence",
+          "paper_cited_by_count": 14,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "Applies a diffusion language model to text-conditioned molecule SMILES generation; tangential to the score-entropy/masked-loss claim."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "Domain-specific pipeline with limited transfer to general masked-diffusion LM practice."
+            },
+            "plausible": {
+              "score": 3,
+              "rationale": "Uses standard discrete diffusion without introducing score-entropy or rigorous masked-token loss."
+            },
+            "scalable": {
+              "score": 2,
+              "rationale": "Small SMILES corpus; no scaling analysis."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "Reports MoleculeNet-style validity metrics, not perplexity-versus-AR."
+            }
+          },
+          "weighted_total": 12.1,
+          "match_score": 0.4321
+        },
+        {
+          "candidate_id": "candidate-language-score-entropy-masked-DFM-040",
+          "paper_id": "DFM-040",
+          "paper_title": "Generative latent diffusion language modeling yields anti-infective synthetic peptides",
+          "paper_year": 2025,
+          "paper_journal": "bioRxiv",
+          "paper_cited_by_count": 7,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "Latent diffusion on peptide sequences yields functional anti-infective hits but does not address score-entropy or masked-token objectives."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "Pipeline is peptide-specific and uses continuous latent rather than masked discrete loss."
+            },
+            "plausible": {
+              "score": 3,
+              "rationale": "Latent-space continuous diffusion is plausible but orthogonal to the discrete-loss claim."
+            },
+            "scalable": {
+              "score": 2,
+              "rationale": "Limited to short peptide sequences and a curated dataset."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "Wet-lab MIC assays give strong biological validation but no AR-perplexity comparison."
+            }
+          },
+          "weighted_total": 12.1,
+          "match_score": 0.4321
+        }
+      ]
+    },
+    "language-llm-scale-diffusion": {
+      "claim_text": "LLM-scale discrete diffusion models (LLaDA, DiffuLLaMA, BeyondAR) demonstrate that non-autoregressive diffusion can match \u2014 and in some regimes exceed \u2014 autoregressive LLM performance at billion-parameter scale, while enabling parallel decoding and bidirectional context.",
+      "candidates": [
+        {
+          "candidate_id": "candidate-language-llm-scale-diffusion-DFM-047",
+          "paper_id": "DFM-047",
+          "paper_title": "Large Language Diffusion Models",
+          "paper_year": 2025,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 5,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "LLaDA is the named exemplar \u2014 8B-parameter masked diffusion matches LLaMA-3 8B on MMLU/GSM8K and supports bidirectional reasoning."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Released pretraining+SFT recipe and weights enable practitioners to deploy diffusion LLMs immediately."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Trained from scratch under standard pre-train + SFT paradigm with masked-token objective; rigorous comparison to AR."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Demonstrated all the way to 8B parameters and 2.3T tokens \u2014 the strongest scaling evidence for the claim."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Head-to-head on MMLU, GSM8K, HumanEval, reversal-curse \u2014 directly transferable AR-LLM benchmark suite."
+            }
+          },
+          "weighted_total": 27.5,
+          "match_score": 0.9821
+        },
+        {
+          "candidate_id": "candidate-language-llm-scale-diffusion-DFM-050",
+          "paper_id": "DFM-050",
+          "paper_title": "Scaling Diffusion Language Models via Adaptation from Autoregressive Models",
+          "paper_year": 2024,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 0,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "DiffuLLaMA \u2014 the named exemplar \u2014 adapts GPT2/LLaMA up to 7B into diffusion LMs and matches AR on standard benchmarks."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "AR-to-diffusion adaptation recipe lets practitioners reuse existing LLM weights and dramatically lowers training cost."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Continuous-time interpolation between AR and diffusion losses is theoretically clean and empirically validated."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Scales successfully to 7B parameters from existing LLaMA weights \u2014 explicit large-scale demonstration."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Reports LM perplexity and downstream zero-shot accuracy versus the parent AR model, transferable but narrower than LLaDA."
+            }
+          },
+          "weighted_total": 26.8,
+          "match_score": 0.9571
+        },
+        {
+          "candidate_id": "candidate-language-llm-scale-diffusion-DFM-049",
+          "paper_id": "DFM-049",
+          "paper_title": "Diffusion Language Models Can Perform Many Tasks with Scaling and Instruction-Finetuning",
+          "paper_year": 2023,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 1,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Shows diffusion LMs scaled and instruction-tuned solve diverse general-language tasks competitively with AR counterparts."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Demonstrates instruction-finetuning pipeline for diffusion LMs that practitioners can replicate."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Standard masked-diffusion training extended with instruction tuning; methodology is sound but incremental."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Scaling up to a few-billion parameters; below LLaDA's 8B regime but still LLM-scale."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Reports task-suite scores comparable to FLAN-style AR baselines \u2014 transferable validation."
+            }
+          },
+          "weighted_total": 22.0,
+          "match_score": 0.7857
+        },
+        {
+          "candidate_id": "candidate-language-llm-scale-diffusion-DFM-048",
+          "paper_id": "DFM-048",
+          "paper_title": "Likelihood-Based Diffusion Language Models",
+          "paper_year": 2023,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 3,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Plaid 1B closes much of the likelihood gap with GPT-2 small and is released \u2014 early evidence that diffusion LMs can rival AR likelihoods."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Plaid 1B weights are public, but training recipe is more involved than later masked-diffusion approaches."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Tighter ELBO and noise-schedule analysis are principled and clearly improve likelihood."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Reaches 1B parameters \u2014 meaningful scale but well below modern LLM regimes."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Standard language-modelling perplexity comparison versus GPT-2 \u2014 the cleanest possible AR-vs-diffusion test."
+            }
+          },
+          "weighted_total": 20.5,
+          "match_score": 0.7321
+        },
+        {
+          "candidate_id": "candidate-language-llm-scale-diffusion-DFM-044",
+          "paper_id": "DFM-044",
+          "paper_title": "Text Generation with Diffusion Language Models: A Pre-training Approach with Continuous Paragraph Denoise",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 16,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "GENIE pretrains a diffusion language model and improves over prior diffusion-LM baselines but does not match AR at scale."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Continuous-paragraph denoise pretraining is reusable but predates the masked-LLM-scale recipes."
+            },
+            "plausible": {
+              "score": 3,
+              "rationale": "Encoder-decoder diffusion with continuous-paragraph noise is plausible but not the strongest discrete-diffusion design."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Pretrained on 160GB corpus but architecture and parameter count remain sub-billion."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Standard summarisation and QG BLEU/ROUGE provide partial validation against AR baselines."
+            }
+          },
+          "weighted_total": 16.5,
+          "match_score": 0.5893
+        },
+        {
+          "candidate_id": "candidate-language-llm-scale-diffusion-DFM-045",
+          "paper_id": "DFM-045",
+          "paper_title": "Empowering Diffusion Models on the Embedding Space for Text Generation",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 12,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "Difformer studies embedding-space optimisation issues but does not demonstrate LLM-scale parity with AR."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Diagnoses and fixes embedding-space training problems applicable to other diffusion-LM pipelines."
+            },
+            "plausible": {
+              "score": 3,
+              "rationale": "Analyses anisotropy and collapse problems in embedding diffusion \u2014 methodologically sound."
+            },
+            "scalable": {
+              "score": 2,
+              "rationale": "Experiments stay at small encoder-decoder scale; no large-LLM evidence."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Conditional text-generation BLEU/ROUGE \u2014 standard but small-scale benchmarks."
+            }
+          },
+          "weighted_total": 14.1,
+          "match_score": 0.5036
+        },
+        {
+          "candidate_id": "candidate-language-llm-scale-diffusion-DFM-046",
+          "paper_id": "DFM-046",
+          "paper_title": "PoetryDiffusion: Towards Joint Semantic and Metrical Manipulation in Poetry Generation",
+          "paper_year": 2024,
+          "paper_journal": "AAAI Conference on Artificial Intelligence",
+          "paper_cited_by_count": 6,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 1,
+              "rationale": "Targets controllable poetry rather than LLM-scale diffusion language modelling; tangential to the claim."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "Joint semantic/metric controller has narrow applicability beyond poetry generation."
+            },
+            "plausible": {
+              "score": 3,
+              "rationale": "Sound application of diffusion-LM to controlled generation but offers no scaling contribution."
+            },
+            "scalable": {
+              "score": 1,
+              "rationale": "Operates at very small model and data scale."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "Poetry-specific automatic and human metrics \u2014 not transferable to AR-LLM comparison."
+            }
+          },
+          "weighted_total": 9.7,
+          "match_score": 0.3464
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,2550 @@
+{
+  "evidence-foundations-score-and-ddpm-DFM001": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      6,
+      7,
+      8
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 69802,
+        "scores": [
+          72.8
+        ]
+      },
+      {
+        "group": 2,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 91049,
+        "scores": [
+          71.5
+        ]
+      },
+      {
+        "group": 3,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 91472,
+        "scores": [
+          73.2
+        ]
+      },
+      {
+        "group": 4,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 77326,
+        "scores": [
+          72.0
+        ]
+      },
+      {
+        "group": 5,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 91029,
+        "scores": [
+          70.7
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-score-and-ddpm-DFM003": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      9,
+      10,
+      18
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 67722,
+        "scores": [
+          74.9
+        ]
+      },
+      {
+        "group": 2,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 68026,
+        "scores": [
+          78.5
+        ]
+      },
+      {
+        "group": 3,
+        "page": 10,
+        "n_sentences": 1,
+        "png_bytes": 79776,
+        "scores": [
+          74.7
+        ]
+      },
+      {
+        "group": 4,
+        "page": 10,
+        "n_sentences": 1,
+        "png_bytes": 63313,
+        "scores": [
+          73.3
+        ]
+      },
+      {
+        "group": 5,
+        "page": 18,
+        "n_sentences": 1,
+        "png_bytes": 91564,
+        "scores": [
+          73.8
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-score-and-ddpm-DFM005": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      13,
+      24,
+      31
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 114696,
+        "scores": [
+          71.4,
+          73.3
+        ]
+      },
+      {
+        "group": 2,
+        "page": 13,
+        "n_sentences": 1,
+        "png_bytes": 47916,
+        "scores": [
+          71.2
+        ]
+      },
+      {
+        "group": 3,
+        "page": 24,
+        "n_sentences": 1,
+        "png_bytes": 76650,
+        "scores": [
+          71.7
+        ]
+      },
+      {
+        "group": 4,
+        "page": 31,
+        "n_sentences": 1,
+        "png_bytes": 74454,
+        "scores": [
+          80.6
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-score-and-ddpm-DFM006": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      3,
+      6,
+      9
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 81907,
+        "scores": [
+          76.9
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 64113,
+        "scores": [
+          76.4
+        ]
+      },
+      {
+        "group": 3,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 63830,
+        "scores": [
+          79.0
+        ]
+      },
+      {
+        "group": 4,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 86777,
+        "scores": [
+          76.2
+        ]
+      },
+      {
+        "group": 5,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 82446,
+        "scores": [
+          76.0
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-score-and-ddpm-DFM007": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 3,
+    "pages": [
+      1,
+      8
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 156274,
+        "scores": [
+          80.7,
+          77.3
+        ]
+      },
+      {
+        "group": 2,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 97652,
+        "scores": [
+          76.7
+        ]
+      },
+      {
+        "group": 3,
+        "page": 8,
+        "n_sentences": 2,
+        "png_bytes": 150106,
+        "scores": [
+          76.2,
+          72.9
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-score-and-ddpm-DFM008": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      7,
+      38
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 91382,
+        "scores": [
+          73.1,
+          73.3
+        ]
+      },
+      {
+        "group": 2,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 85066,
+        "scores": [
+          73.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 72085,
+        "scores": [
+          73.1
+        ]
+      },
+      {
+        "group": 4,
+        "page": 38,
+        "n_sentences": 1,
+        "png_bytes": 99526,
+        "scores": [
+          75.1
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-score-and-ddpm-DFM009": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      6,
+      7
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 181163,
+        "scores": [
+          74.2,
+          74.7
+        ]
+      },
+      {
+        "group": 2,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 63884,
+        "scores": [
+          74.8
+        ]
+      },
+      {
+        "group": 3,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 80820,
+        "scores": [
+          74.5
+        ]
+      },
+      {
+        "group": 4,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 55512,
+        "scores": [
+          77.1
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-score-and-ddpm-DFM010": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      3,
+      6,
+      7,
+      12,
+      28
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 115290,
+        "scores": [
+          77.5
+        ]
+      },
+      {
+        "group": 2,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 141839,
+        "scores": [
+          82.3
+        ]
+      },
+      {
+        "group": 3,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 80336,
+        "scores": [
+          89.0
+        ]
+      },
+      {
+        "group": 4,
+        "page": 12,
+        "n_sentences": 1,
+        "png_bytes": 99643,
+        "scores": [
+          73.3
+        ]
+      },
+      {
+        "group": 5,
+        "page": 28,
+        "n_sentences": 1,
+        "png_bytes": 66114,
+        "scores": [
+          73.9
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-continuous-time-sde-DFM005": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      2,
+      9,
+      31
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 190228,
+        "scores": [
+          72.5,
+          74.4
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 89067,
+        "scores": [
+          73.2
+        ]
+      },
+      {
+        "group": 3,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 72650,
+        "scores": [
+          72.4
+        ]
+      },
+      {
+        "group": 4,
+        "page": 31,
+        "n_sentences": 1,
+        "png_bytes": 74454,
+        "scores": [
+          80.1
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-continuous-time-sde-DFM008": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      4,
+      9,
+      35,
+      38
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 68147,
+        "scores": [
+          74.2
+        ]
+      },
+      {
+        "group": 2,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 96275,
+        "scores": [
+          74.7
+        ]
+      },
+      {
+        "group": 3,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 50351,
+        "scores": [
+          75.6
+        ]
+      },
+      {
+        "group": 4,
+        "page": 35,
+        "n_sentences": 1,
+        "png_bytes": 40708,
+        "scores": [
+          75.5
+        ]
+      },
+      {
+        "group": 5,
+        "page": 38,
+        "n_sentences": 1,
+        "png_bytes": 99526,
+        "scores": [
+          77.9
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-continuous-time-sde-DFM012": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      2,
+      6,
+      10
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 174203,
+        "scores": [
+          77.7,
+          79.3
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 81851,
+        "scores": [
+          74.6
+        ]
+      },
+      {
+        "group": 3,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 89809,
+        "scores": [
+          75.4
+        ]
+      },
+      {
+        "group": 4,
+        "page": 10,
+        "n_sentences": 1,
+        "png_bytes": 91199,
+        "scores": [
+          79.2
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-continuous-time-sde-DFM013": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 85308,
+        "scores": [
+          78.3
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 86607,
+        "scores": [
+          87.2
+        ]
+      },
+      {
+        "group": 3,
+        "page": 4,
+        "n_sentences": 2,
+        "png_bytes": 141494,
+        "scores": [
+          79.5,
+          76.4
+        ]
+      },
+      {
+        "group": 4,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 63342,
+        "scores": [
+          78.9
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-continuous-time-sde-DFM014": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 3,
+    "pages": [
+      1,
+      3,
+      10
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 3,
+        "png_bytes": 126537,
+        "scores": [
+          72.5,
+          71.0,
+          75.6
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 72199,
+        "scores": [
+          71.9
+        ]
+      },
+      {
+        "group": 3,
+        "page": 10,
+        "n_sentences": 1,
+        "png_bytes": 72877,
+        "scores": [
+          73.2
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-continuous-time-sde-DFM015": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      2,
+      9
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 183929,
+        "scores": [
+          74.8,
+          72.5
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 100005,
+        "scores": [
+          77.4
+        ]
+      },
+      {
+        "group": 3,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 61304,
+        "scores": [
+          73.8
+        ]
+      },
+      {
+        "group": 4,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 59731,
+        "scores": [
+          74.8
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-continuous-time-sde-DFM017": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      2,
+      7,
+      13
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 72294,
+        "scores": [
+          74.7
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 86495,
+        "scores": [
+          77.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 100071,
+        "scores": [
+          74.4
+        ]
+      },
+      {
+        "group": 4,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 71818,
+        "scores": [
+          78.7
+        ]
+      },
+      {
+        "group": 5,
+        "page": 13,
+        "n_sentences": 1,
+        "png_bytes": 76606,
+        "scores": [
+          74.7
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-continuous-time-sde-DFM018": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      3,
+      8
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 66909,
+        "scores": [
+          81.6
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 77497,
+        "scores": [
+          77.1
+        ]
+      },
+      {
+        "group": 3,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 102770,
+        "scores": [
+          78.4
+        ]
+      },
+      {
+        "group": 4,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 77792,
+        "scores": [
+          74.4
+        ]
+      },
+      {
+        "group": 5,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 39585,
+        "scores": [
+          74.8
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-latent-and-guidance-DFM003": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      8,
+      9,
+      10,
+      18
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 60222,
+        "scores": [
+          75.2
+        ]
+      },
+      {
+        "group": 2,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 75509,
+        "scores": [
+          73.4
+        ]
+      },
+      {
+        "group": 3,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 68026,
+        "scores": [
+          78.0
+        ]
+      },
+      {
+        "group": 4,
+        "page": 10,
+        "n_sentences": 1,
+        "png_bytes": 79776,
+        "scores": [
+          73.0
+        ]
+      },
+      {
+        "group": 5,
+        "page": 18,
+        "n_sentences": 1,
+        "png_bytes": 91564,
+        "scores": [
+          73.8
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-latent-and-guidance-DFM019": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-019"
+  },
+  "evidence-foundations-latent-and-guidance-DFM020": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-020"
+  },
+  "evidence-foundations-latent-and-guidance-DFM021": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      3,
+      8,
+      9,
+      23
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 54879,
+        "scores": [
+          75.6
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 51289,
+        "scores": [
+          76.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 86524,
+        "scores": [
+          73.8
+        ]
+      },
+      {
+        "group": 4,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 85499,
+        "scores": [
+          74.9
+        ]
+      },
+      {
+        "group": 5,
+        "page": 23,
+        "n_sentences": 1,
+        "png_bytes": 45415,
+        "scores": [
+          74.0
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-latent-and-guidance-DFM022": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      6,
+      22,
+      29
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 97349,
+        "scores": [
+          80.6
+        ]
+      },
+      {
+        "group": 2,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 69326,
+        "scores": [
+          90.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 71734,
+        "scores": [
+          82.2
+        ]
+      },
+      {
+        "group": 4,
+        "page": 22,
+        "n_sentences": 1,
+        "png_bytes": 97273,
+        "scores": [
+          84.3
+        ]
+      },
+      {
+        "group": 5,
+        "page": 29,
+        "n_sentences": 1,
+        "png_bytes": 47158,
+        "scores": [
+          78.0
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-latent-and-guidance-DFM023": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      5,
+      7
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 136402,
+        "scores": [
+          77.6,
+          79.0
+        ]
+      },
+      {
+        "group": 2,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 129121,
+        "scores": [
+          86.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 66801,
+        "scores": [
+          83.8
+        ]
+      },
+      {
+        "group": 4,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 96656,
+        "scores": [
+          83.6
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-latent-and-guidance-DFM024": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      2,
+      5,
+      8,
+      9,
+      10
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 75546,
+        "scores": [
+          75.6
+        ]
+      },
+      {
+        "group": 2,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 60724,
+        "scores": [
+          76.9
+        ]
+      },
+      {
+        "group": 3,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 66230,
+        "scores": [
+          78.4
+        ]
+      },
+      {
+        "group": 4,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 98189,
+        "scores": [
+          77.1
+        ]
+      },
+      {
+        "group": 5,
+        "page": 10,
+        "n_sentences": 1,
+        "png_bytes": 75325,
+        "scores": [
+          76.2
+        ]
+      }
+    ]
+  },
+  "evidence-foundations-latent-and-guidance-DFM027": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      3,
+      4,
+      5,
+      7
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 44672,
+        "scores": [
+          73.3
+        ]
+      },
+      {
+        "group": 2,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 95824,
+        "scores": [
+          73.7
+        ]
+      },
+      {
+        "group": 3,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 78076,
+        "scores": [
+          76.9
+        ]
+      },
+      {
+        "group": 4,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 87706,
+        "scores": [
+          75.1
+        ]
+      },
+      {
+        "group": 5,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 138723,
+        "scores": [
+          81.1
+        ]
+      }
+    ]
+  },
+  "evidence-language-discrete-state-markov-DFM028": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      2,
+      3,
+      6,
+      7
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 75470,
+        "scores": [
+          75.3
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 2,
+        "png_bytes": 128531,
+        "scores": [
+          75.7,
+          74.8
+        ]
+      },
+      {
+        "group": 3,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 39985,
+        "scores": [
+          76.8
+        ]
+      },
+      {
+        "group": 4,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 65351,
+        "scores": [
+          74.7
+        ]
+      }
+    ]
+  },
+  "evidence-language-discrete-state-markov-DFM030": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      3,
+      7
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 80321,
+        "scores": [
+          75.8
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 60151,
+        "scores": [
+          74.3
+        ]
+      },
+      {
+        "group": 3,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 50162,
+        "scores": [
+          74.9
+        ]
+      },
+      {
+        "group": 4,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 75876,
+        "scores": [
+          75.0
+        ]
+      },
+      {
+        "group": 5,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 100112,
+        "scores": [
+          76.9
+        ]
+      }
+    ]
+  },
+  "evidence-language-discrete-state-markov-DFM031": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      3,
+      7
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 87724,
+        "scores": [
+          75.7
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 2,
+        "png_bytes": 108106,
+        "scores": [
+          73.9,
+          74.4
+        ]
+      },
+      {
+        "group": 3,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 45799,
+        "scores": [
+          72.6
+        ]
+      },
+      {
+        "group": 4,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 110213,
+        "scores": [
+          74.1
+        ]
+      }
+    ]
+  },
+  "evidence-language-discrete-state-markov-DFM032": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      4,
+      6,
+      7
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 77671,
+        "scores": [
+          78.1
+        ]
+      },
+      {
+        "group": 2,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 63455,
+        "scores": [
+          76.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 7,
+        "n_sentences": 2,
+        "png_bytes": 103824,
+        "scores": [
+          78.8,
+          77.0
+        ]
+      },
+      {
+        "group": 4,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 91983,
+        "scores": [
+          77.0
+        ]
+      }
+    ]
+  },
+  "evidence-language-discrete-state-markov-DFM033": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      2,
+      7,
+      10
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 80672,
+        "scores": [
+          76.9
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 2,
+        "png_bytes": 93285,
+        "scores": [
+          76.9,
+          76.2
+        ]
+      },
+      {
+        "group": 3,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 60345,
+        "scores": [
+          76.2
+        ]
+      },
+      {
+        "group": 4,
+        "page": 10,
+        "n_sentences": 1,
+        "png_bytes": 67110,
+        "scores": [
+          76.9
+        ]
+      }
+    ]
+  },
+  "evidence-language-discrete-state-markov-DFM034": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      3,
+      9
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 56388,
+        "scores": [
+          78.0
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 64964,
+        "scores": [
+          72.9
+        ]
+      },
+      {
+        "group": 3,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 62465,
+        "scores": [
+          71.3
+        ]
+      },
+      {
+        "group": 4,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 46477,
+        "scores": [
+          71.1
+        ]
+      },
+      {
+        "group": 5,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 41096,
+        "scores": [
+          87.0
+        ]
+      }
+    ]
+  },
+  "evidence-language-score-entropy-masked-DFM038": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      5,
+      7,
+      9
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 83463,
+        "scores": [
+          75.9
+        ]
+      },
+      {
+        "group": 2,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 113252,
+        "scores": [
+          76.9
+        ]
+      },
+      {
+        "group": 3,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 114849,
+        "scores": [
+          73.3
+        ]
+      },
+      {
+        "group": 4,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 121645,
+        "scores": [
+          73.6
+        ]
+      },
+      {
+        "group": 5,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 118354,
+        "scores": [
+          75.7
+        ]
+      }
+    ]
+  },
+  "evidence-language-score-entropy-masked-DFM039": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      5,
+      9,
+      10,
+      13,
+      35
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 60044,
+        "scores": [
+          73.0
+        ]
+      },
+      {
+        "group": 2,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 68399,
+        "scores": [
+          77.1
+        ]
+      },
+      {
+        "group": 3,
+        "page": 10,
+        "n_sentences": 1,
+        "png_bytes": 79637,
+        "scores": [
+          77.1
+        ]
+      },
+      {
+        "group": 4,
+        "page": 13,
+        "n_sentences": 1,
+        "png_bytes": 68006,
+        "scores": [
+          75.8
+        ]
+      },
+      {
+        "group": 5,
+        "page": 35,
+        "n_sentences": 1,
+        "png_bytes": 40590,
+        "scores": [
+          73.8
+        ]
+      }
+    ]
+  },
+  "evidence-language-score-entropy-masked-DFM041": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      15,
+      27,
+      42,
+      43
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 149193,
+        "scores": [
+          80.4
+        ]
+      },
+      {
+        "group": 2,
+        "page": 15,
+        "n_sentences": 1,
+        "png_bytes": 80648,
+        "scores": [
+          77.5
+        ]
+      },
+      {
+        "group": 3,
+        "page": 27,
+        "n_sentences": 1,
+        "png_bytes": 54777,
+        "scores": [
+          79.5
+        ]
+      },
+      {
+        "group": 4,
+        "page": 42,
+        "n_sentences": 1,
+        "png_bytes": 79642,
+        "scores": [
+          80.5
+        ]
+      },
+      {
+        "group": 5,
+        "page": 43,
+        "n_sentences": 1,
+        "png_bytes": 55423,
+        "scores": [
+          83.0
+        ]
+      }
+    ]
+  },
+  "evidence-language-score-entropy-masked-DFM042": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      5,
+      6,
+      9,
+      10
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 128687,
+        "scores": [
+          84.2
+        ]
+      },
+      {
+        "group": 2,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 108588,
+        "scores": [
+          81.3
+        ]
+      },
+      {
+        "group": 3,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 91533,
+        "scores": [
+          80.0
+        ]
+      },
+      {
+        "group": 4,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 122797,
+        "scores": [
+          78.7
+        ]
+      },
+      {
+        "group": 5,
+        "page": 10,
+        "n_sentences": 1,
+        "png_bytes": 85868,
+        "scores": [
+          79.7
+        ]
+      }
+    ]
+  },
+  "evidence-language-score-entropy-masked-DFM043": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 63266,
+        "scores": [
+          74.7
+        ]
+      },
+      {
+        "group": 2,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 50283,
+        "scores": [
+          77.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 80843,
+        "scores": [
+          74.9
+        ]
+      },
+      {
+        "group": 4,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 96733,
+        "scores": [
+          74.4
+        ]
+      },
+      {
+        "group": 5,
+        "page": 10,
+        "n_sentences": 1,
+        "png_bytes": 81879,
+        "scores": [
+          75.1
+        ]
+      }
+    ]
+  },
+  "evidence-language-llm-scale-diffusion-DFM044": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      4,
+      7,
+      8
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 181938,
+        "scores": [
+          76.8
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 81549,
+        "scores": [
+          76.2
+        ]
+      },
+      {
+        "group": 3,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 94684,
+        "scores": [
+          75.6
+        ]
+      },
+      {
+        "group": 4,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 118207,
+        "scores": [
+          75.7
+        ]
+      },
+      {
+        "group": 5,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 121613,
+        "scores": [
+          78.2
+        ]
+      }
+    ]
+  },
+  "evidence-language-llm-scale-diffusion-DFM045": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      2,
+      3,
+      6
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 116079,
+        "scores": [
+          76.3
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 136299,
+        "scores": [
+          75.4
+        ]
+      },
+      {
+        "group": 3,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 104678,
+        "scores": [
+          75.5
+        ]
+      },
+      {
+        "group": 4,
+        "page": 6,
+        "n_sentences": 2,
+        "png_bytes": 145439,
+        "scores": [
+          75.8,
+          75.6
+        ]
+      }
+    ]
+  },
+  "evidence-language-llm-scale-diffusion-DFM047": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      4,
+      9,
+      10
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 82895,
+        "scores": [
+          79.1
+        ]
+      },
+      {
+        "group": 2,
+        "page": 4,
+        "n_sentences": 2,
+        "png_bytes": 56475,
+        "scores": [
+          71.5,
+          71.1
+        ]
+      },
+      {
+        "group": 3,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 87925,
+        "scores": [
+          71.9
+        ]
+      },
+      {
+        "group": 4,
+        "page": 10,
+        "n_sentences": 1,
+        "png_bytes": 64547,
+        "scores": [
+          73.2
+        ]
+      }
+    ]
+  },
+  "evidence-language-llm-scale-diffusion-DFM048": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      3,
+      5,
+      6
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 76310,
+        "scores": [
+          74.9
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 61749,
+        "scores": [
+          73.3
+        ]
+      },
+      {
+        "group": 3,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 37951,
+        "scores": [
+          72.5
+        ]
+      },
+      {
+        "group": 4,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 68899,
+        "scores": [
+          72.7
+        ]
+      },
+      {
+        "group": 5,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 58618,
+        "scores": [
+          72.9
+        ]
+      }
+    ]
+  },
+  "evidence-language-llm-scale-diffusion-DFM049": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      2,
+      8,
+      10
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 157528,
+        "scores": [
+          85.5,
+          74.2
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 104146,
+        "scores": [
+          76.3
+        ]
+      },
+      {
+        "group": 3,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 66981,
+        "scores": [
+          78.7
+        ]
+      },
+      {
+        "group": 4,
+        "page": 10,
+        "n_sentences": 1,
+        "png_bytes": 83196,
+        "scores": [
+          78.5
+        ]
+      }
+    ]
+  },
+  "evidence-language-llm-scale-diffusion-DFM050": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      5,
+      7,
+      9
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 142459,
+        "scores": [
+          77.1,
+          70.8
+        ]
+      },
+      {
+        "group": 2,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 45778,
+        "scores": [
+          74.1
+        ]
+      },
+      {
+        "group": 3,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 68774,
+        "scores": [
+          73.9
+        ]
+      },
+      {
+        "group": 4,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 86599,
+        "scores": [
+          72.5
+        ]
+      }
+    ]
+  },
+  "evidence-biology-protein-structure-DFM051": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-051"
+  },
+  "evidence-biology-protein-structure-DFM052": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-052"
+  },
+  "evidence-biology-protein-structure-DFM053": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      2,
+      7
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 155984,
+        "scores": [
+          71.8,
+          76.7
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 204486,
+        "scores": [
+          71.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 100384,
+        "scores": [
+          73.2
+        ]
+      },
+      {
+        "group": 4,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 150480,
+        "scores": [
+          80.9
+        ]
+      }
+    ]
+  },
+  "evidence-biology-protein-structure-DFM054": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 3,
+    "pages": [
+      1,
+      7,
+      10
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 158013,
+        "scores": [
+          73.1,
+          74.4
+        ]
+      },
+      {
+        "group": 2,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 174453,
+        "scores": [
+          72.6
+        ]
+      },
+      {
+        "group": 3,
+        "page": 10,
+        "n_sentences": 2,
+        "png_bytes": 143541,
+        "scores": [
+          74.3,
+          75.6
+        ]
+      }
+    ]
+  },
+  "evidence-biology-protein-structure-DFM055": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-055"
+  },
+  "evidence-biology-protein-structure-DFM056": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      4,
+      5,
+      7,
+      10
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 90480,
+        "scores": [
+          87.7
+        ]
+      },
+      {
+        "group": 2,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 123294,
+        "scores": [
+          74.7
+        ]
+      },
+      {
+        "group": 3,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 94120,
+        "scores": [
+          75.0
+        ]
+      },
+      {
+        "group": 4,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 121761,
+        "scores": [
+          75.4
+        ]
+      },
+      {
+        "group": 5,
+        "page": 10,
+        "n_sentences": 1,
+        "png_bytes": 105235,
+        "scores": [
+          74.7
+        ]
+      }
+    ]
+  },
+  "evidence-biology-protein-structure-DFM057": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-057"
+  },
+  "evidence-biology-protein-structure-DFM058": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      4,
+      9
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 103428,
+        "scores": [
+          87.2
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 76484,
+        "scores": [
+          75.8
+        ]
+      },
+      {
+        "group": 3,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 63620,
+        "scores": [
+          72.3
+        ]
+      },
+      {
+        "group": 4,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 78814,
+        "scores": [
+          76.5
+        ]
+      },
+      {
+        "group": 5,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 71638,
+        "scores": [
+          73.5
+        ]
+      }
+    ]
+  },
+  "evidence-biology-protein-sequence-DFM057": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-057"
+  },
+  "evidence-biology-protein-sequence-DFM062": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 78407,
+        "scores": [
+          74.0
+        ]
+      },
+      {
+        "group": 2,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 140424,
+        "scores": [
+          74.7
+        ]
+      },
+      {
+        "group": 3,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 171503,
+        "scores": [
+          73.2
+        ]
+      },
+      {
+        "group": 4,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 146259,
+        "scores": [
+          72.5
+        ]
+      },
+      {
+        "group": 5,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 172938,
+        "scores": [
+          73.7
+        ]
+      }
+    ]
+  },
+  "evidence-biology-protein-sequence-DFM063": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-063"
+  },
+  "evidence-biology-protein-sequence-DFM064": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-064"
+  },
+  "evidence-biology-protein-sequence-DFM065": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-065"
+  },
+  "evidence-biology-protein-sequence-DFM066": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-066"
+  },
+  "evidence-biology-protein-sequence-DFM067": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-067"
+  },
+  "evidence-biology-protein-sequence-DFM068": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-068"
+  },
+  "evidence-biology-protein-sequence-DFM069": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 3,
+    "pages": [
+      1,
+      2,
+      8
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 3,
+        "png_bytes": 191884,
+        "scores": [
+          73.8,
+          73.8,
+          74.9
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 148091,
+        "scores": [
+          74.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 142721,
+        "scores": [
+          74.2
+        ]
+      }
+    ]
+  },
+  "evidence-biology-dna-rna-nucleotide-DFM052": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-052"
+  },
+  "evidence-biology-dna-rna-nucleotide-DFM070": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-070"
+  },
+  "evidence-biology-dna-rna-nucleotide-DFM071": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-071"
+  },
+  "evidence-biology-dna-rna-nucleotide-DFM072": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-072"
+  },
+  "evidence-biology-dna-rna-nucleotide-DFM073": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-073"
+  },
+  "evidence-biology-dna-rna-nucleotide-DFM074": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-074"
+  },
+  "evidence-biology-dna-rna-nucleotide-DFM075": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-075"
+  },
+  "evidence-biology-dna-rna-nucleotide-DFM076": {
+    "status": "no_pdf",
+    "notes": "no PDF for DFM-076"
+  },
+  "evidence-biology-dna-rna-nucleotide-DFM077": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 142621,
+        "scores": [
+          81.1
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 144413,
+        "scores": [
+          76.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 78516,
+        "scores": [
+          77.7
+        ]
+      },
+      {
+        "group": 4,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 103886,
+        "scores": [
+          76.8
+        ]
+      },
+      {
+        "group": 5,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 134357,
+        "scores": [
+          82.6
+        ]
+      }
+    ]
+  }
+}

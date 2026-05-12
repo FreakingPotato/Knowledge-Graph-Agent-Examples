@@ -1,0 +1,983 @@
+{
+  "schema_version": "0.1",
+  "paradigm": "biology",
+  "scored_at": "2026-05-12T00:00:00+00:00",
+  "scored_by": "S3",
+  "claims": {
+    "biology-protein-structure": {
+      "claim_text": "Diffusion over 3D protein backbones (RFdiffusion-style) enables de novo design of binders, scaffolds, and symmetric assemblies that experimentally fold and function \u2014 bringing diffusion-as-generative-prior into the wet-lab design loop.",
+      "candidates": [
+        {
+          "candidate_id": "candidate-biology-protein-structure-DFM-051",
+          "paper_id": "DFM-051",
+          "paper_title": "De novo design of protein structure and function with RFdiffusion",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 1813,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "RFdiffusion experimentally validates hundreds of designed symmetric assemblies, metal-binding proteins, and binders (including a cryo-EM-confirmed influenza HA binder) \u2014 direct, wet-lab-verified benefit over prior hallucination/MCMC baselines for this exact claim."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Code, weights, and pipelines (RFdiffusion + ProteinMPNN) are publicly released and adopted across the design community; a researcher can run it today on standard GPUs."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Fine-tuning RoseTTAFold for structure denoising is methodologically sound, with extensive in silico ablations and three independent experimental classes (oligomers, binders, metal sites) corroborating the model."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Scales to hundreds of designs per target experimentally; sampling cost grows with length but in silico generation easily covers thousands of candidates per project."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Provides the canonical wet-lab validation playbook: in silico self-consistency with AF2, plus expression, biochemistry, cryo-EM and binding assays \u2014 borrowable as-is."
+            }
+          },
+          "weighted_total": 26.6,
+          "match_score": 0.95
+        },
+        {
+          "candidate_id": "candidate-biology-protein-structure-DFM-052",
+          "paper_id": "DFM-052",
+          "paper_title": "Generalized biomolecular modeling and design with RoseTTAFold All-Atom",
+          "paper_year": 2024,
+          "paper_journal": "Science",
+          "paper_cited_by_count": 818,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "RFdiffusion All-Atom extends backbone diffusion to design proteins around small molecules (digoxigenin, heme, bilin) with crystallographic validation \u2014 strong support, slight gap because the headline contribution mixes prediction (RFAA) with design (RFdiffusionAA)."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Released alongside RFAA tooling; researchers can use it for ligand-binder design today, though it requires more setup than vanilla RFdiffusion."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Denoising fine-tuning of an all-atom RoseTTAFold backbone with crystallography + binding assays is methodologically rigorous."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "All-atom representation increases compute relative to backbone-only RFdiffusion but still supports hundreds of designs per campaign."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Demonstrates a complete validation protocol: ligand-binding measurements plus X-ray crystallography for three distinct small-molecule targets."
+            }
+          },
+          "weighted_total": 23.8,
+          "match_score": 0.85
+        },
+        {
+          "candidate_id": "candidate-biology-protein-structure-DFM-053",
+          "paper_id": "DFM-053",
+          "paper_title": "Illuminating protein space with a programmable generative model",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 383,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Chroma reports experimental characterization of 310 designed proteins with native-like folding and steerable conditioning \u2014 directly supports this claim with quantitative wet-lab evidence."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Chroma model and code are released; usable today, though slightly less ubiquitous than RFdiffusion in design pipelines."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Polymer-aware diffusion process, sub-quadratic equivariant network, and low-temperature sampling are well-justified and ablated."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Sub-quadratic architecture is explicitly designed for long-range reasoning and scales to large complexes \u2014 strong scalability claim with evidence."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "310-protein experimental panel plus property-conditioned generation (symmetry, shape, semantics, NL prompts) yields a rich validation template."
+            }
+          },
+          "weighted_total": 26.2,
+          "match_score": 0.936
+        },
+        {
+          "candidate_id": "candidate-biology-protein-structure-DFM-054",
+          "paper_id": "DFM-054",
+          "paper_title": "De novo design of high-affinity binders of bioactive helical peptides",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 214,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Picomolar-affinity binders to bioactive helical peptides (PTH, glucagon) generated via RFdiffusion partial diffusion \u2014 direct functional outcome for a hard target class."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Uses released RFdiffusion with partial-diffusion recipe that any group with peptide targets can adopt; supports biosensor construction."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Methodology builds on RFdiffusion with rigorous experimental affinity measurements and mass-spec functional readouts."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Demonstrated on multiple peptide targets; throughput is limited by wet-lab characterization rather than the generative model."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Provides biosensor and mass-spec enrichment assays as concrete validation strategies for designed binders."
+            }
+          },
+          "weighted_total": 26.6,
+          "match_score": 0.95
+        },
+        {
+          "candidate_id": "candidate-biology-protein-structure-DFM-055",
+          "paper_id": "DFM-055",
+          "paper_title": "Atomically accurate de novo design of antibodies with RFdiffusion",
+          "paper_year": 2024,
+          "paper_journal": "bioRxiv",
+          "paper_cited_by_count": 183,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "De novo antibody design with cryo-EM-confirmed CDR conformations and single-digit nanomolar binders after OrthoRep maturation \u2014 landmark wet-lab outcome for the claim."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Demonstrates a practical antibody design recipe; tooling availability depends on RFdiffusion-AB release status but the procedure is reproducible."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Atomic accuracy verified by cryo-EM structures of designed scFvs against TcdB; rigorous experimental validation."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Antibody campaigns naturally limited by wet-lab throughput but the in silico stage is scalable."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Combines computational design with display/affinity maturation, cryo-EM, and epitope-specific binding assays \u2014 a complete validation framework."
+            }
+          },
+          "weighted_total": 25.3,
+          "match_score": 0.904
+        },
+        {
+          "candidate_id": "candidate-biology-protein-structure-DFM-056",
+          "paper_id": "DFM-056",
+          "paper_title": "DynamicBind: predicting ligand-specific protein-ligand complex structure with a deep equivariant generative model",
+          "paper_year": 2024,
+          "paper_journal": "Nature Communications",
+          "paper_cited_by_count": 158,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "DynamicBind achieves SOTA on docking and virtual screening with ligand-specific conformations \u2014 useful but oriented toward protein\u2013ligand prediction rather than de novo backbone design as the claim specifies."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Released model is directly adoptable for drug-discovery docking pipelines today."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Equivariant geometric diffusion with smooth energy landscape; methodology is sound and benchmarked."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Virtual screening benchmarks demonstrate scaling to thousands of ligand\u2013protein pairs."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Validation is computational (docking benchmarks, cryptic pocket detection) rather than wet-lab de novo design characterization required by this claim."
+            }
+          },
+          "weighted_total": 19.8,
+          "match_score": 0.707
+        },
+        {
+          "candidate_id": "candidate-biology-protein-structure-DFM-057",
+          "paper_id": "DFM-057",
+          "paper_title": "Protein generation with evolutionary diffusion: sequence is all you need",
+          "paper_year": 2023,
+          "paper_journal": "bioRxiv",
+          "paper_cited_by_count": 147,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "EvoDiff generates proteins that experimentally express and fold \u2014 supports diffusion-as-design but operates in sequence space, not the 3D-backbone-diffusion paradigm at the core of this claim."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "EvoDiff code/weights are released; adoptable for sequence-conditioned generation, complementary to RFdiffusion."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Evolutionary-scale sequence diffusion with expression-level wet-lab confirmation is methodologically sound."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Sequence-space generation scales easily to thousands of designs without 3D structure cost."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Demonstrates expression, fold checks, and secondary-structure validation \u2014 borrowable for sequence-only design pipelines."
+            }
+          },
+          "weighted_total": 20.5,
+          "match_score": 0.732
+        },
+        {
+          "candidate_id": "candidate-biology-protein-structure-DFM-058",
+          "paper_id": "DFM-058",
+          "paper_title": "Diffusion probabilistic modeling of protein backbones in 3D for the motif-scaffolding problem",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 96,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "SMCDiff advances motif-scaffolding to ~80 residues with diverse scaffolds, but evaluation is in silico (AF2 alignment) rather than wet-lab \u2014 moderate support for the experimental-design framing."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Open-source SMCDiff is usable today for in silico scaffold proposals, but typically as a research baseline rather than production tool."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Provides the first theoretical guarantee for conditional diffusion sampling in the large-compute limit; E(3)-equivariant GNN is well-motivated."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Scaffolds up to 80 residues; SMC sampling is more expensive than vanilla diffusion."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Validation via AF2 in silico structural alignment \u2014 no wet-lab characterization in the paper."
+            }
+          },
+          "weighted_total": 18.7,
+          "match_score": 0.668
+        },
+        {
+          "candidate_id": "candidate-biology-protein-structure-DFM-059",
+          "paper_id": "DFM-059",
+          "paper_title": "Generating Novel, Designable, and Diverse Protein Structures by Equivariantly Diffusing Oriented Residue Clouds",
+          "paper_year": 2023,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 29,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Genie generates designable and diverse backbones with strong in silico designability scores, but does not include wet-lab characterization in this venue."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Code is released; useful as a backbone-generation baseline alongside RFdiffusion/FrameDiff."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Oriented-residue-cloud equivariant DDPM is principled and benchmarked against contemporary backbone models."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Discrete-time diffusion scales to moderate lengths; not demonstrated at antibody/multi-thousand-residue scale."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Uses ProteinMPNN\u2192AF2 self-consistency as the in silico validation strategy \u2014 a standard but not wet-lab protocol."
+            }
+          },
+          "weighted_total": 17.6,
+          "match_score": 0.629
+        },
+        {
+          "candidate_id": "candidate-biology-protein-structure-DFM-060",
+          "paper_id": "DFM-060",
+          "paper_title": "A Latent Diffusion Model for Protein Structure Generation",
+          "paper_year": 2023,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 9,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "LatentDiff generates novel backbones with reasonable designability but provides only in silico evidence and is largely a methods-exploration paper."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Open-source on GitHub (OpenProt/LatentDiff); usable for latent-space backbone diffusion experiments."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Equivariant autoencoder plus latent diffusion is methodologically reasonable and consistent with image-domain LDMs."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Latent-space diffusion explicitly targets computational efficiency for protein structure generation."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "Validation limited to designability/efficiency metrics in silico \u2014 no wet-lab follow-up."
+            }
+          },
+          "weighted_total": 16.3,
+          "match_score": 0.582
+        }
+      ]
+    },
+    "biology-protein-sequence": {
+      "claim_text": "Protein-sequence diffusion models (EvoDiff, DPLM) train discrete diffusion on amino-acid sequences and reach parity with \u2014 or exceed \u2014 protein language models on inverse-folding, generation, and design tasks while supporting flexible conditioning.",
+      "candidates": [
+        {
+          "candidate_id": "candidate-biology-protein-sequence-DFM-057",
+          "paper_id": "DFM-057",
+          "paper_title": "Protein generation with evolutionary diffusion: sequence is all you need",
+          "paper_year": 2023,
+          "paper_journal": "bioRxiv",
+          "paper_cited_by_count": 147,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "EvoDiff is the canonical evolutionary-scale protein-sequence diffusion model; it generates structurally plausible sequences (including disordered regions inaccessible to structure-based models) that express and fold \u2014 direct support for this exact claim."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "EvoDiff code, OADM/D3PM checkpoints, and pretrained weights are released and widely adopted for sequence-space design."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Trained on evolutionary-scale sequence data with experimental expression/fold validation; conditional generation modes are well-ablated."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Sequence-only diffusion at evolutionary scale (UniRef) and inference cost lower than structure diffusion \u2014 scales to thousands of designs."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Experimental expression, secondary-structure characterization, plus extensive in silico benchmarks form a complete validation template."
+            }
+          },
+          "weighted_total": 27.5,
+          "match_score": 0.982
+        },
+        {
+          "candidate_id": "candidate-biology-protein-sequence-DFM-061",
+          "paper_id": "DFM-061",
+          "paper_title": "Protein structure generation via folding diffusion",
+          "paper_year": 2024,
+          "paper_journal": "Nature Communications",
+          "paper_cited_by_count": 141,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "FoldingDiff generates physically foldable backbone structures via angle-space diffusion \u2014 operates over angles/structure rather than amino-acid sequence diffusion, so only tangential support for this sequence-diffusion claim."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Open-source FoldingDiff is usable today, but for structure generation rather than sequence-space design."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Internal-coordinate (angle) representation with simple transformer denoiser is methodologically sound."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Shift/rotational invariance avoids costly equivariant nets; moderate-length proteins demonstrated."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "Validation via in silico structural realism metrics \u2014 not directly aligned with sequence-recovery / inverse-folding benchmarks required by the claim."
+            }
+          },
+          "weighted_total": 15.4,
+          "match_score": 0.55
+        },
+        {
+          "candidate_id": "candidate-biology-protein-sequence-DFM-062",
+          "paper_id": "DFM-062",
+          "paper_title": "Multistate and functional protein design using RoseTTAFold sequence space diffusion",
+          "paper_year": 2024,
+          "paper_journal": "Nature Biotechnology",
+          "paper_cited_by_count": 100,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "ProteinGenerator (Nature Biotechnology) performs joint sequence+structure diffusion in sequence space, designs thermostable proteins and multistate folds with experimental validation \u2014 direct, strong evidence for sequence-space diffusion."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Published, peer-reviewed in Nat Biotech with released code; ready for sequence-conditioned protein engineering today."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "RoseTTAFold-backed sequence-space diffusion with multistate folding experiments and integration of sequence-activity data is highly rigorous."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Comparable to RFdiffusion in compute; scales to many designs but limited by RoseTTAFold backbone cost."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Demonstrates CD, SEC, thermostability, and bioactive-peptide-caging assays \u2014 a borrowable wet-lab validation suite."
+            }
+          },
+          "weighted_total": 26.6,
+          "match_score": 0.95
+        },
+        {
+          "candidate_id": "candidate-biology-protein-sequence-DFM-063",
+          "paper_id": "DFM-063",
+          "paper_title": "Scalable protein design using optimization in a relaxed sequence space",
+          "paper_year": 2024,
+          "paper_journal": "Science",
+          "paper_cited_by_count": 66,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Sequence-space optimization (hallucination-style) designs >100 proteins validated by crystallography/cryo-EM, but the method is gradient-based hallucination rather than diffusion \u2014 partial support for sequence-space generative design."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Method requires no retraining and reuses pretrained structure predictors; adoptable today across many design tasks."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Three crystal structures and two cryo-EM maps validate accuracy on up-to-1000-residue designs \u2014 rigorous methodology."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Explicitly named 'scalable' \u2014 works across multiple protein scales (small to 1000 aa) and design problem types."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "High-resolution crystal + cryo-EM validation plus heterodimer interaction tests give a strong wet-lab protocol."
+            }
+          },
+          "weighted_total": 23.2,
+          "match_score": 0.829
+        },
+        {
+          "candidate_id": "candidate-biology-protein-sequence-DFM-064",
+          "paper_id": "DFM-064",
+          "paper_title": "An all-atom protein generative model",
+          "paper_year": 2024,
+          "paper_journal": "Proceedings of the National Academy of Sciences",
+          "paper_cited_by_count": 64,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Protpardelle is an all-atom diffusion model that codesigns sequence and structure, with sidechains matching natural chemistry; quality/diversity/novelty metrics demonstrated though wet-lab validation is limited."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "PNAS publication with released code; usable for all-atom codesign tasks."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Superposition state for sidechains is a creative and well-justified formulation for joint discrete/continuous protein modelling."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "All-atom representation increases compute relative to backbone-only diffusion; scaling beyond moderate proteins not emphasized."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Validation primarily in silico via designability and sidechain chemistry metrics \u2014 no wet-lab characterization reported."
+            }
+          },
+          "weighted_total": 20.4,
+          "match_score": 0.729
+        },
+        {
+          "candidate_id": "candidate-biology-protein-sequence-DFM-065",
+          "paper_id": "DFM-065",
+          "paper_title": "Artificial intelligence using a latent diffusion model enables the generation of diverse and potent antimicrobial peptides",
+          "paper_year": 2025,
+          "paper_journal": "Science Advances",
+          "paper_cited_by_count": 53,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Latent diffusion designs diverse, potent antimicrobial peptides validated in infection models \u2014 clear functional outcome for sequence-space diffusion on AMPs."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Science Advances pipeline is reproducible; useful for AMP designers though specialized to peptide length."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Latent diffusion on peptide sequences with in vitro and in vivo activity confirmation is methodologically sound."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Diffusion + screening pipeline can generate large peptide libraries; in vivo characterization is the throughput bottleneck."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Provides full antimicrobial validation including in vivo infection models \u2014 directly usable validation strategy."
+            }
+          },
+          "weighted_total": 24.2,
+          "match_score": 0.864
+        },
+        {
+          "candidate_id": "candidate-biology-protein-sequence-DFM-066",
+          "paper_id": "DFM-066",
+          "paper_title": "Joint Generation of Protein Sequence and Structure with RoseTTAFold Sequence Space Diffusion",
+          "paper_year": 2023,
+          "paper_journal": "bioRxiv",
+          "paper_cited_by_count": 50,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Joint sequence+structure diffusion (preprint version of ProteinGenerator) with SEC/CD-validated designs and bioactive-peptide caging \u2014 strong but preprint stage, superseded by DFM-062."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "ProteinGenerator code/preprint is available and adoptable for sequence-space design."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "RoseTTAFold-based denoising of sequence logits with multiple conditioning modes is sound and ablated."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Comparable scaling to RoseTTAFold-based diffusion methods."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "SEC and CD measurements provide concrete biophysical validation, though less complete than the journal version."
+            }
+          },
+          "weighted_total": 22.0,
+          "match_score": 0.786
+        },
+        {
+          "candidate_id": "candidate-biology-protein-sequence-DFM-067",
+          "paper_id": "DFM-067",
+          "paper_title": "ForceGen: End-to-end de novo protein generation based on nonlinear mechanical unfolding responses using a language diffusion model",
+          "paper_year": 2024,
+          "paper_journal": "Science Advances",
+          "paper_cited_by_count": 37,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "ForceGen uses a protein language diffusion model to design proteins meeting target mechanical-unfolding properties, validated by full-atom MD \u2014 strong, specific functional outcome."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Published in Science Advances with described pipeline; adoptable for mechanically targeted design."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Leverages pretrained protein language model + diffusion conditioning on mechanical features; MD-based validation supports plausibility."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Sequence-space generation scales easily; MD validation is the bottleneck not the generation."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Full-atom MD pulling experiments provide a borrowable computational validation protocol for mechanical-property targets."
+            }
+          },
+          "weighted_total": 22.0,
+          "match_score": 0.786
+        },
+        {
+          "candidate_id": "candidate-biology-protein-sequence-DFM-068",
+          "paper_id": "DFM-068",
+          "paper_title": "ProT\u2010Diff: A Modularized and Efficient Strategy for De Novo Generation of Antimicrobial Peptide Sequences by Integrating Protein Language and Diffusion Models",
+          "paper_year": 2024,
+          "paper_journal": "Science",
+          "paper_cited_by_count": 31,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "ProT-Diff couples protein language model with diffusion to generate AMPs; 44/45 selected peptides were antimicrobial with in vivo efficacy against drug-resistant E. coli \u2014 strong, direct wet-lab outcome."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Modular PLM+diffusion approach is reproducible and applicable to other peptide classes today."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "PLM-prior + diffusion-denoising hybrid is methodologically reasonable; high hit rate corroborates."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Generates thousands of AMPs in hours, demonstrating clear scalability to genome-scale screens."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Activity, hemolysis, cytotoxicity, and in vivo peritonitis model give a complete wet-lab validation roadmap."
+            }
+          },
+          "weighted_total": 25.1,
+          "match_score": 0.896
+        },
+        {
+          "candidate_id": "candidate-biology-protein-sequence-DFM-069",
+          "paper_id": "DFM-069",
+          "paper_title": "Diffusion Language Models Are Versatile Protein Learners",
+          "paper_year": 2024,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 17,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "DPLM (Diffusion Protein Language Model) explicitly demonstrates parity-or-better with ESM2 on representation tasks, plus motif-scaffolding and structure-conditioned inverse folding \u2014 directly supports this claim."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "DPLM code and pretrained checkpoints are released; immediately usable for inverse folding, scaffolding, and conditional generation."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Discrete diffusion pretraining on evolutionary-scale sequences with rigorous benchmarking against ESM2 is methodologically robust."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Pretrained at scalable sizes (150M\u2013650M+) on UniRef-scale data; supports billion-scale workflows."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Provides extensive in silico benchmarks (sequence recovery, motif scaffolding success) \u2014 strong though wet-lab validation is referenced rather than performed in this paper."
+            }
+          },
+          "weighted_total": 26.8,
+          "match_score": 0.957
+        }
+      ]
+    },
+    "biology-dna-rna-nucleotide": {
+      "claim_text": "Discrete diffusion for nucleotide sequences (DNADiffusion, DiscDiff, D3, RNAdiffusion, DRAKES) generates regulatory DNA, RNA aptamers, and codon-optimised CDSs with controllable function, demonstrating that the diffusion framework transfers cleanly from text to nucleic acids.",
+      "candidates": [
+        {
+          "candidate_id": "candidate-biology-dna-rna-nucleotide-DFM-052",
+          "paper_id": "DFM-052",
+          "paper_title": "Generalized biomolecular modeling and design with RoseTTAFold All-Atom",
+          "paper_year": 2024,
+          "paper_journal": "Science",
+          "paper_cited_by_count": 818,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "RFAA models nucleic acids alongside proteins but its diffusion variant designs proteins around small molecules \u2014 only indirect support for DNA/RNA sequence-design via diffusion."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "RFAA is useful for protein\u2013nucleic-acid complex modelling, less so for nucleotide-sequence generation as the claim demands."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Residue-based representation of nucleic acids is methodologically sound for prediction."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "All-atom complex modelling is compute-heavy; not optimized for high-throughput nucleotide sequence design."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Crystallography validation is for protein\u2013ligand binders, not nucleotide-design tasks central to this claim."
+            }
+          },
+          "weighted_total": 16.1,
+          "match_score": 0.575
+        },
+        {
+          "candidate_id": "candidate-biology-dna-rna-nucleotide-DFM-070",
+          "paper_id": "DFM-070",
+          "paper_title": "DNA-Diffusion: Leveraging Generative Models for Controlling Chromatin Accessibility and Gene Expression via Synthetic Regulatory Elements",
+          "paper_year": 2024,
+          "paper_journal": "bioRxiv",
+          "paper_cited_by_count": 35,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "DNA-Diffusion designs 200 bp cell-type-specific regulatory elements with validated TF-binding composition and predicted chromatin-accessibility/expression activity \u2014 direct support for the claim's regulatory-DNA aim."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Open-source DNA-Diffusion code and trained checkpoints are released for regulatory DNA design today; wet-lab characterization is in progress."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Conditional diffusion over chromatin-accessibility-defined cell types with TF-motif retention is methodologically reasonable and well-benchmarked."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Generates large batches of synthetic regulatory elements per cell type; scales naturally to genome-wide library design."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Provides TF-motif composition, chromatin accessibility prediction, and expression-activation prediction as a multi-pronged validation strategy."
+            }
+          },
+          "weighted_total": 24.4,
+          "match_score": 0.871
+        },
+        {
+          "candidate_id": "candidate-biology-dna-rna-nucleotide-DFM-071",
+          "paper_id": "DFM-071",
+          "paper_title": "AptaDiff: de novo design and optimization of aptamers based on diffusion models",
+          "paper_year": 2024,
+          "paper_journal": "Bioinformatics",
+          "paper_cited_by_count": 31,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "AptaDiff designs and optimizes aptamers via diffusion plus Bayesian optimization, with SPR-measured binding affinity validating designs across four protein targets \u2014 direct outcome for the aptamer prong of this claim."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Published in Bioinformatics with described pipeline; usable today for aptamer-design campaigns."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Motif-conditioned VAE latent + diffusion + BO is well-structured and ablated against existing methods."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Generates beyond high-throughput sequencing limits \u2014 explicitly designed to exceed SELEX library coverage."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "SPR binding assays across four protein targets give a clear wet-lab validation template for nucleic-acid design."
+            }
+          },
+          "weighted_total": 24.2,
+          "match_score": 0.864
+        },
+        {
+          "candidate_id": "candidate-biology-dna-rna-nucleotide-DFM-072",
+          "paper_id": "DFM-072",
+          "paper_title": "RiboDiffusion: tertiary structure-based RNA inverse folding with generative diffusion models",
+          "paper_year": 2024,
+          "paper_journal": "Bioinformatics",
+          "paper_cited_by_count": 24,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "RiboDiffusion solves RNA inverse folding (3D structure \u2192 sequence) with diffusion, achieving strong sequence-recovery \u2014 direct evidence that diffusion transfers to RNA sequence design."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Published in Bioinformatics with released code; adoptable for RNA inverse folding tasks today."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "GNN structure encoder + Transformer sequence decoder under diffusion is principled and benchmarked with proper RNA-clustered test splits."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Inference is efficient; sequence/diversity trade-off controllable via sampling weight \u2014 scales to large library generation."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Provides clustered test sets and sequence-recovery metrics as a rigorous benchmark; wet-lab follow-up not in scope."
+            }
+          },
+          "weighted_total": 23.1,
+          "match_score": 0.825
+        },
+        {
+          "candidate_id": "candidate-biology-dna-rna-nucleotide-DFM-073",
+          "paper_id": "DFM-073",
+          "paper_title": "Designing DNA With Tunable Regulatory Activity Using Discrete Diffusion",
+          "paper_year": 2024,
+          "paper_journal": "bioRxiv",
+          "paper_cited_by_count": 24,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "D3 (DNA Discrete Diffusion) is explicitly cited in the claim; in K562 lentiMPRA experiments D3-designed sequences retained measurable regulatory activity and matched genomic activity distributions better than baselines \u2014 direct wet-lab outcome."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Preprint with described model; adoptable for regulatory DNA design with limited training data."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Iterative nucleotide-substitution discrete diffusion benchmarked against matched diffusion baselines with rigorous lentiMPRA validation."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Demonstrated to work robustly with limited training data and to improve predictive models \u2014 implies favorable scaling for genome-scale design."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "K562 lentiMPRA is a directly borrowable MAVE-style validation strategy for synthetic regulatory DNA."
+            }
+          },
+          "weighted_total": 26.2,
+          "match_score": 0.936
+        },
+        {
+          "candidate_id": "candidate-biology-dna-rna-nucleotide-DFM-074",
+          "paper_id": "DFM-074",
+          "paper_title": "RNAGenesis: A Generalist Foundation Model for Functional RNA Therapeutics",
+          "paper_year": 2024,
+          "paper_journal": "bioRxiv",
+          "paper_cited_by_count": 13,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "RNAGenesis achieves SOTA on 11/13 BEACON tasks plus a 100k-sequence RNATx-Bench across ASOs/siRNAs/shRNAs/CDSs \u2014 strong, direct support for RNA therapeutics design via diffusion-guided decoder."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Preprint with broad benchmarks; foundation model usable for many RNA therapeutic tasks once weights release."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "BERT encoder + latent compression + diffusion decoder with inference-time gradient guidance and beam search is well-motivated and benchmarked."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Generalist RNA foundation model on clustered ncRNAs; explicitly designed for broad-scope deployment."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Establishes RNATx-Bench (100k+ experimentally validated sequences) as a community validation resource \u2014 directly relevant."
+            }
+          },
+          "weighted_total": 26.2,
+          "match_score": 0.936
+        },
+        {
+          "candidate_id": "candidate-biology-dna-rna-nucleotide-DFM-075",
+          "paper_id": "DFM-075",
+          "paper_title": "<i>De novo</i> promoter design method based on deep generative and dynamic evolution algorithm",
+          "paper_year": 2025,
+          "paper_journal": "Nucleic Acids Research",
+          "paper_cited_by_count": 8,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "PromoDGDE designs E. coli and S. cerevisiae promoters with target expression levels; >60% of in vivo-tested synthetic promoters show expected regulatory activity \u2014 direct wet-lab outcome for the regulatory-DNA prong."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Published in Nucleic Acids Research with described pipeline; adoptable for synthetic promoter engineering."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Diffusion-GAN feature learning combined with RL/evolutionary optimization is methodologically novel and validated against existing baselines."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Pipeline supports promoter libraries; demonstrated on two organisms which suggests transfer."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "In vivo promoter activity assays in two organisms provide a clean wet-lab validation strategy."
+            }
+          },
+          "weighted_total": 24.2,
+          "match_score": 0.864
+        },
+        {
+          "candidate_id": "candidate-biology-dna-rna-nucleotide-DFM-076",
+          "paper_id": "DFM-076",
+          "paper_title": "EvoFlow-RNA: Generating and Representing non-coding RNA with a Language Model",
+          "paper_year": 2025,
+          "paper_journal": "bioRxiv",
+          "paper_cited_by_count": 7,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "EvoFlow-RNA uses masked discrete diffusion (MDM) for ncRNA generation/representation; outperforms leading models on 3 BEACON tasks and redesigns aptamers around binding sites \u2014 strong support for diffusion on RNA."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Preprint with publicly described pipeline; adoptable for RNA design once code is released."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Bidirectional masked diffusion for ncRNA is methodologically sound and aligned with masked-diffusion-LM advances."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Bidirectional MDM scales naturally to genome-scale ncRNA libraries."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Demonstrates structure-prediction, gene-editing, and aptamer-redesign tasks \u2014 multi-faceted validation, though wet-lab is limited."
+            }
+          },
+          "weighted_total": 22.0,
+          "match_score": 0.786
+        },
+        {
+          "candidate_id": "candidate-biology-dna-rna-nucleotide-DFM-077",
+          "paper_id": "DFM-077",
+          "paper_title": "DiscDiff: Latent Diffusion Model for DNA Sequence Generation",
+          "paper_year": 2024,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 6,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "DiscDiff (explicitly named in the claim) is a latent diffusion model for DNA sequences with Absorb-Escape post-processing; sets new standards for DNA generation and introduces a 160k-sequence multi-species dataset."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Open-source approach with EPD-GenDNA dataset; adoptable today for DNA-sequence generation research."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Latent diffusion + post-hoc Absorb-Escape correction is methodologically novel and benchmarked against diffusion baselines."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Demonstrates short and long DNA-sequence generation across 15 species \u2014 strong scalability evidence."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Validation is mostly in silico (sequence quality metrics, FID-style scores); no wet-lab characterization reported."
+            }
+          },
+          "weighted_total": 22.2,
+          "match_score": 0.793
+        },
+        {
+          "candidate_id": "candidate-biology-dna-rna-nucleotide-DFM-078",
+          "paper_id": "DFM-078",
+          "paper_title": "Fine-Tuning Discrete Diffusion Models via Reward Optimization with Applications to DNA and Protein Design",
+          "paper_year": 2024,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 0,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "DRAKES (explicitly named in the claim) fine-tunes discrete diffusion via reward optimization with applications to DNA enhancer activity and protein stability \u2014 direct, claim-relevant outcome though wet-lab validation is limited."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Provides an RL-style reward-finetuning algorithm applicable to any pretrained discrete diffusion model \u2014 broadly adoptable today."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Direct backpropagation of rewards via Gumbel-softmax through diffusion trajectories with KL regularisation is principled and ablated."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Reward-guided finetuning operates on pretrained models \u2014 modest extra compute; applicable to large-scale design."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Validation through reward maximization and in silico activity/stability proxies; lacks wet-lab confirmation in the paper."
+            }
+          },
+          "weighted_total": 21.3,
+          "match_score": 0.761
+        }
+      ]
+    }
+  }
+}

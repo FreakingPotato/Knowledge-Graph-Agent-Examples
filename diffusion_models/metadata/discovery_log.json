@@ -1,0 +1,635 @@
+{
+  "schema_version": "0.1",
+  "topic": "diffusion_models",
+  "generated_at": "2026-05-12T06:12:41.935498+00:00",
+  "citation_threshold": 5,
+  "target_per_claim": 10,
+  "by_claim": {
+    "foundations-score-and-ddpm": {
+      "queries": [
+        {
+          "source": "openalex",
+          "q": "denoising diffusion probabilistic models",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "Ho denoising diffusion probabilistic",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "noise conditional score network",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "score-based generative model gradient data distribution",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "improved denoising diffusion probabilistic",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "variational diffusion models",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "diffusion models beat GANs image synthesis",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "elucidating design space diffusion-based",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "generative modeling by estimating gradients",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "consistency models diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex-byarxiv",
+          "q": "2303.01469",
+          "raw": 1
+        }
+      ],
+      "raw_total": 500,
+      "after_venue": 160,
+      "after_cite": 147,
+      "after_relevance": 71,
+      "kept": 10
+    },
+    "foundations-continuous-time-sde": {
+      "queries": [
+        {
+          "source": "openalex",
+          "q": "score-based generative modeling stochastic differential equations",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "denoising diffusion implicit models DDIM",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "probability flow ODE diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "diffusion Schrödinger bridge",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "continuous time score matching",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "DPM-Solver fast sampling diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "Karras EDM elucidating design space",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "rectified flow generative",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "flow matching generative",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "stochastic interpolants diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex-byarxiv",
+          "q": "2206.00364",
+          "raw": 1
+        },
+        {
+          "source": "openalex-byarxiv",
+          "q": "2209.11215",
+          "raw": 1
+        }
+      ],
+      "raw_total": 500,
+      "after_venue": 209,
+      "after_cite": 130,
+      "after_relevance": 76,
+      "kept": 10
+    },
+    "foundations-latent-and-guidance": {
+      "queries": [
+        {
+          "source": "openalex",
+          "q": "high-resolution image synthesis latent diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "classifier-free diffusion guidance",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "stable diffusion latent",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "GLIDE photorealistic image generation diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "Imagen text-to-image diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "DALL-E 2 hierarchical diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "classifier guidance diffusion Dhariwal",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "cascaded diffusion models high fidelity",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "ControlNet diffusion conditional",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "diffusion autoencoders meaningful decodable",
+          "raw": 50
+        },
+        {
+          "source": "openalex-byarxiv",
+          "q": "2105.05233",
+          "raw": 1
+        },
+        {
+          "source": "openalex-byarxiv",
+          "q": "2204.06125",
+          "raw": 1
+        }
+      ],
+      "raw_total": 500,
+      "after_venue": 193,
+      "after_cite": 154,
+      "after_relevance": 73,
+      "kept": 10
+    },
+    "language-discrete-state-markov": {
+      "queries": [
+        {
+          "source": "openalex",
+          "q": "structured denoising diffusion discrete state",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "D3PM discrete diffusion text",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "Diffusion-LM controllable text generation",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "argmax flows multinomial diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "categorical diffusion text",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "step-unrolled denoising autoencoders SUNDAE",
+          "raw": 19
+        },
+        {
+          "source": "openalex",
+          "q": "discrete diffusion language model",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "reparameterized discrete diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "self-conditioning discrete diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "Plaid diffusion language modeling",
+          "raw": 50
+        },
+        {
+          "source": "openalex-byarxiv",
+          "q": "2210.16886",
+          "raw": 1
+        }
+      ],
+      "raw_total": 469,
+      "after_venue": 156,
+      "after_cite": 106,
+      "after_relevance": 35,
+      "kept": 10
+    },
+    "language-score-entropy-masked": {
+      "queries": [
+        {
+          "source": "openalex",
+          "q": "score entropy discrete diffusion SEDD",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "masked diffusion language model MDLM",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "simplified masked diffusion language",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "ratio matching discrete diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "absorbing discrete diffusion language",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "Lou score entropy discrete diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "Sahoo masked diffusion language",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "Shi simplified masked diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "concrete score discrete diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "any-order autoregressive diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "DiffusionBERT masked language model diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "discrete diffusion estimating ratios data distribution",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "soft masked diffusion language model",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "AR diffusion mixed autoregressive masked",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "Markov masked language model diffusion text",
+          "raw": 50
+        },
+        {
+          "source": "openalex-byarxiv",
+          "q": "2310.17567",
+          "raw": 1
+        }
+      ],
+      "raw_total": 750,
+      "after_venue": 248,
+      "after_cite": 156,
+      "after_relevance": 8,
+      "kept": 7
+    },
+    "language-llm-scale-diffusion": {
+      "queries": [
+        {
+          "source": "openalex",
+          "q": "LLaDA large language diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "DiffuLLaMA diffusion language model",
+          "raw": 17
+        },
+        {
+          "source": "openalex",
+          "q": "scaling diffusion language model billion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "BeyondAR non-autoregressive diffusion language",
+          "raw": 0
+        },
+        {
+          "source": "openalex",
+          "q": "GENIE diffusion text generation",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "DiffuSeq sequence to sequence diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "diffusion of thought reasoning",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "block diffusion language model",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "instruct diffusion language fine-tuning",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "Inception Labs diffusion language",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "likelihood-based diffusion language",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "Plaid diffusion language likelihood",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "diffusion language model many tasks scaling",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "diffusion language model from autoregressive",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "scaling diffusion language model adaptation",
+          "raw": 50
+        }
+      ],
+      "raw_total": 667,
+      "after_venue": 212,
+      "after_cite": 139,
+      "after_relevance": 7,
+      "kept": 7
+    },
+    "biology-protein-structure": {
+      "queries": [
+        {
+          "source": "openalex",
+          "q": "RFdiffusion de novo protein design",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "Chroma generative model protein",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "Genie protein backbone diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "FrameDiff SE(3) protein backbone diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "FoldingDiff protein backbone",
+          "raw": 44
+        },
+        {
+          "source": "openalex",
+          "q": "ProteinSGM protein structure score",
+          "raw": 41
+        },
+        {
+          "source": "openalex",
+          "q": "RFdiffusion all-atom",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "diffusion protein binder design",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "AlphaFold diffusion structure",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "RoseTTAFold diffusion design symmetric",
+          "raw": 50
+        },
+        {
+          "source": "openalex-byarxiv",
+          "q": "2206.04119",
+          "raw": 1
+        }
+      ],
+      "raw_total": 485,
+      "after_venue": 216,
+      "after_cite": 162,
+      "after_relevance": 58,
+      "kept": 10
+    },
+    "biology-protein-sequence": {
+      "queries": [
+        {
+          "source": "openalex",
+          "q": "EvoDiff protein sequence diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "DPLM diffusion protein language model",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "diffusion language model protein generation",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "protein sequence discrete diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "ProteinGenerator sequence structure diffusion",
+          "raw": 21
+        },
+        {
+          "source": "openalex",
+          "q": "Alamdari protein generation evolutionary diffusion",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "ESM diffusion protein",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "CARP convolutional autoencoding protein",
+          "raw": 16
+        },
+        {
+          "source": "openalex",
+          "q": "MSA diffusion protein design",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "Wang DPLM diffusion protein",
+          "raw": 50
+        }
+      ],
+      "raw_total": 437,
+      "after_venue": 170,
+      "after_cite": 110,
+      "after_relevance": 27,
+      "kept": 10
+    },
+    "biology-dna-rna-nucleotide": {
+      "queries": [
+        {
+          "source": "openalex",
+          "q": "DNADiffusion regulatory DNA design",
+          "raw": 3
+        },
+        {
+          "source": "openalex",
+          "q": "DiscDiff DNA sequence diffusion",
+          "raw": 12
+        },
+        {
+          "source": "openalex",
+          "q": "DRAKES discrete diffusion DNA reward",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "RNAdiffusion RNA design",
+          "raw": 2
+        },
+        {
+          "source": "openalex",
+          "q": "RNA aptamer diffusion generative",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "regulatory genomic sequence diffusion design",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "cis-regulatory element diffusion design",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "gRNAde RNA design geometric",
+          "raw": 42
+        },
+        {
+          "source": "openalex",
+          "q": "RFdiffusion nucleic acid",
+          "raw": 50
+        },
+        {
+          "source": "openalex",
+          "q": "codon optimization diffusion CDS",
+          "raw": 50
+        },
+        {
+          "source": "openalex-byarxiv",
+          "q": "2406.01794",
+          "raw": 1
+        }
+      ],
+      "raw_total": 359,
+      "after_venue": 171,
+      "after_cite": 135,
+      "after_relevance": 15,
+      "kept": 10
+    }
+  }
+}

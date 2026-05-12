@@ -1,0 +1,983 @@
+{
+  "schema_version": "0.1",
+  "paradigm": "foundations",
+  "scored_at": "2026-05-12T07:37:40.386526+00:00",
+  "scored_by": "S1",
+  "claims": {
+    "foundations-score-and-ddpm": {
+      "claim_text": "Score-based generative modelling and denoising diffusion probabilistic models (NCSN, DDPM) establish a learnable noise-prediction objective whose reverse process samples high-quality data from a tractable Gaussian prior, giving the field its core modelling vocabulary.",
+      "candidates": [
+        {
+          "candidate_id": "candidate-foundations-score-and-ddpm-DFM-001",
+          "paper_id": "DFM-001",
+          "paper_title": "Denoising Diffusion Probabilistic Models",
+          "paper_year": 2020,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 5608,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Ho et al. DDPM paper directly introduces the noise-prediction epsilon-objective and beats GAN-class samplers on CIFAR-10 and LSUN unconditional synthesis."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "The simple epsilon-prediction training loop and reverse-process sampler are still the canonical recipe adopted by virtually every downstream diffusion implementation."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Derives the simplified variational bound from first principles and shows tight empirical agreement between predicted noise and high-quality samples."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Architecture is a standard UNet trained at image resolution; scaling beyond CIFAR/LSUN was demonstrated only by follow-up work."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Reports FID/IS on held-out splits and likelihoods, the protocol that became the de facto evaluation standard for diffusion samplers."
+            }
+          },
+          "weighted_total": 25.9,
+          "match_score": 0.925
+        },
+        {
+          "candidate_id": "candidate-foundations-score-and-ddpm-DFM-002",
+          "paper_id": "DFM-002",
+          "paper_title": "Hierarchical Text-Conditional Image Generation with CLIP Latents",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 2274,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "DALLE-2/unCLIP uses a diffusion decoder but the paper's outcomes are CLIP-latent text-to-image quality, not establishing the score/DDPM vocabulary."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Diffusion prior and decoder recipes are usable today, but they import rather than define noise-prediction objectives."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Empirical text-to-image results and CLIP-similarity ablations are sound and reproducible at OpenAI scale."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Trained at large scale with cascaded super-resolution diffusion stages, demonstrating diffusion compatibility with web-scale data."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Uses CLIP-similarity, FID, and human evaluation, transferable protocols but not focused on score-matching validation."
+            }
+          },
+          "weighted_total": 17.0,
+          "match_score": 0.6071
+        },
+        {
+          "candidate_id": "candidate-foundations-score-and-ddpm-DFM-003",
+          "paper_id": "DFM-003",
+          "paper_title": "Diffusion Models Beat GANs on Image Synthesis",
+          "paper_year": 2021,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 2169,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Demonstrates DDPM-style noise-prediction models surpass GAN FID on ImageNet, providing landmark empirical support for the score/DDPM vocabulary."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "ADM architecture and classifier-guidance code are widely reused as a drop-in DDPM backbone for downstream researchers."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Extensive architectural ablations on ImageNet 64-512 anchor the empirical claim that better architectures improve noise-prediction training."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Trains at ImageNet-512 with class conditioning, showing the DDPM recipe scales with compute and parameters."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "FID/sFID/IS on held-out ImageNet splits with rigorous ablation tables establish a reusable validation protocol."
+            }
+          },
+          "weighted_total": 23.1,
+          "match_score": 0.825
+        },
+        {
+          "candidate_id": "candidate-foundations-score-and-ddpm-DFM-004",
+          "paper_id": "DFM-004",
+          "paper_title": "RePaint: Inpainting using Denoising Diffusion Probabilistic Models",
+          "paper_year": 2022,
+          "paper_journal": "Conference on Computer Vision and Pattern Recognition",
+          "paper_cited_by_count": 1436,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "Applies an unmodified pretrained DDPM to free-form inpainting; demonstrates utility of the DDPM vocabulary but does not establish it."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Resampling scheme is plug-and-play for any DDPM, immediately adoptable but specific to inpainting."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Compares against autoregressive and GAN baselines across LSUN/CelebA mask types with clear quantitative gains."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Inherits DDPM's slow sampling and reverse-time resampling, limiting throughput on high-resolution inputs."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Uses LPIPS and user studies on held-out masks; protocol is inpainting-specific, not generic to score matching."
+            }
+          },
+          "weighted_total": 16.1,
+          "match_score": 0.575
+        },
+        {
+          "candidate_id": "candidate-foundations-score-and-ddpm-DFM-005",
+          "paper_id": "DFM-005",
+          "paper_title": "Score-Based Generative Modeling through Stochastic Differential Equations",
+          "paper_year": 2020,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 1270,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Unifies NCSN score-matching with DDPM via SDEs and demonstrates state-of-the-art FID on CIFAR-10, directly supporting the score/DDPM vocabulary claim."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Provides reference code, variance-preserving and variance-exploding SDEs, and the probability-flow ODE that practitioners adopt directly."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Rigorous derivation from Anderson's reverse-time SDE backed by strong empirical CIFAR-10/CelebA-HQ results."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Demonstrated on CIFAR-10 and CelebA-HQ 256; ODE samplers make scaling tractable but not at billion-parameter scale here."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "FID, bits/dim on held-out splits, plus likelihood evaluation via the probability-flow ODE provide a comprehensive validation toolkit."
+            }
+          },
+          "weighted_total": 26.6,
+          "match_score": 0.95
+        },
+        {
+          "candidate_id": "candidate-foundations-score-and-ddpm-DFM-006",
+          "paper_id": "DFM-006",
+          "paper_title": "Generative Modeling by Estimating Gradients of the Data Distribution",
+          "paper_year": 2019,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 985,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Song and Ermon's NCSN introduces multi-scale noise-perturbed score matching with annealed Langevin sampling, the foundation half of the NCSN/DDPM vocabulary."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Multi-noise score-matching loss and annealed Langevin sampler are reused across modern score-based diffusion implementations."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Manifold/low-density failure analysis motivates the design and is supported by CIFAR-10/CelebA empirical gains."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Demonstrated on 32x32 and 64x64 images; later SDE/DDPM work showed scaling beyond these resolutions."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "FID/IS on held-out CIFAR-10 with inception comparisons forms an early but transferable validation protocol."
+            }
+          },
+          "weighted_total": 23.7,
+          "match_score": 0.8464
+        },
+        {
+          "candidate_id": "candidate-foundations-score-and-ddpm-DFM-007",
+          "paper_id": "DFM-007",
+          "paper_title": "Improved Denoising Diffusion Probabilistic Models",
+          "paper_year": 2021,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 412,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Shows that learned reverse variances and cosine schedules give DDPMs competitive log-likelihoods, refining the core noise-prediction objective."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Cosine schedule and hybrid loss are immediately adopted recipes in nearly every modern DDPM training pipeline."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Ablations on CIFAR-10 and ImageNet-64 directly attribute improvements to specific schedule and variance modifications."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Demonstrates 1000x sampling speedups via strided sampling, materially improving DDPM scalability."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Reports NLL/FID on held-out ImageNet-64 and CIFAR-10, a reusable likelihood-plus-FID validation pattern."
+            }
+          },
+          "weighted_total": 24.4,
+          "match_score": 0.8714
+        },
+        {
+          "candidate_id": "candidate-foundations-score-and-ddpm-DFM-008",
+          "paper_id": "DFM-008",
+          "paper_title": "Elucidating the Design Space of Diffusion-Based Generative Models",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 307,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "EDM's unified preconditioning, sampling, and training design clarifies the noise-prediction objective and sets CIFAR-10 FID records."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "EDM preconditioning and Heun sampler are widely adopted as the modern reference recipe for score/DDPM training."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Systematic decoupling of design choices is supported by extensive controlled ablations on CIFAR-10 and ImageNet."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Sampler reduces NFEs by 5x, enabling efficient large-scale training; demonstrated on ImageNet-64 but not billion-parameter."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "FID, NFE budget, and exhaustive ablation tables on held-out splits make the validation protocol exceptionally transferable."
+            }
+          },
+          "weighted_total": 26.6,
+          "match_score": 0.95
+        },
+        {
+          "candidate_id": "candidate-foundations-score-and-ddpm-DFM-009",
+          "paper_id": "DFM-009",
+          "paper_title": "Variational Diffusion Models",
+          "paper_year": 2021,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 282,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "VDM achieves state-of-the-art image likelihoods by jointly learning the noise schedule, sharpening the noise-prediction objective's likelihood interpretation."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Learnable-SNR formulation and continuous-time VLB are usable today as a drop-in replacement for fixed-schedule DDPM training."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Derives the loss as a single-variable SNR integral and confirms with strong CIFAR-10/ImageNet density estimation results."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Continuous-time formulation simplifies scaling and trains on ImageNet-64 likelihoods at the time."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Reports bits/dim and FID on held-out CIFAR-10/ImageNet-64, a standard transferable likelihood-and-quality protocol."
+            }
+          },
+          "weighted_total": 23.1,
+          "match_score": 0.825
+        },
+        {
+          "candidate_id": "candidate-foundations-score-and-ddpm-DFM-010",
+          "paper_id": "DFM-010",
+          "paper_title": "Consistency Models",
+          "paper_year": 2023,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 24,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Consistency models distill or train directly to one-step samplers, building on but extending beyond the classical noise-prediction vocabulary."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Open-source one-step sampler is adopted in fast diffusion inference pipelines for both image and beyond."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Distillation and isolated-training results on CIFAR-10 and ImageNet-64 support the consistency-trajectory claim."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "One-step generation dramatically lowers inference cost, with demonstrations at ImageNet-64 and 256."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Uses FID with NFE breakdowns on held-out ImageNet-64/256, a clean and transferable few-step evaluation protocol."
+            }
+          },
+          "weighted_total": 20.5,
+          "match_score": 0.7321
+        }
+      ]
+    },
+    "foundations-continuous-time-sde": {
+      "claim_text": "Continuous-time score-based stochastic differential equations unify discrete-time DDPM with score-matching and make implicit, deterministic, and accelerated samplers (DDIM, probability-flow ODE) natural special cases.",
+      "candidates": [
+        {
+          "candidate_id": "candidate-foundations-continuous-time-sde-DFM-005",
+          "paper_id": "DFM-005",
+          "paper_title": "Score-Based Generative Modeling through Stochastic Differential Equations",
+          "paper_year": 2020,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 1270,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Song et al. SDE paper is the canonical statement of the claim: VP/VE SDEs unify DDPM and NCSN and yield the probability-flow ODE."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Reference VP/VE SDE code and probability-flow ODE sampler are directly adopted by virtually every continuous-time diffusion work today."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Derivation from Anderson's reverse SDE is mathematically rigorous and matched by strong CIFAR-10 FID/likelihood results."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Demonstrates CelebA-HQ 1024 generation, showing the SDE framework scales to high-resolution generation."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "FID, bits/dim, and ODE-based exact likelihood on held-out splits provide a near-complete transferable validation protocol."
+            }
+          },
+          "weighted_total": 26.6,
+          "match_score": 0.95
+        },
+        {
+          "candidate_id": "candidate-foundations-continuous-time-sde-DFM-008",
+          "paper_id": "DFM-008",
+          "paper_title": "Elucidating the Design Space of Diffusion-Based Generative Models",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 307,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "EDM frames training and sampling explicitly as a continuous-time ODE/SDE and derives Heun-based deterministic samplers as natural special cases."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Heun deterministic sampler and EDM preconditioning are widely adopted as the default continuous-time recipe today."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Controlled ablations rigorously isolate the effect of each continuous-time design knob on CIFAR-10 and ImageNet FID."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Reduces NFE by 5x and demonstrates ImageNet-64 SOTA, supporting practical large-scale continuous-time sampling."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "FID-vs-NFE curves on held-out splits offer a transferable validation protocol for SDE/ODE samplers."
+            }
+          },
+          "weighted_total": 26.6,
+          "match_score": 0.95
+        },
+        {
+          "candidate_id": "candidate-foundations-continuous-time-sde-DFM-011",
+          "paper_id": "DFM-011",
+          "paper_title": "SDEdit: Guided Image Synthesis and Editing with Stochastic Differential Equations",
+          "paper_year": 2021,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 300,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Builds explicitly on the SDE framework for guided editing, using continuous-time reverse SDE simulation, but is application-focused rather than unifying."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Reverse-SDE editing recipe runs on any SDE-trained diffusion and is immediately adoptable for guided synthesis."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Quantitative and human-evaluation results on stroke-based editing benchmarks support the reverse-SDE editing claim."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Demonstrated at moderate image resolutions; scaling depends on the underlying SDE diffusion backbone."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Mixes user studies with FID/LPIPS; protocol partially transfers but is editing-specific."
+            }
+          },
+          "weighted_total": 18.9,
+          "match_score": 0.675
+        },
+        {
+          "candidate_id": "candidate-foundations-continuous-time-sde-DFM-012",
+          "paper_id": "DFM-012",
+          "paper_title": "DPM-Solver: A Fast ODE Solver for Diffusion Probabilistic Model Sampling in Around 10 Steps",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 289,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "DPM-Solver derives high-order ODE solvers for the diffusion probability-flow ODE, exactly the accelerated-sampler special case the claim names."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "DPM-Solver and DPM-Solver++ are the default fast samplers in Stable Diffusion and Diffusers; directly adoptable today."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Exponential-integrator analysis is mathematically derived and matched by 10-step FID parity with 1000-step DDPM."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Reduces sampling cost by 50-100x and is applied at Stable Diffusion scale in production."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "FID-vs-NFE on held-out CIFAR-10/CelebA/ImageNet benchmarks provides a transferable fast-sampler validation protocol."
+            }
+          },
+          "weighted_total": 26.8,
+          "match_score": 0.9571
+        },
+        {
+          "candidate_id": "candidate-foundations-continuous-time-sde-DFM-013",
+          "paper_id": "DFM-013",
+          "paper_title": "Pseudo Numerical Methods for Diffusion Models on Manifolds",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 125,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "PNDM derives pseudo numerical solvers for the diffusion ODE, directly an accelerated deterministic sampler special case."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "PLMS sampler is shipped in HuggingFace Diffusers and immediately usable on pretrained DDPMs."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Linear multistep analysis and 20-step FID parity with 1000-step DDPM on CIFAR-10/CelebA support the claim."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Order-of-magnitude speedup applies to large pretrained models including Stable Diffusion."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Reports FID at varying NFE on held-out splits, a transferable accelerated-sampler validation protocol."
+            }
+          },
+          "weighted_total": 22.0,
+          "match_score": 0.7857
+        },
+        {
+          "candidate_id": "candidate-foundations-continuous-time-sde-DFM-014",
+          "paper_id": "DFM-014",
+          "paper_title": "Denoising Diffusion Implicit Models",
+          "paper_year": 2020,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 102,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "DDIM is exactly the implicit/deterministic accelerated sampler the claim names, derived from a non-Markovian forward process equivalent to the probability-flow ODE."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "DDIM remains the most-used deterministic sampler; reusable on any pretrained DDPM without retraining."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Derivation from non-Markovian forward processes is rigorous and validated by 10-50x sampling speedups on CIFAR-10 and CelebA."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Inference-only modification scales trivially to any pretrained DDPM including Stable Diffusion-class models."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "FID-vs-step-count tables on held-out splits provide a transferable accelerated-sampler validation protocol."
+            }
+          },
+          "weighted_total": 26.8,
+          "match_score": 0.9571
+        },
+        {
+          "candidate_id": "candidate-foundations-continuous-time-sde-DFM-015",
+          "paper_id": "DFM-015",
+          "paper_title": "Flow Matching for Generative Modeling",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 87,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Flow Matching trains CNFs with a regression objective that subsumes diffusion ODE training and includes score-SDE paths as a special case."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Flow-matching loss is directly adoptable as a continuous-time alternative to DDPM training and powers modern models like SD3 and Meta MovieGen."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Theoretically grounded conditional-flow construction is supported by ImageNet-64/128/256 likelihood and FID gains."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Simulation-free training scales to ImageNet-256 and underpins large production text-to-image and text-to-video systems."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Held-out FID/NLL on ImageNet alongside ODE-likelihood evaluations form a transferable validation protocol."
+            }
+          },
+          "weighted_total": 24.0,
+          "match_score": 0.8571
+        },
+        {
+          "candidate_id": "candidate-foundations-continuous-time-sde-DFM-016",
+          "paper_id": "DFM-016",
+          "paper_title": "Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 75,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Rectified flow learns straight ODE trajectories that connect to but extend the diffusion ODE family rather than directly unifying SDE and DDPM."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Rectified-flow training and reflow procedure are adopted in modern systems like SD3 and immediately usable."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Straight-trajectory results on CIFAR-10 and image-to-image transfer are well-supported empirically."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Reflow procedure enables few-step generation at modern scales, demonstrated in subsequent work."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "FID on held-out CIFAR-10 and transfer benchmarks provides a transferable ODE-sampler validation protocol."
+            }
+          },
+          "weighted_total": 20.5,
+          "match_score": 0.7321
+        },
+        {
+          "candidate_id": "candidate-foundations-continuous-time-sde-DFM-017",
+          "paper_id": "DFM-017",
+          "paper_title": "Diffusion Schrödinger Bridge with Applications to Score-Based Generative Modeling",
+          "paper_year": 2021,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 61,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Generalises score SDEs to Schrodinger Bridges with finite-time forward processes, extending rather than directly unifying DDPM and DDIM."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "Iterative-proportional-fitting training is non-trivial to deploy compared to standard SDE/DDIM samplers."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Theoretical convergence guarantees and small-scale image/MNIST experiments support the bridge formulation."
+            },
+            "scalable": {
+              "score": 2,
+              "rationale": "IPF-based training has been demonstrated only at low resolutions and is computationally expensive to scale."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Reports FID on held-out MNIST/CelebA-class data, transferable but limited beyond the bridge setting."
+            }
+          },
+          "weighted_total": 15.4,
+          "match_score": 0.55
+        },
+        {
+          "candidate_id": "candidate-foundations-continuous-time-sde-DFM-018",
+          "paper_id": "DFM-018",
+          "paper_title": "Sampling is as easy as learning the score: theory for diffusion models with minimal data assumptions",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 15,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Provides convergence guarantees for SDE-based score generative models under minimal data assumptions, supporting but not constructing the unification."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "Theoretical bounds inform sampler design but do not give immediately deployable code or recipe."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Rigorous probability theory establishing polynomial convergence with accurate score estimates is mathematically sound."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Analysis applies to arbitrary distributions but does not directly demonstrate empirical scaling."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "Theoretical paper without empirical FID/likelihood validation protocols."
+            }
+          },
+          "weighted_total": 16.7,
+          "match_score": 0.5964
+        }
+      ]
+    },
+    "foundations-latent-and-guidance": {
+      "claim_text": "Latent-space diffusion (LDM / Stable Diffusion) and classifier-free guidance are the two engineering innovations that made diffusion practical at modern scale — by moving the diffusion process into a perceptual / semantic latent and by enabling strong conditional generation without an explicit classifier.",
+      "candidates": [
+        {
+          "candidate_id": "candidate-foundations-latent-and-guidance-DFM-019",
+          "paper_id": "DFM-019",
+          "paper_title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+          "paper_year": 2022,
+          "paper_journal": "Conference on Computer Vision and Pattern Recognition",
+          "paper_cited_by_count": 13267,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "LDM/Stable Diffusion directly introduces perceptual latent diffusion and demonstrates state-of-the-art high-resolution synthesis with order-of-magnitude compute reduction."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Open-source Stable Diffusion checkpoints and cross-attention conditioning are the de facto practical recipe used worldwide today."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Two-stage VAE+diffusion design is rigorously ablated on LAION/ImageNet/COCO with strong FID and human-eval results."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Scales from 256x256 to 1024x1024 on LAION-5B and is the dominant production text-to-image backbone."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Reports FID/IS on held-out COCO/ImageNet plus class-conditional and text-conditional ablations, a transferable validation protocol."
+            }
+          },
+          "weighted_total": 27.5,
+          "match_score": 0.9821
+        },
+        {
+          "candidate_id": "candidate-foundations-latent-and-guidance-DFM-020",
+          "paper_id": "DFM-020",
+          "paper_title": "Adding Conditional Control to Text-to-Image Diffusion Models",
+          "paper_year": 2023,
+          "paper_journal": "Science",
+          "paper_cited_by_count": 3476,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "ControlNet adds spatial conditioning to Stable Diffusion but does not establish latent-diffusion or classifier-free guidance themselves."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "ControlNet weights are widely deployed for pose/edge/depth control on top of Stable Diffusion, immediately usable."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Zero-convolution finetuning is supported by extensive qualitative and quantitative comparisons across many control modalities."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Trains on top of billion-parameter Stable Diffusion and runs in production pipelines."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Uses FID, control-fidelity metrics, and user studies on diverse held-out conditions, partially transferable."
+            }
+          },
+          "weighted_total": 21.6,
+          "match_score": 0.7714
+        },
+        {
+          "candidate_id": "candidate-foundations-latent-and-guidance-DFM-003",
+          "paper_id": "DFM-003",
+          "paper_title": "Diffusion Models Beat GANs on Image Synthesis",
+          "paper_year": 2021,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 2169,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Introduces classifier guidance, the precursor to classifier-free guidance, and demonstrates conditional fidelity-diversity tradeoffs on ImageNet."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Classifier-guidance code is widely reused and motivates the classifier-free formulation used at modern scale."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Rigorous ImageNet ablations directly demonstrate the guidance-vs-FID/IS tradeoff."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Demonstrated at ImageNet-512 with class conditioning, scaling the guidance approach to high resolution."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "FID/sFID/IS on held-out ImageNet with guidance-strength sweeps form a reusable validation protocol."
+            }
+          },
+          "weighted_total": 21.6,
+          "match_score": 0.7714
+        },
+        {
+          "candidate_id": "candidate-foundations-latent-and-guidance-DFM-021",
+          "paper_id": "DFM-021",
+          "paper_title": "Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 2105,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Imagen demonstrates classifier-free guidance at extreme scale with frozen T5 conditioning, directly supporting the guidance half of the claim."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Imagen is not open-source, limiting direct adoption, though its dynamic-thresholding recipe is widely reused."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "DrawBench and COCO-FID results plus T5 ablations rigorously support the role of frozen LM and classifier-free guidance."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Cascaded diffusion to 1024x1024 with billion-parameter T5 demonstrates production-scale viability."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Introduces DrawBench and combines COCO-FID with human side-by-side preferences, a strong transferable validation protocol."
+            }
+          },
+          "weighted_total": 23.4,
+          "match_score": 0.8357
+        },
+        {
+          "candidate_id": "candidate-foundations-latent-and-guidance-DFM-022",
+          "paper_id": "DFM-022",
+          "paper_title": "LAION-5B: An open large-scale dataset for training next generation image-text models",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 1036,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "Dataset paper enabling latent-diffusion training at scale but not itself a latent-diffusion or guidance contribution."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "LAION-5B is the dataset that practitioners directly download to train modern open latent-diffusion models."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Documents dataset construction, CLIP filtering, and validation experiments that justify its utility for image-text training."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "5.85 billion CLIP-filtered image-text pairs is the largest open dataset and underpins production diffusion models."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Validates by training CLIP and small diffusion models on subsets, partially transferable but not a guidance/latent protocol."
+            }
+          },
+          "weighted_total": 19.2,
+          "match_score": 0.6857
+        },
+        {
+          "candidate_id": "candidate-foundations-latent-and-guidance-DFM-023",
+          "paper_id": "DFM-023",
+          "paper_title": "GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models",
+          "paper_year": 2021,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 997,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "GLIDE directly compares CLIP guidance vs classifier-free guidance and finds classifier-free preferred, supporting the guidance half of the claim."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Classifier-free guidance schedule from GLIDE is the recipe widely adopted in modern text-to-image diffusion pipelines."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Side-by-side human evaluation and FID/CLIP-score sweeps rigorously support the guidance comparison."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Trained at 3.5B parameters on large filtered datasets and released a smaller variant for community use."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Combines COCO-FID with human preference studies under both guidance regimes, a reusable validation protocol."
+            }
+          },
+          "weighted_total": 23.1,
+          "match_score": 0.825
+        },
+        {
+          "candidate_id": "candidate-foundations-latent-and-guidance-DFM-024",
+          "paper_id": "DFM-024",
+          "paper_title": "Classifier-Free Diffusion Guidance",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 738,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Ho and Salimans introduce classifier-free guidance directly, eliminating the auxiliary classifier and matching the second half of the claim verbatim."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Joint conditional+unconditional training with guided sampling is the default conditional-generation recipe in every modern diffusion pipeline."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Class-conditional ImageNet ablations directly demonstrate FID/IS tradeoffs equivalent to classifier guidance."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Trivially scales because no extra classifier network is needed; used in Stable Diffusion, Imagen, DALLE."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Reports FID and IS on held-out ImageNet under guidance-strength sweeps, a transferable conditional-generation protocol."
+            }
+          },
+          "weighted_total": 26.8,
+          "match_score": 0.9571
+        },
+        {
+          "candidate_id": "candidate-foundations-latent-and-guidance-DFM-025",
+          "paper_id": "DFM-025",
+          "paper_title": "Cascaded Diffusion Models for High Fidelity Image Generation",
+          "paper_year": 2021,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 454,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "Cascaded super-resolution diffusion is a complementary scaling strategy, not latent diffusion or classifier-free guidance per se."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Cascaded super-resolution recipe is used in Imagen and DALLE-2 but not the direct latent/guidance innovation."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "ImageNet class-conditional FID/IS results support the cascade-with-noise-conditioning-augmentation claim."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Demonstrated up to ImageNet-256 with multi-stage pipelines, scalable but more complex than latent diffusion."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "FID/IS on held-out ImageNet with noise-augmentation ablations, transferable but not focused on latent/guidance."
+            }
+          },
+          "weighted_total": 17.0,
+          "match_score": 0.6071
+        },
+        {
+          "candidate_id": "candidate-foundations-latent-and-guidance-DFM-026",
+          "paper_id": "DFM-026",
+          "paper_title": "Imagen Video: High Definition Video Generation with Diffusion Models",
+          "paper_year": 2022,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 346,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "Applies cascaded video diffusion with classifier-free guidance to text-to-video but does not advance latent diffusion or introduce new guidance methods."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "Imagen Video is closed-source and the pipeline is video-specific, limiting direct researcher adoption."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Per-frame and temporal-FID/CLIP-score results plus user studies support video-quality claims."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Demonstrates 1280x768 24fps generation at billion-parameter cascaded scale."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Mix of video-FVD, CLIP-score, and human evaluation on held-out prompts; transferable to video but less to image latent/guidance work."
+            }
+          },
+          "weighted_total": 15.7,
+          "match_score": 0.5607
+        },
+        {
+          "candidate_id": "candidate-foundations-latent-and-guidance-DFM-027",
+          "paper_id": "DFM-027",
+          "paper_title": "SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis",
+          "paper_year": 2023,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 308,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "SDXL is a direct scaling of the LDM/Stable Diffusion latent-diffusion recipe with new conditioning schemes and a refiner stage."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Open-source SDXL checkpoints with classifier-free guidance are immediately usable by the open community."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Reports human preference and COCO-FID gains over SD1.5/SD2 with controlled conditioning ablations."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "3x larger UNet and dual text encoders trained on multi-aspect-ratio data demonstrate scaling of latent diffusion."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Human preference studies and COCO-FID under classifier-free guidance, a reusable validation protocol."
+            }
+          },
+          "weighted_total": 24.2,
+          "match_score": 0.8643
+        }
+      ]
+    }
+  }
+}
