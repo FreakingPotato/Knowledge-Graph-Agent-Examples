@@ -11,7 +11,7 @@ Live on GitHub Pages: <https://freakingpotato.github.io/Knowledge-Graph-Agent-Ex
 | | Project | Topic | Papers | Evidence | Next-steps |
 |---|---|---|---:|---:|---:|
 | 📊 | [**Multimodal NLP × Genomic Foundation Models**](./multimodal_genomics/index.html) | Combining language models with DNA / RNA foundation models | **125** | 76 | 5 |
-| 🚧 | *Whole-Cell Model Paper Collection* | (coming — currently lives in a sister repo) | 56 | — | — |
+| 🧬 | [**Whole-Cell Model Paper Collection**](./whole_cell_model/index.html) | Curated WCM literature; 5 viewer layouts including Hybrid Model Summary. Live explorer hosted in [a sister repo](https://github.com/FreakingPotato/Whole-Cell-Model-Paper-Collection) | **56** | 89 | — |
 | 🚧 | *Your next topic* | Drop a new ontology JSON, re-run, new tile lands here | — | — | — |
 
 ## How it works
@@ -55,15 +55,21 @@ Knowledge-Graph-Agent-Examples/
 ├── README.md                       this file
 ├── index.html                      ← demo hub (start here)
 ├── .nojekyll                       GitHub Pages serves nested HTML correctly
-└── multimodal_genomics/
-    ├── index.html                  project landing page
-    ├── graph.html                  interactive knowledge graph viewer
-    ├── README.md                   per-project reproducibility instructions
-    ├── assets/
-    │   ├── evidence/               1,262 paragraph-screenshot PNGs
-    │   └── qa/                     preview screenshots
-    ├── metadata/                   ontology / papers / candidates / evidence / qc
-    └── scripts/                    pipeline CLI (topic-agnostic)
+├── multimodal_genomics/
+│   ├── index.html                  project landing page
+│   ├── graph.html                  interactive knowledge graph viewer
+│   ├── README.md                   per-project reproducibility instructions
+│   ├── assets/
+│   │   ├── evidence/               1,262 paragraph-screenshot PNGs
+│   │   └── qa/                     preview screenshots
+│   ├── metadata/                   ontology / papers / candidates / evidence / qc
+│   └── scripts/                    pipeline CLI (topic-agnostic)
+└── whole_cell_model/
+    ├── index.html                  project landing page (overview + stats + preview)
+    └── assets/qa/                  preview screenshots
+    ─ live explorer + data live in
+       https://github.com/FreakingPotato/Whole-Cell-Model-Paper-Collection
+       (linked from the project page via the "Enter the knowledge graph →" button)
 ```
 
 ## License
