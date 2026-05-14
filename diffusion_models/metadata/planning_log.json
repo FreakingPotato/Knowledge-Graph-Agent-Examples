@@ -1,0 +1,32 @@
+{
+  "unified-continuous-discrete": {
+    "ok": 48,
+    "not_found": 9,
+    "no_pdf": 0,
+    "kept": 8
+  },
+  "llm-scale-biology-diffusion": {
+    "ok": 45,
+    "not_found": 12,
+    "no_pdf": 0,
+    "kept": 8
+  },
+  "function-aware-controllable-generation": {
+    "ok": 44,
+    "not_found": 13,
+    "no_pdf": 0,
+    "kept": 8
+  },
+  "wet-lab-closed-loop": {
+    "ok": 46,
+    "not_found": 11,
+    "no_pdf": 0,
+    "kept": 8
+  },
+  "inference-efficiency-sampling": {
+    "ok": 48,
+    "not_found": 9,
+    "no_pdf": 0,
+    "kept": 8
+  }
+}

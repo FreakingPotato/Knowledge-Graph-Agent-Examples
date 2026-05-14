@@ -1,0 +1,2058 @@
+{
+  "schema_version": "0.1",
+  "topic": "diffusion_models_planning",
+  "header": "🧭 Planning: where the diffusion-and-biology field goes next",
+  "description": "Five concrete next steps that recur across the Discussion / Limitations / Future Work sections of the corpus. Each step is grounded in evidence pulled directly from passages where the authors themselves call out gaps, future directions, or unresolved problems.",
+  "rendered_at": "2026-05-14T15:07:53Z",
+  "next_steps": [
+    {
+      "id": "unified-continuous-discrete",
+      "title": "Unified continuous-and-discrete diffusion",
+      "subtitle": "One framework for images, text, and biological sequences",
+      "summary": "Bring the score-based continuous framework (DDPM / SDE / LDM) and the discrete-token framework (D3PM / SEDD / MDLM) under a single mathematical roof so a single model can be trained jointly on continuous (structure, expression levels) and discrete (DNA / protein tokens, natural language) modalities.",
+      "why_now": "Continuous diffusion has the cleanest theory; discrete diffusion has the closest fit to biology and language. Unifying them would let a single model be conditioned on a text description, generate a DNA sequence, and predict a continuous-valued activity in one forward pass.",
+      "evidence_points": [
+        {
+          "id": "planning-unified-continuous-discrete-DFM-039",
+          "paper_id": "DFM-039",
+          "next_step_id": "unified-continuous-discrete",
+          "best_score": 89.1,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-unified-continuous-discrete-DFM-039__01.png",
+              "page": 22,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Notice that the term ⟨zt,m⟩in (40) is intended to reduce the diffusion loss to zero when zt =x.",
+                  "match_score": 73.7
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-unified-continuous-discrete-DFM-039__02.png",
+              "page": 24,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "[33] defined the discrete diffusion process as a Continuous- Time Markov Chain (CTMC), where the forward corruption process is specified by the rate change matrix Rt ∈R|V|×|V|, which can be thought of as the instantaneous rate at which one state transitions to another.",
+                  "match_score": 83.2
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-unified-continuous-discrete-DFM-039__03.png",
+              "page": 25,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Case (y′ = x,y ∈V −{x}): In the context of absorbing state diffusion, these states are never observed.",
+                  "match_score": 73.7
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-unified-continuous-discrete-DFM-039__04.png",
+              "page": 25,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Case (y′ ∈V −{m,x},y∈{m,x}): In the context of absorbing state diffusion, these states are never observed.",
+                  "match_score": 73.7
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-unified-continuous-discrete-DFM-039__05.png",
+              "page": 35,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We assess the importance of our continuous-time framework by performing ablation on diffusion steps T. In Table 11, we compare NLL and PPL under continuous and discrete T in MDLM.",
+                  "match_score": 89.1
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 1
+        },
+        {
+          "id": "planning-unified-continuous-discrete-DFM-042",
+          "paper_id": "DFM-042",
+          "next_step_id": "unified-continuous-discrete",
+          "best_score": 85.9,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-unified-continuous-discrete-DFM-042__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We have introduced score entropy discrete diffusion (SEDD) models, a discrete diffusion model that is parameterized by the concrete score and can be trained efficiently with our novel score entropy loss.",
+                  "match_score": 85.9
+                },
+                {
+                  "text": "SEDD beats previous language diffusion models and rivals autoregressive models for both perplexity and quality.",
+                  "match_score": 73.2
+                },
+                {
+                  "text": "Chen, T., Zhang, R., and Hinton, G. Analog bits: Gen- erating discrete data using diffusion models with self- conditioning.",
+                  "match_score": 76.1
+                },
+                {
+                  "text": "We hope that future work can build off our framework to defines alternatives to the modern autoregressive language modeling paradigm.",
+                  "match_score": 68.2
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 2
+        },
+        {
+          "id": "planning-unified-continuous-discrete-DFM-012",
+          "paper_id": "DFM-012",
+          "next_step_id": "unified-continuous-discrete",
+          "best_score": 84.2,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-unified-continuous-discrete-DFM-012__01.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We propose DPM-Solver, a fast dedicated training-free solver of diffusion ODEs for fast sampling of DPMs in around 10 steps of function evaluations.",
+                  "match_score": 73.7
+                },
+                {
+                  "text": "DPM-Solver leverages the semi-linearity of diffusion ODEs and it directly approximates a simpliﬁed formulation of exact solutions of diffusion ODEs, which consists of an exponentially weighted integral of the noise prediction model.",
+                  "match_score": 71.2
+                },
+                {
+                  "text": "We propose both handcrafted and adaptive step size schedule, and apply DPM-Solver for both continuous-time and discrete-time DPMs.",
+                  "match_score": 84.2
+                },
+                {
+                  "text": "Our experimental results show that DPM-Solver can generate high-quality samples in around 10 function evaluations on various datasets, and it can achieve 4 ∼16× speedup compared with previous state-of-the-art training-free samplers.",
+                  "match_score": 66.4
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-unified-continuous-discrete-DFM-012__02.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Besides, compared to the commonly-used GANs, diffusion models with DPM-Solver are still not fast enough for real-time applications.",
+                  "match_score": 71.2
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 2,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 3
+        },
+        {
+          "id": "planning-unified-continuous-discrete-DFM-043",
+          "paper_id": "DFM-043",
+          "next_step_id": "unified-continuous-discrete",
+          "best_score": 84.0,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-unified-continuous-discrete-DFM-043__01.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "First, in some tasks such as text8, masked diffusions are not yet competitive with AR models.",
+                  "match_score": 70.8
+                },
+                {
+                  "text": "Although we have improved masked diffusion models, they still suffer from limitations.",
+                  "match_score": 67.7
+                },
+                {
+                  "text": "It would be interesting to develop better architectures for discrete diffusions.",
+                  "match_score": 84.0
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 4
+        },
+        {
+          "id": "planning-unified-continuous-discrete-DFM-031",
+          "paper_id": "DFM-031",
+          "next_step_id": "unified-continuous-discrete",
+          "best_score": 83.4,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-unified-continuous-discrete-DFM-031__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We have presented D3PMs, a class of models that improves diffusion models for discrete data by deﬁning new kinds of discrete corruption processes.",
+                  "match_score": 68.8
+                },
+                {
+                  "text": "We achieve strong empirical results relative to previous work on discrete diffusion models, even surpassing performance of continuous diffusion models in terms of log-likelihoods for image generation.",
+                  "match_score": 83.4
+                },
+                {
+                  "text": "While these results are promising, one limitation is that—like much other work on non-autoregressive generative models—our models are still inferior to strong autoregressive models like Transformer XL for text generation, and continuous diffusion models still yield stronger results on image quality.",
+                  "match_score": 78.5
+                },
+                {
+                  "text": "We expect that D3PMs can beneﬁt further from the rapid development of continuous diffusion models [47, 30].",
+                  "match_score": 76.1
+                },
+                {
+                  "text": "Inception score and Frechet Inception Distance are based on neural networks that have been trained on a particular distribution of data, which is not representative for all use-cases, and focusing on average quality metrics may not accurately reﬂect performance across the wide diversity of settings where these generative models may be applied.",
+                  "match_score": 68.8
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 5
+        },
+        {
+          "id": "planning-unified-continuous-discrete-DFM-032",
+          "paper_id": "DFM-032",
+          "next_step_id": "unified-continuous-discrete",
+          "best_score": 83.4,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-unified-continuous-discrete-DFM-032__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We introduce a simple and generic technique that enables continuous state diffusion models to generate discrete data.",
+                  "match_score": 83.4
+                },
+                {
+                  "text": "The main idea is to encode discrete or categorical data into bits and then model these bits as real numbers that we call analog bits.",
+                  "match_score": 68.9
+                },
+                {
+                  "text": "We also propose two simple techniques, namely Self-Conditioning (i.e., condition the diffusion models directly on their previously generated samples) and Asymmetric Time Intervals, that lead to improved sample quality.",
+                  "match_score": 78.5
+                },
+                {
+                  "text": "One limitation of our approach, similar to other existing diffusion models, is that they still require a signiﬁcant number of inference steps for generating good (image) samples.",
+                  "match_score": 66.8
+                },
+                {
+                  "text": "However, we expect that future improvements from diffusion models for continuous data can also transfer to discrete data using analog bits.",
+                  "match_score": 71.2
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 6
+        },
+        {
+          "id": "planning-unified-continuous-discrete-DFM-038",
+          "paper_id": "DFM-038",
+          "next_step_id": "unified-continuous-discrete",
+          "best_score": 81.0,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-unified-continuous-discrete-DFM-038__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "To achieve this, we combine pretrained language models with absorbing-state discrete dif- fusion models for text.",
+                  "match_score": 81.0
+                },
+                {
+                  "text": "The training procedure of our proposed DiffusionBERT includes two main deviations from current discrete diffusion models, i.e., a new family of time step designs and the spin- dle noise schedule.",
+                  "match_score": 81.0
+                },
+                {
+                  "text": "It also pushes the Pareto front of quality-variance tradeoff of NAR methods by a large margin, comparable to a Transformer decoder trained from scratch.",
+                  "match_score": 66.1
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 7
+        },
+        {
+          "id": "planning-unified-continuous-discrete-DFM-078",
+          "paper_id": "DFM-078",
+          "next_step_id": "unified-continuous-discrete",
+          "best_score": 81.0,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-unified-continuous-discrete-DFM-078__01.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We propose a novel algorithm that incorporates reward maximization into discrete diffusion models, leveraging the Gumbel-Softmax trick to enable differentiable reward backpropagation, and demon- strate its effectiveness in generating DNA and protein sequences optimized for task-specific objectives.",
+                  "match_score": 81.0
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 8
+        }
+      ]
+    },
+    {
+      "id": "llm-scale-biology-diffusion",
+      "title": "LLM-scale discrete diffusion for biology",
+      "subtitle": "From LLaDA/DiffuLLaMA to protein, DNA, RNA at the same scale",
+      "summary": "Apply the LLM-scale discrete-diffusion recipes (LLaDA, DiffuLLaMA, BeyondAR) to nucleotide and protein sequences — full bidirectional context, parallel decoding, billion-parameter scale — so biological foundation models match the practical capabilities of the most recent text-domain diffusion LMs.",
+      "why_now": "Today's biological diffusion models (EvoDiff, DPLM, DNADiffusion) are at ≤ 1B parameters and context lengths far below modern LLMs. LLM-scale techniques are now well-established for text; transferring them to biology is the obvious next step.",
+      "evidence_points": [
+        {
+          "id": "planning-llm-scale-biology-diffusion-DFM-038",
+          "paper_id": "DFM-038",
+          "next_step_id": "llm-scale-biology-diffusion",
+          "best_score": 90.0,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-llm-scale-biology-diffusion-DFM-038__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "To achieve this, we combine pretrained language models with absorbing-state discrete dif- fusion models for text.",
+                  "match_score": 90.0
+                },
+                {
+                  "text": "The training procedure of our proposed DiffusionBERT includes two main deviations from current discrete diffusion models, i.e., a new family of time step designs and the spin- dle noise schedule.",
+                  "match_score": 85.0
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 1
+        },
+        {
+          "id": "planning-llm-scale-biology-diffusion-DFM-042",
+          "paper_id": "DFM-042",
+          "next_step_id": "llm-scale-biology-diffusion",
+          "best_score": 85.0,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-llm-scale-biology-diffusion-DFM-042__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We have introduced score entropy discrete diffusion (SEDD) models, a discrete diffusion model that is parameterized by the concrete score and can be trained efficiently with our novel score entropy loss.",
+                  "match_score": 85.0
+                },
+                {
+                  "text": "SEDD beats previous language diffusion models and rivals autoregressive models for both perplexity and quality.",
+                  "match_score": 69.0
+                },
+                {
+                  "text": "Chen, T., Zhang, R., and Hinton, G. Analog bits: Gen- erating discrete data using diffusion models with self- conditioning.",
+                  "match_score": 77.5
+                },
+                {
+                  "text": "We hope that future work can build off our framework to defines alternatives to the modern autoregressive language modeling paradigm.",
+                  "match_score": 70.0
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 2
+        },
+        {
+          "id": "planning-llm-scale-biology-diffusion-DFM-043",
+          "paper_id": "DFM-043",
+          "next_step_id": "llm-scale-biology-diffusion",
+          "best_score": 82.3,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-llm-scale-biology-diffusion-DFM-043__01.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "First, in some tasks such as text8, masked diffusions are not yet competitive with AR models.",
+                  "match_score": 72.5
+                },
+                {
+                  "text": "Although we have improved masked diffusion models, they still suffer from limitations.",
+                  "match_score": 70.0
+                },
+                {
+                  "text": "It would be interesting to develop better architectures for discrete diffusions.",
+                  "match_score": 82.3
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 3
+        },
+        {
+          "id": "planning-llm-scale-biology-diffusion-DFM-039",
+          "paper_id": "DFM-039",
+          "next_step_id": "llm-scale-biology-diffusion",
+          "best_score": 80.0,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-llm-scale-biology-diffusion-DFM-039__01.png",
+              "page": 22,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Notice that the term ⟨zt,m⟩in (40) is intended to reduce the diffusion loss to zero when zt =x.",
+                  "match_score": 75.0
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-llm-scale-biology-diffusion-DFM-039__02.png",
+              "page": 24,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "[33] defined the discrete diffusion process as a Continuous- Time Markov Chain (CTMC), where the forward corruption process is specified by the rate change matrix Rt ∈R|V|×|V|, which can be thought of as the instantaneous rate at which one state transitions to another.",
+                  "match_score": 80.0
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-llm-scale-biology-diffusion-DFM-039__03.png",
+              "page": 25,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Since this quantity is not directly accessible in the reverse diffusion process, we approximate it using a neural network, sθ :V →V, with parameters θ.",
+                  "match_score": 72.5
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-llm-scale-biology-diffusion-DFM-039__04.png",
+              "page": 33,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "For fine-tuning all Mamba-based models (including Caduceus) on diffusion objectives, we lower the learning rate from 8e-3 to 1e-3.",
+                  "match_score": 72.5
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-llm-scale-biology-diffusion-DFM-039__05.png",
+              "page": 34,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "This new formulation demonstrates that the diffusion loss is invariant to the functional form of αt.",
+                  "match_score": 72.5
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 4
+        },
+        {
+          "id": "planning-llm-scale-biology-diffusion-DFM-078",
+          "paper_id": "DFM-078",
+          "next_step_id": "llm-scale-biology-diffusion",
+          "best_score": 80.0,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-llm-scale-biology-diffusion-DFM-078__01.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We propose a novel algorithm that incorporates reward maximization into discrete diffusion models, leveraging the Gumbel-Softmax trick to enable differentiable reward backpropagation, and demon- strate its effectiveness in generating DNA and protein sequences optimized for task-specific objectives.",
+                  "match_score": 80.0
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 5
+        },
+        {
+          "id": "planning-llm-scale-biology-diffusion-DFM-062",
+          "paper_id": "DFM-062",
+          "next_step_id": "llm-scale-biology-diffusion",
+          "best_score": 77.6,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-llm-scale-biology-diffusion-DFM-062__01.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "Both PG and RFdiffusion take advantage of RoseTTAFold to jointly model protein sequences and structures, and, hence, both PG sequence space diffusion trajectories and RFdiffusion structure space diffusion trajectories can be guided by both sequence and structure information.",
+                  "match_score": 72.5
+                },
+                {
+                  "text": "However, ‘softer’ sequence constraints, such as biases on the number of amino acids of a given type, are more readily implemented in sequence space diffusion, whereas global structural properties, such as overall symmetry, are more readily implemented in structure-based dif- fusion.",
+                  "match_score": 75.0
+                },
+                {
+                  "text": "As with other protein generative models, obtaining sequences predicted to satisfy specific problem constraints required considerable filtering; future work will seek to increase the fraction of generated sequences that are confidently predicted.",
+                  "match_score": 70.0
+                },
+                {
+                  "text": "Sequence space diffusion is specifically advantageous in multi- state design of protein sequences that fold to two or more distinct structures as in our parent child designs; this can be implemented in sequence space diffusion by logit averaging, but it is not straightfor- ward with structure space diffusion.",
+                  "match_score": 77.6
+                },
+                {
+                  "text": "PG enables deep-learning-based multistate design through the joint search of sequence and struc- ture space without assuming fixed structural priors and should be readily generalizable to the design of more complex conditional state-switching protein systems; evaluation of these designs will ben- efit from advances in methods for structure ensemble prediction49–51.",
+                  "match_score": 70.0
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 6
+        },
+        {
+          "id": "planning-llm-scale-biology-diffusion-DFM-024",
+          "paper_id": "DFM-024",
+          "next_step_id": "llm-scale-biology-diffusion",
+          "best_score": 77.5,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-llm-scale-biology-diffusion-DFM-024__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Furthermore, our diffusion models are parameterized by unconstrained neural networks and therefore their score estimates do not necessarily form conservative vector ﬁelds, unlike classiﬁer gradients (Salimans & Ho, 2021).",
+                  "match_score": 72.1
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-llm-scale-biology-diffusion-DFM-024__02.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "Generally, classiﬁers can be smaller and faster than generative models, so classiﬁer guided sampling may be faster than classiﬁer- free guidance because the latter needs to run two forward passes of the diffusion model, one for conditional score and another for the unconditional score.",
+                  "match_score": 72.5
+                },
+                {
+                  "text": "The necessity to run multiple passes of the diffusion model might be mitigated by changing the architecture to inject conditioning late in the network, but we leave this exploration for future work.",
+                  "match_score": 77.5
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-llm-scale-biology-diffusion-DFM-024__03.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We have presented classiﬁer-free guidance, a method to increase sample quality while decreasing sample diversity in diffusion models.",
+                  "match_score": 77.1
+                },
+                {
+                  "text": "Classiﬁer-free guidance can be thought of as classiﬁer guidance without a classiﬁer, and our results showing the effectiveness of classiﬁer-free guidance conﬁrm that pure generative diffusion models are capable of maximizing classiﬁer-based sample quality metrics while entirely avoiding classiﬁer gradients.",
+                  "match_score": 72.5
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 3,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 7
+        },
+        {
+          "id": "planning-llm-scale-biology-diffusion-DFM-027",
+          "paper_id": "DFM-027",
+          "next_step_id": "llm-scale-biology-diffusion",
+          "best_score": 77.5,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-llm-scale-biology-diffusion-DFM-027__01.png",
+              "page": 8,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "This report presents a preliminary analysis of improvements to the foundation model Stable Diffusion for text-to-image synthesis.",
+                  "match_score": 77.5
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-llm-scale-biology-diffusion-DFM-027__02.png",
+              "page": 8,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "• Text synthesis: While the scale and the larger text encoder (OpenCLIP ViT-bigG [19]) help to improve the text rendering capabilities over previous versions of Stable Diffusion, incorporating byte-level tokenizers [52, 27] or simply scaling the model to larger sizes [53, 40] may further improve text synthesis.",
+                  "match_score": 72.5
+                },
+                {
+                  "text": "We remain, however, optimistic that a careful hyperparameter study will eventually enable scaling to much larger transformer-dominated architectures.",
+                  "match_score": 63.0
+                },
+                {
+                  "text": "• Distillation: While our improvements over the original Stable Diffusion model are significant, they come at the price of increased inference cost (both in VRAM and sampling speed).",
+                  "match_score": 75.0
+                },
+                {
+                  "text": "• Our model is trained in the discrete-time formulation of [14], and requires offset-noise [11, 25] for aesthetically pleasing results.",
+                  "match_score": 67.5
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 2,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 8
+        }
+      ]
+    },
+    {
+      "id": "function-aware-controllable-generation",
+      "title": "Function-aware controllable generation",
+      "subtitle": "Steering diffusion with explicit biological constraints",
+      "summary": "Move from prompt-only conditioning (e.g. a text description of a desired property) toward diffusion sampling guided by **measured** functional and structural constraints — activity assays, fitness landscapes, structural feasibility, codon usage, GC content — using classifier guidance, reward-weighted fine-tuning (DRAKES-style), or differentiable proxies.",
+      "why_now": "Most biological diffusion outputs today still need extensive downstream filtering. Reward-guided diffusion (DRAKES, RDM-style fine-tuning) shows that conditioning can be moved inside the sampler itself, raising the hit rate of usable designs by an order of magnitude.",
+      "evidence_points": [
+        {
+          "id": "planning-function-aware-controllable-generation-DFM-046",
+          "paper_id": "DFM-046",
+          "next_step_id": "function-aware-controllable-generation",
+          "best_score": 91.1,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-function-aware-controllable-generation-DFM-046__01.png",
+              "page": 8,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Discussion In terms of the generalization of our method in other con- trollable text generation scenarios, we selected poetry gen- eration for evaluation because its strict structures make it perfect for testing controlled text generation.",
+                  "match_score": 91.1
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-function-aware-controllable-generation-DFM-046__02.png",
+              "page": 8,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "Conclusion We proposed PoetryDiffusion which optimizes the semantic performance by stepwise denoising masked information in entire sentences and incorporating an exceptional metrical controller.",
+                  "match_score": 72.9
+                },
+                {
+                  "text": "SOTA performances in the au- tomatic evaluation and human evaluation of PoetryDiffusion in two datasets also validate its effectiveness.",
+                  "match_score": 67.3
+                },
+                {
+                  "text": "Moreover, the cases study vividly showcases our model’s superiority, and the visualization of the stepwise optimization process in the Diffusion model uncovers the different modeling phases of semantic features and metrical information.",
+                  "match_score": 72.6
+                },
+                {
+                  "text": "To evaluate its assumption and reveal how PoetryDiffusion integrates semantics and metrics gradually, we conducted experiments focusing on poetry expression, BLEU, and met- rical score stepwise.",
+                  "match_score": 67.3
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 2,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 1
+        },
+        {
+          "id": "planning-function-aware-controllable-generation-DFM-058",
+          "paper_id": "DFM-058",
+          "next_step_id": "function-aware-controllable-generation",
+          "best_score": 88.4,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-function-aware-controllable-generation-DFM-058__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We have created the ﬁrst generative modeling approach to motif-scaffolding by developing ProtDiff, a diffusion probabilistic model of protein backbones, and SMCDiff, a procedure for generating scaffolds conditioned on a motif.",
+                  "match_score": 70.0
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-function-aware-controllable-generation-DFM-058__02.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "While we do not make claims of SMCDiff outperforming state-of-the-art conditional diffusion models on other tasks such as image generation, we demonstrate a clear advantage of SMCDiff over the replacement method on a toy task of inpainting MNIST images in Appendix I.",
+                  "match_score": 70.0
+                },
+                {
+                  "text": "Extending SMCDiff outside of motif-scaffolding is outside the scope of the present work, but the advantages of a single model for both unconditional and conditional generation warrants additional research.",
+                  "match_score": 88.4
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-function-aware-controllable-generation-DFM-058__03.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Additionally, ProtDiff does not explicitly model primary sequence or side-chains.",
+                  "match_score": 69.1
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-function-aware-controllable-generation-DFM-058__04.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "It will be important to gather motifs of biological importance in order to guide ML method development towards real-world applications.",
+                  "match_score": 67.3
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 4,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 2
+        },
+        {
+          "id": "planning-function-aware-controllable-generation-DFM-003",
+          "paper_id": "DFM-003",
+          "next_step_id": "function-aware-controllable-generation",
+          "best_score": 83.2,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-function-aware-controllable-generation-DFM-003__01.png",
+              "page": 12,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "While we believe diffusion models are an extremely promising direction for generative modeling, they are still slower than GANs at sampling time due to the use of multiple denoising steps (and therefore forward passes).",
+                  "match_score": 72.6
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-function-aware-controllable-generation-DFM-003__02.png",
+              "page": 12,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "The effectiveness of classiﬁer guidance demonstrates that we can obtain powerful generative models from the gradients of a classiﬁcation function.",
+                  "match_score": 71.9
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-function-aware-controllable-generation-DFM-003__03.png",
+              "page": 13,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "Our improved architecture is sufﬁcient to achieve this on unconditional image generation tasks, and our classiﬁer guidance technique allows us to do so on class-conditional tasks.",
+                  "match_score": 83.2
+                },
+                {
+                  "text": "These guided diffusion models can reduce the sampling time gap between GANs and diffusion models, although diffusion models still require multiple forward passes during sampling.",
+                  "match_score": 69.1
+                },
+                {
+                  "text": "Finally, by combining guidance with upsampling, we can further improve sample quality on high-resolution conditional image synthesis.",
+                  "match_score": 72.8
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 3,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 3
+        },
+        {
+          "id": "planning-function-aware-controllable-generation-DFM-038",
+          "paper_id": "DFM-038",
+          "next_step_id": "function-aware-controllable-generation",
+          "best_score": 83.2,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-function-aware-controllable-generation-DFM-038__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "This work aims to approach the problem of un- conditional text generation for non-autoregressive models.",
+                  "match_score": 83.2
+                },
+                {
+                  "text": "The training procedure of our proposed DiffusionBERT includes two main deviations from current discrete diffusion models, i.e., a new family of time step designs and the spin- dle noise schedule.",
+                  "match_score": 67.4
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 4
+        },
+        {
+          "id": "planning-function-aware-controllable-generation-DFM-005",
+          "paper_id": "DFM-005",
+          "next_step_id": "function-aware-controllable-generation",
+          "best_score": 80.5,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-function-aware-controllable-generation-DFM-005__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "Our work enables a better understanding of existing approaches, new sampling algorithms, exact likelihood computation, uniquely identiﬁable encoding, latent code manipulation, and brings new conditional generation abilities to the family of score-based generative models.",
+                  "match_score": 80.5
+                },
+                {
+                  "text": "While our proposed sampling approaches improve results and enable more efﬁcient sampling, they remain slower at sampling than GANs (Goodfellow et al., 2014) on the same datasets.",
+                  "match_score": 63.6
+                },
+                {
+                  "text": "Identifying ways of combining the stable learning of score-based generative models with the fast sampling of implicit models like GANs remains an important research direction.",
+                  "match_score": 70.0
+                },
+                {
+                  "text": "Additionally, the breadth of samplers one can use when given access to score functions introduces a number of hyper-parameters.",
+                  "match_score": 70.0
+                },
+                {
+                  "text": "Future work would beneﬁt from improved methods to automatically select and tune these hyper- parameters, as well as more extensive investigation on the merits and limitations of various samplers.",
+                  "match_score": 68.5
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 5
+        },
+        {
+          "id": "planning-function-aware-controllable-generation-DFM-007",
+          "paper_id": "DFM-007",
+          "next_step_id": "function-aware-controllable-generation",
+          "best_score": 80.5,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-function-aware-controllable-generation-DFM-007__01.png",
+              "page": 8,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We surprisingly discover that this change also allows sampling from these models with many fewer steps.",
+                  "match_score": 66.5
+                },
+                {
+                  "text": "We have also found that DDPMs can match the sample qual- ity of GANs while achieving much better mode coverage as measured by recall.",
+                  "match_score": 65.9
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-function-aware-controllable-generation-DFM-007__02.png",
+              "page": 8,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "(2020b) use a combination of improved schedule and L1 loss to allow sampling with fewer steps with very lit- tle reduction in sample quality.",
+                  "match_score": 67.3
+                },
+                {
+                  "text": "The combination of these results makes DDPMs an attrac- tive choice for generative modeling, since they combine good log-likelihoods, high-quality samples, and reasonably fast sampling with a well-grounded, stationary training ob- jective that scales easily with training compute.",
+                  "match_score": 70.0
+                },
+                {
+                  "text": "However, compared to our unconditional image generation task, their generative task has a strong input conditioning signal provided by the mel- spectrograms, and we hypothesize that this makes it easier to sample with fewer diffusion steps.",
+                  "match_score": 80.5
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 2,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 6
+        },
+        {
+          "id": "planning-function-aware-controllable-generation-DFM-010",
+          "paper_id": "DFM-010",
+          "next_step_id": "function-aware-controllable-generation",
+          "best_score": 80.5,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-function-aware-controllable-generation-DFM-010__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Similar to diffusion models, they also allow zero-shot image editing applications such as inpainting, colorization, super-resolution, denoising, inter- polation, and stroke-guided image generation.",
+                  "match_score": 75.7
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-function-aware-controllable-generation-DFM-010__02.png",
+              "page": 26,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Schedule Functions for Consistency Training As discussed in Section 5, consistency generation requires specifying schedule functions Np¨q and µp¨q for best performance.",
+                  "match_score": 80.5
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-function-aware-controllable-generation-DFM-010__03.png",
+              "page": 26,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "12), and stroke-guided image generation (SDEdit, Meng et al.",
+                  "match_score": 70.0
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-function-aware-controllable-generation-DFM-010__04.png",
+              "page": 28,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Stroke-guided image generation We can also use Algorithm 4 for stroke-guided image generation as introduced in SDEdit (Meng et al., 2021).",
+                  "match_score": 72.9
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-function-aware-controllable-generation-DFM-010__05.png",
+              "page": 34,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Images on the right side are the results of stroke-guided image generation (SDEdit).",
+                  "match_score": 72.6
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 7
+        },
+        {
+          "id": "planning-function-aware-controllable-generation-DFM-032",
+          "paper_id": "DFM-032",
+          "next_step_id": "function-aware-controllable-generation",
+          "best_score": 80.5,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-function-aware-controllable-generation-DFM-032__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We also propose two simple techniques, namely Self-Conditioning (i.e., condition the diffusion models directly on their previously generated samples) and Asymmetric Time Intervals, that lead to improved sample quality.",
+                  "match_score": 69.1
+                },
+                {
+                  "text": "We demonstrate that our approach leads to state-of-the-art results in discrete / categorical image generation, beating the best autoregressive model.",
+                  "match_score": 75.3
+                },
+                {
+                  "text": "In an image-conditional text generation task on MS-COCO dataset, we also achieve competitive results compared to autoregressive models.",
+                  "match_score": 80.5
+                },
+                {
+                  "text": "One limitation of our approach, similar to other existing diffusion models, is that they still require a signiﬁcant number of inference steps for generating good (image) samples.",
+                  "match_score": 72.7
+                },
+                {
+                  "text": "However, we expect that future improvements from diffusion models for continuous data can also transfer to discrete data using analog bits.",
+                  "match_score": 70.9
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 8
+        }
+      ]
+    },
+    {
+      "id": "wet-lab-closed-loop",
+      "title": "Wet-lab closed-loop design",
+      "subtitle": "Active-learning feedback between diffusion and experiments",
+      "summary": "Close the loop from diffusion-generated designs through wet-lab characterisation back into the next round of training or guidance. Each iteration shrinks the model's epistemic uncertainty in the regions of design space that actually matter for the target function.",
+      "why_now": "RFdiffusion and its successors have shown that diffusion-generated proteins can be cloned, expressed, and characterised at modest cost. Treating those experiments as labelled data for the next training round is now operationally feasible but rarely done end-to-end.",
+      "evidence_points": [
+        {
+          "id": "planning-wet-lab-closed-loop-DFM-003",
+          "paper_id": "DFM-003",
+          "next_step_id": "wet-lab-closed-loop",
+          "best_score": 82.1,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-003__01.png",
+              "page": 12,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "While we believe diffusion models are an extremely promising direction for generative modeling, they are still slower than GANs at sampling time due to the use of multiple denoising steps (and therefore forward passes).",
+                  "match_score": 74.7
+                },
+                {
+                  "text": "Future work in this direction might be able to completely close the sampling speed gap between diffusion models and GANs without sacriﬁcing image quality.",
+                  "match_score": 82.1
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-003__02.png",
+              "page": 12,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "The effectiveness of classiﬁer guidance demonstrates that we can obtain powerful generative models from the gradients of a classiﬁcation function.",
+                  "match_score": 70.2
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-003__03.png",
+              "page": 13,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We have shown that diffusion models, a class of likelihood-based models with a stationary training objective, can obtain better sample quality than state-of-the-art GANs.",
+                  "match_score": 71.2
+                },
+                {
+                  "text": "These guided diffusion models can reduce the sampling time gap between GANs and diffusion models, although diffusion models still require multiple forward passes during sampling.",
+                  "match_score": 75.2
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 3,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 1
+        },
+        {
+          "id": "planning-wet-lab-closed-loop-DFM-048",
+          "paper_id": "DFM-048",
+          "next_step_id": "wet-lab-closed-loop",
+          "best_score": 82.1,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-048__01.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Despite this progress, substantial work remains: Plaid narrows the compute- efficiency gap between diffusion and autoregressive language models to 64×, and we view this gap as a tractable and exciting open problem that may be addressed with further research.",
+                  "match_score": 82.1
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 2
+        },
+        {
+          "id": "planning-wet-lab-closed-loop-DFM-039",
+          "paper_id": "DFM-039",
+          "next_step_id": "wet-lab-closed-loop",
+          "best_score": 78.6,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-039__01.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "With a well-engineered implementation that supports a simple variational objective, we attain state-of-the-art diffusion perplexities on language benchmarks and demonstrate how to efficiently convert BERT-style encoders into generative models.",
+                  "match_score": 73.4
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-039__02.png",
+              "page": 25,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Since this quantity is not directly accessible in the reverse diffusion process, we approximate it using a neural network, sθ :V →V, with parameters θ.",
+                  "match_score": 73.4
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-039__03.png",
+              "page": 33,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We exclude timestep embeddings for all Diffusion DNA experiments, as we show it has minimal impact on generative performance (see Table 12, Suppl.",
+                  "match_score": 78.6
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-039__04.png",
+              "page": 45,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "• The answer NA means that the paper does not include experiments.",
+                  "match_score": 73.0
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-039__05.png",
+              "page": 46,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "• The answer NA means that the paper does not include experiments.",
+                  "match_score": 73.0
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 3
+        },
+        {
+          "id": "planning-wet-lab-closed-loop-DFM-017",
+          "paper_id": "DFM-017",
+          "next_step_id": "wet-lab-closed-loop",
+          "best_score": 78.0,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-017__01.png",
+              "page": 54,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "In order to obtain a speed-up we consider a cached-version of Algorithm 1 given by Algorithm 3 which entails storing and then resampling diffusion trajectories.",
+                  "match_score": 74.4
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-017__02.png",
+              "page": 54,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "The convergence of the IPF is affected by the mean and covariance matrix of the target Gaussian.",
+                  "match_score": 78.0
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-017__03.png",
+              "page": 55,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "All two-dimensional experiments are run on Intel(R) Core(TM) i7-10850H CPU @ 2.70GHz CPUs.",
+                  "match_score": 73.9
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-017__04.png",
+              "page": 56,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "The cache is refreshed each 103 iterations and the networks are trained for 5 × 103 iterations.",
+                  "match_score": 73.7
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-017__05.png",
+              "page": 57,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Additional examples In this section we present additional examples for our high-dimensional generative modeling experiments.",
+                  "match_score": 73.5
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 4
+        },
+        {
+          "id": "planning-wet-lab-closed-loop-DFM-010",
+          "paper_id": "DFM-010",
+          "next_step_id": "wet-lab-closed-loop",
+          "best_score": 77.0,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-010__01.png",
+              "page": 18,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "The consistency distillation and consistency training objectives can be generalized to hold for infinite time steps (N Ñ 8) under suitable conditions.",
+                  "match_score": 70.3
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-010__02.png",
+              "page": 23,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Note that L8 CTpθ, θ´q does not depend on the diffusion model parameter ϕ and hence can be optimized without any pre-trained diffusion models.",
+                  "match_score": 70.0
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-010__03.png",
+              "page": 25,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We set the learning rate to 4e-4, and the EMA decay rate for the target network to 0.99.",
+                  "match_score": 77.0
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-010__04.png",
+              "page": 26,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Additional hyperparameters for consistency training and distillation are listed in Table 3.",
+                  "match_score": 69.5
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-010__05.png",
+              "page": 28,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "In our experiments, we set t1 “ 5.38 and t2 “ 2.24, with N “ 2.",
+                  "match_score": 69.2
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 5
+        },
+        {
+          "id": "planning-wet-lab-closed-loop-DFM-054",
+          "paper_id": "DFM-054",
+          "next_step_id": "wet-lab-closed-loop",
+          "best_score": 76.1,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-054__01.png",
+              "page": 7,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "Second, designed scaffolds are more ame- nable to incorporation into sensors as illustrated by the lucCagePTH sensor.",
+                  "match_score": 75.0
+                },
+                {
+                  "text": "RFdiffusion was pre- viously shown to be able to design binders to folded targets8; here we demonstrate further that it can be used to improve starting designs by partial noising and denoising, and can generate binders to peptides starting from no information other than the target sequence.",
+                  "match_score": 73.8
+                },
+                {
+                  "text": "To our knowledge, the Bim- and PTH-binding proteins diffused starting from random noise are the highest-affinity binders to any target (protein, peptide or small molecule) achieved directly by computational design with no experimental optimization.",
+                  "match_score": 75.9
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-054__02.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "AF2 model_4_ptm was used for all experiments.",
+                  "match_score": 76.1
+                },
+                {
+                  "text": "The precise values used for filtering were chosen to reduce the set down to 46 designs.",
+                  "match_score": 74.9
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 2,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 6
+        },
+        {
+          "id": "planning-wet-lab-closed-loop-DFM-009",
+          "paper_id": "DFM-009",
+          "next_step_id": "wet-lab-closed-loop",
+          "best_score": 75.2,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-009__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We presented state-of-the-art results on modeling the density of natural images using a new class of diffusion models that incorporates a learnable diffusion speciﬁcation, Fourier features for ﬁne-scale modeling, as well as other architectural innovations.",
+                  "match_score": 71.7
+                },
+                {
+                  "text": "In addition, we obtained new theoretical insight into likelihood-based generative modeling with diffusion models, showing a surprising invariance of the VLB to the forward time diffusion process in continuous time, as well as an equivalence between various diffusion processes from the literature previously thought to be different.",
+                  "match_score": 75.2
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 7
+        },
+        {
+          "id": "planning-wet-lab-closed-loop-DFM-058",
+          "paper_id": "DFM-058",
+          "next_step_id": "wet-lab-closed-loop",
+          "best_score": 75.1,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-058__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Our work demonstrates the potential of machine learning methods to be applied in realistic protein design settings.",
+                  "match_score": 75.1
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-058__02.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "While we do not make claims of SMCDiff outperforming state-of-the-art conditional diffusion models on other tasks such as image generation, we demonstrate a clear advantage of SMCDiff over the replacement method on a toy task of inpainting MNIST images in Appendix I.",
+                  "match_score": 68.5
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-058__03.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We believe improvements in protein modeling could provide better inductive biases for generalization.",
+                  "match_score": 71.5
+                },
+                {
+                  "text": "(2022) demonstrate the beneﬁts of modeling sequence information in small molecules; joint modeling sequence and structure in a single model could improve the designability of protein scaffolds and backbones as well.",
+                  "match_score": 70.0
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-wet-lab-closed-loop-DFM-058__04.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Scaling up to longer proteins opens up thousands more examples from the PDB, but in preliminary experiments has proven challenging.",
+                  "match_score": 70.0
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 4,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 8
+        }
+      ]
+    },
+    {
+      "id": "inference-efficiency-sampling",
+      "title": "Production-grade sampling efficiency",
+      "subtitle": "Few-step diffusion for biological design pipelines",
+      "summary": "Bring accelerated samplers (DPM-Solver, EDM, consistency models, flow matching, distillation) into biological diffusion pipelines so each candidate sequence or structure costs single-digit forward passes instead of thousands — making large-scale design libraries and high-throughput screens computationally trivial.",
+      "why_now": "Image-side diffusion went from 1000-step to 1–4-step sampling in two years via consistency models and DPM-Solver. Biological diffusion models are still using 100–1000 sampling steps. The same compression is largely a transfer problem, not a research problem.",
+      "evidence_points": [
+        {
+          "id": "planning-inference-efficiency-sampling-DFM-017",
+          "paper_id": "DFM-017",
+          "next_step_id": "inference-efficiency-sampling",
+          "best_score": 78.3,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-017__01.png",
+              "page": 11,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Computing resources were provided through the Google Cloud research credits programme.",
+                  "match_score": 70.0
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-017__02.png",
+              "page": 39,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "Hence the algorithm requires more memory as n increases and the sampling procedure requires O(nN) passes through a neural network.",
+                  "match_score": 70.0
+                },
+                {
+                  "text": "The approaches described in Proposition 3 and Proposition 29 yield sampling procedures which only require O(N) passes through a neural network and have ﬁxed memory cost for any n ∈N.",
+                  "match_score": 75.6
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-017__03.png",
+              "page": 54,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "In order to obtain a speed-up we consider a cached-version of Algorithm 1 given by Algorithm 3 which entails storing and then resampling diffusion trajectories.",
+                  "match_score": 78.3
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-017__04.png",
+              "page": 56,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We therefore chose to avoid using such techniques altogether because of the increase in computing time when sampling, often by doubling the number of passes through the network.",
+                  "match_score": 78.3
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 4,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 1
+        },
+        {
+          "id": "planning-inference-efficiency-sampling-DFM-039",
+          "paper_id": "DFM-039",
+          "next_step_id": "inference-efficiency-sampling",
+          "best_score": 78.3,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-039__01.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "With a well-engineered implementation that supports a simple variational objective, we attain state-of-the-art diffusion perplexities on language benchmarks and demonstrate how to efficiently convert BERT-style encoders into generative models.",
+                  "match_score": 70.0
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-039__02.png",
+              "page": 17,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We then simplify these expressions specifically for the case of absorbing state diffusion in Suppl.",
+                  "match_score": 73.3
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-039__03.png",
+              "page": 33,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We exclude timestep embeddings for all Diffusion DNA experiments, as we show it has minimal impact on generative performance (see Table 12, Suppl.",
+                  "match_score": 74.0
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-039__04.png",
+              "page": 34,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "When sampling in batches, a change of 1 token would necessitate a call to the denoising model.",
+                  "match_score": 71.1
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-039__05.png",
+              "page": 47,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "• If there are negative societal impacts, the authors could also discuss possible mitigation strategies (e.g., gated release of models, providing defenses in addition to attacks, mechanisms for monitoring misuse, mechanisms to monitor how a system learns from feedback over time, improving the efficiency and accessibility of ML).",
+                  "match_score": 78.3
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 2
+        },
+        {
+          "id": "planning-inference-efficiency-sampling-DFM-061",
+          "paper_id": "DFM-061",
+          "next_step_id": "inference-efficiency-sampling",
+          "best_score": 78.3,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-061__01.png",
+              "page": 8,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "A sequence-guided generative model of structure might bypass such expensive simulations and directly sample from the conditional dis- tribution of conformations matching a given amino acid sequence.",
+                  "match_score": 72.1
+                },
+                {
+                  "text": "In summary, our work provides an important step in leveraging biologically inspired problem formulations for generative protein design.",
+                  "match_score": 76.0
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-061__02.png",
+              "page": 8,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Methods Denoising diffusion probabilistic models Denoising diffusion probabilistic models (or diffusion models, for short) leverage a Markov process q xtjxt\u00021 \u0001 \u0003 to corrupt a data sample x0 over T discrete timesteps until it is indistinguishable from noise at xT.",
+                  "match_score": 74.0
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-061__03.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "15 use ProteinMPNN47 for inverse folding and generate 8 candidate sequences per structure, whereas ref.",
+                  "match_score": 72.4
+                },
+                {
+                  "text": "13 use ESM-IF165 and generate 10 candidate sequences for each structure.",
+                  "match_score": 78.3
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 3,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 3
+        },
+        {
+          "id": "planning-inference-efficiency-sampling-DFM-027",
+          "paper_id": "DFM-027",
+          "next_step_id": "inference-efficiency-sampling",
+          "best_score": 77.1,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-027__01.png",
+              "page": 8,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "This report presents a preliminary analysis of improvements to the foundation model Stable Diffusion for text-to-image synthesis.",
+                  "match_score": 77.1
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-027__02.png",
+              "page": 8,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "This results in having to load two large models into memory, hampering accessibility and sampling speed.",
+                  "match_score": 71.9
+                },
+                {
+                  "text": "• Distillation: While our improvements over the original Stable Diffusion model are significant, they come at the price of increased inference cost (both in VRAM and sampling speed).",
+                  "match_score": 75.9
+                },
+                {
+                  "text": "Future work will thus focus on decreasing the compute needed for inference, and increased sampling speed, for example through guidance- [29], knowledge- [6, 22, 24] and progressive distillation [41, 2, 29].",
+                  "match_score": 72.8
+                },
+                {
+                  "text": "[21] is a promising candidate for future model training, as its formulation in continuous time allows for increased sampling flexibility and does not require noise-schedule corrections.",
+                  "match_score": 75.6
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 2,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 4
+        },
+        {
+          "id": "planning-inference-efficiency-sampling-DFM-003",
+          "paper_id": "DFM-003",
+          "next_step_id": "inference-efficiency-sampling",
+          "best_score": 75.6,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-003__01.png",
+              "page": 12,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "While we believe diffusion models are an extremely promising direction for generative modeling, they are still slower than GANs at sampling time due to the use of multiple denoising steps (and therefore forward passes).",
+                  "match_score": 70.0
+                },
+                {
+                  "text": "Future work in this direction might be able to completely close the sampling speed gap between diffusion models and GANs without sacriﬁcing image quality.",
+                  "match_score": 68.0
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-003__02.png",
+              "page": 12,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "In the future, our method could be extended to unlabeled data by clustering samples to produce synthetic labels [36] or by training discriminative models to predict when samples are in the true data distribution or from the sampling distribution.",
+                  "match_score": 75.6
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-003__03.png",
+              "page": 13,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "These guided diffusion models can reduce the sampling time gap between GANs and diffusion models, although diffusion models still require multiple forward passes during sampling.",
+                  "match_score": 75.1
+                },
+                {
+                  "text": "Finally, by combining guidance with upsampling, we can further improve sample quality on high-resolution conditional image synthesis.",
+                  "match_score": 70.0
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 3,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 5
+        },
+        {
+          "id": "planning-inference-efficiency-sampling-DFM-008",
+          "paper_id": "DFM-008",
+          "next_step_id": "inference-efficiency-sampling",
+          "best_score": 75.6,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-008__01.png",
+              "page": 6,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Deterministic sampling offers many beneﬁts, e.g., the ability to turn real images into their corre- sponding latent representations by inverting the ODE.",
+                  "match_score": 74.3
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-008__02.png",
+              "page": 7,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "If the degradation is caused by ﬂaws in Dθ(x; σ), they can only be remedied using heuristic means during sampling.",
+                  "match_score": 73.8
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-008__03.png",
+              "page": 7,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "It is an open question if adaptive solvers can be a net win over a well-tuned ﬁxed schedule in sampling diffusion models.",
+                  "match_score": 71.4
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-008__04.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "[49], stochastic sampling is highly beneﬁcial (blue, green), while deterministic sampling (Schurn = 0) leads to relatively poor FID.",
+                  "match_score": 72.8
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-008__05.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "The training and sampling of diffusion models needs a lot of electricity; our project consumed ∼250MWh on an in-house cluster of NVIDIA V100s.",
+                  "match_score": 75.6
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 6
+        },
+        {
+          "id": "planning-inference-efficiency-sampling-DFM-010",
+          "paper_id": "DFM-010",
+          "next_step_id": "inference-efficiency-sampling",
+          "best_score": 75.6,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-010__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We have empirically demonstrated that our consistency distillation method outshines the exist- ing distillation techniques for diffusion models on multiple image benchmarks and small sampling iterations.",
+                  "match_score": 72.1
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-010__02.png",
+              "page": 20,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Suppose we use the Euler ODE solver, and set dpx, yq “ ∥x ´ y∥1 in consistency distillation.",
+                  "match_score": 72.6
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-010__03.png",
+              "page": 23,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Note that L8 CTpθ, θ´q does not depend on the diffusion model parameter ϕ and hence can be optimized without any pre-trained diffusion models.",
+                  "match_score": 71.9
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-010__04.png",
+              "page": 26,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "When using the LPIPS metric on CIFAR-10 and ImageNet 64 ˆ 64, we rescale images to resolution 224 ˆ 224 with bilinear upsampling before feeding them to the LPIPS network.",
+                  "match_score": 72.8
+                }
+              ]
+            },
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-010__05.png",
+              "page": 28,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We provide additional samples from consistency distillation (CD) and consistency training (CT) on CIFAR-10 (Figs.",
+                  "match_score": 75.6
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 7
+        },
+        {
+          "id": "planning-inference-efficiency-sampling-DFM-015",
+          "paper_id": "DFM-015",
+          "next_step_id": "inference-efficiency-sampling",
+          "best_score": 75.6,
+          "screenshots": [
+            {
+              "href": "diffusion_models/assets/evidence/planning-inference-efficiency-sampling-DFM-015__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We introduced Flow Matching, a new simulation-free framework for training Continuous Normaliz- ing Flow models, relying on conditional constructions to effortlessly scale to very high dimensions.",
+                  "match_score": 65.1
+                },
+                {
+                  "text": "Furthermore, the FM framework provides an alternative view on diffusion models, and suggests forsaking the stochastic/diffusion construction in favor of more directly specifying the probability path, allowing us to, e.g., construct paths that allow faster sampling and/or improve generation.",
+                  "match_score": 68.9
+                },
+                {
+                  "text": "We experimentally showed the ease of training and sampling when using the Flow Matching framework, and in the future, we expect FM to open the door to allowing a multitude of probability paths (e.g., non-isotropic Gaussians or more general kernels altogether).",
+                  "match_score": 75.6
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 8
+        }
+      ]
+    }
+  ]
+}

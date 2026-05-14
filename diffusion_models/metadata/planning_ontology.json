@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1",
+  "topic_id": "diffusion_models_planning",
+  "topic_label": "Diffusion Models × NL × Genomic Sequences — Next Steps (Planning)",
+  "header": "🧭 Planning: where the diffusion-and-biology field goes next",
+  "description": "Five concrete next steps that recur across the Discussion / Limitations / Future Work sections of the corpus. Each step is grounded in evidence pulled directly from passages where the authors themselves call out gaps, future directions, or unresolved problems.",
+  "next_steps": [
+    {
+      "id": "unified-continuous-discrete",
+      "title": "Unified continuous-and-discrete diffusion",
+      "subtitle": "One framework for images, text, and biological sequences",
+      "summary": "Bring the score-based continuous framework (DDPM / SDE / LDM) and the discrete-token framework (D3PM / SEDD / MDLM) under a single mathematical roof so a single model can be trained jointly on continuous (structure, expression levels) and discrete (DNA / protein tokens, natural language) modalities.",
+      "why_now": "Continuous diffusion has the cleanest theory; discrete diffusion has the closest fit to biology and language. Unifying them would let a single model be conditioned on a text description, generate a DNA sequence, and predict a continuous-valued activity in one forward pass.",
+      "search_terms": "unified continuous discrete diffusion joint framework score entropy multimodal"
+    },
+    {
+      "id": "llm-scale-biology-diffusion",
+      "title": "LLM-scale discrete diffusion for biology",
+      "subtitle": "From LLaDA/DiffuLLaMA to protein, DNA, RNA at the same scale",
+      "summary": "Apply the LLM-scale discrete-diffusion recipes (LLaDA, DiffuLLaMA, BeyondAR) to nucleotide and protein sequences — full bidirectional context, parallel decoding, billion-parameter scale — so biological foundation models match the practical capabilities of the most recent text-domain diffusion LMs.",
+      "why_now": "Today's biological diffusion models (EvoDiff, DPLM, DNADiffusion) are at ≤ 1B parameters and context lengths far below modern LLMs. LLM-scale techniques are now well-established for text; transferring them to biology is the obvious next step.",
+      "search_terms": "large scale discrete diffusion protein DNA RNA billion parameter bidirectional context"
+    },
+    {
+      "id": "function-aware-controllable-generation",
+      "title": "Function-aware controllable generation",
+      "subtitle": "Steering diffusion with explicit biological constraints",
+      "summary": "Move from prompt-only conditioning (e.g. a text description of a desired property) toward diffusion sampling guided by **measured** functional and structural constraints — activity assays, fitness landscapes, structural feasibility, codon usage, GC content — using classifier guidance, reward-weighted fine-tuning (DRAKES-style), or differentiable proxies.",
+      "why_now": "Most biological diffusion outputs today still need extensive downstream filtering. Reward-guided diffusion (DRAKES, RDM-style fine-tuning) shows that conditioning can be moved inside the sampler itself, raising the hit rate of usable designs by an order of magnitude.",
+      "search_terms": "classifier guidance reward fine tuning diffusion controllable generation property conditioned biological"
+    },
+    {
+      "id": "wet-lab-closed-loop",
+      "title": "Wet-lab closed-loop design",
+      "subtitle": "Active-learning feedback between diffusion and experiments",
+      "summary": "Close the loop from diffusion-generated designs through wet-lab characterisation back into the next round of training or guidance. Each iteration shrinks the model's epistemic uncertainty in the regions of design space that actually matter for the target function.",
+      "why_now": "RFdiffusion and its successors have shown that diffusion-generated proteins can be cloned, expressed, and characterised at modest cost. Treating those experiments as labelled data for the next training round is now operationally feasible but rarely done end-to-end.",
+      "search_terms": "active learning wet lab feedback closed loop diffusion protein design iterative experimental validation"
+    },
+    {
+      "id": "inference-efficiency-sampling",
+      "title": "Production-grade sampling efficiency",
+      "subtitle": "Few-step diffusion for biological design pipelines",
+      "summary": "Bring accelerated samplers (DPM-Solver, EDM, consistency models, flow matching, distillation) into biological diffusion pipelines so each candidate sequence or structure costs single-digit forward passes instead of thousands — making large-scale design libraries and high-throughput screens computationally trivial.",
+      "why_now": "Image-side diffusion went from 1000-step to 1–4-step sampling in two years via consistency models and DPM-Solver. Biological diffusion models are still using 100–1000 sampling steps. The same compression is largely a transfer problem, not a research problem.",
+      "search_terms": "consistency model DPM solver few step diffusion distillation flow matching accelerated sampler"
+    }
+  ],
+  "evidence_sources": {
+    "preferred_sections": ["Discussion", "Limitations", "Future Work", "Future Directions", "Outlook", "Conclusion", "Open Problems", "Challenges"],
+    "rationale": "Next-step claims are best supported by passages where the paper's authors themselves call out gaps or future directions. The renderer preferentially highlights from these sections rather than the abstract / methods."
+  },
+  "rubric": {
+    "weights": {
+      "directly_proposes_step": 1.5,
+      "grounded_in_limitation": 1.3,
+      "concrete_next_action": 1.1,
+      "broad_applicability": 0.9,
+      "field_consensus": 0.7
+    },
+    "anchors": {
+      "5": "the paper's discussion / future-work explicitly proposes this next step",
+      "4": "the paper identifies the gap this next step closes, even if not the proposal",
+      "3": "the paper's limitations imply this direction without naming it",
+      "2": "weak / indirect support — adjacent topic only",
+      "1": "tangential",
+      "0": "no relevant content"
+    },
+    "primary_threshold": 14.0,
+    "secondary_threshold": 10.0,
+    "max_total": 28.0
+  },
+  "promotion": {
+    "per_next_step_min_papers": 3,
+    "per_next_step_max_papers": 6,
+    "max_next_steps_per_paper": 3
+  }
+}
