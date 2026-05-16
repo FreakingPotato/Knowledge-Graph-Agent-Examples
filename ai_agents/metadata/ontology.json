@@ -1,0 +1,149 @@
+{
+  "schema_version": "0.1",
+  "topic_id": "ai_agents",
+  "topic_label": "AI Agents — Classics of 2023–2025 (≥500 citations)",
+  "thesis": "Between 2023 and 2025, large-language-model agents went from prompting curiosities to working systems that reason, plan, use tools, communicate with one another, and complete real-world tasks across software engineering, the web, and scientific research. This knowledge graph maps the classics of that three-year window, filtered to landmark works (≥ 500 citations) at top AI venues, organised around three coordinated lines of progress — single-agent reasoning + planning + tools + memory; multi-agent collaboration and emergent behaviour; and real-world agentic applications — plus a forward-looking Planning view distilling the field's next 18 months from each paper's own discussion and limitations.",
+  "paradigm_id_prefix": "AGT",
+  "paper_id_prefix": "AGT",
+  "paradigms": [
+    {
+      "id": "reasoning",
+      "label": "Reasoning, planning, tool use, memory",
+      "summary": "The single-agent core: how LLMs are made to reason step by step, plan over horizons longer than one prompt, call external tools, and remember across episodes. The foundational papers of agentic AI.",
+      "claims": [
+        {
+          "id": "reasoning-chain-of-thought",
+          "subtype": "Chain / Tree / Graph of thought",
+          "claim": "Explicit step-by-step reasoning prompts (Chain-of-Thought, Tree-of-Thought, Graph-of-Thought, Self-Consistency, Plan-and-Solve) materially raise LLM performance on multi-step problems and form the prompting backbone of every modern agent.",
+          "search_terms": "chain of thought tree of thoughts self consistency plan and solve reasoning prompt large language model"
+        },
+        {
+          "id": "reasoning-tool-use",
+          "subtype": "Tool use & function calling",
+          "claim": "Letting an LLM emit structured tool calls (ReAct, Toolformer, function-calling APIs, HuggingGPT) turns it from a text generator into an agent that can search, compute, query APIs, and execute code — closing the gap between knowledge and action.",
+          "search_terms": "tool use function calling ReAct Toolformer language model agent execute API"
+        },
+        {
+          "id": "reasoning-memory-and-reflection",
+          "subtype": "Memory & reflection",
+          "claim": "Reflection / self-refinement loops (Reflexion, Self-Refine, Self-Discover) and persistent memory architectures (MemGPT, Memory-Augmented Transformers) let agents learn from their own mistakes within and across episodes — the bridge from stateless prompting to long-horizon autonomy.",
+          "search_terms": "reflexion self refine memory persistent MemGPT long horizon agent"
+        }
+      ]
+    },
+    {
+      "id": "multiagent",
+      "label": "Multi-agent collaboration & emergence",
+      "summary": "When several agents share a goal, debate a problem, or specialise into roles, behaviours emerge that no single agent shows. The classics of 2023–2025 multi-agent systems: AutoGen, MetaGPT, CAMEL, Generative Agents, Voyager.",
+      "claims": [
+        {
+          "id": "multiagent-role-and-debate",
+          "subtype": "Role-playing & debate frameworks",
+          "claim": "Role-playing frameworks (CAMEL, AutoGen, MetaGPT) and structured multi-agent debate / critique loops raise solution quality on tasks like coding, scientific reasoning, and decision-making by forcing models to surface and resolve disagreement.",
+          "search_terms": "multi-agent debate role play CAMEL AutoGen MetaGPT collaboration framework"
+        },
+        {
+          "id": "multiagent-autonomous-loops",
+          "subtype": "Autonomous agent loops",
+          "claim": "Open-ended autonomous-agent loops (AutoGPT, BabyAGI, LangGraph-style state machines) plan, execute, and self-correct over many steps without per-step human supervision, demonstrating that LLM agents can drive multi-stage workflows.",
+          "search_terms": "autonomous agent AutoGPT BabyAGI self planning execution loop"
+        },
+        {
+          "id": "multiagent-emergent-behavior",
+          "subtype": "Emergent behaviour in simulated societies",
+          "claim": "Embedding LLM agents in persistent simulated environments (Generative Agents, Voyager, CivRealm) produces emergent social, exploratory, and skill-acquisition behaviour that no single prompt elicits — a substrate for studying agent collectives.",
+          "search_terms": "generative agents simulation emergent behaviour Voyager Minecraft persistent environment"
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "label": "Real-world agentic applications",
+      "summary": "Where agents began to ship: software engineering (SWE-agent, Devin-style), web and computer use (WebArena, Computer Use), and scientific research (research co-pilots, biomedical agents). The classics that moved agents from demos to deployments.",
+      "claims": [
+        {
+          "id": "applications-software-engineering",
+          "subtype": "Software-engineering agents",
+          "claim": "Agentic systems for software engineering (SWE-agent, SWE-bench, AlphaCode 2, Devin-style code agents) solve real GitHub-issue benchmarks at increasing rates, demonstrating that LLM agents can plan, edit, run, and debug code over long horizons.",
+          "search_terms": "SWE-agent SWE-bench code generation autonomous software engineering agent debug"
+        },
+        {
+          "id": "applications-web-and-embodied",
+          "subtype": "Web, GUI, and embodied agents",
+          "claim": "Web and GUI agents (WebArena, Mind2Web, computer-use models) and embodied LLM agents (PaLM-E, RT-2, VLA models) translate textual reasoning into clicks, keystrokes, and physical actions — opening up the action space agents can operate in.",
+          "search_terms": "web agent computer use WebArena Mind2Web embodied vision language action PaLM-E RT-2"
+        },
+        {
+          "id": "applications-scientific-research",
+          "subtype": "Scientific research agents",
+          "claim": "Research co-pilot agents for biomedicine, chemistry, and materials (ChemCrow, Coscientist, Biomni, GeneAgent, agentic rare-disease diagnosis) demonstrate that agents can plan and execute multi-step scientific workflows — including hypothesis generation, literature synthesis, and wet-lab planning.",
+          "search_terms": "scientific research agent ChemCrow Coscientist Biomni biomedical agent hypothesis"
+        }
+      ]
+    }
+  ],
+  "rubric": {
+    "weights": {
+      "useful_outcomes": 1.5,
+      "immediate_benefit": 1.3,
+      "plausible": 1.1,
+      "scalable": 0.9,
+      "how_to_validate": 0.7
+    },
+    "anchors": {
+      "5": "strong, direct, explicit support for THIS specific claim",
+      "4": "strong, modest gap",
+      "3": "moderate / partial",
+      "2": "weak / indirect",
+      "1": "tangential",
+      "0": "does not support"
+    },
+    "primary_threshold": 18.0,
+    "secondary_threshold": 14.0,
+    "max_total": 28.0
+  },
+  "discovery": {
+    "candidates_per_claim": 10,
+    "min_citations": 500,
+    "year_range": [2023, 2025],
+    "year_range_inclusive": true,
+    "year_filter_strict": true,
+    "year_filter_note": "Last three years only — 2023, 2024, 2025. Drop 2022 papers (CoT, Toolformer original, ReAct original) even though they are highly cited; the user explicitly asked for the most recent classics. If a 2022 paper has a 2023+ canonical version, prefer that.",
+    "venue_allowlist": [
+      "Advances in Neural Information Processing Systems", "NeurIPS Proceedings",
+      "International Conference on Machine Learning", "ICML Proceedings",
+      "International Conference on Learning Representations", "ICLR",
+      "Annual Meeting of the Association for Computational Linguistics", "ACL Proceedings",
+      "Empirical Methods in Natural Language Processing", "EMNLP Proceedings",
+      "North American Chapter of the Association for Computational Linguistics", "NAACL",
+      "AAAI Conference on Artificial Intelligence",
+      "Conference on Computer Vision and Pattern Recognition", "CVPR",
+      "International Joint Conference on Artificial Intelligence", "IJCAI",
+      "Conference on Robot Learning", "CoRL",
+      "Robotics: Science and Systems", "RSS",
+      "ICRA",
+      "Journal of Machine Learning Research", "Transactions on Machine Learning Research",
+      "Nature", "Science", "Cell", "Nature Machine Intelligence", "Nature Communications",
+      "arXiv"
+    ],
+    "preprint_venues": ["arXiv"],
+    "domain_buckets": ["reasoning", "tool-use", "memory", "multi-agent", "autonomous-loop", "emergent", "code-agent", "web-agent", "embodied", "scientific-agent", "interdisciplinary"]
+  },
+  "promotion": {
+    "per_claim_min_papers": 5,
+    "per_claim_max_papers": 10,
+    "max_claims_per_paper": 4,
+    "diversity_filter_threshold": 4
+  },
+  "ranking": {
+    "primary": "journal_tier",
+    "secondary": "cited_by_count",
+    "tertiary": "year"
+  },
+  "viewer": {
+    "title": "AI Agents — Classics of 2023–2025 — Knowledge Graph",
+    "subtitle": "The most-cited LLM-agent papers from 2023, 2024, and 2025 (≥ 500 citations at top AI venues), organised by reasoning + tools + memory · multi-agent collaboration · real-world applications. Plus a Planning view of the field's next 18 months.",
+    "primary_color": "#60a5fa",
+    "secondary_color": "#34d399"
+  }
+}

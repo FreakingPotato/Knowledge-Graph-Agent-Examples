@@ -12,7 +12,8 @@ Live on GitHub Pages: <https://freakingpotato.github.io/Knowledge-Graph-Agent-Ex
 |---|---|---|---:|---:|---:|
 | 📊 | [**Multimodal NLP × Genomic Foundation Models**](./multimodal_genomics/index.html) | Combining language models with DNA / RNA foundation models | **125** | 76 | 5 |
 | 🧬 | [**Whole-Cell Model Paper Collection**](./whole_cell_model/index.html) | Curated WCM literature; 5 viewer layouts including Hybrid Model Summary. Live explorer hosted in [a sister repo](https://github.com/FreakingPotato/Whole-Cell-Model-Paper-Collection) | **56** | 89 | — |
-| 🎨 | [**Diffusion Models × NL × Genomic Sequences**](./diffusion_models/index.html) | Continuous & discrete diffusion across image, text, and protein / DNA / RNA design. Companion paper collection at [Diffusion_Model_Paper_Collection](https://github.com/FreakingPotato/Diffusion_Model_Paper_Collection) | **78** | 67 | — |
+| 🎨 | [**Diffusion Models × NL × Genomic Sequences**](./diffusion_models/index.html) | Continuous & discrete diffusion across image, text, and protein / DNA / RNA design. Companion paper collection at [Diffusion_Model_Paper_Collection](https://github.com/FreakingPotato/Diffusion_Model_Paper_Collection) | **78** | 67 | 5 |
+| 🤖 | [**AI Agents — Classics of 2023–2025**](./ai_agents/index.html) | Most-cited LLM-agent papers from 2023, 2024, 2025 (≥500 citations × top AI venues). Reasoning + multi-agent + applications. | **62** | 61 | 5 |
 | 🚧 | *Your next topic* | Drop a new ontology JSON, re-run, new tile lands here | — | — | — |
 
 ## How it works

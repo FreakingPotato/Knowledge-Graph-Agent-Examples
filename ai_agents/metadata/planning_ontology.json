@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1",
+  "topic_id": "ai_agents_planning",
+  "topic_label": "AI Agents — Next Steps (Planning)",
+  "header": "🧭 Planning: where the AI-agent field goes next",
+  "description": "Five concrete next-step research directions that recur across the Discussion / Limitations / Future Work sections of the 2023–2025 agent classics. Each step is grounded in passages where the authors themselves call out unresolved problems.",
+  "next_steps": [
+    {
+      "id": "persistent-autonomous-agents",
+      "title": "Persistent autonomous agents",
+      "subtitle": "From single tasks to ongoing personas with stable memory",
+      "summary": "Move beyond episode-bounded agents that reset after each task toward persistent autonomous agents whose memory, goals, and learnt skills survive across days, weeks, and months — and that can be safely audited and rolled back.",
+      "why_now": "Reflexion, MemGPT, and Generative Agents show that long-horizon memory + skill libraries are feasible. The remaining gap is operational: persistence in the wild, secure state stores, and rollback / audit infrastructure. The first vendor that ships this primitive cleanly wins the agent-platform space.",
+      "search_terms": "persistent memory long horizon autonomous agent skill library lifelong learning"
+    },
+    {
+      "id": "self-improving-agents",
+      "title": "Self-improving agents",
+      "subtitle": "Agents that edit their own prompts, code, and architectures",
+      "summary": "Push past prompt-engineering-as-a-static-art toward agents that revise their own system prompts, propose new tools, and even modify their own scaffolding code based on observed task outcomes — a closed loop between agent behaviour and agent design.",
+      "why_now": "Self-Refine and Self-Discover have shown one-step self-improvement on single tasks. Extending this to multi-task, multi-deployment, durable improvement is the obvious next research move, but raises immediate safety questions that need solving in parallel.",
+      "search_terms": "self-improvement self-refine self-discover meta agent automatic prompt optimization"
+    },
+    {
+      "id": "verifiable-and-safe-agents",
+      "title": "Verifiable and safe agents",
+      "subtitle": "Formal guarantees, human-in-the-loop, oversight",
+      "summary": "Develop formal verification, human-in-the-loop checkpoints, sandboxed execution, and provenance trails so that agentic systems acting on real-world resources can be reasoned about and trusted by the people deploying them — especially at organisational scale.",
+      "why_now": "Every agent paper from 2024 onwards (AutoGen, MetaGPT, SWE-agent, ChemCrow, Coscientist) flags safety, drift, and oversight as the blocker to production adoption. The research community now needs to move from anecdote to mechanism.",
+      "search_terms": "agent safety verification sandbox human in the loop oversight alignment provenance"
+    },
+    {
+      "id": "multimodal-embodied-agents",
+      "title": "Multimodal embodied agents",
+      "subtitle": "Vision-Language-Action models in the real world",
+      "summary": "Bring the agentic reasoning advances from text-only domains into multimodal Vision-Language-Action models that perceive screens, cameras, robot arms, and instruments — and act on them under the same planning + memory + tool-use loop.",
+      "why_now": "PaLM-E, RT-2, Computer Use, and the Mind2Web / WebArena lineage have demonstrated that the modality bridge is workable. The agent community's open question is unifying these with the discrete reasoning machinery of CoT / ToT / Reflexion.",
+      "search_terms": "vision language action robot computer use embodied multimodal agent perception"
+    },
+    {
+      "id": "scientific-discovery-agents",
+      "title": "Scientific discovery agents",
+      "subtitle": "Closing the loop from hypothesis to wet-lab",
+      "summary": "Build research co-pilots that go beyond literature synthesis to plan, execute, and iterate genuine scientific experiments — coupling reasoning agents to laboratory automation, simulation pipelines, and experimental design loops with measurable speed-up against human-only baselines.",
+      "why_now": "ChemCrow, Coscientist, Biomni, and the agentic rare-disease system (Nature 2026) demonstrated that the components exist. The next step is end-to-end deployment with rigorous measurement of discovery rate against control.",
+      "search_terms": "scientific discovery research agent autonomous laboratory wet lab loop hypothesis generation"
+    }
+  ],
+  "evidence_sources": {
+    "preferred_sections": ["Discussion", "Limitations", "Future Work", "Future Directions", "Outlook", "Conclusion", "Open Problems", "Challenges"],
+    "rationale": "Next-step claims are best supported by passages where the paper's authors themselves call out gaps or future directions."
+  },
+  "rubric": {
+    "weights": {
+      "directly_proposes_step": 1.5,
+      "grounded_in_limitation": 1.3,
+      "concrete_next_action": 1.1,
+      "broad_applicability": 0.9,
+      "field_consensus": 0.7
+    },
+    "anchors": {
+      "5": "the paper's discussion / future-work explicitly proposes this next step",
+      "4": "the paper identifies the gap this next step closes",
+      "3": "the paper's limitations imply this direction without naming it",
+      "2": "weak / indirect support",
+      "1": "tangential",
+      "0": "no relevant content"
+    },
+    "primary_threshold": 14.0,
+    "secondary_threshold": 10.0,
+    "max_total": 28.0
+  },
+  "promotion": {
+    "per_next_step_min_papers": 3,
+    "per_next_step_max_papers": 6,
+    "max_next_steps_per_paper": 3
+  }
+}

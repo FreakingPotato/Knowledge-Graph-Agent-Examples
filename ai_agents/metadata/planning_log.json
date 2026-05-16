@@ -1,0 +1,32 @@
+{
+  "persistent-autonomous-agents": {
+    "ok": 44,
+    "not_found": 9,
+    "no_pdf": 0,
+    "kept": 8
+  },
+  "self-improving-agents": {
+    "ok": 47,
+    "not_found": 6,
+    "no_pdf": 0,
+    "kept": 8
+  },
+  "verifiable-and-safe-agents": {
+    "ok": 43,
+    "not_found": 10,
+    "no_pdf": 0,
+    "kept": 8
+  },
+  "multimodal-embodied-agents": {
+    "ok": 47,
+    "not_found": 6,
+    "no_pdf": 0,
+    "kept": 8
+  },
+  "scientific-discovery-agents": {
+    "ok": 46,
+    "not_found": 7,
+    "no_pdf": 0,
+    "kept": 8
+  }
+}

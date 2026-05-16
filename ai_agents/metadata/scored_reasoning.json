@@ -1,0 +1,1079 @@
+{
+  "schema_version": "0.1",
+  "paradigm": "reasoning",
+  "scored_at": "2026-05-17T00:00:00Z",
+  "scored_by": "S1",
+  "claims": {
+    "reasoning-chain-of-thought": {
+      "claim_text": "Explicit step-by-step reasoning prompts (Chain-of-Thought, Tree-of-Thought, Graph-of-Thought, Self-Consistency, Plan-and-Solve) materially raise LLM performance on multi-step problems and form the prompting backbone of every modern agent.",
+      "candidates": [
+        {
+          "candidate_id": "candidate-reasoning-chain-of-thought-AGT001",
+          "paper_id": "AGT-001",
+          "paper_title": "Large language models encode clinical knowledge",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 2977,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Med-PaLM uses instruction prompt tuning, demonstrates CoT-style reasoning gains on MedQA (67.6%) but CoT not central contribution."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Clinical QA results actionable; CoT mechanism only one of several prompting techniques evaluated."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Nature-published, large evaluation; reasoning improvements with scale plausibly shown via human eval."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Med-PaLM scales prompting but domain-specific to medicine, not general CoT framework."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "MedQA, MedMCQA benchmarks provide reproducible validation; human eval rubrics included."
+            }
+          },
+          "weighted_total": 17.6,
+          "match_score": 0.6286
+        },
+        {
+          "candidate_id": "candidate-reasoning-chain-of-thought-AGT002",
+          "paper_id": "AGT-002",
+          "paper_title": "Sparks of Artificial General Intelligence: Early experiments with GPT-4",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (Cornell University)",
+          "paper_cited_by_count": 1542,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Documents GPT-4 multi-step reasoning across domains but is a broad capability survey, not a CoT method paper."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Qualitative reasoning case studies inform agent design but no concrete benchmark numbers for CoT variants."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Microsoft Research extensive probing of GPT-4; widely cited (1542) reasoning observations."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Observations apply to frontier LLMs generally; not a portable technique."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "Largely anecdotal/qualitative probes, limited reproducible benchmark protocols."
+            }
+          },
+          "weighted_total": 16.9,
+          "match_score": 0.6036
+        },
+        {
+          "candidate_id": "candidate-reasoning-chain-of-thought-AGT003",
+          "paper_id": "AGT-003",
+          "paper_title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (Cornell University)",
+          "paper_cited_by_count": 985,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 1,
+              "rationale": "Mamba is an architecture (selective SSM) for long sequences; not about CoT/ToT/GoT prompting."
+            },
+            "immediate_benefit": {
+              "score": 1,
+              "rationale": "Does not provide prompting recipes for multi-step reasoning."
+            },
+            "plausible": {
+              "score": 2,
+              "rationale": "Strong architecture work but tangential to claim about explicit reasoning prompts."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Linear-time scaling is real but unrelated to reasoning prompts."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "Reasoning-prompt-specific validation absent; benchmarks are language modeling."
+            }
+          },
+          "weighted_total": 9.1,
+          "match_score": 0.325
+        },
+        {
+          "candidate_id": "candidate-reasoning-chain-of-thought-AGT004",
+          "paper_id": "AGT-004",
+          "paper_title": "A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (Cornell University)",
+          "paper_cited_by_count": 786,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Catalog includes step-by-step decomposition patterns; broader prompt-engineering scope than CoT alone."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Practitioner-ready patterns directly usable for designing agent prompts."
+            },
+            "plausible": {
+              "score": 3,
+              "rationale": "White Vanderbilt prompt-pattern paper; well-structured but more taxonomy than empirical proof."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Patterns are model-agnostic and portable across LLMs."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "Limited quantitative benchmarks; mostly illustrative examples."
+            }
+          },
+          "weighted_total": 18.0,
+          "match_score": 0.6429
+        },
+        {
+          "candidate_id": "candidate-reasoning-chain-of-thought-AGT005",
+          "paper_id": "AGT-005",
+          "paper_title": "Toward expert-level medical question answering with large language models",
+          "paper_year": 2025,
+          "paper_journal": "Nature Medicine",
+          "paper_cited_by_count": 649,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Med-PaLM 2 uses ensemble refinement / self-consistency CoT for MedQA; demonstrates reasoning gains."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Medical-domain CoT pipeline; transferable ensemble-refinement idea to other agents."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Nature Medicine evaluation with clinician panels and multiple datasets."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Ensemble refinement is compute-heavy; principles generalize."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "MedQA, MedMCQA, PubMedQA benchmarks plus human rubric provide rigorous validation."
+            }
+          },
+          "weighted_total": 18.3,
+          "match_score": 0.6536
+        },
+        {
+          "candidate_id": "candidate-reasoning-chain-of-thought-AGT006",
+          "paper_id": "AGT-006",
+          "paper_title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (Cornell University)",
+          "paper_cited_by_count": 638,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "RAG survey discusses chain-of-thought retrieval interplay but core topic is retrieval, not CoT."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "Indirect: RAG often combined with CoT, but paper focuses on retrieval pipelines."
+            },
+            "plausible": {
+              "score": 3,
+              "rationale": "Survey citing canonical RAG/CoT works; reasoning role addressed only briefly."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Retrieval techniques scale; relation to claim mainly via combined RAG+CoT systems."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "Survey enumerates benchmarks but does not validate CoT prompting specifically."
+            }
+          },
+          "weighted_total": 13.0,
+          "match_score": 0.4643
+        },
+        {
+          "candidate_id": "candidate-reasoning-chain-of-thought-AGT007",
+          "paper_id": "AGT-007",
+          "paper_title": "A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning, Hallucination, and Interactivity",
+          "paper_year": 2023,
+          "paper_journal": "IJCNLP-AACL 2023",
+          "paper_cited_by_count": 606,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Evaluates ChatGPT on multi-step reasoning tasks across 23 datasets; informs where CoT helps."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Benchmark insights directly usable for agent designers; identifies CoT failure modes."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Bang et al. multitask eval with extensive reasoning benchmarks; well-cited (606)."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Findings span many languages/modalities but ChatGPT-specific."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Public benchmarks (MMLU, BBH, etc.) with documented zero/few-shot CoT protocols."
+            }
+          },
+          "weighted_total": 18.3,
+          "match_score": 0.6536
+        },
+        {
+          "candidate_id": "candidate-reasoning-chain-of-thought-AGT008",
+          "paper_id": "AGT-008",
+          "paper_title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (Cornell University)",
+          "paper_cited_by_count": 563,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "ToT directly named in claim; raises Game-of-24 from 4% (CoT) to 74% with GPT-4."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Concrete search-over-thoughts algorithm immediately usable in agents."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Yao et al. landmark with explicit benchmarks (Game-of-24, creative writing, crosswords)."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Search adds inference cost but generalizes across tasks; framework portable."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Open code, three distinct task suites with quantitative comparisons to CoT/self-consistency."
+            }
+          },
+          "weighted_total": 26.6,
+          "match_score": 0.95
+        },
+        {
+          "candidate_id": "candidate-reasoning-chain-of-thought-AGT009",
+          "paper_id": "AGT-009",
+          "paper_title": "Detecting hallucinations in large language models using semantic entropy",
+          "paper_year": 2024,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 556,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "Semantic-entropy hallucination detection complements CoT but is not a reasoning prompt method."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "Useful for agent reliability layer; tangential to step-by-step reasoning prompts."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Nature paper with rigorous entropy estimator and benchmark sweeps."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Method generalizes across models but not a CoT scaling lever."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "TriviaQA/NQ-style benchmarks; reproducible but off-topic for the claim."
+            }
+          },
+          "weighted_total": 14.8,
+          "match_score": 0.5286
+        },
+        {
+          "candidate_id": "candidate-reasoning-chain-of-thought-AGT010",
+          "paper_id": "AGT-010",
+          "paper_title": "G-Eval: NLG Evaluation using Gpt-4 with Better Human Alignment",
+          "paper_year": 2023,
+          "paper_journal": "EMNLP 2023",
+          "paper_cited_by_count": 548,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "G-Eval uses CoT-based GPT-4 evaluation; demonstrates CoT improves NLG-eval alignment with humans."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Provides usable CoT eval prompts (SummEval, Topical-Chat) for agent eval pipelines."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Liu et al. show Spearman correlation gains using CoT auto-eval at scale."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Approach transfers to other NLG tasks though cost depends on GPT-4 calls."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "SummEval and Topical-Chat human correlations; reproducible protocol."
+            }
+          },
+          "weighted_total": 18.3,
+          "match_score": 0.6536
+        }
+      ]
+    },
+    "reasoning-tool-use": {
+      "claim_text": "Letting an LLM emit structured tool calls (ReAct, Toolformer, function-calling APIs, HuggingGPT) turns it from a text generator into an agent that can search, compute, query APIs, and execute code — closing the gap between knowledge and action.",
+      "candidates": [
+        {
+          "candidate_id": "candidate-reasoning-tool-use-AGT011",
+          "paper_id": "AGT-011",
+          "paper_title": "Segment anything in medical images",
+          "paper_year": 2024,
+          "paper_journal": "Nature Communications",
+          "paper_cited_by_count": 2256,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 1,
+              "rationale": "MedSAM is a segmentation foundation model, not an LLM tool-calling system."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "Could be invoked as a tool by an LLM agent, but paper does not demonstrate that."
+            },
+            "plausible": {
+              "score": 2,
+              "rationale": "High-quality vision work; weak fit to tool-use-by-LLM claim."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Model itself scales but not a tool-orchestration framework."
+            },
+            "how_to_validate": {
+              "score": 1,
+              "rationale": "No tool-use protocol or benchmark provided."
+            }
+          },
+          "weighted_total": 9.7,
+          "match_score": 0.3464
+        },
+        {
+          "candidate_id": "candidate-reasoning-tool-use-AGT012",
+          "paper_id": "AGT-012",
+          "paper_title": "Foundation models for generalist medical artificial intelligence",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 1485,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "GMAI vision paper discusses tool/modality combination but does not implement structured tool calls."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "Position piece; little immediate implementation guidance for tool-calling agents."
+            },
+            "plausible": {
+              "score": 3,
+              "rationale": "Influential Nature perspective on multi-modal medical AI."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Articulates scalable vision but not concrete tool-use methodology."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "Perspective with no empirical tool-call evaluation."
+            }
+          },
+          "weighted_total": 13.0,
+          "match_score": 0.4643
+        },
+        {
+          "candidate_id": "candidate-reasoning-tool-use-AGT013",
+          "paper_id": "AGT-013",
+          "paper_title": "CheckM2: a rapid, scalable and accurate tool for assessing microbial genome quality using machine learning",
+          "paper_year": 2023,
+          "paper_journal": "Nature Methods",
+          "paper_cited_by_count": 1267,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 1,
+              "rationale": "Bioinformatics ML tool unrelated to LLM tool calling."
+            },
+            "immediate_benefit": {
+              "score": 1,
+              "rationale": "No agent/tool-call relevance."
+            },
+            "plausible": {
+              "score": 1,
+              "rationale": "High-quality but off-topic for claim."
+            },
+            "scalable": {
+              "score": 2,
+              "rationale": "Could be wrapped as a callable tool but paper does not."
+            },
+            "how_to_validate": {
+              "score": 1,
+              "rationale": "No tool-use validation."
+            }
+          },
+          "weighted_total": 6.4,
+          "match_score": 0.2286
+        },
+        {
+          "candidate_id": "candidate-reasoning-tool-use-AGT014",
+          "paper_id": "AGT-014",
+          "paper_title": "Computational approaches streamlining drug discovery",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 1107,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 1,
+              "rationale": "Drug-discovery computational review; not LLM tool-calling."
+            },
+            "immediate_benefit": {
+              "score": 1,
+              "rationale": "No direct tool-use methodology for agents."
+            },
+            "plausible": {
+              "score": 2,
+              "rationale": "Review piece; tangential to claim."
+            },
+            "scalable": {
+              "score": 2,
+              "rationale": "Methods scalable but unrelated framing."
+            },
+            "how_to_validate": {
+              "score": 1,
+              "rationale": "No agent-tool benchmarks."
+            }
+          },
+          "weighted_total": 7.5,
+          "match_score": 0.2679
+        },
+        {
+          "candidate_id": "candidate-reasoning-tool-use-AGT015",
+          "paper_id": "AGT-015",
+          "paper_title": "Autonomous chemical research with large language models",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 759,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Coscientist couples GPT-4 with web search, Python, and robotic liquid handlers to run Pd reactions."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "End-to-end LLM tool-calling agent executing real wet-lab experiments."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Nature paper with multiple validated tool-using experiments."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Modular tool-use design generalizes to other domains and instruments."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Specific case studies (Suzuki/Sonogashira) reproducible by other chemistry agents."
+            }
+          },
+          "weighted_total": 25.9,
+          "match_score": 0.925
+        },
+        {
+          "candidate_id": "candidate-reasoning-tool-use-AGT006",
+          "paper_id": "AGT-006",
+          "paper_title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (Cornell University)",
+          "paper_cited_by_count": 638,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Retrieval is a canonical tool; survey covers tool-augmented LLMs and retrieval-as-tool patterns."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Useful taxonomy for agent designers integrating retrieval tools."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Comprehensive RAG survey; well cited (638)."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Patterns scale across retrieval backends and tool wrappers."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Lists benchmarks but does not run new tool-use experiments."
+            }
+          },
+          "weighted_total": 18.5,
+          "match_score": 0.6607
+        },
+        {
+          "candidate_id": "candidate-reasoning-tool-use-AGT016",
+          "paper_id": "AGT-016",
+          "paper_title": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (Cornell University)",
+          "paper_cited_by_count": 542,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 1,
+              "rationale": "Labor-market study; LLM-powered software framing but not a tool-use method."
+            },
+            "immediate_benefit": {
+              "score": 1,
+              "rationale": "Economic analysis offers no implementation for tool-calling agents."
+            },
+            "plausible": {
+              "score": 2,
+              "rationale": "OpenAI/UPenn economic paper; off-topic for claim."
+            },
+            "scalable": {
+              "score": 2,
+              "rationale": "Findings broad but not method-scalable."
+            },
+            "how_to_validate": {
+              "score": 1,
+              "rationale": "No tool-use benchmarks."
+            }
+          },
+          "weighted_total": 7.5,
+          "match_score": 0.2679
+        },
+        {
+          "candidate_id": "candidate-reasoning-tool-use-AGT017",
+          "paper_id": "AGT-017",
+          "paper_title": "Augmenting large language models with chemistry tools",
+          "paper_year": 2024,
+          "paper_journal": "Nature Machine Intelligence",
+          "paper_cited_by_count": 541,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "ChemCrow integrates 18 expert chemistry tools (RDKit, retrosynthesis, etc.) into GPT-4 agent."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Reference design for tool-calling LLM agents; outperforms GPT-4 baselines on chemistry tasks."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Nature MI paper with expert evaluation of synthesis planning."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Pattern extends to any domain with API/CLI tools."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Released code and benchmark tasks; expert chemist comparisons documented."
+            }
+          },
+          "weighted_total": 25.9,
+          "match_score": 0.925
+        },
+        {
+          "candidate_id": "candidate-reasoning-tool-use-AGT032",
+          "paper_id": "AGT-032",
+          "paper_title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (Cornell University)",
+          "paper_cited_by_count": 384,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Toolformer directly named in claim: self-supervised API-call training for calculator, search, QA, translate."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Concrete method (self-generated API-call data) reusable in any LLM tool-use stack."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Schick et al. Meta AI landmark; clear empirical gains over GPT-3 baseline on zero-shot tasks."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Self-supervised pipeline scales but per-tool annotation curated."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "LAMA, SQuAD, ASDiv, GSM8K, WebQuestions zero-shot benchmarks reported."
+            }
+          },
+          "weighted_total": 26.6,
+          "match_score": 0.95
+        },
+        {
+          "candidate_id": "candidate-reasoning-tool-use-AGT033",
+          "paper_id": "AGT-033",
+          "paper_title": "HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (Cornell University)",
+          "paper_cited_by_count": 264,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "HuggingGPT named in claim: ChatGPT orchestrates HF models for vision/audio/text task pipelines."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Plan-Select-Execute-Generate pattern reusable for any tool-rich LLM agent."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Shen et al. extensive multi-modal demos; method clearly described."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Scales with HF model hub; coordination overhead grows with tool count."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Open code, multi-domain task benchmarks (image, speech, NLP)."
+            }
+          },
+          "weighted_total": 24.8,
+          "match_score": 0.8857
+        },
+        {
+          "candidate_id": "candidate-reasoning-tool-use-AGT034",
+          "paper_id": "AGT-034",
+          "paper_title": "Gorilla: Large Language Model Connected with Massive APIs",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (Cornell University)",
+          "paper_cited_by_count": 83,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Gorilla fine-tunes LLaMA to emit correct API calls over 1,645 ML APIs (HF, TF Hub, TorchHub)."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Direct recipe for retrieval-aware API-call fine-tuning in agents."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Patil et al. demonstrate >20pt accuracy gains over GPT-4 on API benchmarks."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Retrieval-aware training handles changing API docs at scale."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "APIBench released with hallucination/accuracy metrics."
+            }
+          },
+          "weighted_total": 23.5,
+          "match_score": 0.8393
+        },
+        {
+          "candidate_id": "candidate-reasoning-tool-use-AGT035",
+          "paper_id": "AGT-035",
+          "paper_title": "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (Cornell University)",
+          "paper_cited_by_count": 68,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "ToolLLM builds ToolBench across 16k RapidAPI APIs and trains ToolLLaMA matching ChatGPT tool use."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Open dataset and training recipe directly usable for tool-using open-source agents."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Qin et al. landmark large-scale tool dataset; methodology well documented."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Scales to thousands of real APIs with DFSDT search."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "ToolEval benchmark with pass-rate and win-rate metrics released."
+            }
+          },
+          "weighted_total": 24.4,
+          "match_score": 0.8714
+        },
+        {
+          "candidate_id": "candidate-reasoning-tool-use-AGT036",
+          "paper_id": "AGT-036",
+          "paper_title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (Cornell University)",
+          "paper_cited_by_count": 191,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Voyager uses GPT-4 to write executable Mineflayer code as tools, builds skill library in Minecraft."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Code-as-tool plus skill-library pattern directly applicable to other embodied agents."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Wang et al. show 3.3x more unique items, faster tech-tree progress vs ReAct/AutoGPT baselines."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Skill library accumulates open-endedly; transferable across worlds."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "MineDojo/Minecraft benchmarks with quantitative progression metrics."
+            }
+          },
+          "weighted_total": 22.0,
+          "match_score": 0.7857
+        }
+      ]
+    },
+    "reasoning-memory-and-reflection": {
+      "claim_text": "Reflection / self-refinement loops (Reflexion, Self-Refine, Self-Discover) and persistent memory architectures (MemGPT, Memory-Augmented Transformers) let agents learn from their own mistakes within and across episodes — the bridge from stateless prompting to long-horizon autonomy.",
+      "candidates": [
+        {
+          "candidate_id": "candidate-reasoning-memory-and-reflection-AGT001",
+          "paper_id": "AGT-001",
+          "paper_title": "Large language models encode clinical knowledge",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 2977,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "Med-PaLM uses instruction prompt tuning but not reflection/memory loops as defined in claim."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "Limited reflection mechanism; clinical-domain focus."
+            },
+            "plausible": {
+              "score": 3,
+              "rationale": "Strong Nature paper but tangential to memory/reflection."
+            },
+            "scalable": {
+              "score": 2,
+              "rationale": "Domain-specific tuning, not a memory architecture."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "MedQA validation present but not reflection-specific."
+            }
+          },
+          "weighted_total": 12.1,
+          "match_score": 0.4321
+        },
+        {
+          "candidate_id": "candidate-reasoning-memory-and-reflection-AGT002",
+          "paper_id": "AGT-002",
+          "paper_title": "Sparks of Artificial General Intelligence: Early experiments with GPT-4",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (Cornell University)",
+          "paper_cited_by_count": 1542,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "Discusses GPT-4 self-correction qualitatively; not a memory/reflection method paper."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "Observations seed reflection ideas but no concrete loop algorithm."
+            },
+            "plausible": {
+              "score": 3,
+              "rationale": "Highly cited probing study; reflection mentions are anecdotal."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Generic observations, not architecture-specific."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "No reflection benchmark protocol."
+            }
+          },
+          "weighted_total": 13.0,
+          "match_score": 0.4643
+        },
+        {
+          "candidate_id": "candidate-reasoning-memory-and-reflection-AGT006",
+          "paper_id": "AGT-006",
+          "paper_title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (Cornell University)",
+          "paper_cited_by_count": 638,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "RAG is often used as external long-term memory; survey covers memory-augmented retrieval."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Retrieval-as-memory patterns directly usable in agent design."
+            },
+            "plausible": {
+              "score": 3,
+              "rationale": "Comprehensive survey but reflection loops not core."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Retrieval memory scales with vector stores."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Many benchmarks listed; no reflection-specific eval."
+            }
+          },
+          "weighted_total": 17.4,
+          "match_score": 0.6214
+        },
+        {
+          "candidate_id": "candidate-reasoning-memory-and-reflection-AGT017",
+          "paper_id": "AGT-017",
+          "paper_title": "Augmenting large language models with chemistry tools",
+          "paper_year": 2024,
+          "paper_journal": "Nature Machine Intelligence",
+          "paper_cited_by_count": 541,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "ChemCrow uses ReAct-style reflection over tool outputs; not its primary contribution."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Demonstrates reflection inside a tool-using agent in chemistry."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Nature MI; reflection loop documented in agent architecture."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Pattern transferable but coupled to ChemCrow tool set."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Chemistry case studies, not memory benchmarks."
+            }
+          },
+          "weighted_total": 17.6,
+          "match_score": 0.6286
+        },
+        {
+          "candidate_id": "candidate-reasoning-memory-and-reflection-AGT037",
+          "paper_id": "AGT-037",
+          "paper_title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (Cornell University)",
+          "paper_cited_by_count": 262,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Reflexion named in claim: verbal RL self-reflection lifts HumanEval pass@1 to 91% with GPT-4."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Generic verbal feedback loop directly droppable into any LLM agent."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Shinn et al. canonical reflection work with strong reproducible numbers."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Scales across tasks (HotPotQA, ALFWorld, HumanEval) with low overhead."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Three benchmarks released with code; clear ablation against baselines."
+            }
+          },
+          "weighted_total": 26.6,
+          "match_score": 0.95
+        },
+        {
+          "candidate_id": "candidate-reasoning-memory-and-reflection-AGT038",
+          "paper_id": "AGT-038",
+          "paper_title": "Self-Refine: Iterative Refinement with Self-Feedback",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (Cornell University)",
+          "paper_cited_by_count": 208,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Self-Refine named in claim: iterative self-feedback gains ~20% across 7 tasks with GPT-3.5/4."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Prompt-only refinement loop trivially integrable into agents."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Madaan et al. NeurIPS-quality work with multi-task validation."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Inference cost grows with iterations; otherwise broadly applicable."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Seven tasks (math, code, dialogue, etc.) with public prompts and metrics."
+            }
+          },
+          "weighted_total": 26.6,
+          "match_score": 0.95
+        },
+        {
+          "candidate_id": "candidate-reasoning-memory-and-reflection-AGT040",
+          "paper_id": "AGT-040",
+          "paper_title": "MemGPT: Towards LLMs as Operating Systems",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (Cornell University)",
+          "paper_cited_by_count": 38,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "MemGPT named in claim: OS-style virtual context management for unbounded conversations/documents."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Reference architecture for persistent memory in agents; open implementation."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Packer et al. show gains on document analysis and multi-session chat over long contexts."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Paged memory scales to arbitrary context lengths."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Document QA and conversation benchmarks released with code."
+            }
+          },
+          "weighted_total": 26.8,
+          "match_score": 0.9571
+        },
+        {
+          "candidate_id": "candidate-reasoning-memory-and-reflection-AGT039",
+          "paper_id": "AGT-039",
+          "paper_title": "Self-Discover: Large Language Models Self-Compose Reasoning Structures",
+          "paper_year": 2024,
+          "paper_journal": "arXiv (Cornell University)",
+          "paper_cited_by_count": 9,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Self-Discover named in claim: composes atomic reasoning modules; 32% gain on BBH with GPT-4."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Two-stage discovery prompt directly reusable; low overhead vs CoT-SC."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Zhou et al. with strong BBH/MATH/T4D improvements; lower citation count reflects recency."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Discovered structures reusable per task class; scales across models."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "BBH, MATH, Thinking-for-Doing benchmarks with comparison to CoT/PS."
+            }
+          },
+          "weighted_total": 23.5,
+          "match_score": 0.8393
+        },
+        {
+          "candidate_id": "candidate-reasoning-memory-and-reflection-AGT041",
+          "paper_id": "AGT-041",
+          "paper_title": "Plan-and-Solve Prompting: Improving Zero-Shot Chain-of-Thought Reasoning by Large Language Models",
+          "paper_year": 2023,
+          "paper_journal": "ACL 2023",
+          "paper_cited_by_count": 250,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Plan-and-Solve is decomposition prompting; mild reflection via plan critique, not memory."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Useful prompt template; not a reflection loop or memory architecture."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Wang et al. ACL paper with multi-dataset arithmetic/commonsense gains."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Prompt-only and broadly portable."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "GSM8K, AQuA, SVAMP, ARC benchmarks reproducible."
+            }
+          },
+          "weighted_total": 19.2,
+          "match_score": 0.6857
+        },
+        {
+          "candidate_id": "candidate-reasoning-memory-and-reflection-AGT062",
+          "paper_id": "AGT-062",
+          "paper_title": "Graph of Thoughts: Solving Elaborate Problems with Large Language Models",
+          "paper_year": 2024,
+          "paper_journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
+          "paper_cited_by_count": 389,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "GoT enables thought aggregation/refinement; has reflection flavor but core is reasoning topology."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Framework usable in agents that revisit thoughts but not a memory architecture."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Besta et al. AAAI 2024 with sorting/keyword counting gains over ToT."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Graph search generalizes across tasks; cost manageable."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Open framework, quantitative comparisons to CoT/ToT released."
+            }
+          },
+          "weighted_total": 19.2,
+          "match_score": 0.6857
+        }
+      ]
+    }
+  }
+}

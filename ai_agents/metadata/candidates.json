@@ -1,0 +1,829 @@
+{
+  "schema_version": "0.2",
+  "topic": "ai_agents",
+  "generated_by": "agent-D",
+  "generated_at": "2026-05-17T10:00:00Z",
+  "claims": {
+    "reasoning-chain-of-thought": {
+      "paradigm": "reasoning",
+      "candidates": [
+        {
+          "id": "candidate-reasoning-chain-of-thought-AGT001",
+          "paper_id": "AGT-001",
+          "claim_ref": "reasoning-chain-of-thought",
+          "discovery_score": 65,
+          "discovery_rank": 1,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-chain-of-thought-AGT002",
+          "paper_id": "AGT-002",
+          "claim_ref": "reasoning-chain-of-thought",
+          "discovery_score": 59,
+          "discovery_rank": 2,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-chain-of-thought-AGT003",
+          "paper_id": "AGT-003",
+          "claim_ref": "reasoning-chain-of-thought",
+          "discovery_score": 55,
+          "discovery_rank": 3,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-chain-of-thought-AGT004",
+          "paper_id": "AGT-004",
+          "claim_ref": "reasoning-chain-of-thought",
+          "discovery_score": 52,
+          "discovery_rank": 4,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-chain-of-thought-AGT005",
+          "paper_id": "AGT-005",
+          "claim_ref": "reasoning-chain-of-thought",
+          "discovery_score": 49,
+          "discovery_rank": 5,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-chain-of-thought-AGT006",
+          "paper_id": "AGT-006",
+          "claim_ref": "reasoning-chain-of-thought",
+          "discovery_score": 47,
+          "discovery_rank": 6,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-chain-of-thought-AGT007",
+          "paper_id": "AGT-007",
+          "claim_ref": "reasoning-chain-of-thought",
+          "discovery_score": 44,
+          "discovery_rank": 7,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-chain-of-thought-AGT008",
+          "paper_id": "AGT-008",
+          "claim_ref": "reasoning-chain-of-thought",
+          "discovery_score": 42,
+          "discovery_rank": 8,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-chain-of-thought-AGT009",
+          "paper_id": "AGT-009",
+          "claim_ref": "reasoning-chain-of-thought",
+          "discovery_score": 40,
+          "discovery_rank": 9,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-chain-of-thought-AGT010",
+          "paper_id": "AGT-010",
+          "claim_ref": "reasoning-chain-of-thought",
+          "discovery_score": 38,
+          "discovery_rank": 10,
+          "confidence": "candidate_unscored"
+        }
+      ]
+    },
+    "reasoning-tool-use": {
+      "paradigm": "reasoning",
+      "candidates": [
+        {
+          "id": "candidate-reasoning-tool-use-AGT011",
+          "paper_id": "AGT-011",
+          "claim_ref": "reasoning-tool-use",
+          "discovery_score": 63,
+          "discovery_rank": 1,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-tool-use-AGT012",
+          "paper_id": "AGT-012",
+          "claim_ref": "reasoning-tool-use",
+          "discovery_score": 59,
+          "discovery_rank": 2,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-tool-use-AGT013",
+          "paper_id": "AGT-013",
+          "claim_ref": "reasoning-tool-use",
+          "discovery_score": 56,
+          "discovery_rank": 3,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-tool-use-AGT014",
+          "paper_id": "AGT-014",
+          "claim_ref": "reasoning-tool-use",
+          "discovery_score": 54,
+          "discovery_rank": 4,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-tool-use-AGT015",
+          "paper_id": "AGT-015",
+          "claim_ref": "reasoning-tool-use",
+          "discovery_score": 50,
+          "discovery_rank": 5,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-tool-use-AGT006",
+          "paper_id": "AGT-006",
+          "claim_ref": "reasoning-tool-use",
+          "discovery_score": 47,
+          "discovery_rank": 6,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-tool-use-AGT016",
+          "paper_id": "AGT-016",
+          "claim_ref": "reasoning-tool-use",
+          "discovery_score": 44,
+          "discovery_rank": 7,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-tool-use-AGT017",
+          "paper_id": "AGT-017",
+          "claim_ref": "reasoning-tool-use",
+          "discovery_score": 42,
+          "discovery_rank": 8,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-tool-use-AGT032",
+          "paper_id": "AGT-032",
+          "claim_ref": "reasoning-tool-use",
+          "discovery_score": 70,
+          "discovery_rank": 9,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-tool-use-AGT033",
+          "paper_id": "AGT-033",
+          "claim_ref": "reasoning-tool-use",
+          "discovery_score": 65,
+          "discovery_rank": 10,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-tool-use-AGT034",
+          "paper_id": "AGT-034",
+          "claim_ref": "reasoning-tool-use",
+          "discovery_score": 60,
+          "discovery_rank": 11,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-tool-use-AGT035",
+          "paper_id": "AGT-035",
+          "claim_ref": "reasoning-tool-use",
+          "discovery_score": 58,
+          "discovery_rank": 12,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-tool-use-AGT036",
+          "paper_id": "AGT-036",
+          "claim_ref": "reasoning-tool-use",
+          "discovery_score": 55,
+          "discovery_rank": 13,
+          "confidence": "candidate_unscored"
+        }
+      ]
+    },
+    "reasoning-memory-and-reflection": {
+      "paradigm": "reasoning",
+      "candidates": [
+        {
+          "id": "candidate-reasoning-memory-and-reflection-AGT001",
+          "paper_id": "AGT-001",
+          "claim_ref": "reasoning-memory-and-reflection",
+          "discovery_score": 65,
+          "discovery_rank": 1,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-memory-and-reflection-AGT002",
+          "paper_id": "AGT-002",
+          "claim_ref": "reasoning-memory-and-reflection",
+          "discovery_score": 59,
+          "discovery_rank": 2,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-memory-and-reflection-AGT006",
+          "paper_id": "AGT-006",
+          "claim_ref": "reasoning-memory-and-reflection",
+          "discovery_score": 53,
+          "discovery_rank": 3,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-memory-and-reflection-AGT017",
+          "paper_id": "AGT-017",
+          "claim_ref": "reasoning-memory-and-reflection",
+          "discovery_score": 50,
+          "discovery_rank": 4,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-memory-and-reflection-AGT037",
+          "paper_id": "AGT-037",
+          "claim_ref": "reasoning-memory-and-reflection",
+          "discovery_score": 70,
+          "discovery_rank": 5,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-memory-and-reflection-AGT038",
+          "paper_id": "AGT-038",
+          "claim_ref": "reasoning-memory-and-reflection",
+          "discovery_score": 65,
+          "discovery_rank": 6,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-memory-and-reflection-AGT040",
+          "paper_id": "AGT-040",
+          "claim_ref": "reasoning-memory-and-reflection",
+          "discovery_score": 62,
+          "discovery_rank": 7,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-memory-and-reflection-AGT039",
+          "paper_id": "AGT-039",
+          "claim_ref": "reasoning-memory-and-reflection",
+          "discovery_score": 58,
+          "discovery_rank": 8,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-memory-and-reflection-AGT041",
+          "paper_id": "AGT-041",
+          "claim_ref": "reasoning-memory-and-reflection",
+          "discovery_score": 55,
+          "discovery_rank": 9,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-reasoning-memory-and-reflection-AGT062",
+          "paper_id": "AGT-062",
+          "claim_ref": "reasoning-memory-and-reflection",
+          "discovery_score": 52,
+          "discovery_rank": 10,
+          "confidence": "candidate_unscored"
+        }
+      ]
+    },
+    "multiagent-role-and-debate": {
+      "paradigm": "multiagent",
+      "candidates": [
+        {
+          "id": "candidate-multiagent-role-and-debate-AGT017",
+          "paper_id": "AGT-017",
+          "claim_ref": "multiagent-role-and-debate",
+          "discovery_score": 56,
+          "discovery_rank": 1,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-role-and-debate-AGT042",
+          "paper_id": "AGT-042",
+          "claim_ref": "multiagent-role-and-debate",
+          "discovery_score": 70,
+          "discovery_rank": 2,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-role-and-debate-AGT043",
+          "paper_id": "AGT-043",
+          "claim_ref": "multiagent-role-and-debate",
+          "discovery_score": 67,
+          "discovery_rank": 3,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-role-and-debate-AGT044",
+          "paper_id": "AGT-044",
+          "claim_ref": "multiagent-role-and-debate",
+          "discovery_score": 65,
+          "discovery_rank": 4,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-role-and-debate-AGT045",
+          "paper_id": "AGT-045",
+          "claim_ref": "multiagent-role-and-debate",
+          "discovery_score": 62,
+          "discovery_rank": 5,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-role-and-debate-AGT046",
+          "paper_id": "AGT-046",
+          "claim_ref": "multiagent-role-and-debate",
+          "discovery_score": 58,
+          "discovery_rank": 6,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-role-and-debate-AGT047",
+          "paper_id": "AGT-047",
+          "claim_ref": "multiagent-role-and-debate",
+          "discovery_score": 55,
+          "discovery_rank": 7,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-role-and-debate-AGT048",
+          "paper_id": "AGT-048",
+          "claim_ref": "multiagent-role-and-debate",
+          "discovery_score": 52,
+          "discovery_rank": 8,
+          "confidence": "candidate_unscored"
+        }
+      ]
+    },
+    "multiagent-autonomous-loops": {
+      "paradigm": "multiagent",
+      "candidates": [
+        {
+          "id": "candidate-multiagent-autonomous-loops-AGT015",
+          "paper_id": "AGT-015",
+          "claim_ref": "multiagent-autonomous-loops",
+          "discovery_score": 58,
+          "discovery_rank": 1,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-autonomous-loops-AGT018",
+          "paper_id": "AGT-018",
+          "claim_ref": "multiagent-autonomous-loops",
+          "discovery_score": 56,
+          "discovery_rank": 2,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-autonomous-loops-AGT008",
+          "paper_id": "AGT-008",
+          "claim_ref": "multiagent-autonomous-loops",
+          "discovery_score": 52,
+          "discovery_rank": 3,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-autonomous-loops-AGT019",
+          "paper_id": "AGT-019",
+          "claim_ref": "multiagent-autonomous-loops",
+          "discovery_score": 50,
+          "discovery_rank": 4,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-autonomous-loops-AGT017",
+          "paper_id": "AGT-017",
+          "claim_ref": "multiagent-autonomous-loops",
+          "discovery_score": 48,
+          "discovery_rank": 5,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-autonomous-loops-AGT043",
+          "paper_id": "AGT-043",
+          "claim_ref": "multiagent-autonomous-loops",
+          "discovery_score": 65,
+          "discovery_rank": 6,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-autonomous-loops-AGT044",
+          "paper_id": "AGT-044",
+          "claim_ref": "multiagent-autonomous-loops",
+          "discovery_score": 62,
+          "discovery_rank": 7,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-autonomous-loops-AGT059",
+          "paper_id": "AGT-059",
+          "claim_ref": "multiagent-autonomous-loops",
+          "discovery_score": 58,
+          "discovery_rank": 8,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-autonomous-loops-AGT049",
+          "paper_id": "AGT-049",
+          "claim_ref": "multiagent-autonomous-loops",
+          "discovery_score": 55,
+          "discovery_rank": 9,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-autonomous-loops-AGT036",
+          "paper_id": "AGT-036",
+          "claim_ref": "multiagent-autonomous-loops",
+          "discovery_score": 53,
+          "discovery_rank": 10,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-autonomous-loops-AGT048",
+          "paper_id": "AGT-048",
+          "claim_ref": "multiagent-autonomous-loops",
+          "discovery_score": 50,
+          "discovery_rank": 11,
+          "confidence": "candidate_unscored"
+        }
+      ]
+    },
+    "multiagent-emergent-behavior": {
+      "paradigm": "multiagent",
+      "candidates": [
+        {
+          "id": "candidate-multiagent-emergent-behavior-AGT020",
+          "paper_id": "AGT-020",
+          "claim_ref": "multiagent-emergent-behavior",
+          "discovery_score": 56,
+          "discovery_rank": 1,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-emergent-behavior-AGT016",
+          "paper_id": "AGT-016",
+          "claim_ref": "multiagent-emergent-behavior",
+          "discovery_score": 54,
+          "discovery_rank": 2,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-emergent-behavior-AGT021",
+          "paper_id": "AGT-021",
+          "claim_ref": "multiagent-emergent-behavior",
+          "discovery_score": 51,
+          "discovery_rank": 3,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-emergent-behavior-AGT050",
+          "paper_id": "AGT-050",
+          "claim_ref": "multiagent-emergent-behavior",
+          "discovery_score": 75,
+          "discovery_rank": 4,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-emergent-behavior-AGT036",
+          "paper_id": "AGT-036",
+          "claim_ref": "multiagent-emergent-behavior",
+          "discovery_score": 65,
+          "discovery_rank": 5,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-emergent-behavior-AGT046",
+          "paper_id": "AGT-046",
+          "claim_ref": "multiagent-emergent-behavior",
+          "discovery_score": 60,
+          "discovery_rank": 6,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-emergent-behavior-AGT042",
+          "paper_id": "AGT-042",
+          "claim_ref": "multiagent-emergent-behavior",
+          "discovery_score": 57,
+          "discovery_rank": 7,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-emergent-behavior-AGT045",
+          "paper_id": "AGT-045",
+          "claim_ref": "multiagent-emergent-behavior",
+          "discovery_score": 54,
+          "discovery_rank": 8,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-multiagent-emergent-behavior-AGT047",
+          "paper_id": "AGT-047",
+          "claim_ref": "multiagent-emergent-behavior",
+          "discovery_score": 50,
+          "discovery_rank": 9,
+          "confidence": "candidate_unscored"
+        }
+      ]
+    },
+    "applications-software-engineering": {
+      "paradigm": "applications",
+      "candidates": [
+        {
+          "id": "candidate-applications-software-engineering-AGT001",
+          "paper_id": "AGT-001",
+          "claim_ref": "applications-software-engineering",
+          "discovery_score": 65,
+          "discovery_rank": 1,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-software-engineering-AGT022",
+          "paper_id": "AGT-022",
+          "claim_ref": "applications-software-engineering",
+          "discovery_score": 61,
+          "discovery_rank": 2,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-software-engineering-AGT023",
+          "paper_id": "AGT-023",
+          "claim_ref": "applications-software-engineering",
+          "discovery_score": 57,
+          "discovery_rank": 3,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-software-engineering-AGT024",
+          "paper_id": "AGT-024",
+          "claim_ref": "applications-software-engineering",
+          "discovery_score": 53,
+          "discovery_rank": 4,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-software-engineering-AGT025",
+          "paper_id": "AGT-025",
+          "claim_ref": "applications-software-engineering",
+          "discovery_score": 50,
+          "discovery_rank": 5,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-software-engineering-AGT015",
+          "paper_id": "AGT-015",
+          "claim_ref": "applications-software-engineering",
+          "discovery_score": 48,
+          "discovery_rank": 6,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-software-engineering-AGT026",
+          "paper_id": "AGT-026",
+          "claim_ref": "applications-software-engineering",
+          "discovery_score": 45,
+          "discovery_rank": 7,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-software-engineering-AGT005",
+          "paper_id": "AGT-005",
+          "claim_ref": "applications-software-engineering",
+          "discovery_score": 43,
+          "discovery_rank": 8,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-software-engineering-AGT027",
+          "paper_id": "AGT-027",
+          "claim_ref": "applications-software-engineering",
+          "discovery_score": 40,
+          "discovery_rank": 9,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-software-engineering-AGT008",
+          "paper_id": "AGT-008",
+          "claim_ref": "applications-software-engineering",
+          "discovery_score": 38,
+          "discovery_rank": 10,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-software-engineering-AGT051",
+          "paper_id": "AGT-051",
+          "claim_ref": "applications-software-engineering",
+          "discovery_score": 70,
+          "discovery_rank": 11,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-software-engineering-AGT052",
+          "paper_id": "AGT-052",
+          "claim_ref": "applications-software-engineering",
+          "discovery_score": 68,
+          "discovery_rank": 12,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-software-engineering-AGT048",
+          "paper_id": "AGT-048",
+          "claim_ref": "applications-software-engineering",
+          "discovery_score": 65,
+          "discovery_rank": 13,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-software-engineering-AGT044",
+          "paper_id": "AGT-044",
+          "claim_ref": "applications-software-engineering",
+          "discovery_score": 62,
+          "discovery_rank": 14,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-software-engineering-AGT053",
+          "paper_id": "AGT-053",
+          "claim_ref": "applications-software-engineering",
+          "discovery_score": 58,
+          "discovery_rank": 15,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-software-engineering-AGT054",
+          "paper_id": "AGT-054",
+          "claim_ref": "applications-software-engineering",
+          "discovery_score": 55,
+          "discovery_rank": 16,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-software-engineering-AGT060",
+          "paper_id": "AGT-060",
+          "claim_ref": "applications-software-engineering",
+          "discovery_score": 52,
+          "discovery_rank": 17,
+          "confidence": "candidate_unscored"
+        }
+      ]
+    },
+    "applications-web-and-embodied": {
+      "paradigm": "applications",
+      "candidates": [
+        {
+          "id": "candidate-applications-web-and-embodied-AGT026",
+          "paper_id": "AGT-026",
+          "claim_ref": "applications-web-and-embodied",
+          "discovery_score": 57,
+          "discovery_rank": 1,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-web-and-embodied-AGT007",
+          "paper_id": "AGT-007",
+          "claim_ref": "applications-web-and-embodied",
+          "discovery_score": 54,
+          "discovery_rank": 2,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-web-and-embodied-AGT017",
+          "paper_id": "AGT-017",
+          "claim_ref": "applications-web-and-embodied",
+          "discovery_score": 52,
+          "discovery_rank": 3,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-web-and-embodied-AGT021",
+          "paper_id": "AGT-021",
+          "claim_ref": "applications-web-and-embodied",
+          "discovery_score": 49,
+          "discovery_rank": 4,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-web-and-embodied-AGT055",
+          "paper_id": "AGT-055",
+          "claim_ref": "applications-web-and-embodied",
+          "discovery_score": 65,
+          "discovery_rank": 5,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-web-and-embodied-AGT036",
+          "paper_id": "AGT-036",
+          "claim_ref": "applications-web-and-embodied",
+          "discovery_score": 60,
+          "discovery_rank": 6,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-web-and-embodied-AGT056",
+          "paper_id": "AGT-056",
+          "claim_ref": "applications-web-and-embodied",
+          "discovery_score": 58,
+          "discovery_rank": 7,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-web-and-embodied-AGT057",
+          "paper_id": "AGT-057",
+          "claim_ref": "applications-web-and-embodied",
+          "discovery_score": 55,
+          "discovery_rank": 8,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-web-and-embodied-AGT058",
+          "paper_id": "AGT-058",
+          "claim_ref": "applications-web-and-embodied",
+          "discovery_score": 52,
+          "discovery_rank": 9,
+          "confidence": "candidate_unscored"
+        }
+      ]
+    },
+    "applications-scientific-research": {
+      "paradigm": "applications",
+      "candidates": [
+        {
+          "id": "candidate-applications-scientific-research-AGT001",
+          "paper_id": "AGT-001",
+          "claim_ref": "applications-scientific-research",
+          "discovery_score": 65,
+          "discovery_rank": 1,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-scientific-research-AGT011",
+          "paper_id": "AGT-011",
+          "claim_ref": "applications-scientific-research",
+          "discovery_score": 61,
+          "discovery_rank": 2,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-scientific-research-AGT002",
+          "paper_id": "AGT-002",
+          "claim_ref": "applications-scientific-research",
+          "discovery_score": 57,
+          "discovery_rank": 3,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-scientific-research-AGT012",
+          "paper_id": "AGT-012",
+          "claim_ref": "applications-scientific-research",
+          "discovery_score": 55,
+          "discovery_rank": 4,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-scientific-research-AGT028",
+          "paper_id": "AGT-028",
+          "claim_ref": "applications-scientific-research",
+          "discovery_score": 52,
+          "discovery_rank": 5,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-scientific-research-AGT029",
+          "paper_id": "AGT-029",
+          "claim_ref": "applications-scientific-research",
+          "discovery_score": 49,
+          "discovery_rank": 6,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-scientific-research-AGT030",
+          "paper_id": "AGT-030",
+          "claim_ref": "applications-scientific-research",
+          "discovery_score": 46,
+          "discovery_rank": 7,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-scientific-research-AGT015",
+          "paper_id": "AGT-015",
+          "claim_ref": "applications-scientific-research",
+          "discovery_score": 44,
+          "discovery_rank": 8,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-scientific-research-AGT005",
+          "paper_id": "AGT-005",
+          "claim_ref": "applications-scientific-research",
+          "discovery_score": 41,
+          "discovery_rank": 9,
+          "confidence": "candidate_unscored"
+        },
+        {
+          "id": "candidate-applications-scientific-research-AGT031",
+          "paper_id": "AGT-031",
+          "claim_ref": "applications-scientific-research",
+          "discovery_score": 38,
+          "discovery_rank": 10,
+          "confidence": "candidate_unscored"
+        }
+      ]
+    }
+  }
+}

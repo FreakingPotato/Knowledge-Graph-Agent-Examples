@@ -1,0 +1,1247 @@
+{
+  "schema_version": "0.1",
+  "paradigm": "applications",
+  "scored_at": "2026-05-17T00:00:00Z",
+  "scored_by": "S3",
+  "claims": {
+    "applications-software-engineering": {
+      "claim_text": "Agentic systems for software engineering (SWE-agent, SWE-bench, AlphaCode 2, Devin-style code agents) solve real GitHub-issue benchmarks at increasing rates, demonstrating that LLM agents can plan, edit, run, and debug code over long horizons.",
+      "candidates": [
+        {
+          "paper_id": "AGT-051",
+          "paper_title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+          "paper_year": 2023,
+          "paper_journal": "arXiv/ICLR",
+          "paper_cited_by_count": 37,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Introduces SWE-bench, the canonical benchmark of 2,294 real GitHub issues across 12 Python repos; this benchmark is the field's primary measurement instrument for code-agent progress."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Practitioners can run SWE-bench today on any candidate agent to obtain a comparable issue-resolution rate; the dataset and harness are public."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Methodology grounds evaluation in held-out PR tests on real repositories \u2014 standard and reproducible."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Benchmark and Lite/Verified variants scale to large agent fleets and have become the de facto leaderboard for SWE agents."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Validation strategy (pass real PR test suites) transfers directly to any new agent and is used by hundreds of follow-on systems."
+            }
+          },
+          "weighted_total": 27.5,
+          "match_score": 0.982,
+          "match_note": "Defines the exact benchmark cited in the claim text.",
+          "discovery_rank": 11,
+          "discovery_score": 70
+        },
+        {
+          "paper_id": "AGT-052",
+          "paper_title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+          "paper_year": 2024,
+          "paper_journal": "arXiv/NeurIPS",
+          "paper_cited_by_count": 24,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Demonstrates substantial SWE-bench resolution-rate gains via a purpose-built agent-computer interface, named in the claim text."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Open-source agent and ACI design patterns are directly adoptable; widely forked."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Ablations isolate ACI components (file viewer, edit, search) showing why each lifts performance."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Scales across SWE-bench instances and HumanEvalFix; long-horizon runs remain bounded by LLM context, but architecture is production-ready."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "SWE-bench pass@1 and HumanEvalFix provide transferable validation."
+            }
+          },
+          "weighted_total": 26.6,
+          "match_score": 0.95,
+          "match_note": "Directly named in the claim; flagship code-agent paper.",
+          "discovery_rank": 12,
+          "discovery_score": 68
+        },
+        {
+          "paper_id": "AGT-048",
+          "paper_title": "ChatDev: Communicative Agents for Software Development",
+          "paper_year": 2024,
+          "paper_journal": "ACL",
+          "paper_cited_by_count": 213,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "End-to-end software dev via role-playing agents (CEO, CTO, programmer, tester) producing runnable mini-applications."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Open-source framework usable today for software-generation pipelines."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Waterfall-style multi-agent SOP grounded in software-engineering practice."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Demonstrated on small applications; SWE-bench-scale long-horizon repo edits not the focus."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Validation uses code-quality and runnability metrics rather than held-out issue benchmarks."
+            }
+          },
+          "weighted_total": 20.4,
+          "match_score": 0.729,
+          "match_note": "Code-agent application, but operates on greenfield generation rather than the GitHub-issue paradigm in the claim.",
+          "discovery_rank": 13,
+          "discovery_score": 65
+        },
+        {
+          "paper_id": "AGT-044",
+          "paper_title": "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework",
+          "paper_year": 2023,
+          "paper_journal": "ICLR",
+          "paper_cited_by_count": 136,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Encodes SOPs into multi-agent prompts and reports state-of-the-art on HumanEval/MBPP and a SoftwareDev benchmark."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Open framework with role abstractions practitioners can drop into pipelines."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "SOP-based prompt engineering with documented role contracts mitigates cascading hallucinations."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Mid-sized application generation; long-horizon repo evolution not addressed."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Validates on HumanEval, MBPP, and SoftwareDev \u2014 transferable code-generation benchmarks."
+            }
+          },
+          "weighted_total": 21.1,
+          "match_score": 0.754,
+          "match_note": "Strong code-generation multi-agent system, slight gap from GitHub-issue framing.",
+          "discovery_rank": 14,
+          "discovery_score": 62
+        },
+        {
+          "paper_id": "AGT-053",
+          "paper_title": "Executable Code Actions Elicit Better LLM Agents",
+          "paper_year": 2024,
+          "paper_journal": "ICML",
+          "paper_cited_by_count": 9,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "CodeAct unifies actions as Python; reports up to 20% absolute gains over JSON/text-action baselines on API-Bank and other agent benchmarks."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "CodeAct interpreter and agent are open and adoptable for any tool-using SWE agent."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Code-as-action consolidates composition and control flow; well-motivated against JSON-action limits."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Python interpreter substrate scales to arbitrary tool sets."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "API-Bank, MINT, and agent benchmarks provide transferable validation."
+            }
+          },
+          "weighted_total": 23.1,
+          "match_score": 0.825,
+          "match_note": "Underpins many SWE-agent action interfaces; tangential to GitHub-issue resolution rate.",
+          "discovery_rank": 15,
+          "discovery_score": 58
+        },
+        {
+          "paper_id": "AGT-054",
+          "paper_title": "AgentCoder: Multi-Agent-based Code Generation with Iterative Testing and Optimisation",
+          "paper_year": 2023,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 16,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Reports strong pass@1 gains on HumanEval, MBPP, and APPS via programmer/test-designer/executor roles."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Concept is reusable but framework less standardised than ChatDev/MetaGPT."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Iterative test-driven optimisation is a sound, well-motivated loop."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Evaluated on standard code-gen benchmarks; not yet on repo-scale issues."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "HumanEval/MBPP/APPS are standard transferable benchmarks."
+            }
+          },
+          "weighted_total": 19.8,
+          "match_score": 0.707,
+          "match_note": "Multi-agent code generation with iterative testing; weak on long-horizon debug task in claim.",
+          "discovery_rank": 16,
+          "discovery_score": 55
+        },
+        {
+          "paper_id": "AGT-060",
+          "paper_title": "Self-Collaboration Code Generation via ChatGPT",
+          "paper_year": 2024,
+          "paper_journal": "TOSEM",
+          "paper_cited_by_count": 173,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Self-collaboration framework (analyst/coder/tester roles) yields large pass@1 improvements on HumanEval/MBPP."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Lightweight prompting recipe immediately reusable on any LLM."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Role-based decomposition is well-motivated and reproducible."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Demonstrated on standard code benchmarks rather than full repos."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "HumanEval, MBPP, BIG-Bench-Hard \u2014 transferable code-gen evaluations."
+            }
+          },
+          "weighted_total": 21.1,
+          "match_score": 0.754,
+          "match_note": "Single-LLM self-collaboration; partial overlap with the SWE-agent claim.",
+          "discovery_rank": 17,
+          "discovery_score": 52
+        },
+        {
+          "paper_id": "AGT-022",
+          "paper_title": "GPT-4 Technical Report",
+          "paper_year": 2023,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 2321,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Reports strong HumanEval and codex-style coding scores that underpin downstream SWE-agents."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "GPT-4 is the default backbone for nearly every code agent in the period."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Methodology is well-established; the model is a foundation, not an agent."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Production-grade API serving millions of code-agent invocations."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Reports HumanEval/exam suites; not focused on agentic SWE validation."
+            }
+          },
+          "weighted_total": 19.8,
+          "match_score": 0.707,
+          "match_note": "Foundation model behind most SWE agents; not itself an agentic SWE paper.",
+          "discovery_rank": 2,
+          "discovery_score": 61
+        },
+        {
+          "paper_id": "AGT-008",
+          "paper_title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
+          "paper_year": 2023,
+          "paper_journal": "NeurIPS",
+          "paper_cited_by_count": 563,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Improves search on Game of 24, creative writing, crosswords; coding-specific results are limited."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Reusable inference pattern but not a SWE-specific recipe."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Well-motivated search-over-thoughts methodology."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Expensive at scale; rarely used in production SWE agents."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Validation transfers, but not on SWE benchmarks."
+            }
+          },
+          "weighted_total": 17.6,
+          "match_score": 0.629,
+          "match_note": "Reasoning paradigm relevant to planning in SWE agents but not a software-engineering application.",
+          "discovery_rank": 10,
+          "discovery_score": 38
+        },
+        {
+          "paper_id": "AGT-025",
+          "paper_title": "Lost in the Middle: How Language Models Use Long Contexts",
+          "paper_year": 2024,
+          "paper_journal": "TACL",
+          "paper_cited_by_count": 836,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Identifies long-context retrieval failure mode that directly affects long-horizon SWE agents."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Findings inform context-management design for code agents but no agent is released."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Careful controlled experiments on multi-doc QA and KV-retrieval."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Conclusions hold across multiple long-context LLMs."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Position-controlled multi-doc QA protocol transfers to any model."
+            }
+          },
+          "weighted_total": 20.3,
+          "match_score": 0.725,
+          "match_note": "Context-length analysis affecting SWE-agent design; not an applications paper itself.",
+          "discovery_rank": 5,
+          "discovery_score": 50
+        },
+        {
+          "paper_id": "AGT-001",
+          "paper_title": "Large language models encode clinical knowledge",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 2977,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 1,
+              "rationale": "MedQA/Med-PaLM medical QA results \u2014 not software engineering."
+            },
+            "immediate_benefit": {
+              "score": 1,
+              "rationale": "Adopters are clinicians, not SWE-agent builders."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Sound methodology in its own domain."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Scales as a Nature-level study."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "MedQA validation does not transfer to SWE benchmarks."
+            }
+          },
+          "weighted_total": 11.3,
+          "match_score": 0.404,
+          "match_note": "Off-topic for software engineering claim.",
+          "discovery_rank": 1,
+          "discovery_score": 65
+        },
+        {
+          "paper_id": "AGT-023",
+          "paper_title": "Accurate medium-range global weather forecasting with 3D neural networks",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 1349,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 1,
+              "rationale": "Pangu-Weather forecasting \u2014 not software engineering."
+            },
+            "immediate_benefit": {
+              "score": 1,
+              "rationale": "Weather-prediction model, not a code agent."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Excellent methodology in its own field."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Production-scale forecasting."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "ECMWF-benchmark validation does not transfer to SWE."
+            }
+          },
+          "weighted_total": 13.3,
+          "match_score": 0.475,
+          "match_note": "Off-topic for the SWE claim.",
+          "discovery_rank": 3,
+          "discovery_score": 57
+        },
+        {
+          "paper_id": "AGT-024",
+          "paper_title": "Logical quantum processor based on reconfigurable atom arrays",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 973,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 1,
+              "rationale": "Quantum-computing hardware result; not software engineering."
+            },
+            "immediate_benefit": {
+              "score": 1,
+              "rationale": "Not adoptable by SWE-agent practitioners."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Excellent physics methodology."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Lab-scale processor."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "QEC validation does not transfer."
+            }
+          },
+          "weighted_total": 12.4,
+          "match_score": 0.443,
+          "match_note": "Off-topic for SWE.",
+          "discovery_rank": 4,
+          "discovery_score": 53
+        },
+        {
+          "paper_id": "AGT-015",
+          "paper_title": "Autonomous chemical research with large language models",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 759,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "Coscientist's autonomous lab agent uses code execution; tangential to SWE."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "Architecture useful inspiration; not directly for SWE."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Validated on real chemistry experiments."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Single-lab scale demonstration."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Wet-lab validation does not transfer to SWE benchmarks."
+            }
+          },
+          "weighted_total": 14.8,
+          "match_score": 0.529,
+          "match_note": "Scientific-research agent rather than SWE.",
+          "discovery_rank": 6,
+          "discovery_score": 48
+        },
+        {
+          "paper_id": "AGT-026",
+          "paper_title": "Visual Instruction Tuning",
+          "paper_year": 2023,
+          "paper_journal": "NeurIPS",
+          "paper_cited_by_count": 676,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 1,
+              "rationale": "LLaVA \u2014 multimodal model, not a SWE benchmark contribution."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "Some code-screenshot use cases but not core SWE-agent stack."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Foundational multimodal methodology."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Used widely as multimodal backbone."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "MM-Vet/Science-QA validation does not transfer to SWE."
+            }
+          },
+          "weighted_total": 15.3,
+          "match_score": 0.546,
+          "match_note": "Vision-language foundation; off-topic for SWE claim.",
+          "discovery_rank": 7,
+          "discovery_score": 45
+        },
+        {
+          "paper_id": "AGT-005",
+          "paper_title": "Toward expert-level medical question answering with large language models",
+          "paper_year": 2025,
+          "paper_journal": "Nature Medicine",
+          "paper_cited_by_count": 649,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 1,
+              "rationale": "Med-PaLM 2 medical QA \u2014 off-topic for SWE."
+            },
+            "immediate_benefit": {
+              "score": 1,
+              "rationale": "Not adoptable for code agents."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Strong medical-domain methodology."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Production-scale clinical evaluation."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "Clinical validation does not transfer to SWE."
+            }
+          },
+          "weighted_total": 13.3,
+          "match_score": 0.475,
+          "match_note": "Off-topic for SWE.",
+          "discovery_rank": 8,
+          "discovery_score": 43
+        },
+        {
+          "paper_id": "AGT-027",
+          "paper_title": "A whole-slide foundation model for digital pathology from real-world data",
+          "paper_year": 2024,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 596,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 1,
+              "rationale": "Prov-GigaPath pathology foundation model \u2014 off-topic for SWE."
+            },
+            "immediate_benefit": {
+              "score": 1,
+              "rationale": "Used by pathologists, not SWE-agent builders."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Excellent pathology methodology."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "1.3B-tile pretraining scales."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "Pathology validation does not transfer."
+            }
+          },
+          "weighted_total": 13.3,
+          "match_score": 0.475,
+          "match_note": "Off-topic for SWE.",
+          "discovery_rank": 9,
+          "discovery_score": 40
+        }
+      ]
+    },
+    "applications-web-and-embodied": {
+      "claim_text": "Web and GUI agents (WebArena, Mind2Web, computer-use models) and embodied LLM agents (PaLM-E, RT-2, VLA models) translate textual reasoning into clicks, keystrokes, and physical actions \u2014 opening up the action space agents can operate in.",
+      "candidates": [
+        {
+          "paper_id": "AGT-055",
+          "paper_title": "VisualWebArena: Evaluating Multimodal Agents on Realistic Visual Web Tasks",
+          "paper_year": 2024,
+          "paper_journal": "ACL",
+          "paper_cited_by_count": 1,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Defines VisualWebArena, a realistic visual-web benchmark with 910 tasks; best agent (GPT-4V SoM) hits ~16% success \u2014 quantifies the gap directly."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Reproducible benchmark immediately adoptable by web-agent practitioners."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Held-out tasks across Classifieds/Shopping/Reddit-like sites; explicit visual grounding."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Benchmark harness scales to fleets of agents; current models still far from solved."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Task-success-rate validation is fully transferable."
+            }
+          },
+          "weighted_total": 26.6,
+          "match_score": 0.95,
+          "match_note": "Canonical visual-web-agent benchmark; squarely on-claim.",
+          "discovery_rank": 5,
+          "discovery_score": 65
+        },
+        {
+          "paper_id": "AGT-057",
+          "paper_title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+          "paper_year": 2023,
+          "paper_journal": "CoRL",
+          "paper_cited_by_count": 266,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Co-fine-tuning a VLM on robot trajectories yields large emergent-reasoning gains on unseen-object manipulation tasks."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "VLA recipe is directly adoptable on RT-1-like robot stacks."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "End-to-end training and broad real-robot evaluation are well-described."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Demonstrated on production-scale robot fleets at Google."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Held-out manipulation suites and emergent-skill probes provide transferable validation."
+            }
+          },
+          "weighted_total": 25.5,
+          "match_score": 0.911,
+          "match_note": "Flagship VLA paper directly named in claim text.",
+          "discovery_rank": 8,
+          "discovery_score": 55
+        },
+        {
+          "paper_id": "AGT-056",
+          "paper_title": "PaLM-E: An Embodied Multimodal Language Model",
+          "paper_year": 2023,
+          "paper_journal": "ICML",
+          "paper_cited_by_count": 350,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "562B PaLM-E integrates vision/state into LM; strong embodied-task and OK-VQA results, and positive transfer across robot embodiments."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Architecture pattern adopted across VLAs; the model itself is closed."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Multi-embodiment training is rigorously evaluated."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Industrial-scale demonstration."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Robot success-rate and VQA validation transfer to follow-on embodied agents."
+            }
+          },
+          "weighted_total": 25.5,
+          "match_score": 0.911,
+          "match_note": "Named in the claim; canonical embodied LLM.",
+          "discovery_rank": 7,
+          "discovery_score": 58
+        },
+        {
+          "paper_id": "AGT-058",
+          "paper_title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+          "paper_year": 2024,
+          "paper_journal": "CoRL",
+          "paper_cited_by_count": 38,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "7B open VLA matches/beats RT-2-X (55B) on 29 manipulation tasks across embodiments while being 7x smaller."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Weights and fine-tuning recipes are open; usable today on a single GPU with LoRA."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Trained on Open X-Embodiment; ablations cover LoRA fine-tuning and quantization."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Efficient fine-tuning scales VLA deployment to many labs."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Bridge V2 and other embodied benchmarks provide transferable validation."
+            }
+          },
+          "weighted_total": 26.6,
+          "match_score": 0.95,
+          "match_note": "Open-source flagship VLA; squarely on-claim.",
+          "discovery_rank": 9,
+          "discovery_score": 52
+        },
+        {
+          "paper_id": "AGT-021",
+          "paper_title": "RT-1: Robotics Transformer for Real-World Control at Scale",
+          "paper_year": 2023,
+          "paper_journal": "RSS",
+          "paper_cited_by_count": 501,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "RT-1 trained on 130k episodes / 700 tasks achieves 97% success on training tasks and strong generalization to unseen tasks/environments."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Recipe and dataset are public; widely reused as VLA precursor."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Large-scale real-robot data collection rigorously evaluated."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Production-scale Everyday Robot deployment."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Real-robot held-out tasks transfer."
+            }
+          },
+          "weighted_total": 25.5,
+          "match_score": 0.911,
+          "match_note": "Direct embodied-agent contribution; foundational for VLA line in claim.",
+          "discovery_rank": 4,
+          "discovery_score": 49
+        },
+        {
+          "paper_id": "AGT-036",
+          "paper_title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+          "paper_year": 2023,
+          "paper_journal": "TMLR",
+          "paper_cited_by_count": 191,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "First LLM-powered lifelong agent in Minecraft; obtains 3.3x more unique items, traverses 2.3x longer distances, and unlocks key tech-tree milestones 15.3x faster than baselines."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Skill-library and curriculum patterns are reusable; Minecraft sandbox is open."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Sound methodology with executable skill memory and self-verification."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Game-environment scale; concept extends to broader embodied domains."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Minecraft tech-tree milestones provide a reproducible validation harness."
+            }
+          },
+          "weighted_total": 23.5,
+          "match_score": 0.839,
+          "match_note": "Embodied open-ended agent in a virtual environment; slight gap from physical/web action claim.",
+          "discovery_rank": 6,
+          "discovery_score": 60
+        },
+        {
+          "paper_id": "AGT-026",
+          "paper_title": "Visual Instruction Tuning",
+          "paper_year": 2023,
+          "paper_journal": "NeurIPS",
+          "paper_cited_by_count": 676,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "LLaVA establishes the multimodal-instruction backbone underpinning many web-GUI agents (e.g. SoM, screenshot understanding)."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Open weights heavily reused in web/GUI-agent stacks."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Rigorous instruction-tuning methodology."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Scales across MLLM sizes."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "ScienceQA/MM-Vet validation transfers to VQA but not directly to web-task success."
+            }
+          },
+          "weighted_total": 20.9,
+          "match_score": 0.746,
+          "match_note": "Multimodal foundation enabling web-GUI agents; not itself a web/embodied agent.",
+          "discovery_rank": 1,
+          "discovery_score": 57
+        },
+        {
+          "paper_id": "AGT-017",
+          "paper_title": "Augmenting large language models with chemistry tools",
+          "paper_year": 2024,
+          "paper_journal": "Nature Machine Intelligence",
+          "paper_cited_by_count": 541,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "ChemCrow plans/executes synthesis with 18 tools \u2014 a scientific-tool agent, not web/embodied."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "Limited adoptability for web/GUI/embodied practitioners."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Validated against expert chemists."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Lab-scale demo."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Chemistry validation does not transfer."
+            }
+          },
+          "weighted_total": 15.9,
+          "match_score": 0.568,
+          "match_note": "Scientific tool-using agent, not web/embodied.",
+          "discovery_rank": 3,
+          "discovery_score": 52
+        },
+        {
+          "paper_id": "AGT-007",
+          "paper_title": "A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning, Hallucination, and Interactivity",
+          "paper_year": 2023,
+          "paper_journal": "IJCNLP-AACL",
+          "paper_cited_by_count": 606,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "Evaluates ChatGPT on 23 datasets; tangential to web/embodied action."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "Findings inform agent designers but no agent is released."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Sound evaluation methodology."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Benchmark-scale only."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Validation does not transfer to web/embodied success-rate metrics."
+            }
+          },
+          "weighted_total": 14.8,
+          "match_score": 0.529,
+          "match_note": "General ChatGPT eval; tangential to web/embodied claim.",
+          "discovery_rank": 2,
+          "discovery_score": 54
+        }
+      ]
+    },
+    "applications-scientific-research": {
+      "claim_text": "Research co-pilot agents for biomedicine, chemistry, and materials (ChemCrow, Coscientist, Biomni, GeneAgent, agentic rare-disease diagnosis) demonstrate that agents can plan and execute multi-step scientific workflows \u2014 including hypothesis generation, literature synthesis, and wet-lab planning.",
+      "candidates": [
+        {
+          "paper_id": "AGT-015",
+          "paper_title": "Autonomous chemical research with large language models",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 759,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Coscientist autonomously designs, plans, and executes complex chemistry experiments (e.g. Pd-catalysed cross-couplings) on real lab hardware \u2014 directly named in the claim."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Architecture (web/doc search + code-execution + lab automation) is directly reusable as a scientific-agent template."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Nature-grade methodology with reproducible task suite."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Single-lab scale but generalises to other automated platforms."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Validation via actual reaction-yield outcomes on six task families is transferable."
+            }
+          },
+          "weighted_total": 26.6,
+          "match_score": 0.95,
+          "match_note": "Coscientist is one of the named exemplars in the claim.",
+          "discovery_rank": 8,
+          "discovery_score": 44
+        },
+        {
+          "paper_id": "AGT-001",
+          "paper_title": "Large language models encode clinical knowledge",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 2977,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Med-PaLM achieves 67.6% on MedQA, +17% over prior SOTA \u2014 a major biomedical research-copilot building block."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Instruction-prompt-tuning recipe is reusable for domain-specific biomedical agents."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Rigorous clinician-graded human evaluation."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Industrial-scale evaluation pipeline."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Held-out medical QA + clinician panels transfer to other biomedical assistants."
+            }
+          },
+          "weighted_total": 23.1,
+          "match_score": 0.825,
+          "match_note": "Biomedical foundation model, not agentic, but supports research-copilot claim.",
+          "discovery_rank": 1,
+          "discovery_score": 65
+        },
+        {
+          "paper_id": "AGT-005",
+          "paper_title": "Toward expert-level medical question answering with large language models",
+          "paper_year": 2025,
+          "paper_journal": "Nature Medicine",
+          "paper_cited_by_count": 649,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Med-PaLM 2 reaches 86.5% on MedQA with ensemble refinement and chain-of-retrieval \u2014 directly relevant to biomedical research agents."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Ensemble-refinement and chain-of-retrieval techniques are reusable in scientific-research agents."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Multi-stage clinician evaluation."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Production-grade medical-LLM stack."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Held-out MedQA + long-form physician evaluations transfer."
+            }
+          },
+          "weighted_total": 23.1,
+          "match_score": 0.825,
+          "match_note": "Strong medical-QA pillar for biomedical research copilots.",
+          "discovery_rank": 9,
+          "discovery_score": 41
+        },
+        {
+          "paper_id": "AGT-031",
+          "paper_title": "Adapted large language models can outperform medical experts in clinical text summarization",
+          "paper_year": 2024,
+          "paper_journal": "Nature Medicine",
+          "paper_cited_by_count": 617,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Adapted LLMs outperform clinician baselines on multiple summarization tasks \u2014 a literature-synthesis primitive named in the claim."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Fine-tuning recipes directly adoptable by biomedical research-agent builders."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Multi-task evaluation with clinician scoring."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Production-scale clinical text processing."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Clinician-graded held-out summarization transfers."
+            }
+          },
+          "weighted_total": 23.1,
+          "match_score": 0.825,
+          "match_note": "Literature-synthesis component of research-copilot vision.",
+          "discovery_rank": 10,
+          "discovery_score": 38
+        },
+        {
+          "paper_id": "AGT-012",
+          "paper_title": "Foundation models for generalist medical artificial intelligence",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 1485,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Proposes GMAI as flexible foundation models across imaging/EHR/genomics \u2014 articulates the research-copilot vision."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Conceptual roadmap rather than a deployable system."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Nature perspective grounded in empirical foundation-model results."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Discusses scaling to clinical workflows."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Validation strategies discussed but not benchmarked."
+            }
+          },
+          "weighted_total": 21.1,
+          "match_score": 0.754,
+          "match_note": "Vision paper supporting biomedical-agent direction.",
+          "discovery_rank": 4,
+          "discovery_score": 55
+        },
+        {
+          "paper_id": "AGT-011",
+          "paper_title": "Segment anything in medical images",
+          "paper_year": 2024,
+          "paper_journal": "Nature Communications",
+          "paper_cited_by_count": 2256,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "MedSAM trained on 1.57M image-mask pairs covering 10 modalities and 30+ cancer types \u2014 a universal segmentation tool for biomedical agents."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Open model immediately usable as a tool inside biomedical research pipelines."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Large-scale, multi-modality evaluation."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Production-scale model release."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Held-out modality/disease benchmarks transfer."
+            }
+          },
+          "weighted_total": 25.3,
+          "match_score": 0.904,
+          "match_note": "Foundation tool for biomedical-research agents.",
+          "discovery_rank": 2,
+          "discovery_score": 61
+        },
+        {
+          "paper_id": "AGT-028",
+          "paper_title": "Scaling deep learning for materials discovery",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 1119,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "GNoME discovers 2.2M new inorganic crystals (381k stable) \u2014 direct materials-research outcome."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Database release is immediately useful to materials-discovery agents."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Nature-grade methodology with experimental synthesis follow-up."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Internet-scale graph-network training."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "DFT and experimental synthesis validation transfer."
+            }
+          },
+          "weighted_total": 24.0,
+          "match_score": 0.857,
+          "match_note": "Materials-discovery component of the claim.",
+          "discovery_rank": 5,
+          "discovery_score": 52
+        },
+        {
+          "paper_id": "AGT-029",
+          "paper_title": "Transfer learning enables predictions in network biology",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 958,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Geneformer enables transfer-learning predictions on single-cell network biology \u2014 supports GeneAgent-style scientific agents."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Open model and pretraining corpus directly reusable in biomedical pipelines."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Validated across multiple cell types and tasks."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Scales with corpus and cell-type coverage."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Held-out cell types and biological-task transfer benchmarks."
+            }
+          },
+          "weighted_total": 23.1,
+          "match_score": 0.825,
+          "match_note": "Biology foundation model underpinning research agents.",
+          "discovery_rank": 6,
+          "discovery_score": 49
+        },
+        {
+          "paper_id": "AGT-030",
+          "paper_title": "A foundation model for generalizable disease detection from retinal images",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 789,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "RETFound retinal foundation model generalises across multiple eye-disease tasks \u2014 biomedical research-tool outcome."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Open weights directly adoptable as a tool in research pipelines."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Validated on diverse held-out clinical datasets."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Production-grade retinal-image scaling."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Held-out disease-detection benchmarks transfer."
+            }
+          },
+          "weighted_total": 23.1,
+          "match_score": 0.825,
+          "match_note": "Biomedical foundation tool for research agents.",
+          "discovery_rank": 7,
+          "discovery_score": 46
+        },
+        {
+          "paper_id": "AGT-002",
+          "paper_title": "Sparks of Artificial General Intelligence: Early experiments with GPT-4",
+          "paper_year": 2023,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 1542,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "Reports broad emergent reasoning across math/coding/medicine that motivates scientific-copilot use."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Findings inform which tasks scientific agents should target; no system released."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Largely qualitative case studies; rigorous but not benchmark-driven."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "GPT-4 itself scales."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Case-study evaluation transfers loosely."
+            }
+          },
+          "weighted_total": 18.5,
+          "match_score": 0.661,
+          "match_note": "Capability survey rather than a scientific-research agent.",
+          "discovery_rank": 3,
+          "discovery_score": 57
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,3010 @@
+{
+  "evidence-reasoning-chain-of-thought-AGT-005": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      2,
+      3,
+      7
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 153085,
+        "scores": [
+          77.6,
+          82.1
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 139040,
+        "scores": [
+          82.1
+        ]
+      },
+      {
+        "group": 3,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 136898,
+        "scores": [
+          77.6
+        ]
+      },
+      {
+        "group": 4,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 182940,
+        "scores": [
+          80.6
+        ]
+      }
+    ]
+  },
+  "evidence-reasoning-chain-of-thought-AGT-007": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      11,
+      30,
+      38
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 128029,
+        "scores": [
+          78.1
+        ]
+      },
+      {
+        "group": 2,
+        "page": 11,
+        "n_sentences": 1,
+        "png_bytes": 104374,
+        "scores": [
+          74.5
+        ]
+      },
+      {
+        "group": 3,
+        "page": 30,
+        "n_sentences": 2,
+        "png_bytes": 187000,
+        "scores": [
+          74.9,
+          74.0
+        ]
+      },
+      {
+        "group": 4,
+        "page": 38,
+        "n_sentences": 1,
+        "png_bytes": 178869,
+        "scores": [
+          75.4
+        ]
+      }
+    ]
+  },
+  "evidence-reasoning-chain-of-thought-AGT-008": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      4,
+      9
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 97382,
+        "scores": [
+          84.6
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 87855,
+        "scores": [
+          78.2
+        ]
+      },
+      {
+        "group": 3,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 89133,
+        "scores": [
+          80.6
+        ]
+      },
+      {
+        "group": 4,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 74194,
+        "scores": [
+          75.6
+        ]
+      },
+      {
+        "group": 5,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 65507,
+        "scores": [
+          73.9
+        ]
+      }
+    ]
+  },
+  "evidence-reasoning-chain-of-thought-AGT-010": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      3,
+      6,
+      7
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 146134,
+        "scores": [
+          74.2
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 187163,
+        "scores": [
+          74.1
+        ]
+      },
+      {
+        "group": 3,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 107320,
+        "scores": [
+          74.2
+        ]
+      },
+      {
+        "group": 4,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 137335,
+        "scores": [
+          73.5
+        ]
+      },
+      {
+        "group": 5,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 103634,
+        "scores": [
+          75.6
+        ]
+      }
+    ]
+  },
+  "evidence-reasoning-tool-use-AGT-006": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      5,
+      8
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 137578,
+        "scores": [
+          77.4
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 117022,
+        "scores": [
+          78.1
+        ]
+      },
+      {
+        "group": 3,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 105613,
+        "scores": [
+          80.0
+        ]
+      },
+      {
+        "group": 4,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 89870,
+        "scores": [
+          76.9
+        ]
+      },
+      {
+        "group": 5,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 152481,
+        "scores": [
+          77.6
+        ]
+      }
+    ]
+  },
+  "evidence-reasoning-tool-use-AGT-015": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      3,
+      4,
+      5
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 154877,
+        "scores": [
+          75.2,
+          76.5
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 153346,
+        "scores": [
+          75.9
+        ]
+      },
+      {
+        "group": 3,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 139684,
+        "scores": [
+          76.9
+        ]
+      },
+      {
+        "group": 4,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 141466,
+        "scores": [
+          75.0
+        ]
+      }
+    ]
+  },
+  "evidence-reasoning-tool-use-AGT-017": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      5,
+      8
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 79583,
+        "scores": [
+          74.9
+        ]
+      },
+      {
+        "group": 2,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 188642,
+        "scores": [
+          74.1
+        ]
+      },
+      {
+        "group": 3,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 199668,
+        "scores": [
+          74.8
+        ]
+      },
+      {
+        "group": 4,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 201747,
+        "scores": [
+          75.7
+        ]
+      },
+      {
+        "group": 5,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 186830,
+        "scores": [
+          76.9
+        ]
+      }
+    ]
+  },
+  "evidence-reasoning-tool-use-AGT-032": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      2,
+      5
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 155406,
+        "scores": [
+          73.0,
+          71.1
+        ]
+      },
+      {
+        "group": 2,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 68111,
+        "scores": [
+          74.3
+        ]
+      },
+      {
+        "group": 3,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 82554,
+        "scores": [
+          73.3
+        ]
+      },
+      {
+        "group": 4,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 76954,
+        "scores": [
+          70.3
+        ]
+      }
+    ]
+  },
+  "evidence-reasoning-tool-use-AGT-033": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      4,
+      6,
+      8
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 61085,
+        "scores": [
+          72.5
+        ]
+      },
+      {
+        "group": 2,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 62558,
+        "scores": [
+          72.6
+        ]
+      },
+      {
+        "group": 3,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 58764,
+        "scores": [
+          71.5
+        ]
+      },
+      {
+        "group": 4,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 81371,
+        "scores": [
+          73.5
+        ]
+      },
+      {
+        "group": 5,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 81238,
+        "scores": [
+          72.6
+        ]
+      }
+    ]
+  },
+  "evidence-reasoning-tool-use-AGT-034": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      5,
+      8,
+      9
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 5,
+        "n_sentences": 2,
+        "png_bytes": 107399,
+        "scores": [
+          84.8,
+          76.8
+        ]
+      },
+      {
+        "group": 2,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 68100,
+        "scores": [
+          80.4
+        ]
+      },
+      {
+        "group": 3,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 66912,
+        "scores": [
+          85.0
+        ]
+      },
+      {
+        "group": 4,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 75615,
+        "scores": [
+          77.4
+        ]
+      }
+    ]
+  },
+  "evidence-reasoning-tool-use-AGT-035": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 38287,
+        "scores": [
+          73.5
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 87966,
+        "scores": [
+          73.5
+        ]
+      },
+      {
+        "group": 3,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 76646,
+        "scores": [
+          84.7
+        ]
+      },
+      {
+        "group": 4,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 98652,
+        "scores": [
+          72.6
+        ]
+      },
+      {
+        "group": 5,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 60298,
+        "scores": [
+          74.2
+        ]
+      }
+    ]
+  },
+  "evidence-reasoning-tool-use-AGT-036": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      3,
+      6,
+      11,
+      15
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 64653,
+        "scores": [
+          81.2
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 55011,
+        "scores": [
+          75.9
+        ]
+      },
+      {
+        "group": 3,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 92366,
+        "scores": [
+          78.2
+        ]
+      },
+      {
+        "group": 4,
+        "page": 11,
+        "n_sentences": 1,
+        "png_bytes": 75869,
+        "scores": [
+          76.7
+        ]
+      },
+      {
+        "group": 5,
+        "page": 15,
+        "n_sentences": 1,
+        "png_bytes": 86366,
+        "scores": [
+          79.1
+        ]
+      }
+    ]
+  },
+  "evidence-reasoning-memory-and-reflection-AGT-037": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 174662,
+        "scores": [
+          72.2,
+          72.2
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 70505,
+        "scores": [
+          73.8
+        ]
+      },
+      {
+        "group": 3,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 83484,
+        "scores": [
+          75.9
+        ]
+      },
+      {
+        "group": 4,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 85368,
+        "scores": [
+          73.6
+        ]
+      }
+    ]
+  },
+  "evidence-reasoning-memory-and-reflection-AGT-038": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      2,
+      7,
+      14,
+      25
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 78315,
+        "scores": [
+          79.7
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 63797,
+        "scores": [
+          79.8
+        ]
+      },
+      {
+        "group": 3,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 73755,
+        "scores": [
+          77.6
+        ]
+      },
+      {
+        "group": 4,
+        "page": 14,
+        "n_sentences": 1,
+        "png_bytes": 63704,
+        "scores": [
+          75.7
+        ]
+      },
+      {
+        "group": 5,
+        "page": 25,
+        "n_sentences": 1,
+        "png_bytes": 62499,
+        "scores": [
+          76.6
+        ]
+      }
+    ]
+  },
+  "evidence-reasoning-memory-and-reflection-AGT-039": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      2,
+      7
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 191706,
+        "scores": [
+          79.8,
+          86.2
+        ]
+      },
+      {
+        "group": 2,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 99742,
+        "scores": [
+          77.6
+        ]
+      },
+      {
+        "group": 3,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 55202,
+        "scores": [
+          85.9
+        ]
+      },
+      {
+        "group": 4,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 120335,
+        "scores": [
+          80.3
+        ]
+      }
+    ]
+  },
+  "evidence-reasoning-memory-and-reflection-AGT-040": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 3,
+    "pages": [
+      6,
+      7,
+      8
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 70491,
+        "scores": [
+          80.0
+        ]
+      },
+      {
+        "group": 2,
+        "page": 7,
+        "n_sentences": 2,
+        "png_bytes": 121739,
+        "scores": [
+          81.2,
+          87.4
+        ]
+      },
+      {
+        "group": 3,
+        "page": 8,
+        "n_sentences": 2,
+        "png_bytes": 195238,
+        "scores": [
+          82.9,
+          80.0
+        ]
+      }
+    ]
+  },
+  "evidence-reasoning-memory-and-reflection-AGT-041": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      2,
+      4,
+      6
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 191588,
+        "scores": [
+          80.6
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 203946,
+        "scores": [
+          71.5
+        ]
+      },
+      {
+        "group": 3,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 97204,
+        "scores": [
+          71.5
+        ]
+      },
+      {
+        "group": 4,
+        "page": 6,
+        "n_sentences": 2,
+        "png_bytes": 166489,
+        "scores": [
+          73.8,
+          71.5
+        ]
+      }
+    ]
+  },
+  "evidence-reasoning-memory-and-reflection-AGT-062": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      2,
+      4,
+      5,
+      7
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 94969,
+        "scores": [
+          74.5
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 157024,
+        "scores": [
+          78.8
+        ]
+      },
+      {
+        "group": 3,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 118391,
+        "scores": [
+          74.1
+        ]
+      },
+      {
+        "group": 4,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 107808,
+        "scores": [
+          72.8
+        ]
+      },
+      {
+        "group": 5,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 173762,
+        "scores": [
+          72.9
+        ]
+      }
+    ]
+  },
+  "evidence-multiagent-role-and-debate-AGT-042": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      4,
+      52,
+      64
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 86816,
+        "scores": [
+          88.4
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 83010,
+        "scores": [
+          90.1
+        ]
+      },
+      {
+        "group": 3,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 118756,
+        "scores": [
+          81.5
+        ]
+      },
+      {
+        "group": 4,
+        "page": 52,
+        "n_sentences": 1,
+        "png_bytes": 80234,
+        "scores": [
+          77.8
+        ]
+      },
+      {
+        "group": 5,
+        "page": 64,
+        "n_sentences": 1,
+        "png_bytes": 50886,
+        "scores": [
+          77.3
+        ]
+      }
+    ]
+  },
+  "evidence-multiagent-role-and-debate-AGT-043": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      4,
+      17,
+      26
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 80427,
+        "scores": [
+          88.8
+        ]
+      },
+      {
+        "group": 2,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 75439,
+        "scores": [
+          74.7
+        ]
+      },
+      {
+        "group": 3,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 82828,
+        "scores": [
+          75.4
+        ]
+      },
+      {
+        "group": 4,
+        "page": 17,
+        "n_sentences": 1,
+        "png_bytes": 113458,
+        "scores": [
+          75.7
+        ]
+      },
+      {
+        "group": 5,
+        "page": 26,
+        "n_sentences": 1,
+        "png_bytes": 64734,
+        "scores": [
+          78.5
+        ]
+      }
+    ]
+  },
+  "evidence-multiagent-role-and-debate-AGT-044": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 102856,
+        "scores": [
+          73.8,
+          106.8
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 49045,
+        "scores": [
+          77.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 50038,
+        "scores": [
+          87.5
+        ]
+      },
+      {
+        "group": 4,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 73787,
+        "scores": [
+          91.2
+        ]
+      }
+    ]
+  },
+  "evidence-multiagent-role-and-debate-AGT-045": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      2
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 132836,
+        "scores": [
+          77.9,
+          75.5
+        ]
+      },
+      {
+        "group": 2,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 74763,
+        "scores": [
+          80.8
+        ]
+      },
+      {
+        "group": 3,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 75725,
+        "scores": [
+          75.3
+        ]
+      },
+      {
+        "group": 4,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 83326,
+        "scores": [
+          76.8
+        ]
+      }
+    ]
+  },
+  "evidence-multiagent-role-and-debate-AGT-047": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      2,
+      3,
+      9
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 76037,
+        "scores": [
+          72.1
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 140312,
+        "scores": [
+          72.5
+        ]
+      },
+      {
+        "group": 3,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 83690,
+        "scores": [
+          70.9
+        ]
+      },
+      {
+        "group": 4,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 144866,
+        "scores": [
+          72.6
+        ]
+      },
+      {
+        "group": 5,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 93342,
+        "scores": [
+          77.5
+        ]
+      }
+    ]
+  },
+  "evidence-multiagent-role-and-debate-AGT-048": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      4,
+      6,
+      7,
+      8,
+      9
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 137068,
+        "scores": [
+          70.8
+        ]
+      },
+      {
+        "group": 2,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 134221,
+        "scores": [
+          74.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 65999,
+        "scores": [
+          70.9
+        ]
+      },
+      {
+        "group": 4,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 130907,
+        "scores": [
+          72.7
+        ]
+      },
+      {
+        "group": 5,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 120184,
+        "scores": [
+          72.7
+        ]
+      }
+    ]
+  },
+  "evidence-multiagent-autonomous-loops-AGT-015": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      6,
+      7
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 121915,
+        "scores": [
+          74.5
+        ]
+      },
+      {
+        "group": 2,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 135877,
+        "scores": [
+          73.9
+        ]
+      },
+      {
+        "group": 3,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 119595,
+        "scores": [
+          77.1
+        ]
+      },
+      {
+        "group": 4,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 123337,
+        "scores": [
+          73.9
+        ]
+      },
+      {
+        "group": 5,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 121674,
+        "scores": [
+          71.8
+        ]
+      }
+    ]
+  },
+  "evidence-multiagent-autonomous-loops-AGT-017": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 3,
+    "pages": [
+      1,
+      2,
+      5
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 144597,
+        "scores": [
+          97.0,
+          91.3
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 2,
+        "png_bytes": 157217,
+        "scores": [
+          75.7,
+          77.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 166014,
+        "scores": [
+          78.2
+        ]
+      }
+    ]
+  },
+  "evidence-multiagent-autonomous-loops-AGT-018": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 189750,
+        "scores": [
+          71.2
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 191617,
+        "scores": [
+          71.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 125366,
+        "scores": [
+          71.6
+        ]
+      },
+      {
+        "group": 4,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 147316,
+        "scores": [
+          70.3
+        ]
+      },
+      {
+        "group": 5,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 126905,
+        "scores": [
+          70.6
+        ]
+      }
+    ]
+  },
+  "evidence-multiagent-autonomous-loops-AGT-036": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      3,
+      9,
+      15
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 79669,
+        "scores": [
+          84.0
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 87708,
+        "scores": [
+          72.4
+        ]
+      },
+      {
+        "group": 3,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 85048,
+        "scores": [
+          75.6
+        ]
+      },
+      {
+        "group": 4,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 76833,
+        "scores": [
+          72.1
+        ]
+      },
+      {
+        "group": 5,
+        "page": 15,
+        "n_sentences": 1,
+        "png_bytes": 86366,
+        "scores": [
+          79.1
+        ]
+      }
+    ]
+  },
+  "evidence-multiagent-autonomous-loops-AGT-043": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      17
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 63368,
+        "scores": [
+          75.6
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 92053,
+        "scores": [
+          73.9
+        ]
+      },
+      {
+        "group": 3,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 57338,
+        "scores": [
+          78.4
+        ]
+      },
+      {
+        "group": 4,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 82828,
+        "scores": [
+          78.8
+        ]
+      },
+      {
+        "group": 5,
+        "page": 17,
+        "n_sentences": 1,
+        "png_bytes": 113458,
+        "scores": [
+          75.7
+        ]
+      }
+    ]
+  },
+  "evidence-multiagent-autonomous-loops-AGT-044": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      3,
+      4,
+      8
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 76998,
+        "scores": [
+          87.5
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 50038,
+        "scores": [
+          87.5
+        ]
+      },
+      {
+        "group": 3,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 73787,
+        "scores": [
+          91.2
+        ]
+      },
+      {
+        "group": 4,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 64543,
+        "scores": [
+          73.3
+        ]
+      },
+      {
+        "group": 5,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 62274,
+        "scores": [
+          73.3
+        ]
+      }
+    ]
+  },
+  "evidence-multiagent-autonomous-loops-AGT-048": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      3,
+      7,
+      8
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 187085,
+        "scores": [
+          71.3,
+          71.6
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 115942,
+        "scores": [
+          78.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 103348,
+        "scores": [
+          75.5
+        ]
+      },
+      {
+        "group": 4,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 156778,
+        "scores": [
+          71.2
+        ]
+      }
+    ]
+  },
+  "evidence-multiagent-autonomous-loops-AGT-049": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      2,
+      12
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 107842,
+        "scores": [
+          85.1,
+          84.9
+        ]
+      },
+      {
+        "group": 2,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 59028,
+        "scores": [
+          75.6
+        ]
+      },
+      {
+        "group": 3,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 101106,
+        "scores": [
+          77.5
+        ]
+      },
+      {
+        "group": 4,
+        "page": 12,
+        "n_sentences": 1,
+        "png_bytes": 70512,
+        "scores": [
+          74.8
+        ]
+      }
+    ]
+  },
+  "evidence-multiagent-autonomous-loops-AGT-059": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 125837,
+        "scores": [
+          83.5
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 94723,
+        "scores": [
+          77.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 101091,
+        "scores": [
+          76.6
+        ]
+      },
+      {
+        "group": 4,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 94833,
+        "scores": [
+          81.3
+        ]
+      },
+      {
+        "group": 5,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 117383,
+        "scores": [
+          79.2
+        ]
+      }
+    ]
+  },
+  "evidence-multiagent-emergent-behavior-AGT-036": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      3,
+      8,
+      9,
+      15
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 79669,
+        "scores": [
+          77.3
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 85048,
+        "scores": [
+          72.6
+        ]
+      },
+      {
+        "group": 3,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 72746,
+        "scores": [
+          73.2
+        ]
+      },
+      {
+        "group": 4,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 76833,
+        "scores": [
+          74.9
+        ]
+      },
+      {
+        "group": 5,
+        "page": 15,
+        "n_sentences": 1,
+        "png_bytes": 86366,
+        "scores": [
+          79.1
+        ]
+      }
+    ]
+  },
+  "evidence-multiagent-emergent-behavior-AGT-042": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      2,
+      3
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 115528,
+        "scores": [
+          78.1,
+          77.5
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 107494,
+        "scores": [
+          80.8
+        ]
+      },
+      {
+        "group": 3,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 103277,
+        "scores": [
+          77.0
+        ]
+      },
+      {
+        "group": 4,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 77728,
+        "scores": [
+          76.5
+        ]
+      }
+    ]
+  },
+  "evidence-multiagent-emergent-behavior-AGT-046": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      2,
+      4,
+      5,
+      7,
+      23
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 91791,
+        "scores": [
+          73.5
+        ]
+      },
+      {
+        "group": 2,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 61141,
+        "scores": [
+          77.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 67696,
+        "scores": [
+          73.6
+        ]
+      },
+      {
+        "group": 4,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 60526,
+        "scores": [
+          76.0
+        ]
+      },
+      {
+        "group": 5,
+        "page": 23,
+        "n_sentences": 1,
+        "png_bytes": 79066,
+        "scores": [
+          73.8
+        ]
+      }
+    ]
+  },
+  "evidence-multiagent-emergent-behavior-AGT-050": {
+    "status": "no_pdf",
+    "notes": "no PDF for AGT-050"
+  },
+  "evidence-applications-software-engineering-AGT-022": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      4,
+      24,
+      32,
+      45,
+      46
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 72899,
+        "scores": [
+          72.2
+        ]
+      },
+      {
+        "group": 2,
+        "page": 24,
+        "n_sentences": 1,
+        "png_bytes": 73414,
+        "scores": [
+          71.9
+        ]
+      },
+      {
+        "group": 3,
+        "page": 32,
+        "n_sentences": 1,
+        "png_bytes": 89607,
+        "scores": [
+          72.2
+        ]
+      },
+      {
+        "group": 4,
+        "page": 45,
+        "n_sentences": 1,
+        "png_bytes": 80621,
+        "scores": [
+          72.3
+        ]
+      },
+      {
+        "group": 5,
+        "page": 46,
+        "n_sentences": 1,
+        "png_bytes": 80158,
+        "scores": [
+          72.1
+        ]
+      }
+    ]
+  },
+  "evidence-applications-software-engineering-AGT-025": {
+    "status": "no_pdf",
+    "notes": "no PDF for AGT-025"
+  },
+  "evidence-applications-software-engineering-AGT-044": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      3,
+      4,
+      7
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 84266,
+        "scores": [
+          75.8
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 50038,
+        "scores": [
+          86.2
+        ]
+      },
+      {
+        "group": 3,
+        "page": 4,
+        "n_sentences": 2,
+        "png_bytes": 101227,
+        "scores": [
+          91.2,
+          72.9
+        ]
+      },
+      {
+        "group": 4,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 62342,
+        "scores": [
+          72.9
+        ]
+      }
+    ]
+  },
+  "evidence-applications-software-engineering-AGT-051": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      2,
+      3,
+      4,
+      16,
+      25
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 98077,
+        "scores": [
+          81.9
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 83534,
+        "scores": [
+          72.1
+        ]
+      },
+      {
+        "group": 3,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 72109,
+        "scores": [
+          71.7
+        ]
+      },
+      {
+        "group": 4,
+        "page": 16,
+        "n_sentences": 1,
+        "png_bytes": 78513,
+        "scores": [
+          71.2
+        ]
+      },
+      {
+        "group": 5,
+        "page": 25,
+        "n_sentences": 1,
+        "png_bytes": 39005,
+        "scores": [
+          71.4
+        ]
+      }
+    ]
+  },
+  "evidence-applications-software-engineering-AGT-052": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      5,
+      37,
+      117
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 99857,
+        "scores": [
+          77.6
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 67396,
+        "scores": [
+          77.3
+        ]
+      },
+      {
+        "group": 3,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 92572,
+        "scores": [
+          78.7
+        ]
+      },
+      {
+        "group": 4,
+        "page": 37,
+        "n_sentences": 1,
+        "png_bytes": 43395,
+        "scores": [
+          76.3
+        ]
+      },
+      {
+        "group": 5,
+        "page": 117,
+        "n_sentences": 1,
+        "png_bytes": 106039,
+        "scores": [
+          76.5
+        ]
+      }
+    ]
+  },
+  "evidence-applications-software-engineering-AGT-053": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      5,
+      7,
+      8
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 181541,
+        "scores": [
+          76.9,
+          75.9
+        ]
+      },
+      {
+        "group": 2,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 119739,
+        "scores": [
+          77.6
+        ]
+      },
+      {
+        "group": 3,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 106513,
+        "scores": [
+          74.5
+        ]
+      },
+      {
+        "group": 4,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 108528,
+        "scores": [
+          76.1
+        ]
+      }
+    ]
+  },
+  "evidence-applications-software-engineering-AGT-060": {
+    "status": "no_pdf",
+    "notes": "no PDF for AGT-060"
+  },
+  "evidence-applications-web-and-embodied-AGT-021": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      8
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 109178,
+        "scores": [
+          80.0
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 186616,
+        "scores": [
+          78.1
+        ]
+      },
+      {
+        "group": 3,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 90615,
+        "scores": [
+          81.4
+        ]
+      },
+      {
+        "group": 4,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 120651,
+        "scores": [
+          78.3
+        ]
+      },
+      {
+        "group": 5,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 142503,
+        "scores": [
+          78.6
+        ]
+      }
+    ]
+  },
+  "evidence-applications-web-and-embodied-AGT-026": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 4,
+    "pages": [
+      1,
+      4,
+      7,
+      9
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 125697,
+        "scores": [
+          83.5,
+          83.5
+        ]
+      },
+      {
+        "group": 2,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 48523,
+        "scores": [
+          87.6
+        ]
+      },
+      {
+        "group": 3,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 83961,
+        "scores": [
+          87.5
+        ]
+      },
+      {
+        "group": 4,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 52083,
+        "scores": [
+          85.0
+        ]
+      }
+    ]
+  },
+  "evidence-applications-web-and-embodied-AGT-036": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 3,
+    "pages": [
+      1,
+      3,
+      11
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 191627,
+        "scores": [
+          80.9,
+          107.1
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 2,
+        "png_bytes": 128709,
+        "scores": [
+          81.5,
+          80.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 11,
+        "n_sentences": 1,
+        "png_bytes": 70534,
+        "scores": [
+          78.0
+        ]
+      }
+    ]
+  },
+  "evidence-applications-web-and-embodied-AGT-055": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      3,
+      5,
+      9
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 96076,
+        "scores": [
+          71.4
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 112797,
+        "scores": [
+          71.2
+        ]
+      },
+      {
+        "group": 3,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 116124,
+        "scores": [
+          71.5
+        ]
+      },
+      {
+        "group": 4,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 146060,
+        "scores": [
+          75.4
+        ]
+      },
+      {
+        "group": 5,
+        "page": 9,
+        "n_sentences": 1,
+        "png_bytes": 91746,
+        "scores": [
+          72.9
+        ]
+      }
+    ]
+  },
+  "evidence-applications-web-and-embodied-AGT-056": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 3,
+    "pages": [
+      1,
+      3
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 89655,
+        "scores": [
+          74.8
+        ]
+      },
+      {
+        "group": 2,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 100346,
+        "scores": [
+          74.8
+        ]
+      },
+      {
+        "group": 3,
+        "page": 3,
+        "n_sentences": 3,
+        "png_bytes": 184749,
+        "scores": [
+          81.3,
+          80.3,
+          78.1
+        ]
+      }
+    ]
+  },
+  "evidence-applications-web-and-embodied-AGT-057": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 3,
+    "pages": [
+      1,
+      3,
+      8
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 2,
+        "png_bytes": 82635,
+        "scores": [
+          74.9,
+          76.3
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 2,
+        "png_bytes": 101754,
+        "scores": [
+          73.6,
+          73.6
+        ]
+      },
+      {
+        "group": 3,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 103738,
+        "scores": [
+          72.6
+        ]
+      }
+    ]
+  },
+  "evidence-applications-web-and-embodied-AGT-058": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      2,
+      3,
+      5,
+      7,
+      8
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 107186,
+        "scores": [
+          83.2
+        ]
+      },
+      {
+        "group": 2,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 79966,
+        "scores": [
+          81.4
+        ]
+      },
+      {
+        "group": 3,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 65063,
+        "scores": [
+          80.6
+        ]
+      },
+      {
+        "group": 4,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 60385,
+        "scores": [
+          80.4
+        ]
+      },
+      {
+        "group": 5,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 94435,
+        "scores": [
+          82.3
+        ]
+      }
+    ]
+  },
+  "evidence-applications-scientific-research-AGT-001": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      2,
+      6,
+      7,
+      10,
+      13
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 104145,
+        "scores": [
+          87.4
+        ]
+      },
+      {
+        "group": 2,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 98754,
+        "scores": [
+          85.1
+        ]
+      },
+      {
+        "group": 3,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 121807,
+        "scores": [
+          86.7
+        ]
+      },
+      {
+        "group": 4,
+        "page": 10,
+        "n_sentences": 1,
+        "png_bytes": 165230,
+        "scores": [
+          87.4
+        ]
+      },
+      {
+        "group": 5,
+        "page": 13,
+        "n_sentences": 1,
+        "png_bytes": 139275,
+        "scores": [
+          84.6
+        ]
+      }
+    ]
+  },
+  "evidence-applications-scientific-research-AGT-002": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      6,
+      12,
+      54,
+      67,
+      73
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 104830,
+        "scores": [
+          95.0
+        ]
+      },
+      {
+        "group": 2,
+        "page": 12,
+        "n_sentences": 1,
+        "png_bytes": 51616,
+        "scores": [
+          100.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 54,
+        "n_sentences": 1,
+        "png_bytes": 88017,
+        "scores": [
+          92.7
+        ]
+      },
+      {
+        "group": 4,
+        "page": 67,
+        "n_sentences": 1,
+        "png_bytes": 80105,
+        "scores": [
+          100.0
+        ]
+      },
+      {
+        "group": 5,
+        "page": 73,
+        "n_sentences": 1,
+        "png_bytes": 59304,
+        "scores": [
+          90.0
+        ]
+      }
+    ]
+  },
+  "evidence-applications-scientific-research-AGT-005": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 159689,
+        "scores": [
+          82.1
+        ]
+      },
+      {
+        "group": 2,
+        "page": 4,
+        "n_sentences": 1,
+        "png_bytes": 137484,
+        "scores": [
+          82.1
+        ]
+      },
+      {
+        "group": 3,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 127266,
+        "scores": [
+          84.2
+        ]
+      },
+      {
+        "group": 4,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 139057,
+        "scores": [
+          80.6
+        ]
+      },
+      {
+        "group": 5,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 155483,
+        "scores": [
+          81.5
+        ]
+      }
+    ]
+  },
+  "evidence-applications-scientific-research-AGT-011": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      6,
+      7
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 84904,
+        "scores": [
+          87.9
+        ]
+      },
+      {
+        "group": 2,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 139708,
+        "scores": [
+          79.0
+        ]
+      },
+      {
+        "group": 3,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 146134,
+        "scores": [
+          75.9
+        ]
+      },
+      {
+        "group": 4,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 190130,
+        "scores": [
+          76.0
+        ]
+      },
+      {
+        "group": 5,
+        "page": 7,
+        "n_sentences": 1,
+        "png_bytes": 146709,
+        "scores": [
+          76.8
+        ]
+      }
+    ]
+  },
+  "evidence-applications-scientific-research-AGT-012": {
+    "status": "no_pdf",
+    "notes": "no PDF for AGT-012"
+  },
+  "evidence-applications-scientific-research-AGT-015": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      6,
+      8
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 121915,
+        "scores": [
+          75.6
+        ]
+      },
+      {
+        "group": 2,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 135771,
+        "scores": [
+          73.3
+        ]
+      },
+      {
+        "group": 3,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 155292,
+        "scores": [
+          72.1
+        ]
+      },
+      {
+        "group": 4,
+        "page": 6,
+        "n_sentences": 1,
+        "png_bytes": 123337,
+        "scores": [
+          73.7
+        ]
+      },
+      {
+        "group": 5,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 179838,
+        "scores": [
+          72.9
+        ]
+      }
+    ]
+  },
+  "evidence-applications-scientific-research-AGT-028": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      8,
+      10
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 83513,
+        "scores": [
+          83.2
+        ]
+      },
+      {
+        "group": 2,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 169123,
+        "scores": [
+          80.2
+        ]
+      },
+      {
+        "group": 3,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 124295,
+        "scores": [
+          80.5
+        ]
+      },
+      {
+        "group": 4,
+        "page": 8,
+        "n_sentences": 1,
+        "png_bytes": 163756,
+        "scores": [
+          80.5
+        ]
+      },
+      {
+        "group": 5,
+        "page": 10,
+        "n_sentences": 1,
+        "png_bytes": 158956,
+        "scores": [
+          79.4
+        ]
+      }
+    ]
+  },
+  "evidence-applications-scientific-research-AGT-029": {
+    "status": "no_pdf",
+    "notes": "no PDF for AGT-029"
+  },
+  "evidence-applications-scientific-research-AGT-030": {
+    "status": "ok",
+    "strategy": "multi-sentence-multi-page",
+    "screenshots": 5,
+    "pages": [
+      1,
+      2,
+      3,
+      5,
+      10
+    ],
+    "groups": [
+      {
+        "group": 1,
+        "page": 1,
+        "n_sentences": 1,
+        "png_bytes": 62709,
+        "scores": [
+          84.8
+        ]
+      },
+      {
+        "group": 2,
+        "page": 2,
+        "n_sentences": 1,
+        "png_bytes": 191105,
+        "scores": [
+          84.6
+        ]
+      },
+      {
+        "group": 3,
+        "page": 3,
+        "n_sentences": 1,
+        "png_bytes": 154609,
+        "scores": [
+          85.0
+        ]
+      },
+      {
+        "group": 4,
+        "page": 5,
+        "n_sentences": 1,
+        "png_bytes": 121610,
+        "scores": [
+          83.3
+        ]
+      },
+      {
+        "group": 5,
+        "page": 10,
+        "n_sentences": 1,
+        "png_bytes": 154920,
+        "scores": [
+          83.5
+        ]
+      }
+    ]
+  },
+  "evidence-applications-scientific-research-AGT-031": {
+    "status": "no_pdf",
+    "notes": "no PDF for AGT-031"
+  }
+}

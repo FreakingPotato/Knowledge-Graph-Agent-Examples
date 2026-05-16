@@ -1,0 +1,231 @@
+{
+  "schema_version": "0.1",
+  "topic": "ai_agents",
+  "generated_at": "2026-05-16T16:31:06Z",
+  "citation_threshold": 500,
+  "year_range": [
+    2023,
+    2025
+  ],
+  "target_per_claim": 10,
+  "by_claim": {
+    "reasoning-chain-of-thought": {
+      "queries_run": [
+        "openalex: tree of thoughts deliberate problem solving",
+        "openalex: graph of thoughts large language model",
+        "openalex: self consistency chain of thought reasoning",
+        "openalex: chain of thought prompting reasoning",
+        "openalex: step by step reasoning prompt LLM",
+        "openalex: self-discover composing reasoning structures",
+        "openalex: tree search language model reasoning",
+        "openalex: mathematical reasoning large language model",
+        "openalex_id: W4377130677"
+      ],
+      "raw_total": 232,
+      "after_year": 100,
+      "after_citations": 100,
+      "after_venue": 25,
+      "after_relevance": 10,
+      "after_dedup": 10,
+      "kept_top_n": 10,
+      "citation_threshold_attrition": "0 of 100 dropped by >=500 threshold",
+      "notes": ""
+    },
+    "reasoning-tool-use": {
+      "queries_run": [
+        "openalex: ReAct synergizing reasoning acting language models",
+        "openalex: Toolformer language models tools",
+        "openalex: HuggingGPT solving AI tasks ChatGPT Hugging Face",
+        "openalex: Gorilla large language model connected massive APIs",
+        "openalex: function calling tool augmented language model",
+        "openalex: ToolLLM open source LLM mastering APIs",
+        "openalex: tool learning foundation model",
+        "openalex: augmented language model survey tools",
+        "openalex: external tool use language model agent",
+        "openalex: code interpreter LLM tool",
+        "openalex_id: W4389991792",
+        "openalex_id: W4396723768"
+      ],
+      "raw_total": 175,
+      "after_year": 118,
+      "after_citations": 118,
+      "after_venue": 21,
+      "after_relevance": 8,
+      "after_dedup": 8,
+      "kept_top_n": 8,
+      "citation_threshold_attrition": "0 of 118 dropped by >=500 threshold",
+      "notes": ""
+    },
+    "reasoning-memory-and-reflection": {
+      "queries_run": [
+        "openalex: Reflexion language agents verbal reinforcement learning",
+        "openalex: Self-Refine iterative refinement self feedback",
+        "openalex: Self-Discover composing reasoning structures large language model",
+        "openalex: MemGPT towards LLMs operating systems memory",
+        "openalex: memory augmented transformer long context agent",
+        "openalex: self refine self correction language model",
+        "openalex: long term memory LLM agent",
+        "openalex: retrieval augmented generation language model",
+        "openalex: self improvement reasoning iterative",
+        "openalex_id: W4389984066"
+      ],
+      "raw_total": 145,
+      "after_year": 74,
+      "after_citations": 74,
+      "after_venue": 21,
+      "after_relevance": 4,
+      "after_dedup": 4,
+      "kept_top_n": 4,
+      "citation_threshold_attrition": "0 of 74 dropped by >=500 threshold",
+      "notes": "Fewer than 5 candidates: OpenAlex cited_by_count for many agent-classic arXiv preprints (e.g. ReAct, AutoGen, MetaGPT, Reflexion, SWE-bench, WebArena, Voyager) is below 500 even though they have thousands of Google-Scholar cites. Per user instruction the >=500 threshold is NOT lowered."
+    },
+    "multiagent-role-and-debate": {
+      "queries_run": [
+        "openalex: CAMEL communicative agents mind exploration",
+        "openalex: AutoGen multi-agent conversation framework",
+        "openalex: MetaGPT meta programming multi-agent collaborative",
+        "openalex: multi-agent debate factuality reasoning",
+        "openalex: AgentVerse multi-agent",
+        "openalex: ChatDev communicative agents software development",
+        "openalex: role play multi agent large language model",
+        "openalex: agent collaboration framework LLM",
+        "openalex: society of mind multi-agent LLM debate"
+      ],
+      "raw_total": 80,
+      "after_year": 57,
+      "after_citations": 57,
+      "after_venue": 10,
+      "after_relevance": 1,
+      "after_dedup": 1,
+      "kept_top_n": 1,
+      "citation_threshold_attrition": "0 of 57 dropped by >=500 threshold",
+      "notes": "Fewer than 5 candidates: OpenAlex cited_by_count for many agent-classic arXiv preprints (e.g. ReAct, AutoGen, MetaGPT, Reflexion, SWE-bench, WebArena, Voyager) is below 500 even though they have thousands of Google-Scholar cites. Per user instruction the >=500 threshold is NOT lowered."
+    },
+    "multiagent-autonomous-loops": {
+      "queries_run": [
+        "openalex: AutoGPT autonomous task agent",
+        "openalex: autonomous agent task decomposition",
+        "openalex: LangGraph state machine agent",
+        "openalex: agentic workflow long horizon planning",
+        "openalex: open ended autonomous agent",
+        "openalex: task planning execution loop language model",
+        "openalex: agentic AI workflow",
+        "openalex: autonomous LLM agent loop",
+        "openalex_id: W4387835442"
+      ],
+      "raw_total": 133,
+      "after_year": 86,
+      "after_citations": 86,
+      "after_venue": 12,
+      "after_relevance": 5,
+      "after_dedup": 5,
+      "kept_top_n": 5,
+      "citation_threshold_attrition": "0 of 86 dropped by >=500 threshold",
+      "notes": ""
+    },
+    "multiagent-emergent-behavior": {
+      "queries_run": [
+        "openalex: Generative Agents interactive simulacra human behavior",
+        "openalex: Voyager open-ended embodied agent Minecraft",
+        "openalex: GITM ghost in Minecraft generally capable agents",
+        "openalex: JARVIS-1 open world multi-task agents",
+        "openalex: social simulation language agent population",
+        "openalex: simulated society LLM agents emergent",
+        "openalex: Minecraft LLM agent autonomous skill",
+        "openalex: embodied agent learning open ended",
+        "openalex_id: W4387835442"
+      ],
+      "raw_total": 55,
+      "after_year": 44,
+      "after_citations": 44,
+      "after_venue": 10,
+      "after_relevance": 3,
+      "after_dedup": 3,
+      "kept_top_n": 3,
+      "citation_threshold_attrition": "0 of 44 dropped by >=500 threshold",
+      "notes": "Fewer than 5 candidates: OpenAlex cited_by_count for many agent-classic arXiv preprints (e.g. ReAct, AutoGen, MetaGPT, Reflexion, SWE-bench, WebArena, Voyager) is below 500 even though they have thousands of Google-Scholar cites. Per user instruction the >=500 threshold is NOT lowered."
+    },
+    "applications-software-engineering": {
+      "queries_run": [
+        "openalex: SWE-bench language models real-world github issues",
+        "openalex: SWE-agent agent computer interface software engineering",
+        "openalex: AlphaCode competitive programming code generation",
+        "openalex: code agent benchmark autonomous github",
+        "openalex: autonomous program improvement agent",
+        "openalex: code generation large language model benchmark",
+        "openalex: repository level code completion",
+        "openalex: software engineering agent autonomous repair",
+        "openalex: AgentBench evaluating LLM agents"
+      ],
+      "raw_total": 136,
+      "after_year": 105,
+      "after_citations": 105,
+      "after_venue": 29,
+      "after_relevance": 12,
+      "after_dedup": 12,
+      "kept_top_n": 10,
+      "citation_threshold_attrition": "0 of 105 dropped by >=500 threshold",
+      "notes": ""
+    },
+    "applications-web-and-embodied": {
+      "queries_run": [
+        "openalex: WebArena realistic web environment autonomous agents",
+        "openalex: Mind2Web generalist agent web",
+        "openalex: VisualWebArena multimodal agents",
+        "openalex: PaLM-E embodied multimodal language model",
+        "openalex: RT-2 vision language action models web robotic",
+        "openalex: RT-1 robotics transformer real-world control",
+        "openalex: OpenVLA open source vision language action",
+        "openalex: computer use agent multimodal",
+        "openalex: WebShop scalable real-world web interaction",
+        "openalex: GUI agent screen large language model",
+        "openalex_id: W4385430679",
+        "openalex_id: W4366330503"
+      ],
+      "raw_total": 52,
+      "after_year": 44,
+      "after_citations": 44,
+      "after_venue": 8,
+      "after_relevance": 4,
+      "after_dedup": 4,
+      "kept_top_n": 4,
+      "citation_threshold_attrition": "0 of 44 dropped by >=500 threshold",
+      "notes": "Fewer than 5 candidates: OpenAlex cited_by_count for many agent-classic arXiv preprints (e.g. ReAct, AutoGen, MetaGPT, Reflexion, SWE-bench, WebArena, Voyager) is below 500 even though they have thousands of Google-Scholar cites. Per user instruction the >=500 threshold is NOT lowered."
+    },
+    "applications-scientific-research": {
+      "queries_run": [
+        "openalex: ChemCrow augmenting large language models chemistry tools",
+        "openalex: Coscientist autonomous chemical research large language models",
+        "openalex: Biomni biomedical agent",
+        "openalex: GeneAgent gene set biological agent",
+        "openalex: scientific research agent literature hypothesis",
+        "openalex: drug discovery agent large language model",
+        "openalex: automated scientific discovery language model",
+        "openalex: large language models clinical knowledge encode",
+        "openalex: foundation model generalist medical artificial intelligence",
+        "openalex: structured information extraction scientific text",
+        "openalex_id: W4389991792",
+        "openalex_id: W4396723768",
+        "openalex_id: W4391836235",
+        "openalex_id: W4384071683",
+        "openalex_id: W4406152279",
+        "openalex_id: W4360891289",
+        "openalex_id: W4365143687",
+        "openalex_id: W4389727268"
+      ],
+      "raw_total": 222,
+      "after_year": 156,
+      "after_citations": 155,
+      "after_venue": 34,
+      "after_relevance": 20,
+      "after_dedup": 20,
+      "kept_top_n": 10,
+      "citation_threshold_attrition": "1 of 156 dropped by >=500 threshold",
+      "notes": ""
+    }
+  },
+  "totals": {
+    "unique_papers": 31,
+    "claims": 9
+  }
+}

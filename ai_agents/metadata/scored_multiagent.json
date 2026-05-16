@@ -1,0 +1,919 @@
+{
+  "schema_version": "0.1",
+  "paradigm": "multiagent",
+  "scored_at": "2026-05-17T10:00:00Z",
+  "scored_by": "S2",
+  "claims": {
+    "multiagent-role-and-debate": {
+      "claim_text": "Role-playing frameworks (CAMEL, AutoGen, MetaGPT) and structured multi-agent debate / critique loops raise solution quality on tasks like coding, scientific reasoning, and decision-making by forcing models to surface and resolve disagreement.",
+      "candidates": [
+        {
+          "candidate_id": "candidate-multiagent-role-and-debate-AGT017",
+          "paper_id": "AGT-017",
+          "paper_title": "Augmenting large language models with chemistry tools",
+          "paper_year": 2024,
+          "paper_journal": "Nature Machine Intelligence",
+          "paper_cited_by_count": 541,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "ChemCrow is a single GPT-4 agent wired to 18 chemistry tools rather than a role-playing or debate framework; its outcomes (synthesis of insect repellent, organocatalysts) are not produced by inter-agent role play or debate."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "The 18-tool ChemCrow scaffold is reusable for chemistry pipelines, but it offers no role assignment or critique loop that a practitioner could lift into a CAMEL/AutoGen/MetaGPT-style system."
+            },
+            "plausible": {
+              "score": 3,
+              "rationale": "Expert + LLM assessments establish ChemCrow's effectiveness, but there is no experimental comparison versus an alternative role-playing or debating multi-agent baseline."
+            },
+            "scalable": {
+              "score": 2,
+              "rationale": "Scales by adding chemistry tools, not by adding cooperating role-bound agents; the claim's scaling axis (more debating agents -> better answers) is untested."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "Expert and LLM evaluators rate task completion, which is reusable, but no debate-quality or role-consistency metric of the kind this claim relies on is reported."
+            }
+          },
+          "weighted_total": 12.1,
+          "match_score": 0.4321
+        },
+        {
+          "candidate_id": "candidate-multiagent-role-and-debate-AGT042",
+          "paper_id": "AGT-042",
+          "paper_title": "CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (NeurIPS 2023)",
+          "paper_cited_by_count": 98,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "CAMEL is one of the three frameworks named in the claim; it introduces inception-prompting-based role-playing between AI user and AI assistant agents to autonomously cooperate on tasks."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "The role-playing prompt template and released conversational corpus are directly reusable as the canonical recipe for instantiating a two-role multi-agent system."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Comprehensive case studies of instruction-following cooperation across many task types support the role-play hypothesis, though formal head-to-head against single-agent baselines is limited."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Inception prompting scales to arbitrary role pairs and large conversational datasets, demonstrated by generating extensive role-play data."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Releases conversational datasets and task-completion analyses that downstream multi-agent papers reuse as a validation protocol for role-play frameworks."
+            }
+          },
+          "weighted_total": 24.8,
+          "match_score": 0.8857
+        },
+        {
+          "candidate_id": "candidate-multiagent-role-and-debate-AGT043",
+          "paper_id": "AGT-043",
+          "paper_title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (ICLR 2024 workshop)",
+          "paper_cited_by_count": 149,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "AutoGen is explicitly named in the claim; it provides a generic infrastructure of customizable, conversable agents that converse to solve mathematics, coding, QA, and operations-research tasks."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Open-source framework with a documented programming model lets practitioners drop role-bound conversing agents into their LLM apps the day they read the paper."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Empirical studies across six application domains show conversation-based role assignment improves task completion versus single-agent baselines."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Supports arbitrary numbers of agents, mixed human/LLM/tool modes, and nested chats; widely adopted in industry as the de facto multi-agent framework."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Reproducible task suites (math, coding, online decision-making) and open code provide a clear validation protocol for role-and-debate setups."
+            }
+          },
+          "weighted_total": 25.7,
+          "match_score": 0.9179
+        },
+        {
+          "candidate_id": "candidate-multiagent-role-and-debate-AGT044",
+          "paper_id": "AGT-044",
+          "paper_title": "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (ICLR 2024)",
+          "paper_cited_by_count": 136,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "MetaGPT is named in the claim; it encodes Standardized Operating Procedures and assigns assembly-line software-engineering roles (PM, architect, engineer, QA) that demonstrably reduce cascading hallucinations on collaborative coding benchmarks."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Open-source SOP-prompted role pipeline can be lifted into any software-engineering project as a structured role-playing recipe."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "On collaborative software-engineering benchmarks MetaGPT yields more coherent solutions than naive chat-based multi-agent baselines, with ablations on SOP enforcement."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Assembly-line paradigm decomposes tasks across many specialist agents and extends to other workflows that admit SOPs."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Reports HumanEval/MBPP and SoftwareDev benchmark results with role ablations, an reusable validation protocol for role-bound multi-agent coding."
+            }
+          },
+          "weighted_total": 24.8,
+          "match_score": 0.8857
+        },
+        {
+          "candidate_id": "candidate-multiagent-role-and-debate-AGT045",
+          "paper_id": "AGT-045",
+          "paper_title": "Improving Factuality and Reasoning in Language Models through Multiagent Debate",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (ICML 2024)",
+          "paper_cited_by_count": 87,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Canonical multi-agent debate paper: multiple LLM instances propose, critique, and debate over rounds, raising performance on mathematical and strategic reasoning and reducing hallucinations."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Debate procedure works on black-box models with identical prompts across tasks, making it a drop-in inference-time enhancement for any practitioner."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Multiple reasoning and factuality benchmarks (GSM8K-style arithmetic, biographies, chess) show that debate rounds beat single-agent self-consistency baselines."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Scales with number of agents and rounds; cost is linear in agents x rounds, which is tractable for small N."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Per-task accuracy on reasoning and factuality benchmarks gives a clean, replicable validation recipe for debate frameworks."
+            }
+          },
+          "weighted_total": 25.9,
+          "match_score": 0.925
+        },
+        {
+          "candidate_id": "candidate-multiagent-role-and-debate-AGT046",
+          "paper_id": "AGT-046",
+          "paper_title": "AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (ICLR 2024)",
+          "paper_cited_by_count": 20,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "AgentVerse defines a role-playing multi-agent framework with dynamically composed groups that outperform single agents on collaborative tasks, directly supporting the role-playing half of the claim."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Open-source framework with reusable role-assignment and recruitment modules; less mature than AutoGen but the recipe is portable."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Reports that multi-agent groups exceed single-agent baselines and observes emergent social behaviours (volunteering, conformity, destructive behaviour) supporting the role hypothesis."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Dynamic group composition is demonstrated for modest group sizes; very large agent populations not stress-tested."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Uses task success plus qualitative behaviour taxonomies; the behaviour analysis is reproducible but less standardised than debate accuracy benchmarks."
+            }
+          },
+          "weighted_total": 20.4,
+          "match_score": 0.7286
+        },
+        {
+          "candidate_id": "candidate-multiagent-role-and-debate-AGT047",
+          "paper_id": "AGT-047",
+          "paper_title": "Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate",
+          "paper_year": 2024,
+          "paper_journal": "arXiv (EMNLP 2024)",
+          "paper_cited_by_count": 177,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Introduces the MAD framework with tit-for-tat debating agents plus a judge, and shows it overcomes the Degeneration-of-Thought failure mode of self-reflection on commonsense MT and counterintuitive arithmetic."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Prompt-only MAD setup is directly applicable to existing black-box LLMs; judge role is a clear pattern to copy."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Quantitative gains on two challenging benchmarks plus a diagnosis of the DoT failure mode that motivates debate."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Extends naturally to more debaters/judges; cost grows linearly with agents and rounds."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Reports task accuracy and qualitative analyses of DoT mitigation, a transferable validation protocol for debate frameworks."
+            }
+          },
+          "weighted_total": 23.5,
+          "match_score": 0.8393
+        },
+        {
+          "candidate_id": "candidate-multiagent-role-and-debate-AGT048",
+          "paper_id": "AGT-048",
+          "paper_title": "ChatDev: Communicative Agents for Software Development",
+          "paper_year": 2024,
+          "paper_journal": "ACL Proceedings (Long Papers)",
+          "paper_cited_by_count": 213,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "ChatDev instantiates the waterfall SDLC as a multi-agent role-playing company (CEO, CTO, programmer, tester) with structured chats, directly exemplifying role-based multi-agent collaboration on coding."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Open-source virtual-software-company recipe is reusable as a template for role-bound critique loops in software workflows."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Reports task-success and bug-rate improvements over single-agent code generation, supporting the role-playing portion of the claim."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Pipeline scales to add more roles/phases and was shown to build varied programs from natural-language briefs."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Validation mixes automated benchmarks with case studies; less rigorous than debate accuracy benchmarks but reproducible."
+            }
+          },
+          "weighted_total": 21.3,
+          "match_score": 0.7607
+        }
+      ]
+    },
+    "multiagent-autonomous-loops": {
+      "claim_text": "Open-ended autonomous-agent loops (AutoGPT, BabyAGI, LangGraph-style state machines) plan, execute, and self-correct over many steps without per-step human supervision, demonstrating that LLM agents can drive multi-stage workflows.",
+      "candidates": [
+        {
+          "candidate_id": "candidate-multiagent-autonomous-loops-AGT015",
+          "paper_id": "AGT-015",
+          "paper_title": "Autonomous chemical research with large language models",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 759,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Coscientist is a GPT-4-driven autonomous loop that designs, plans, and executes complex experiments (palladium-catalysed cross-couplings) end-to-end, exemplifying multi-step self-correcting workflows."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Architecture composing planning, web/doc search, code execution and experimental automation is a directly portable pattern for AutoGPT-style scientific loops."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Demonstrates success on six diverse chemistry tasks with wet-lab confirmation in Nature, providing rare physical-world validation of an autonomous LLM loop."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Scales across multiple reaction families; cost limited by physical experiments rather than the loop architecture."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Wet-lab yields, reproducible runs, and ablations of subsystems give a strong validation protocol for autonomous-loop claims."
+            }
+          },
+          "weighted_total": 24.6,
+          "match_score": 0.8786
+        },
+        {
+          "candidate_id": "candidate-multiagent-autonomous-loops-AGT018",
+          "paper_id": "AGT-018",
+          "paper_title": "An autonomous laboratory for the accelerated synthesis of inorganic materials",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 756,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "A-Lab runs 17 days of continuous autonomous synthesis, realising 41 of 58 novel compound targets, a direct demonstration of multi-stage autonomous workflows planning and self-correcting via active learning."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "The active-learning + literature-trained NL recipe generator is reusable conceptually, but the heavy robotics dependency limits drop-in reuse for software-only LLM-agent loops."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Physical, peer-reviewed validation of an autonomous loop completing many materials-synthesis steps with high success rate."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Scales within a single robotic lab; broader scaling depends on hardware investment, not just LLM cost."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "X-ray diffraction-based success criteria and per-target outcome counts give a clear validation recipe for autonomous-loop performance."
+            }
+          },
+          "weighted_total": 20.9,
+          "match_score": 0.7464
+        },
+        {
+          "candidate_id": "candidate-multiagent-autonomous-loops-AGT008",
+          "paper_id": "AGT-008",
+          "paper_title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (NeurIPS 2023)",
+          "paper_cited_by_count": 563,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "Tree of Thoughts is a single-agent inference search procedure (explore, backtrack, self-evaluate) rather than an open-ended autonomous loop in the AutoGPT/BabyAGI sense."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "ToT's deliberate-search prompt structure is reusable as a planning subroutine inside an autonomous loop but is not itself a loop."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Strong gains on Game of 24 (74% vs CoT 4%), Creative Writing and Crosswords support deliberate multi-step problem solving."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Tree branching factor and depth grow inference cost rapidly; scaling to long horizons is limited."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Reports task accuracy with controlled branching factors; protocol is reproducible but covers short-horizon puzzles, not multi-stage workflows."
+            }
+          },
+          "weighted_total": 16.1,
+          "match_score": 0.575
+        },
+        {
+          "candidate_id": "candidate-multiagent-autonomous-loops-AGT019",
+          "paper_id": "AGT-019",
+          "paper_title": "A somato-cognitive action network alternates with effector regions in motor cortex",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 560,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 0,
+              "rationale": "Neuroscience paper on motor cortex organisation (the SCAN network); no LLM agents, no autonomous loops."
+            },
+            "immediate_benefit": {
+              "score": 0,
+              "rationale": "Nothing in this paper is transferable to building autonomous LLM-agent workflows."
+            },
+            "plausible": {
+              "score": 0,
+              "rationale": "Plausibility of the SCAN claim is irrelevant to autonomous-loop research."
+            },
+            "scalable": {
+              "score": 0,
+              "rationale": "Not applicable to multi-stage LLM workflows."
+            },
+            "how_to_validate": {
+              "score": 0,
+              "rationale": "fMRI-based validation does not translate to LLM-agent loop evaluation."
+            }
+          },
+          "weighted_total": 0.0,
+          "match_score": 0.0
+        },
+        {
+          "candidate_id": "candidate-multiagent-autonomous-loops-AGT017",
+          "paper_id": "AGT-017",
+          "paper_title": "Augmenting large language models with chemistry tools",
+          "paper_year": 2024,
+          "paper_journal": "Nature Machine Intelligence",
+          "paper_cited_by_count": 541,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "ChemCrow autonomously plans and executes multi-step chemistry syntheses (insect repellent, three organocatalysts, novel chromophore) via a ReAct-style loop over 18 tools."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "The GPT-4 + 18-tool loop is a directly reusable AutoGPT-style scaffold for tool-rich autonomous workflows."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Wet-lab and expert evaluation back the loop's effectiveness, though it is single-agent rather than the canonical AutoGPT loop."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Loop scales with additional tools and tasks across organic synthesis, drug discovery, and materials."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Expert + LLM judging plus wet-lab outcomes give a reproducible multi-step-workflow evaluation."
+            }
+          },
+          "weighted_total": 22.0,
+          "match_score": 0.7857
+        },
+        {
+          "candidate_id": "candidate-multiagent-autonomous-loops-AGT043",
+          "paper_id": "AGT-043",
+          "paper_title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (ICLR 2024 workshop)",
+          "paper_cited_by_count": 149,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "AutoGen's nested conversation patterns and tool-using agents implement open-ended planning-execution loops on math, coding, and online decision-making, the same family the claim points to."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Open-source framework is essentially the LangGraph-precursor reference implementation cited in the claim; practitioners use it as a state-machine substrate today."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Six application domains demonstrate that conversation-driven loops succeed end-to-end without per-step human supervision."
+            },
+            "scalable": {
+              "score": 5,
+              "rationale": "Supports arbitrary numbers of agents, tools, and nested loops; widely adopted for complex production workflows."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Reproducible benchmarks across math, coding, and online decision-making allow direct comparison to single-pass baselines."
+            }
+          },
+          "weighted_total": 24.2,
+          "match_score": 0.8643
+        },
+        {
+          "candidate_id": "candidate-multiagent-autonomous-loops-AGT044",
+          "paper_id": "AGT-044",
+          "paper_title": "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (ICLR 2024)",
+          "paper_cited_by_count": 136,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "Assembly-line agents execute multi-stage software workflows (requirements -> design -> code -> QA) without per-step human supervision on coding benchmarks."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "SOP-encoded pipeline is a reusable state-machine recipe for autonomous software-engineering loops."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Coherent improvements on collaborative software-engineering benchmarks over chain-of-prompt baselines."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "SOP pattern extends to other workflows that can be decomposed into role-bound stages."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "HumanEval/MBPP and the SoftwareDev benchmark with role ablations provide a reproducible loop evaluation."
+            }
+          },
+          "weighted_total": 22.0,
+          "match_score": 0.7857
+        },
+        {
+          "candidate_id": "candidate-multiagent-autonomous-loops-AGT059",
+          "paper_id": "AGT-059",
+          "paper_title": "Auto-GPT for Online Decision Making: Benchmarks and Additional Opinions",
+          "paper_year": 2023,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 39,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Directly benchmarks Auto-GPT styled autonomous agents (GPT-4, GPT-3.5, Claude, Vicuna) on real-world decision-making tasks and proposes the Additional Opinions algorithm to improve them."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Provides the first systematic benchmark suite and a lightweight Additional Opinions augmentation usable on top of existing Auto-GPT deployments."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Ablations across four LLMs and supervised-learner baselines provide credible evidence that Auto-GPT-style loops solve multi-stage tasks."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Additional Opinions avoids fine-tuning, so the loop pattern scales across foundation models."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Releases benchmarks and ablations that downstream Auto-GPT research can directly reuse as the validation protocol."
+            }
+          },
+          "weighted_total": 24.2,
+          "match_score": 0.8643
+        },
+        {
+          "candidate_id": "candidate-multiagent-autonomous-loops-AGT049",
+          "paper_id": "AGT-049",
+          "paper_title": "OpenAgents: An Open Platform for Language Agents in the Wild",
+          "paper_year": 2023,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 11,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "OpenAgents ships three autonomous agents (Data Agent with Python/SQL, Plugins Agent with 200+ APIs, Web Agent) that drive multi-stage workflows end-to-end without per-step human supervision."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Open-source platform with web UI gives practitioners a deployable autonomous-loop reference implementation."
+            },
+            "plausible": {
+              "score": 3,
+              "rationale": "Demonstrations and case studies support the loop claim but rigorous benchmark numbers are sparse."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Plugin architecture with 200+ tools and hosted UI supports broad task coverage."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "User-facing evaluation rather than fixed benchmark suites; reproducibility is moderate."
+            }
+          },
+          "weighted_total": 20.2,
+          "match_score": 0.7214
+        },
+        {
+          "candidate_id": "candidate-multiagent-autonomous-loops-AGT036",
+          "paper_id": "AGT-036",
+          "paper_title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (TMLR 2024)",
+          "paper_cited_by_count": 191,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Voyager is the canonical open-ended autonomous loop: GPT-4 driven Minecraft agent with automatic curriculum, executable-code skill library, and self-verification loop, achieving 3.3x more unique items and 15.3x faster tech-tree milestones than prior SOTA."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "The curriculum + skill-library + self-verification triple is a reusable architectural pattern for autonomous-loop agents, especially open-source via blackbox GPT-4 calls."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Strong, quantitative beat over prior SOTA on Minecraft lifelong-learning metrics, plus skill-transfer to new worlds."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Skill library grows monotonically; demonstrated transfer to new Minecraft worlds without re-training."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Minecraft-specific metrics (unique items, distance, tech tree) are reproducible and now widely reused for open-ended-agent evaluation."
+            }
+          },
+          "weighted_total": 24.6,
+          "match_score": 0.8786
+        },
+        {
+          "candidate_id": "candidate-multiagent-autonomous-loops-AGT048",
+          "paper_id": "AGT-048",
+          "paper_title": "ChatDev: Communicative Agents for Software Development",
+          "paper_year": 2024,
+          "paper_journal": "ACL Proceedings (Long Papers)",
+          "paper_cited_by_count": 213,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "ChatDev's waterfall pipeline (design -> coding -> testing -> documenting) is an autonomous multi-stage loop that runs without per-step supervision."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Open-source virtual-software-company template is reusable as a state-machine for autonomous software workflows."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Reports task-success and code-quality gains over single-agent baselines on SoftwareDev-style benchmarks."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Stage-and-role pipeline scales to additional development phases and project types."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Validation mixes automated metrics with case studies; protocol is partially standardised."
+            }
+          },
+          "weighted_total": 21.3,
+          "match_score": 0.7607
+        }
+      ]
+    },
+    "multiagent-emergent-behavior": {
+      "claim_text": "Embedding LLM agents in persistent simulated environments (Generative Agents, Voyager, CivRealm) produces emergent social, exploratory, and skill-acquisition behaviour that no single prompt elicits \u2014 a substrate for studying agent collectives.",
+      "candidates": [
+        {
+          "candidate_id": "candidate-multiagent-emergent-behavior-AGT020",
+          "paper_id": "AGT-020",
+          "paper_title": "Champion-level drone racing using deep reinforcement learning",
+          "paper_year": 2023,
+          "paper_journal": "Nature",
+          "paper_cited_by_count": 551,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 1,
+              "rationale": "Swift is a single-drone deep-RL controller competing against human champions; no LLM, no persistent multi-agent simulated society, and no emergent social behaviour of the kind the claim describes."
+            },
+            "immediate_benefit": {
+              "score": 1,
+              "rationale": "Sim-to-real RL pipeline does not transfer to LLM-agent emergent-behaviour setups."
+            },
+            "plausible": {
+              "score": 2,
+              "rationale": "Result is rigorously demonstrated in physical racing but is orthogonal to LLM emergence in simulated societies."
+            },
+            "scalable": {
+              "score": 1,
+              "rationale": "Scales as a robotics RL system, not as a substrate for studying agent collectives."
+            },
+            "how_to_validate": {
+              "score": 1,
+              "rationale": "Race-time metrics do not validate emergent social/exploratory behaviour."
+            }
+          },
+          "weighted_total": 6.6,
+          "match_score": 0.2357
+        },
+        {
+          "candidate_id": "candidate-multiagent-emergent-behavior-AGT016",
+          "paper_id": "AGT-016",
+          "paper_title": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+          "paper_year": 2023,
+          "paper_journal": "arXiv",
+          "paper_cited_by_count": 542,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 1,
+              "rationale": "Economic-impact rubric over US occupations; does not embed LLM agents in any simulated environment or study emergent multi-agent behaviour."
+            },
+            "immediate_benefit": {
+              "score": 1,
+              "rationale": "Labour-market rubric is not transferable to building agent simulations."
+            },
+            "plausible": {
+              "score": 2,
+              "rationale": "Methodologically sound for its scope but tangential to emergent-behaviour claims."
+            },
+            "scalable": {
+              "score": 1,
+              "rationale": "Not applicable as a multi-agent substrate."
+            },
+            "how_to_validate": {
+              "score": 1,
+              "rationale": "Occupational alignment scores do not validate emergent social behaviour."
+            }
+          },
+          "weighted_total": 6.6,
+          "match_score": 0.2357
+        },
+        {
+          "candidate_id": "candidate-multiagent-emergent-behavior-AGT021",
+          "paper_id": "AGT-021",
+          "paper_title": "RT-1: Robotics Transformer for Real-World Control at Scale",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (CoRL 2023)",
+          "paper_cited_by_count": 501,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "RT-1 is a single-robot transformer policy trained on diverse manipulation data; it shows skill generalisation but not multi-agent emergent behaviour in a persistent simulated society."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "Model and data are reusable for robotics, less so for LLM-agent simulated environments."
+            },
+            "plausible": {
+              "score": 3,
+              "rationale": "Strong evidence for scaling generalisation but not for the specific emergent-society claim."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Scales with data and parameters; relevant to embodied agents but tangential to claim."
+            },
+            "how_to_validate": {
+              "score": 2,
+              "rationale": "Task-success metrics on real robots do not validate emergent social/exploratory behaviour."
+            }
+          },
+          "weighted_total": 13.0,
+          "match_score": 0.4643
+        },
+        {
+          "candidate_id": "candidate-multiagent-emergent-behavior-AGT050",
+          "paper_id": "AGT-050",
+          "paper_title": "Generative Agents: Interactive Simulacra of Human Behavior",
+          "paper_year": 2023,
+          "paper_journal": "UIST 2023",
+          "paper_cited_by_count": 1345,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Canonical paper named in the claim: 25 generative agents in a Sims-like sandbox produce believable individual and emergent social behaviours (party planning, relationship formation) from a single seed."
+            },
+            "immediate_benefit": {
+              "score": 5,
+              "rationale": "Memory-stream + reflection + planning architecture is directly reusable as the reference design for persistent agent societies."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "Controlled ablations of memory and reflection components, plus human-evaluator believability ratings, support the emergence claim."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Demonstrated for 25 agents over multiple in-sim days; further scaling depends on memory retrieval cost."
+            },
+            "how_to_validate": {
+              "score": 5,
+              "rationale": "Establishes the validation protocol (memory ablations, human believability ratings, emergent-behaviour case studies) that subsequent simulated-society papers reuse."
+            }
+          },
+          "weighted_total": 26.6,
+          "match_score": 0.95
+        },
+        {
+          "candidate_id": "candidate-multiagent-emergent-behavior-AGT036",
+          "paper_id": "AGT-036",
+          "paper_title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (TMLR 2024)",
+          "paper_cited_by_count": 191,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 5,
+              "rationale": "Voyager is explicitly named in the claim; in persistent Minecraft it autonomously acquires a compositional skill library, exhibiting open-ended exploratory and skill-acquisition behaviour."
+            },
+            "immediate_benefit": {
+              "score": 4,
+              "rationale": "Curriculum + skill-library + self-verification recipe is a reusable substrate for embedding LLM agents in persistent simulated environments."
+            },
+            "plausible": {
+              "score": 5,
+              "rationale": "3.3x unique items, 2.3x distance and 15.3x faster tech-tree milestones versus prior SOTA quantify the emergent skill-acquisition claim."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Skill library grows monotonically and transfers across Minecraft worlds; cost limited by GPT-4 calls."
+            },
+            "how_to_validate": {
+              "score": 4,
+              "rationale": "Quantitative Minecraft metrics plus zero-shot world transfer establish a reproducible validation recipe for skill-acquisition emergence."
+            }
+          },
+          "weighted_total": 24.6,
+          "match_score": 0.8786
+        },
+        {
+          "candidate_id": "candidate-multiagent-emergent-behavior-AGT046",
+          "paper_id": "AGT-046",
+          "paper_title": "AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (ICLR 2024)",
+          "paper_cited_by_count": 20,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 4,
+              "rationale": "AgentVerse explicitly studies emergent social behaviours (volunteering, conformity, destructive behaviour) inside a multi-agent collaboration framework, matching the emergence half of the claim."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Open-source framework offers a usable substrate, though less polished than Generative Agents or Voyager."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Reports both task-performance gains over single agents and qualitative emergence taxonomies."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Dynamic group composition scales to modest sizes; very large societies untested."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Behaviour taxonomies plus task metrics are reproducible but less standardised than memory-ablation protocols."
+            }
+          },
+          "weighted_total": 19.1,
+          "match_score": 0.6821
+        },
+        {
+          "candidate_id": "candidate-multiagent-emergent-behavior-AGT042",
+          "paper_id": "AGT-042",
+          "paper_title": "CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (NeurIPS 2023)",
+          "paper_cited_by_count": 98,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 3,
+              "rationale": "CAMEL studies cooperative behaviours in a 'society' of role-playing LLM agents and surfaces cognitive patterns, partially overlapping with the emergent-behaviour claim though it lacks a persistent simulated environment."
+            },
+            "immediate_benefit": {
+              "score": 3,
+              "rationale": "Released role-play conversational data is a usable substrate for analysing emergent dialogue patterns."
+            },
+            "plausible": {
+              "score": 4,
+              "rationale": "Comprehensive case studies of cooperative behaviour back the society-of-agents framing."
+            },
+            "scalable": {
+              "score": 4,
+              "rationale": "Inception prompting scales to many role pairs and large conversational corpora."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Qualitative analyses and instruction-following metrics are reusable but not focused on emergence-specific metrics."
+            }
+          },
+          "weighted_total": 18.5,
+          "match_score": 0.6607
+        },
+        {
+          "candidate_id": "candidate-multiagent-emergent-behavior-AGT045",
+          "paper_id": "AGT-045",
+          "paper_title": "Improving Factuality and Reasoning in Language Models through Multiagent Debate",
+          "paper_year": 2023,
+          "paper_journal": "arXiv (ICML 2024)",
+          "paper_cited_by_count": 87,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "Multi-agent debate raises reasoning accuracy but agents do not inhabit a persistent simulated environment and the paper does not document emergent social/skill-acquisition behaviour."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "Debate protocol is reusable for accuracy but not as an emergence substrate."
+            },
+            "plausible": {
+              "score": 3,
+              "rationale": "Strong reasoning-accuracy evidence, modest evidence for emergent collective dynamics."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Scales linearly with agents/rounds; not persistent."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Reasoning-accuracy benchmarks do not validate the emergent-behaviour claim directly."
+            }
+          },
+          "weighted_total": 13.7,
+          "match_score": 0.4893
+        },
+        {
+          "candidate_id": "candidate-multiagent-emergent-behavior-AGT047",
+          "paper_id": "AGT-047",
+          "paper_title": "Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate",
+          "paper_year": 2024,
+          "paper_journal": "arXiv (EMNLP 2024)",
+          "paper_cited_by_count": 177,
+          "rubric": {
+            "useful_outcomes": {
+              "score": 2,
+              "rationale": "MAD debaters address Degeneration-of-Thought rather than emergence in persistent environments; the contribution lies in better reasoning, not in agent-society dynamics."
+            },
+            "immediate_benefit": {
+              "score": 2,
+              "rationale": "Debate framework is reusable but not as a simulated-society substrate."
+            },
+            "plausible": {
+              "score": 3,
+              "rationale": "Gains on commonsense MT and counterintuitive arithmetic are demonstrated but emergence is not the focal claim."
+            },
+            "scalable": {
+              "score": 3,
+              "rationale": "Adds debaters and judges; no persistent environment."
+            },
+            "how_to_validate": {
+              "score": 3,
+              "rationale": "Task-accuracy benchmarks do not validate emergent multi-agent behaviour."
+            }
+          },
+          "weighted_total": 13.7,
+          "match_score": 0.4893
+        }
+      ]
+    }
+  }
+}

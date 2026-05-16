@@ -1,0 +1,409 @@
+{
+  "AGT-001": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://www.nature.com/articles/s41586-023-06291-2.pdf",
+    "saved_to": "pdfs/AGT-001_2023_Large_language_models_encode_clinical_knowledge.pdf",
+    "bytes": 4867390
+  },
+  "AGT-002": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2303.12712.pdf",
+    "saved_to": "pdfs/AGT-002_2023_Sparks_of_Artificial_General_Intelligence_Early_experiments_with_GPT_4.pdf",
+    "bytes": 7370286
+  },
+  "AGT-003": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2312.00752.pdf",
+    "saved_to": "pdfs/AGT-003_2023_Mamba_Linear_Time_Sequence_Modeling_with_Selective_State_Spaces.pdf",
+    "bytes": 1168615
+  },
+  "AGT-004": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2302.11382.pdf",
+    "saved_to": "pdfs/AGT-004_2023_A_Prompt_Pattern_Catalog_to_Enhance_Prompt_Engineering_with_ChatGPT.pdf",
+    "bytes": 297795
+  },
+  "AGT-005": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://www.nature.com/articles/s41591-024-03423-7.pdf",
+    "saved_to": "pdfs/AGT-005_2025_Toward_expert_level_medical_question_answering_with_large_language_models.pdf",
+    "bytes": 2810040
+  },
+  "AGT-006": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2312.10997.pdf",
+    "saved_to": "pdfs/AGT-006_2023_Retrieval_Augmented_Generation_for_Large_Language_Models_A_Survey.pdf",
+    "bytes": 1662567
+  },
+  "AGT-007": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://aclanthology.org/2023.ijcnlp-main.45.pdf",
+    "saved_to": "pdfs/AGT-007_2023_A_Multitask_Multilingual_Multimodal_Evaluation_of_ChatGPT_on_Reasoning_Hallucina.pdf",
+    "bytes": 2089845
+  },
+  "AGT-008": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2305.10601.pdf",
+    "saved_to": "pdfs/AGT-008_2023_Tree_of_Thoughts_Deliberate_Problem_Solving_with_Large_Language_Models.pdf",
+    "bytes": 799685
+  },
+  "AGT-009": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://www.nature.com/articles/s41586-024-07421-0.pdf",
+    "saved_to": "pdfs/AGT-009_2024_Detecting_hallucinations_in_large_language_models_using_semantic_entropy.pdf",
+    "bytes": 2294477
+  },
+  "AGT-010": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://aclanthology.org/2023.emnlp-main.153.pdf",
+    "saved_to": "pdfs/AGT-010_2023_G_Eval_NLG_Evaluation_using_Gpt_4_with_Better_Human_Alignment.pdf",
+    "bytes": 393714
+  },
+  "AGT-011": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://www.nature.com/articles/s41467-024-44824-z.pdf",
+    "saved_to": "pdfs/AGT-011_2024_Segment_anything_in_medical_images.pdf",
+    "bytes": 5196000
+  },
+  "AGT-012": {
+    "status": "paywalled",
+    "source": "none"
+  },
+  "AGT-013": {
+    "status": "paywalled",
+    "source": "none"
+  },
+  "AGT-014": {
+    "status": "paywalled",
+    "source": "none"
+  },
+  "AGT-015": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://www.nature.com/articles/s41586-023-06792-0.pdf",
+    "saved_to": "pdfs/AGT-015_2023_Autonomous_chemical_research_with_large_language_models.pdf",
+    "bytes": 8869905
+  },
+  "AGT-016": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2303.10130.pdf",
+    "saved_to": "pdfs/AGT-016_2023_GPTs_are_GPTs_An_Early_Look_at_the_Labor_Market_Impact_Potential_of_Large_Langua.pdf",
+    "bytes": 2119311
+  },
+  "AGT-017": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://www.nature.com/articles/s42256-024-00832-8.pdf",
+    "saved_to": "pdfs/AGT-017_2024_Augmenting_large_language_models_with_chemistry_tools.pdf",
+    "bytes": 2396611
+  },
+  "AGT-018": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://www.nature.com/articles/s41586-023-06734-w.pdf",
+    "saved_to": "pdfs/AGT-018_2023_An_autonomous_laboratory_for_the_accelerated_synthesis_of_inorganic_materials.pdf",
+    "bytes": 10411037
+  },
+  "AGT-019": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://www.nature.com/articles/s41586-023-05964-2.pdf",
+    "saved_to": "pdfs/AGT-019_2023_A_somato_cognitive_action_network_alternates_with_effector_regions_in_motor_cort.pdf",
+    "bytes": 17233664
+  },
+  "AGT-020": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://www.nature.com/articles/s41586-023-06419-4.pdf",
+    "saved_to": "pdfs/AGT-020_2023_Champion_level_drone_racing_using_deep_reinforcement_learning.pdf",
+    "bytes": 9924246
+  },
+  "AGT-021": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://doi.org/10.15607/rss.2023.xix.025",
+    "saved_to": "pdfs/AGT-021_2023_RT_1_Robotics_Transformer_for_Real_World_Control_at_Scale.pdf",
+    "bytes": 13330974
+  },
+  "AGT-022": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2303.08774.pdf",
+    "saved_to": "pdfs/AGT-022_2023_GPT_4_Technical_Report.pdf",
+    "bytes": 5245564
+  },
+  "AGT-023": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://www.nature.com/articles/s41586-023-06185-3.pdf",
+    "saved_to": "pdfs/AGT-023_2023_Accurate_medium_range_global_weather_forecasting_with_3D_neural_networks.pdf",
+    "bytes": 8079020
+  },
+  "AGT-024": {
+    "status": "paywalled",
+    "source": "none"
+  },
+  "AGT-025": {
+    "status": "paywalled",
+    "source": "none"
+  },
+  "AGT-026": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2304.08485.pdf",
+    "saved_to": "pdfs/AGT-026_2023_Visual_Instruction_Tuning.pdf",
+    "bytes": 5906135
+  },
+  "AGT-027": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://www.nature.com/articles/s41586-024-07441-w.pdf",
+    "saved_to": "pdfs/AGT-027_2024_A_whole_slide_foundation_model_for_digital_pathology_from_real_world_data.pdf",
+    "bytes": 5011924
+  },
+  "AGT-028": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://www.nature.com/articles/s41586-023-06735-9.pdf",
+    "saved_to": "pdfs/AGT-028_2023_Scaling_deep_learning_for_materials_discovery.pdf",
+    "bytes": 3132539
+  },
+  "AGT-029": {
+    "status": "paywalled",
+    "source": "none"
+  },
+  "AGT-030": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://www.nature.com/articles/s41586-023-06555-x.pdf",
+    "saved_to": "pdfs/AGT-030_2023_A_foundation_model_for_generalizable_disease_detection_from_retinal_images.pdf",
+    "bytes": 22132449
+  },
+  "AGT-031": {
+    "status": "paywalled",
+    "source": "none"
+  },
+  "AGT-032": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2302.04761.pdf",
+    "saved_to": "pdfs/AGT-032_2023_Toolformer_Language_Models_Can_Teach_Themselves_to_Use_Tools.pdf",
+    "bytes": 657966
+  },
+  "AGT-033": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2303.17580.pdf",
+    "saved_to": "pdfs/AGT-033_2023_HuggingGPT_Solving_AI_Tasks_with_ChatGPT_and_its_Friends_in_Hugging_Face.pdf",
+    "bytes": 3417598
+  },
+  "AGT-034": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2305.15334.pdf",
+    "saved_to": "pdfs/AGT-034_2023_Gorilla_Large_Language_Model_Connected_with_Massive_APIs.pdf",
+    "bytes": 1247664
+  },
+  "AGT-035": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2307.16789.pdf",
+    "saved_to": "pdfs/AGT-035_2023_ToolLLM_Facilitating_Large_Language_Models_to_Master_16000_Real_world_APIs.pdf",
+    "bytes": 2048075
+  },
+  "AGT-036": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2305.16291.pdf",
+    "saved_to": "pdfs/AGT-036_2023_Voyager_An_Open_Ended_Embodied_Agent_with_Large_Language_Models.pdf",
+    "bytes": 18830859
+  },
+  "AGT-037": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2303.11366.pdf",
+    "saved_to": "pdfs/AGT-037_2023_Reflexion_Language_Agents_with_Verbal_Reinforcement_Learning.pdf",
+    "bytes": 591097
+  },
+  "AGT-038": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2303.17651.pdf",
+    "saved_to": "pdfs/AGT-038_2023_Self_Refine_Iterative_Refinement_with_Self_Feedback.pdf",
+    "bytes": 2014949
+  },
+  "AGT-039": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2402.03620.pdf",
+    "saved_to": "pdfs/AGT-039_2024_Self_Discover_Large_Language_Models_Self_Compose_Reasoning_Structures.pdf",
+    "bytes": 1262297
+  },
+  "AGT-040": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2310.08560.pdf",
+    "saved_to": "pdfs/AGT-040_2023_MemGPT_Towards_LLMs_as_Operating_Systems.pdf",
+    "bytes": 663708
+  },
+  "AGT-041": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://aclanthology.org/2023.acl-long.147.pdf",
+    "saved_to": "pdfs/AGT-041_2023_Plan_and_Solve_Prompting_Improving_Zero_Shot_Chain_of_Thought_Reasoning_by_Large.pdf",
+    "bytes": 3390326
+  },
+  "AGT-042": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2303.17760.pdf",
+    "saved_to": "pdfs/AGT-042_2023_CAMEL_Communicative_Agents_for_Mind_Exploration_of_Large_Language_Model_Society.pdf",
+    "bytes": 7536497
+  },
+  "AGT-043": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2308.08155.pdf",
+    "saved_to": "pdfs/AGT-043_2023_AutoGen_Enabling_Next_Gen_LLM_Applications_via_Multi_Agent_Conversation.pdf",
+    "bytes": 3571809
+  },
+  "AGT-044": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2308.00352.pdf",
+    "saved_to": "pdfs/AGT-044_2023_MetaGPT_Meta_Programming_for_A_Multi_Agent_Collaborative_Framework.pdf",
+    "bytes": 16753634
+  },
+  "AGT-045": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2305.14325.pdf",
+    "saved_to": "pdfs/AGT-045_2023_Improving_Factuality_and_Reasoning_in_Language_Models_through_Multiagent_Debate.pdf",
+    "bytes": 1779875
+  },
+  "AGT-046": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://arxiv.org/pdf/2308.10848",
+    "saved_to": "pdfs/AGT-046_2023_AgentVerse_Facilitating_Multi_Agent_Collaboration_and_Exploring_Emergent_Behavio.pdf",
+    "bytes": 4652125
+  },
+  "AGT-047": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://aclanthology.org/2024.emnlp-main.992.pdf",
+    "saved_to": "pdfs/AGT-047_2024_Encouraging_Divergent_Thinking_in_Large_Language_Models_through_Multi_Agent_Deba.pdf",
+    "bytes": 895481
+  },
+  "AGT-048": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://aclanthology.org/2024.acl-long.810.pdf",
+    "saved_to": "pdfs/AGT-048_2024_ChatDev_Communicative_Agents_for_Software_Development.pdf",
+    "bytes": 3342208
+  },
+  "AGT-049": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2310.10634.pdf",
+    "saved_to": "pdfs/AGT-049_2023_OpenAgents_An_Open_Platform_for_Language_Agents_in_the_Wild.pdf",
+    "bytes": 9889691
+  },
+  "AGT-050": {
+    "status": "paywalled",
+    "source": "none"
+  },
+  "AGT-051": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2310.06770.pdf",
+    "saved_to": "pdfs/AGT-051_2023_SWE_bench_Can_Language_Models_Resolve_Real_World_GitHub_Issues.pdf",
+    "bytes": 4533722
+  },
+  "AGT-052": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2405.15793.pdf",
+    "saved_to": "pdfs/AGT-052_2024_SWE_agent_Agent_Computer_Interfaces_Enable_Automated_Software_Engineering.pdf",
+    "bytes": 4963538
+  },
+  "AGT-053": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2402.01030.pdf",
+    "saved_to": "pdfs/AGT-053_2024_Executable_Code_Actions_Elicit_Better_LLM_Agents.pdf",
+    "bytes": 4345392
+  },
+  "AGT-054": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2312.13010.pdf",
+    "saved_to": "pdfs/AGT-054_2023_AgentCoder_Multi_Agent_based_Code_Generation_with_Iterative_Testing_and_Optimisa.pdf",
+    "bytes": 678536
+  },
+  "AGT-055": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2401.13649.pdf",
+    "saved_to": "pdfs/AGT-055_2024_VisualWebArena_Evaluating_Multimodal_Agents_on_Realistic_Visual_Web_Tasks.pdf",
+    "bytes": 4564902
+  },
+  "AGT-056": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2303.03378.pdf",
+    "saved_to": "pdfs/AGT-056_2023_PaLM_E_An_Embodied_Multimodal_Language_Model.pdf",
+    "bytes": 10707237
+  },
+  "AGT-057": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2307.15818.pdf",
+    "saved_to": "pdfs/AGT-057_2023_RT_2_Vision_Language_Action_Models_Transfer_Web_Knowledge_to_Robotic_Control.pdf",
+    "bytes": 15668163
+  },
+  "AGT-058": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2406.09246.pdf",
+    "saved_to": "pdfs/AGT-058_2024_OpenVLA_An_Open_Source_Vision_Language_Action_Model.pdf",
+    "bytes": 13240309
+  },
+  "AGT-059": {
+    "status": "downloaded",
+    "source": "arxiv",
+    "pdf_url": "https://arxiv.org/pdf/2306.02224.pdf",
+    "saved_to": "pdfs/AGT-059_2023_Auto_GPT_for_Online_Decision_Making_Benchmarks_and_Additional_Opinions.pdf",
+    "bytes": 727639
+  },
+  "AGT-060": {
+    "status": "paywalled",
+    "source": "none"
+  },
+  "AGT-061": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://www.nature.com/articles/s41586-023-06924-6_reference.pdf",
+    "saved_to": "pdfs/AGT-061_2023_Mathematical_discoveries_from_program_search_with_large_language_models.pdf",
+    "bytes": 2285181
+  },
+  "AGT-062": {
+    "status": "downloaded",
+    "source": "openalex",
+    "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/29720/31236",
+    "saved_to": "pdfs/AGT-062_2024_Graph_of_Thoughts_Solving_Elaborate_Problems_with_Large_Language_Models.pdf",
+    "bytes": 599151
+  }
+}

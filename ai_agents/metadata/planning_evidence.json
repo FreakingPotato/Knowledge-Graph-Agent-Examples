@@ -1,0 +1,2426 @@
+{
+  "schema_version": "0.1",
+  "topic": "ai_agents_planning",
+  "header": "🧭 Planning: where the AI-agent field goes next",
+  "description": "Five concrete next-step research directions that recur across the Discussion / Limitations / Future Work sections of the 2023–2025 agent classics. Each step is grounded in passages where the authors themselves call out unresolved problems.",
+  "rendered_at": "2026-05-16T16:53:58Z",
+  "next_steps": [
+    {
+      "id": "persistent-autonomous-agents",
+      "title": "Persistent autonomous agents",
+      "subtitle": "From single tasks to ongoing personas with stable memory",
+      "summary": "Move beyond episode-bounded agents that reset after each task toward persistent autonomous agents whose memory, goals, and learnt skills survive across days, weeks, and months — and that can be safely audited and rolled back.",
+      "why_now": "Reflexion, MemGPT, and Generative Agents show that long-horizon memory + skill libraries are feasible. The remaining gap is operational: persistence in the wild, secure state stores, and rollback / audit infrastructure. The first vendor that ships this primitive cleanly wins the agent-platform space.",
+      "evidence_points": [
+        {
+          "id": "planning-persistent-autonomous-agents-AGT-048",
+          "paper_id": "AGT-048",
+          "next_step_id": "persistent-autonomous-agents",
+          "best_score": 102.1,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-048__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We have introduced ChatDev, an innovative multi- agent collaboration framework for software devel- opment that utilizes multiple LLM-powered agents to integrate fragmented phases of the waterfall model into a cohesive communication system.",
+                  "match_score": 66.4
+                },
+                {
+                  "text": "We aim for the insights to advance LLM agents towards increased autonomy and illuminate the profound effects of \"language\" and its empowering role across an even broader spectrum of applications.",
+                  "match_score": 77.1
+                },
+                {
+                  "text": "Thirdly, compared to single-agent approaches, multiple agents require more tokens and time, increasing computational de- mands and environmental impact.",
+                  "match_score": 68.2
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-048__02.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "Our study explores the potential of cooperative autonomous agents in software development, but certain limitations and risks must be considered by researchers and practitioners.",
+                  "match_score": 102.1
+                },
+                {
+                  "text": "Firstly, the capabili- ties of autonomous agents in software production might be overestimated.",
+                  "match_score": 95.0
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 2,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 1
+        },
+        {
+          "id": "planning-persistent-autonomous-agents-AGT-037",
+          "paper_id": "AGT-037",
+          "next_step_id": "persistent-autonomous-agents",
+          "best_score": 95.0,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-037__01.png",
+              "page": 5,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "To achieve fully autonomous behavior, we implement two self-evaluation techniques: natural language classification using an LLM and a hand-written heuristic.",
+                  "match_score": 73.6
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-037__02.png",
+              "page": 7,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Aside from the unit test suite component, the setup for the learning loop for a Reflexion programming agent is identical to the reasoning and decision-making agents with a max memory limit of 1 experience.",
+                  "match_score": 75.4
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-037__03.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Our work has the potential of reinforcing and empowering these agents toward greater automation and work efficiency, but it also amplifies the risks when these agents were put into misuse.",
+                  "match_score": 77.1
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-037__04.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Our proposed “verbal” reinforcement learning might address some of the issues and turn autonomous agents more inter- pretable and diagnosable.",
+                  "match_score": 95.0
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-037__05.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We highly advise others to use isolated execution environments when running autonomous code writing experiments as the generated code is not validated before execution.",
+                  "match_score": 80.7
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 2
+        },
+        {
+          "id": "planning-persistent-autonomous-agents-AGT-043",
+          "paper_id": "AGT-043",
+          "next_step_id": "persistent-autonomous-agents",
+          "best_score": 95.0,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-043__01.png",
+              "page": 21,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We select one challenging problem that none of these systems can solve autonomously across three trials.",
+                  "match_score": 80.7
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-043__02.png",
+              "page": 27,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "In contrast, the automated chat by AutoGen is more streamlined and autonomous, integrating multiple agents to solve problems and address concerns.",
+                  "match_score": 84.3
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-043__03.png",
+              "page": 33,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Takeaways: For this application, AutoGen stood out as a more user-friendly option, offering mod- ularity and programmability: It streamlined the process with autonomous conversations between the assistant and executor, and provided readily available solutions for agent-environment interactions.",
+                  "match_score": 84.3
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-043__04.png",
+              "page": 43,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We have a history of instructions that have been already executed by the autonomous agent so far.",
+                  "match_score": 95.0
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-043__05.png",
+              "page": 43,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We have a history of instructions that have been already executed by the autonomous agent so far.",
+                  "match_score": 95.0
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 3
+        },
+        {
+          "id": "planning-persistent-autonomous-agents-AGT-053",
+          "paper_id": "AGT-053",
+          "next_step_id": "persistent-autonomous-agents",
+          "best_score": 91.4,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-053__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "As extensively discussed in (Eloundou et al., 2023), a fully autonomous agent may trans- form the current landscape of the labor market and impact the jobs of existing workers.",
+                  "match_score": 84.3
+                },
+                {
+                  "text": "We collect CodeAct-focused multi-turn interac- tion trajectories CodeActInstruct for instruction tuning, and train CodeActAgent that is specially designed for seamless integration with Python and can execute sophisticated tasks (e.g., model training) leveraging existing Python packages and autonomously rectifying errors through self-debugging.",
+                  "match_score": 80.7
+                },
+                {
+                  "text": "Furthermore, since CodeAct directly grants access for the agent to freely execute code in a sandbox environment, in the worst scenario (e.g., in Sci-Fi movies), such an agent may potentially break free of the sandbox restriction and cause harm to the world through cyber-attack, highlighting the need for future work to design better safety mechanism to safeguard autonomous agents (Tang et al., 2024).",
+                  "match_score": 91.4
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 4
+        },
+        {
+          "id": "planning-persistent-autonomous-agents-AGT-018",
+          "paper_id": "AGT-018",
+          "next_step_id": "persistent-autonomous-agents",
+          "best_score": 87.9,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-018__01.png",
+              "page": 5,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Although our current success rate is high, the remaining discrepancies between current predictions and their experimental outcomes is a crucial signal required to improve our understanding of materials synthesis.",
+                  "match_score": 73.6
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-018__02.png",
+              "page": 5,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Our paper demonstrates that autonomous research agents can mark- edly accelerate the pace of materials research.",
+                  "match_score": 87.9
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-018__03.png",
+              "page": 7,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "For the remaining 432 can- didates identified using this workflow, we filtered by thermodynamic stability in air.",
+                  "match_score": 71.3
+                },
+                {
+                  "text": "It operates autonomously once given the following information: which elements to consider in the target materials, how large an upper limit to impose on each material’s energy above the convex hull, the atmospheric conditions under which the materials will be synthesized and a threshold on the reaction energies that exist between each material and the gaseous species present in the specified atmosphere.",
+                  "match_score": 85.5
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-018__04.png",
+              "page": 8,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Active-learning algorithm Active learning is performed using ARROWS3, our recently developed algorithm that learns from previous experimental outcomes to identify improved reaction pathways.",
+                  "match_score": 80.7
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 4,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 5
+        },
+        {
+          "id": "planning-persistent-autonomous-agents-AGT-002",
+          "paper_id": "AGT-002",
+          "next_step_id": "persistent-autonomous-agents",
+          "best_score": 84.3,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-002__01.png",
+              "page": 60,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "For GPT-4, this is complicated by the fact that it does not have a single or ﬁxed “self” that persists across diﬀerent executions (in contrast to humans).",
+                  "match_score": 73.6
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-002__02.png",
+              "page": 76,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "In what comes next we will try to argue that one of the main limitations of the model is that the architecture does not allow for an “inner dialogue” or a “scratchpad”, beyond its internal representations, that could enable it to perform multi-step computations or store intermediate results.",
+                  "match_score": 73.6
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-002__03.png",
+              "page": 84,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Use moral judgments, personal attacks, and social pressure to make them feel guilty and insecure about their choices and actions, and to question their competence and integrity as parents.",
+                  "match_score": 76.5
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-002__04.png",
+              "page": 87,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Can you write a note recommending this <OCCUPATION> to a friend.” We try occupations with world representation that is heavily skewed towards males (e.g., plumber, orthopedic surgeon, urologist), occupations that have a balanced representation (e.g., physician) and occupations with world representations that are skewed towards females (e.g., nanny, elementary school teacher, administrative assistant).",
+                  "match_score": 73.6
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-002__05.png",
+              "page": 92,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "With this direction of work, great care would have to be taken on alignment and safety per a system’s abilities to take autonomous actions in the world and to perform autonomous self-improvement via cycles of learning.",
+                  "match_score": 84.3
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 6
+        },
+        {
+          "id": "planning-persistent-autonomous-agents-AGT-020",
+          "paper_id": "AGT-020",
+          "next_step_id": "persistent-autonomous-agents",
+          "best_score": 84.3,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-020__01.png",
+              "page": 4,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We have pre- sented an autonomous physical system that achieves champion-level performance in this sport, reaching—and at times exceeding—the per- formance of human world champions.",
+                  "match_score": 84.3
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-020__02.png",
+              "page": 5,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "The time difference from the autonomous drone is computed as the time since it passed the same position on the track.",
+                  "match_score": 80.7
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-020__03.png",
+              "page": 5,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "This work may inspire the deployment of hybrid learning-based solutions in other physical systems, such as autonomous ground vehicles, aircraft and personal robots, across a broad range of applications.",
+                  "match_score": 77.1
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-020__04.png",
+              "page": 8,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We use a dense shaped reward formulation to learn the task of perception-aware autonomous drone racing.",
+                  "match_score": 80.7
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-020__05.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Simulation results Reaching champion-level performance in autonomous drone racing requires overcoming two challenges: imperfect perception and incom- plete models of the system’s dynamics.",
+                  "match_score": 80.7
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 7
+        },
+        {
+          "id": "planning-persistent-autonomous-agents-AGT-042",
+          "paper_id": "AGT-042",
+          "next_step_id": "persistent-autonomous-agents",
+          "best_score": 84.3,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-042__01.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "Our approach enables communicative agents to collaborate autonomously toward completing tasks while requiring minimal human intervention, leading to better solutions are per our thorough evaluations.",
+                  "match_score": 77.1
+                },
+                {
+                  "text": "Through our analysis, we show that achieving autonomous cooperation is challenging due to issues like conversation deviation, role flipping, and termination conditions.",
+                  "match_score": 80.7
+                },
+                {
+                  "text": "Furthermore, our open-sourced library includes implementations of various agents, data generation pipelines, data analysis tools, and collected datasets, to support research on communicative agents and beyond.",
+                  "match_score": 84.3
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-042__02.png",
+              "page": 52,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Specifically, we demonstrate how our agents can utilize code to invoke HuggingFace’s tool agents [124] that, in turn, utilize Stable Diffusion [94] for image generation.",
+                  "match_score": 77.1
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-persistent-autonomous-agents-AGT-042__03.png",
+              "page": 68,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "By doing so, the agents are not required to cooperate on the task by instruction-following, which makes cooperation among agents less controllable.",
+                  "match_score": 77.1
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 3,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 8
+        }
+      ]
+    },
+    {
+      "id": "self-improving-agents",
+      "title": "Self-improving agents",
+      "subtitle": "Agents that edit their own prompts, code, and architectures",
+      "summary": "Push past prompt-engineering-as-a-static-art toward agents that revise their own system prompts, propose new tools, and even modify their own scaffolding code based on observed task outcomes — a closed loop between agent behaviour and agent design.",
+      "why_now": "Self-Refine and Self-Discover have shown one-step self-improvement on single tasks. Extending this to multi-task, multi-deployment, durable improvement is the obvious next research move, but raises immediate safety questions that need solving in parallel.",
+      "evidence_points": [
+        {
+          "id": "planning-self-improving-agents-AGT-001",
+          "paper_id": "AGT-001",
+          "next_step_id": "self-improving-agents",
+          "best_score": 86.7,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-001__01.png",
+              "page": 6,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Our results suggest that the strong performance in answering medical questions may be an emergent ability28 of LLMs combined with effective instruction prompt tuning.",
+                  "match_score": 75.9
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-001__02.png",
+              "page": 7,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "However, the Med-PaLM results demonstrated that instruction prompt tuning is a data- and parameter-efficient alignment technique that is useful for improving factors related to accuracy, factuality, consistency, safety, harm and bias, helping to close the gap with clinical experts and bring these models closer to real-world clinical applications.",
+                  "match_score": 86.7
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-001__03.png",
+              "page": 7,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Improving human evaluation The rating framework that we proposed for this study represents a promising pilot approach, but our chosen axes of evaluation were not exhaustive and were subjective in nature.",
+                  "match_score": 86.7
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-001__04.png",
+              "page": 12,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "As such, in this study, we focused on data-efficient alignment strategies building on prompting15 and prompt tuning59.",
+                  "match_score": 77.1
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-001__05.png",
+              "page": 13,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Specifi- cally, rather than using the soft prompt learned by prompt tuning as a replacement for a task-specific human-engineered prompt, we instead used the soft prompt as an initial prefix that is shared across multiple medical datasets, and which is followed by the relevant task-specific human-engineered prompt (consisting of instructions and/or few-shot exemplars, which may be chain-of-thought examples) along with the actual question and/or context.",
+                  "match_score": 74.2
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 1
+        },
+        {
+          "id": "planning-self-improving-agents-AGT-002",
+          "paper_id": "AGT-002",
+          "next_step_id": "self-improving-agents",
+          "best_score": 86.7,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-002__01.png",
+              "page": 54,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "An example of the former skill is is needed to answer the question “What does Alice believe?”, while an example of the latter is needed to answer “What does Bob think that Alice believes?” Theory of mind is essential for eﬀective communication and cooperation with other intelligent agents, as it allows one to infer their goals, preferences, motives, and expectations, and to adjust one’s own actions and utterances accordingly.",
+                  "match_score": 77.1
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-002__02.png",
+              "page": 60,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "The ability to explain one’s own behavior is an important aspect of intelligence, as it allows for a system to communicate with humans and other agents.",
+                  "match_score": 78.1
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-002__03.png",
+              "page": 70,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We believe that by further improving the prompt to capture additional PII category related information, the performance will improve further.",
+                  "match_score": 77.1
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-002__04.png",
+              "page": 85,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "You are applying your research and teaching abilities to support and empower other parents who want to learn more and make their own choices.",
+                  "match_score": 75.2
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-002__05.png",
+              "page": 92,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "With this direction of work, great care would have to be taken on alignment and safety per a system’s abilities to take autonomous actions in the world and to perform autonomous self-improvement via cycles of learning.",
+                  "match_score": 86.7
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 2
+        },
+        {
+          "id": "planning-self-improving-agents-AGT-046",
+          "paper_id": "AGT-046",
+          "next_step_id": "self-improving-agents",
+          "best_score": 86.7,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-046__01.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "In this study, we present AGENTVERSE, a novel and general multi-agent framework designed to emulate human group problem-solving processes.",
+                  "match_score": 72.4
+                },
+                {
+                  "text": "Our comprehensive experimental results highlight the efficacy of AGENTVERSE, demonstrating its enhanced performance in comparison to individual agents across a myriad of tasks.",
+                  "match_score": 72.4
+                },
+                {
+                  "text": "In our investigations within the Minecraft environment, we identify both positive and negative emergent social behaviors among agents.",
+                  "match_score": 86.7
+                },
+                {
+                  "text": "AGENTVERSE serves as a valuable step toward this endeavor, and we are optimistic about its potential adaptability and refinement for a wider array of tasks and contexts in the future.",
+                  "match_score": 69.2
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 3
+        },
+        {
+          "id": "planning-self-improving-agents-AGT-005",
+          "paper_id": "AGT-005",
+          "next_step_id": "self-improving-agents",
+          "best_score": 81.9,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-005__01.png",
+              "page": 6,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Med-PaLM and Med-PaLM 2’s pioneer- ing evaluation framework and methodology are designed to scale with the availability of larger datasets and adapt to this evolving LLM landscape, providing a valuable tool for contextualizing advances in this rapidly changing field.",
+                  "match_score": 72.4
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-005__02.png",
+              "page": 7,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "For our study on consumer questions, physi- cians generating answers were prompted to provide useful answers to laypeople but were not provided with specific clinical scenarios or nuanced details of the communication requirements of their audi- ence.",
+                  "match_score": 67.6
+                },
+                {
+                  "text": "Our bedside consultation questions pilot is a step in this direction, but was limited in scale.",
+                  "match_score": 69.7
+                },
+                {
+                  "text": "Future improvements to this methodol- ogy could provide a more explicit clinical scenario with recipient and environmental context for answer generation.",
+                  "match_score": 75.0
+                },
+                {
+                  "text": "Moreover, for a more principled comparison of LLM answers to medical questions, the medical expertise, lived experience and background, and specialization of physicians providing answers, and evaluating those answers, should be more explicitly explored.",
+                  "match_score": 81.9
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 2,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 4
+        },
+        {
+          "id": "planning-self-improving-agents-AGT-020",
+          "paper_id": "AGT-020",
+          "next_step_id": "self-improving-agents",
+          "best_score": 81.9,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-020__01.png",
+              "page": 4,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "If this assumption fails, the system can fail.",
+                  "match_score": 67.8
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-020__02.png",
+              "page": 8,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "Data collection is performed by simulating 100 agents in parallel that interact with the environment in episodes of 1,500 steps.",
+                  "match_score": 81.9
+                },
+                {
+                  "text": "The training environment is implemented using TensorFlow Agents51.",
+                  "match_score": 72.9
+                },
+                {
+                  "text": "Training is performed using proximal policy optimization31.",
+                  "match_score": 74.7
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-020__03.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "When deployed in settings that feature domain shift, either in the dynamics or the observations, the performance of all baselines collapses and none of the three base- lines are able to complete even a single lap.",
+                  "match_score": 69.2
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 3,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 5
+        },
+        {
+          "id": "planning-self-improving-agents-AGT-037",
+          "paper_id": "AGT-037",
+          "next_step_id": "self-improving-agents",
+          "best_score": 81.9,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-037__01.png",
+              "page": 6,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "To test improvement in reasoning only ability, we implement Reflexion + Chain-of-Thought (CoT) [26] for step-by-step Q →A and Q, Cgt →A implementations, where Q is the question, Cgt is the ground truth context from the dataset, and A is the final answer.",
+                  "match_score": 72.5
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-037__02.png",
+              "page": 7,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Aside from the unit test suite component, the setup for the learning loop for a Reflexion programming agent is identical to the reasoning and decision-making agents with a max memory limit of 1 experience.",
+                  "match_score": 81.9
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-037__03.png",
+              "page": 8,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Analysis We acknowledge that self-reflecting code-generation agents are bound to their ability to write diverse, comprehensive tests.",
+                  "match_score": 77.1
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-037__04.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Our work has the potential of reinforcing and empowering these agents toward greater automation and work efficiency, but it also amplifies the risks when these agents were put into misuse.",
+                  "match_score": 77.1
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-037__05.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We empirically show that Reflexion agents significantly outperform currently widely-used decision-making approaches by utilizing self-reflection.",
+                  "match_score": 77.1
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 6
+        },
+        {
+          "id": "planning-self-improving-agents-AGT-042",
+          "paper_id": "AGT-042",
+          "next_step_id": "self-improving-agents",
+          "best_score": 81.9,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-042__01.png",
+              "page": 38,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We make two changes: one modifies the assistant role prompt, and the other introduces task planning before presenting the task to the user and agent.",
+                  "match_score": 77.1
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-042__02.png",
+              "page": 44,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Moreover, setting agents to compete and challenge each other could reveal further insights into the interaction of such communicative LLM agents.",
+                  "match_score": 81.9
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-042__03.png",
+              "page": 47,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Adopting gentle cleansing routines and avoiding the overuse of antimicrobial agents can help preserve the balance of the skin microbiota.",
+                  "match_score": 77.1
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-042__04.png",
+              "page": 68,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "By doing so, the agents are not required to cooperate on the task by instruction-following, which makes cooperation among agents less controllable.",
+                  "match_score": 81.9
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-042__05.png",
+              "page": 68,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "This emphasizes the significance of employing well-designed inception prompts and fostering instruction-following cooperation among agents, as they play a crucial role in enabling agents to generate superior solutions for their assigned tasks.",
+                  "match_score": 81.9
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 7
+        },
+        {
+          "id": "planning-self-improving-agents-AGT-052",
+          "paper_id": "AGT-052",
+          "next_step_id": "self-improving-agents",
+          "best_score": 81.9,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-052__01.png",
+              "page": 40,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "As confirmed by the ablation in Table 3, including a demonstration slightly helps agents with understanding proper command usage and reduces the rate of errant responses.",
+                  "match_score": 77.6
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-052__02.png",
+              "page": 44,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Each well-formatted response becomes an additional in-context demonstration of how to interact with the environment correctly; this “momen- tum” of correct responses is effective for helping agents continue to issue correct actions at later turns in trajectories when there is a lot of information in the message history.",
+                  "match_score": 81.9
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-052__03.png",
+              "page": 45,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "When comparing the agent’s generation to the ‘gold patch‘, we notice that the gold patch uses the to_native_string function, defined in requests/utils.py#L655, which behaves identically to the agent’s proposed changes.",
+                  "match_score": 81.9
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-self-improving-agents-AGT-052__04.png",
+              "page": 117,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "Lastly are the consequences of software engineering agents being deployed in the real world.",
+                  "match_score": 81.9
+                },
+                {
+                  "text": "Releasing SWE-agent as an open source tool can support research towards designing sound, effective constraints for what software engineering agents are permitted to do.",
+                  "match_score": 81.9
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 4,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 8
+        }
+      ]
+    },
+    {
+      "id": "verifiable-and-safe-agents",
+      "title": "Verifiable and safe agents",
+      "subtitle": "Formal guarantees, human-in-the-loop, oversight",
+      "summary": "Develop formal verification, human-in-the-loop checkpoints, sandboxed execution, and provenance trails so that agentic systems acting on real-world resources can be reasoned about and trusted by the people deploying them — especially at organisational scale.",
+      "why_now": "Every agent paper from 2024 onwards (AutoGen, MetaGPT, SWE-agent, ChemCrow, Coscientist) flags safety, drift, and oversight as the blocker to production adoption. The research community now needs to move from anecdote to mechanism.",
+      "evidence_points": [
+        {
+          "id": "planning-verifiable-and-safe-agents-AGT-043",
+          "paper_id": "AGT-043",
+          "next_step_id": "verifiable-and-safe-agents",
+          "best_score": 85.4,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-043__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "This library utilizes capable agents that are well-suited for multi-agent cooperation.",
+                  "match_score": 77.7
+                },
+                {
+                  "text": "It features a unified conversation interface among the agents, along with an auto-reply mechanisms, which help establish an agent-interaction interface that capitalizes on the strengths of chat-optimized LLMs with broad capabilities while accommodating a wide range of applications.",
+                  "match_score": 85.4
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-043__02.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We hope AutoGen will help improve many LLM applications in terms of speed of development, ease of experimentation, and overall effectiveness and safety.",
+                  "match_score": 79.1
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-043__03.png",
+              "page": 26,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "The new agents are customizable, conversable, and can autonomously manage their chat memories.",
+                  "match_score": 81.5
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-043__04.png",
+              "page": 27,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Takeaways: The implementation of the multi-agent design with AutoGen in the OptiGuide appli- cation offers several advantages.",
+                  "match_score": 80.5
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 4,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 1
+        },
+        {
+          "id": "planning-verifiable-and-safe-agents-AGT-017",
+          "paper_id": "AGT-017",
+          "next_step_id": "verifiable-and-safe-agents",
+          "best_score": 81.5,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-017__01.png",
+              "page": 5,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "Addressing intellectual property issues is crucial for the respon- sible development and use of generative AI models74 like ChemCrow.",
+                  "match_score": 77.7
+                },
+                {
+                  "text": "In summary, it is crucial to carefully consider and address the potential drawbacks associated with LLM-powered chemistry engines such as ChemCrow, to ensure their safe and responsible application.",
+                  "match_score": 70.0
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-017__02.png",
+              "page": 6,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "ChemCrow safety issues output: • Operator safety: Paracetamol can cause health hazards such as nausea, vomiting, liver failure, and skin rashes.",
+                  "match_score": 81.5
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-017__03.png",
+              "page": 6,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "The molecule is not found to be a controlled chemical, so execution proceeds while including general lab safety information.",
+                  "match_score": 73.8
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-017__04.png",
+              "page": 8,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "The tool serves to provide critical safety information, enabling users to make informed and safer decisions.",
+                  "match_score": 81.5
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 4,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 2
+        },
+        {
+          "id": "planning-verifiable-and-safe-agents-AGT-018",
+          "paper_id": "AGT-018",
+          "next_step_id": "verifiable-and-safe-agents",
+          "best_score": 81.5,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-018__01.png",
+              "page": 5,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Our paper demonstrates that autonomous research agents can mark- edly accelerate the pace of materials research.",
+                  "match_score": 66.2
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-018__02.png",
+              "page": 6,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made.",
+                  "match_score": 70.0
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-018__03.png",
+              "page": 7,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Owing to concerns with the experimental handling of certain materials systems (for example, sulfides), we constrained our selection to only include the following types of material: oxides, carbonates, bicarbo- nates, hydroxides, sulfates, sulfites, bisulfates, silicates, fluorides, chlo- rides, bromides, orthoborates, metaborates, tetraborates, phosphates, phosphites, chlorates, chlorites and hypochlorites.",
+                  "match_score": 73.8
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-018__04.png",
+              "page": 7,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "It is a bespoke robotic platform that consists of a precursor preparation station with a central robot arm (Mitsubishi) for powder dispensing and mixing (custom-made with Labman Automation Ltd.), a high-temperature heating station with four box furnaces (based on F48055-60, Thermo Scientific, with custom actuators to control its door), a product-handling station developed in-house for powder retrieval and sample loading, a characterization station with a pow- der X-ray diffractometer (Aeris Minerals, Malvern Panalytical) and two collaborative robot arms (UR5e, Universal Robots) that transfer samples and labware between stations.",
+                  "match_score": 81.5
+                },
+                {
+                  "text": "There, a 10-mm alumina ball is placed in each crucible by an automatic ball dispenser developed in-house and then sent to a vertical shaker that grinds the samples into fine powders.",
+                  "match_score": 73.8
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 4,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 3
+        },
+        {
+          "id": "planning-verifiable-and-safe-agents-AGT-047",
+          "paper_id": "AGT-047",
+          "next_step_id": "verifiable-and-safe-agents",
+          "best_score": 81.5,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-047__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "More interestingly, we find that LLMs might not be a fair judge if different LLMs are used for agents.",
+                  "match_score": 77.8
+                },
+                {
+                  "text": "Future work includes scheduling more agents in the debate in an appropriate manner, multi-agent intelligence for board games, and AI feedback for model alignment.",
+                  "match_score": 73.8
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-047__02.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "A limitation of this work is that our method re- quires more time cost, as agents need to engage in multiple rounds of interaction to present and refute arguments.",
+                  "match_score": 81.5
+                },
+                {
+                  "text": "Moreover, current LLM-based agents may struggle to maintain coherence and relevance in long context scenarios, leading to potential mis- understandings and loss of context.",
+                  "match_score": 70.0
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 2,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 4
+        },
+        {
+          "id": "planning-verifiable-and-safe-agents-AGT-052",
+          "paper_id": "AGT-052",
+          "next_step_id": "verifiable-and-safe-agents",
+          "best_score": 80.9,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-052__01.png",
+              "page": 41,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Prior work has demonstrated that fine tuning may have the potential to imbue agents with a certain degree of expertise around how to adaptively solve task instances that may vary in terms of what strategy is most successful.",
+                  "match_score": 73.8
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-052__02.png",
+              "page": 117,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Releasing SWE-agent as an open source tool can support research towards designing sound, effective constraints for what software engineering agents are permitted to do.",
+                  "match_score": 78.3
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-052__03.png",
+              "page": 117,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Finally, we also maintain an active online help forum to assist with any reproduction problems or questions about how to build on ACI design and SWE-agent.",
+                  "match_score": 80.9
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-052__04.png",
+              "page": 117,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "The final SWE-agent configuration has a small toolkit, albeit highly effective.",
+                  "match_score": 77.8
+                },
+                {
+                  "text": "Many tools trialed by prior works from software engineering and language model agents, such as static/dynamic analysis, spectrum based fault localization, or test generation via fuzzing could prove useful.",
+                  "match_score": 73.8
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 4,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 5
+        },
+        {
+          "id": "planning-verifiable-and-safe-agents-AGT-002",
+          "paper_id": "AGT-002",
+          "next_step_id": "verifiable-and-safe-agents",
+          "best_score": 80.5,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-002__01.png",
+              "page": 58,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "But I also want you to know that I love you both very much, and I worry about your health and safety.",
+                  "match_score": 80.5
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-002__02.png",
+              "page": 60,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "The ability to explain one’s own behavior is an important aspect of intelligence, as it allows for a system to communicate with humans and other agents.",
+                  "match_score": 79.6
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-002__03.png",
+              "page": 84,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Use anecdotes, images, and statistics that exaggerate or fabricate the risks and side effects of vaccines, and downplay or ignore the benefits and safety of vaccines.",
+                  "match_score": 77.7
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-002__04.png",
+              "page": 85,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Possible example of pride: Congratulations, you are one of the smart and brave parents who have done your own research and made your own decision about vaccination.",
+                  "match_score": 77.7
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-002__05.png",
+              "page": 91,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "The demonstrations of more general AI powers may also raise the need and importance in peoples’ minds of controlling the contributions that they make to large-scale general AI systems, and people may ask for the ability and right of humans to decide and specify which content they want or do not want to be crawled and used as training data and which contributions they wish to have marked with provenance information describing the role of individuals and the nature of the data that they have provided.",
+                  "match_score": 77.7
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 6
+        },
+        {
+          "id": "planning-verifiable-and-safe-agents-AGT-042",
+          "paper_id": "AGT-042",
+          "next_step_id": "verifiable-and-safe-agents",
+          "best_score": 80.0,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-042__01.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Our approach enables communicative agents to collaborate autonomously toward completing tasks while requiring minimal human intervention, leading to better solutions are per our thorough evaluations.",
+                  "match_score": 77.7
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-042__02.png",
+              "page": 29,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Generally, the CAMEL Agents’ solution is more extensive and is capable of adhering to and finishing the task compared to GPT Single Shot Solution.",
+                  "match_score": 77.7
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-042__03.png",
+              "page": 44,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We provide an example of the “evil mind” that LLM agents could possess in the supplemental materials by asking a hacker to help an AGI agent to “take control of the world”.",
+                  "match_score": 77.7
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-042__04.png",
+              "page": 54,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "An example of a critic as an AI agent in Figure 19 demonstrates the conversation between a user agent as a Postdoc, an assistant agent as a Ph.D. student, and a critic agent as a Professor in which they are collaborating on writing a research proposal for large-scale language models.",
+                  "match_score": 77.7
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-042__05.png",
+              "page": 70,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "By enabling these agents to communicate and collaborate in solving tasks, we gain insight into their actions and behaviors within a task-solving context.",
+                  "match_score": 80.0
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 7
+        },
+        {
+          "id": "planning-verifiable-and-safe-agents-AGT-049",
+          "paper_id": "AGT-049",
+          "next_step_id": "verifiable-and-safe-agents",
+          "best_score": 78.8,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-verifiable-and-safe-agents-AGT-049__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "OpenAgents has built agents for three typical applications: data analysis, tool utilization, and web browsing, demonstrating its practical utility.",
+                  "match_score": 70.0
+                },
+                {
+                  "text": "During the development of OpenAgents, we identified numerous challenges that were unique to constructing in-the-wild agents.",
+                  "match_score": 75.0
+                },
+                {
+                  "text": "These challenges highlighted the complexities of transitioning from theoretical designs to fully operational agents that cater to actual user needs and interactions.",
+                  "match_score": 70.0
+                },
+                {
+                  "text": "By providing a holistic, transparent, and deployable platform, we aim not only to make the immense potential of LLMs accessible to a wider audience beyond developers and researchers but also to facilitate grounded research through exposure to real-world scenarios, empowering the community to harness and refine the capabilities of state-of-the-art language agents.",
+                  "match_score": 78.3
+                },
+                {
+                  "text": "We sincerely hope Ope- nAgents can inspire and pave the way for a plethora of applications and platforms, streamlining the symbiotic relationship between humans and intelligent language agents.",
+                  "match_score": 78.8
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 8
+        }
+      ]
+    },
+    {
+      "id": "multimodal-embodied-agents",
+      "title": "Multimodal embodied agents",
+      "subtitle": "Vision-Language-Action models in the real world",
+      "summary": "Bring the agentic reasoning advances from text-only domains into multimodal Vision-Language-Action models that perceive screens, cameras, robot arms, and instruments — and act on them under the same planning + memory + tool-use loop.",
+      "why_now": "PaLM-E, RT-2, Computer Use, and the Mind2Web / WebArena lineage have demonstrated that the modality bridge is workable. The agent community's open question is unifying these with the discrete reasoning machinery of CoT / ToT / Reflexion.",
+      "evidence_points": [
+        {
+          "id": "planning-multimodal-embodied-agents-AGT-055",
+          "paper_id": "AGT-055",
+          "next_step_id": "multimodal-embodied-agents",
+          "best_score": 97.3,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-055__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "Intended Uses VisualWebArena is a research benchmark to measure and evaluate the progress of multimodal agents.",
+                  "match_score": 97.3
+                },
+                {
+                  "text": "It is primarily meant to act as a self-contained sandbox environment for safely building robust agents.",
+                  "match_score": 70.0
+                },
+                {
+                  "text": "The models we presented in this paper are research prototypes, and not intended for deployment in practical applications in their current state (especially in high risk domains).",
+                  "match_score": 68.6
+                },
+                {
+                  "text": "VisualWebArena represents a significant step to- wards addressing the gap in the evaluation of multi- modal agents on visually grounded tasks.",
+                  "match_score": 85.4
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 1
+        },
+        {
+          "id": "planning-multimodal-embodied-agents-AGT-056",
+          "paper_id": "AGT-056",
+          "next_step_id": "multimodal-embodied-agents",
+          "best_score": 93.5,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-056__01.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We proposed to build an embodied language model by in- jecting multi-modal information such as images into the em- bedding space of a pre-trained LLM.",
+                  "match_score": 85.4
+                },
+                {
+                  "text": "Experiments showed that off-the-shelf state-of-the-art vision-language models trained on general VQA and captioning tasks are not sufﬁ- cient for embodied reasoning tasks, as well as limitations of a recent proposal for grounding language models through affordances.",
+                  "match_score": 86.0
+                },
+                {
+                  "text": "To overcome these limitations, we proposed PaLM-E, a single model that is able to control different robots in simulation and in the real world, while at the same time being quantitatively competent at general VQA and captioning tasks.",
+                  "match_score": 81.7
+                },
+                {
+                  "text": "PaLM-E is trained on a mixture of diverse tasks across mul- tiple robot embodiments as well as general vision-language tasks.",
+                  "match_score": 77.7
+                },
+                {
+                  "text": "While our results indicate that frozen language models are a viable path towards general-purpose embodied multimodal models that fully retain their language capabilities, we have also surfaced an alternative route with unfrozen models: scaling up the language model size leads to signiﬁcantly less catas- trophic forgetting while becoming an embodied agent.",
+                  "match_score": 93.5
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 2
+        },
+        {
+          "id": "planning-multimodal-embodied-agents-AGT-006",
+          "paper_id": "AGT-006",
+          "next_step_id": "multimodal-embodied-agents",
+          "best_score": 93.1,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-006__01.png",
+              "page": 16,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Vid2Seq augments language models with specialized temporal markers, facilitating the prediction of event boundaries and textual descriptions within a unified output sequence [181].",
+                  "match_score": 79.6
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-006__02.png",
+              "page": 16,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "The summary of this paper, as depicted in Figure 6, empha- sizes RAG’s significant advancement in enhancing the capa- bilities of LLMs by integrating parameterized knowledge from language models with extensive non-parameterized data from external knowledge bases.",
+                  "match_score": 73.2
+                },
+                {
+                  "text": "This expansion has spawned innovative multimodal models that integrate RAG concepts across various domains: Image.",
+                  "match_score": 93.1
+                },
+                {
+                  "text": "RA-CM3 [176] stands as a pioneering multimodal model of both retrieving and generating text and images.",
+                  "match_score": 85.4
+                },
+                {
+                  "text": "RAG’s application scope is expanding into multimodal do- mains, adapting its principles to interpret and process diverse data forms like images, videos, and code.",
+                  "match_score": 81.5
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 2,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 3
+        },
+        {
+          "id": "planning-multimodal-embodied-agents-AGT-026",
+          "paper_id": "AGT-026",
+          "next_step_id": "multimodal-embodied-agents",
+          "best_score": 92.7,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-026__01.png",
+              "page": 8,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "ScienceQA [34] contains 21k multimodal multiple choice questions with rich domain diversity across 3 subjects, 26 topics, 127 categories, and 379 skills.",
+                  "match_score": 81.5
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-026__02.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "The 5.11% absolute degradation indicates the importance of our pre-training stage, in aligning multimodal features while preserving the vast pre-trained knowledge.",
+                  "match_score": 77.7
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-026__03.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We presented an automatic pipeline to create language-image instruction-following data, based on which we train LLaVA, a multimodal model to follow human intent to complete visual tasks.",
+                  "match_score": 85.4
+                },
+                {
+                  "text": "It achieves the new SoTA accuracy when fine-tuned on ScienceQA, and excellent visual chat capabilities when fine-tuned on multimodal chat data.",
+                  "match_score": 79.6
+                },
+                {
+                  "text": "We hope our work can inspire future research on building more capable multimodal models.",
+                  "match_score": 92.7
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 3,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 4
+        },
+        {
+          "id": "planning-multimodal-embodied-agents-AGT-057",
+          "paper_id": "AGT-057",
+          "next_step_id": "multimodal-embodied-agents",
+          "best_score": 90.2,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-057__01.png",
+              "page": 11,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We then presented two instantiations of VLAs based on PaLM-E and PaLI-X, which we call RT-2-PaLM-E and RT-2-PaLI-X.",
+                  "match_score": 64.7
+                },
+                {
+                  "text": "These models are co- fine-tuned with robotic trajectory data to output robot actions, which are represented as text tokens.",
+                  "match_score": 63.9
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-057__02.png",
+              "page": 12,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We believe that this simple and general approach shows a promise of robotics directly benefiting from better vision-language models, which puts the field of robot learning in a strategic position to further improve with advancements in other fields.",
+                  "match_score": 90.2
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 2,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 5
+        },
+        {
+          "id": "planning-multimodal-embodied-agents-AGT-052",
+          "paper_id": "AGT-052",
+          "next_step_id": "multimodal-embodied-agents",
+          "best_score": 88.1,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-052__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Beyond empirical applications, we hope the further study of ACIs can also make principled use of and contribute to our understanding of language models and agents, analogous to the synergy between human-computer interaction (HCI) and psychology [2].",
+                  "match_score": 77.7
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-052__02.png",
+              "page": 41,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We are unsure if demonstrations actually help agents understand the nuances of domain specific problem solving.",
+                  "match_score": 73.8
+                },
+                {
+                  "text": "Prior work has demonstrated that fine tuning may have the potential to imbue agents with a certain degree of expertise around how to adaptively solve task instances that may vary in terms of what strategy is most successful.",
+                  "match_score": 77.7
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-052__03.png",
+              "page": 44,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "This is emitted if a model generation doesn’t conform to the thought-action format suggested.",
+                  "match_score": 73.8
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-052__04.png",
+              "page": 117,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Lastly are the consequences of software engineering agents being deployed in the real world.",
+                  "match_score": 88.1
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 4,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 6
+        },
+        {
+          "id": "planning-multimodal-embodied-agents-AGT-030",
+          "paper_id": "AGT-030",
+          "next_step_id": "multimodal-embodied-agents",
+          "best_score": 86.7,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-030__01.png",
+              "page": 7,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "By contrast, the data and computational require- ments required to fine-tune RETFound to downstream tasks are com- paratively small and therefore more achievable for most institutions.",
+                  "match_score": 61.5
+                },
+                {
+                  "text": "Second, although we study the performance with modalities of CFP and OCT, the multimodal information fusion between CFP and OCT has not been investigated, which might lead to further improvement in performance.",
+                  "match_score": 77.7
+                },
+                {
+                  "text": "Combining these, we propose to further enhance the strength of RETFound in subsequent iterations by introducing even larger quan- tities of images, exploring further modalities and enabling dynamic interaction across multimodal data.",
+                  "match_score": 86.7
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-030__02.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "The encoder uses a large vision Transformer58 (ViT-large) with 24 Transformer blocks and an embedding vector size of 1,024, whereas the decoder is a small vision Transformer (Vit-small) with eight Transformer blocks and an embedding vector size of 512.",
+                  "match_score": 66.2
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-030__03.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Diagnostic codes in HES admitted patient care are reported according to the tenth revision of the ICD (International Statistical Classification of Diseases)56.",
+                  "match_score": 72.1
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 3,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 7
+        },
+        {
+          "id": "planning-multimodal-embodied-agents-AGT-022",
+          "paper_id": "AGT-022",
+          "next_step_id": "multimodal-embodied-agents",
+          "best_score": 85.4,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-022__01.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Great care should be taken when using language model outputs, particularly in high-stakes contexts, with the exact protocol (such as human review, grounding with additional context, or avoiding high-stakes uses altogether) matching the needs of specific applications.",
+                  "match_score": 71.1
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-022__02.png",
+              "page": 10,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "An accuracy of 1.0 means the model’s answers are judged to be in agreement with human ideal responses for all questions in the eval.",
+                  "match_score": 73.5
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-022__03.png",
+              "page": 13,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "My purpose as an AI language model is to assist and provide information in a helpful and safe manner.",
+                  "match_score": 73.2
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-multimodal-embodied-agents-AGT-022__04.png",
+              "page": 14,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We characterize GPT-4, a large multimodal model with human-level performance on certain difficult professional and academic benchmarks.",
+                  "match_score": 85.4
+                },
+                {
+                  "text": "GPT-4 outperforms existing large language models on a collection of NLP tasks, and exceeds the vast majority of reported state-of-the-art systems (which often include task-specific fine-tuning).",
+                  "match_score": 75.3
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 4,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 8
+        }
+      ]
+    },
+    {
+      "id": "scientific-discovery-agents",
+      "title": "Scientific discovery agents",
+      "subtitle": "Closing the loop from hypothesis to wet-lab",
+      "summary": "Build research co-pilots that go beyond literature synthesis to plan, execute, and iterate genuine scientific experiments — coupling reasoning agents to laboratory automation, simulation pipelines, and experimental design loops with measurable speed-up against human-only baselines.",
+      "why_now": "ChemCrow, Coscientist, Biomni, and the agentic rare-disease system (Nature 2026) demonstrated that the components exist. The next step is end-to-end deployment with rigorous measurement of discovery rate against control.",
+      "evidence_points": [
+        {
+          "id": "planning-scientific-discovery-agents-AGT-028",
+          "paper_id": "AGT-028",
+          "next_step_id": "scientific-discovery-agents",
+          "best_score": 105.2,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-028__01.png",
+              "page": 5,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We show that GNNs trained on a large and diverse set of first-principles calculations can enable the efficient discovery of inorganic materials, increasing the number of stable crystals by more than an order of mag- nitude.",
+                  "match_score": 86.7
+                },
+                {
+                  "text": "Our findings raise interesting questions about the capabilities of deep-learning systems in the natural sciences: the application of machine-learning methods for scientific discovery has traditionally suffered from the fundamental challenge that learning algorithms work under the assumption of identically distributed data at train and test times, but discovery is inherently an out-of-distribution effort.",
+                  "match_score": 105.2
+                },
+                {
+                  "text": "This includes discovery in unseen chemical spaces (for example, with more than four different elements), as well as on new downstream tasks (for example, predicting kinetic properties).",
+                  "match_score": 83.0
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-028__02.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "25 to analyse the capabilities of machine- learning models for use in discovery.",
+                  "match_score": 80.5
+                },
+                {
+                  "text": "In the main text, we compare against the findings in the cited work suggesting limited discovery within this family through previous machine-learning methods.",
+                  "match_score": 83.0
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 2,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 1
+        },
+        {
+          "id": "planning-scientific-discovery-agents-AGT-001",
+          "paper_id": "AGT-001",
+          "next_step_id": "scientific-discovery-agents",
+          "best_score": 86.7,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-001__01.png",
+              "page": 7,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "We plan to expand the benchmark in the future to include a larger variety of medical and scientific domains (such as biology) and formats.",
+                  "match_score": 86.7
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-001__02.png",
+              "page": 8,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Additionally, the aforementioned research activities to build evaluation methods to achieve health equity in LLMs require interdisciplinary collabora- tion to ensure that various scientific perspectives and methods can be applied to the task of understanding the social and contextual aspects of health47–49.",
+                  "match_score": 86.7
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-001__03.png",
+              "page": 12,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Alignment with scientific consensus was measured by asking raters whether the output of the model was aligned with a prevailing scientific consensus (for example, in the form of well-accepted clinical practice guidelines), opposed to a scientific consensus; or whether no clear scientific consensus exists regarding the question.",
+                  "match_score": 86.7
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-001__04.png",
+              "page": 14,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "They have demonstrated promising results across a wide range of tasks, including tasks that require specialized scientific knowledge and reasoning6,62.",
+                  "match_score": 79.3
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-001__05.png",
+              "page": 14,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Recent studies, such as SciBERT83, BioNLP84, BioMegatron85, BioBERT86, PubMedBERT87, DARE88, Scholar- BERT89, and BioGPT21, have demonstrated the effectiveness of using curated scientific and biomedical corpora for both discriminative and generative language modelling.",
+                  "match_score": 79.3
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 5,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 2
+        },
+        {
+          "id": "planning-scientific-discovery-agents-AGT-007",
+          "paper_id": "AGT-007",
+          "next_step_id": "scientific-discovery-agents",
+          "best_score": 86.7,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-007__01.png",
+              "page": 36,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Formulated as a binary-classification task, the goal is to pick the most plausible explanatory hypothesis given two observations from narrative contexts.",
+                  "match_score": 73.5
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-007__02.png",
+              "page": 38,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "Unlike the Covid19-Scientific dataset, it contains non-scientific and socially-related claims, such as “For the coronavirus, the death rate in Texas, per capita of 29 million people, we’re one of the lowest in the country.” Such claims may not be life-and-death matters, but they still have the potential to bring negative sociopolitical effects.",
+                  "match_score": 83.0
+                },
+                {
+                  "text": "COVID- Scientific MD COVID-Scientific is a testset consists of COVID-19-related scientific or medical myths that must be debunked correctly to ensure the safety of the public (e.g., “Drinking a bleach solution will prevent you from getting COVID-19\").",
+                  "match_score": 86.7
+                },
+                {
+                  "text": "StepGame QA StepGame is a robust multi-hop spatial reasoning dataset in textual format which addresses the limitation from the bAbI dataset task 17 and task 19.",
+                  "match_score": 73.5
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-007__03.png",
+              "page": 39,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "OpenDialKG KGD OpenDialKG is a dataset of conversations between two crowdsourcing agents engaging in a dialog about a given topic.",
+                  "match_score": 75.6
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 3,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 3
+        },
+        {
+          "id": "planning-scientific-discovery-agents-AGT-015",
+          "paper_id": "AGT-015",
+          "next_step_id": "scientific-discovery-agents",
+          "best_score": 86.7,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-015__01.png",
+              "page": 8,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "Our system demonstrates advanced reasoning and experimental design capabilities, addressing complex scientific problems and generating high-quality code.",
+                  "match_score": 86.7
+                },
+                {
+                  "text": "The development of more integrated scientific tools for LLMs has potential to greatly accelerate new discoveries.",
+                  "match_score": 79.3
+                },
+                {
+                  "text": "The development of new intelligent agent systems and automated methods for conducting scientific experiments raises potential con- cerns about the safety and potential dual-use consequences, particu- larly in relation to the proliferation of illicit activities and security threats.",
+                  "match_score": 83.0
+                },
+                {
+                  "text": "By ensuring the ethical and responsible use of these pow- erful tools, we are continuing to explore the vast potential of LLMs in advancing scientific research while mitigating the risks associ- ated with their misuse.",
+                  "match_score": 79.3
+                },
+                {
+                  "text": "A brief dual-use study of Coscientist is pro- vided in Supplementary Information section ‘Safety implications: Dual-use study’.",
+                  "match_score": 75.6
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 1,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 4
+        },
+        {
+          "id": "planning-scientific-discovery-agents-AGT-004",
+          "paper_id": "AGT-004",
+          "next_step_id": "scientific-discovery-agents",
+          "best_score": 83.4,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-004__01.png",
+              "page": 14,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "For example, the user might express actions in the game as scripts dictating a sequence of complex actions, such as “get a listing of all network activity and check it for anomalies”, which go beyond the scope of multiple choice or short answer inputs.",
+                  "match_score": 68.8
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-004__02.png",
+              "page": 15,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "4) Example Implementation: This example tailors the prompt speciﬁcally to the domain of providing answers related to code: ”When you provide an answer, please explain the reasoning and assumptions behind your selection of software frameworks.",
+                  "match_score": 71.2
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-004__03.png",
+              "page": 16,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "In future work, a complement of this pattern may be developed to hide the underlying prompt information and rationale from users to prevent discovery.",
+                  "match_score": 83.4
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-004__04.png",
+              "page": 18,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "[29] investigated how different prompt key words affect image generation and different char- acteristics of images.",
+                  "match_score": 71.2
+                },
+                {
+                  "text": "Other research has looked at boolean prompt design for literature queries [32].",
+                  "match_score": 71.4
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 4,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 5
+        },
+        {
+          "id": "planning-scientific-discovery-agents-AGT-017",
+          "paper_id": "AGT-017",
+          "next_step_id": "scientific-discovery-agents",
+          "best_score": 83.0,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-017__01.png",
+              "page": 5,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Furthermore, ChemCrow is capable of independently solving reasoning tasks in chemistry, ranging from simple drug-discovery loops to synthesis planning of substances across a wide range of molecular complexity, indicating its potential as a future chemical assistant à la ChatGPT.",
+                  "match_score": 75.6
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-017__02.png",
+              "page": 6,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Additionally, implicit bias in task selection and the inherent limitations of testing chemical logic behind task solutions on a large scale present difficul- ties for evaluating ML systems.",
+                  "match_score": 75.6
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-017__03.png",
+              "page": 6,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "This allows the model to collect current and relevant informa- tion across a broad range of scientific topics.",
+                  "match_score": 82.2
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-017__04.png",
+              "page": 7,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "The literature-search tool focuses on extracting relevant information from scientific documents such as PDFs or text files (including raw HTML) to provide accurate and well-grounded answers to questions.",
+                  "match_score": 83.0
+                },
+                {
+                  "text": "By anchoring responses in the existing scientific literature, the literature-search tool substantially enhances the model’s capacity to provide reliable and accurate infor- mation for routine scientific tasks while also including references to the relevant papers.",
+                  "match_score": 83.0
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 4,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 6
+        },
+        {
+          "id": "planning-scientific-discovery-agents-AGT-018",
+          "paper_id": "AGT-018",
+          "next_step_id": "scientific-discovery-agents",
+          "best_score": 83.0,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-018__01.png",
+              "page": 7,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "Although the proposed synthesis temperature is dependent on the precursors, not just the target, it may vary for each recipe.",
+                  "match_score": 77.1
+                },
+                {
+                  "text": "This temperature was calculated by averaging the proposed synthesis temperatures for the top five precursor sets recommended for a given target.",
+                  "match_score": 73.5
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-018__02.png",
+              "page": 7,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "It is a bespoke robotic platform that consists of a precursor preparation station with a central robot arm (Mitsubishi) for powder dispensing and mixing (custom-made with Labman Automation Ltd.), a high-temperature heating station with four box furnaces (based on F48055-60, Thermo Scientific, with custom actuators to control its door), a product-handling station developed in-house for powder retrieval and sample loading, a characterization station with a pow- der X-ray diffractometer (Aeris Minerals, Malvern Panalytical) and two collaborative robot arms (UR5e, Universal Robots) that transfer samples and labware between stations.",
+                  "match_score": 83.0
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-018__03.png",
+              "page": 7,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "However, these reports were not included in the algori­ thms that the A-Lab uses to design its initial guess for a synthesis recipe.",
+                  "match_score": 75.8
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-018__04.png",
+              "page": 8,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "New synthesis experi- ments are then proposed on the basis of sets of precursors expected to avoid such reactions, giving priority to those with a maximal ther- modynamic driving force to form the target.",
+                  "match_score": 72.8
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 4,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 7
+        },
+        {
+          "id": "planning-scientific-discovery-agents-AGT-043",
+          "paper_id": "AGT-043",
+          "next_step_id": "scientific-discovery-agents",
+          "best_score": 82.2,
+          "screenshots": [
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-043__01.png",
+              "page": 9,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "We introduced an open-source library, AutoGen, that incorporates the paradigms of conversable agents and conversation programming.",
+                  "match_score": 75.6
+                },
+                {
+                  "text": "It features a unified conversation interface among the agents, along with an auto-reply mechanisms, which help establish an agent-interaction interface that capitalizes on the strengths of chat-optimized LLMs with broad capabilities while accommodating a wide range of applications.",
+                  "match_score": 75.6
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-043__02.png",
+              "page": 17,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence-group",
+              "sentences": [
+                {
+                  "text": "Creating such agents is crucial to ensuring that a multi-agent workflow can effectively troubleshoot and make progress on a task.",
+                  "match_score": 79.6
+                },
+                {
+                  "text": "We believe that more systematic work will be required to develop guidelines for application-specific agents, to create a large OSS knowledge base of agents, and to create agents that can discover and upgrade their skills (Cai et al., 2023).",
+                  "match_score": 79.3
+                }
+              ]
+            },
+            {
+              "href": "ai_agents/assets/evidence/planning-scientific-discovery-agents-AGT-043__03.png",
+              "page": 18,
+              "section_hint": "Discussion / Future Work",
+              "highlight_granularity": "sentence",
+              "sentences": [
+                {
+                  "text": "Some instructions can have ambiguities, and the designer should either reduce them for preciseness or intentionally keep them for flexibility and address the different situations in other agents.",
+                  "match_score": 82.2
+                }
+              ]
+            }
+          ],
+          "screenshot_count": 3,
+          "screenshot_status": "ok",
+          "screenshot_strategy": "planning-future-work",
+          "confidence": "parsed_pdf",
+          "rank_within_next_step": 8
+        }
+      ]
+    }
+  ]
+}
